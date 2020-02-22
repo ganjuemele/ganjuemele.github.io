@@ -1,0 +1,1174 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "Hugo的配置",
+        "headline" : "Hugo的配置",
+        "description" : "首先需要将 themes\/future-imperfect\/examplesite\/config.toml 复制到根目录替换原文件；  baseurl = \x26#34;\/\x26#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = \x26#34;en-us\x26#34; # 网站支持语言 title = \x26#34;Hugo Future Imperfect\x26#34; # 网站标题 theme = \x26#34;hugo-future-imperfect\x26#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = \x26#34;shortname\x26#34; googleAnalytics = \x26#34;\x26#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = \x26#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-02-10 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2020-02-10 00:00:00 \x2b0000 UTC",
+        "url" : "\/blog\/hugo%E7%9A%84%E9%85%8D%E7%BD%AE\/",
+        "wordCount" : "986",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>Hugo的配置</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.62.0" />
+        
+  
+    
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed-3.png'>
+  <link rel="icon" href='/favicon/favicon-3.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile-3.png'>
+  <meta name="application-name" content="么了&#39;s 博客">
+  <meta name="msapplication-tooltip" content="么记">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="么了">
+        
+        
+            
+                <meta name="description" content="么记">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo的配置"/>
+<meta name="twitter:description" content="首先需要将 themes/future-imperfect/examplesite/config.toml 复制到根目录替换原文件；  baseurl = &#34;/&#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = &#34;en-us&#34; # 网站支持语言 title = &#34;Hugo Future Imperfect&#34; # 网站标题 theme = &#34;hugo-future-imperfect&#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = &#34;shortname&#34; googleAnalytics = &#34;&#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = &#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador."/>
+
+        <meta property="og:title" content="Hugo的配置" />
+<meta property="og:description" content="首先需要将 themes/future-imperfect/examplesite/config.toml 复制到根目录替换原文件；  baseurl = &#34;/&#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = &#34;en-us&#34; # 网站支持语言 title = &#34;Hugo Future Imperfect&#34; # 网站标题 theme = &#34;hugo-future-imperfect&#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = &#34;shortname&#34; googleAnalytics = &#34;&#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = &#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/" />
+<meta property="article:published_time" content="2020-02-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-10T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="Hugo的配置">
+<meta itemprop="description" content="首先需要将 themes/future-imperfect/examplesite/config.toml 复制到根目录替换原文件；  baseurl = &#34;/&#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = &#34;en-us&#34; # 网站支持语言 title = &#34;Hugo Future Imperfect&#34; # 网站标题 theme = &#34;hugo-future-imperfect&#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = &#34;shortname&#34; googleAnalytics = &#34;&#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = &#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador.">
+<meta itemprop="datePublished" content="2020-02-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-10T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="986">
+
+
+
+<meta itemprop="keywords" content="" />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>主页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/music/">
+                            <i class="fa fa-list">&nbsp;</i>音乐
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>类别
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/gallery/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>画作
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="google" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="google" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>主页
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/music/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>音乐
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>类别
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/gallery/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>画作
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/axios-note/">Axios笔记</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-22'>
+                                    February 22, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-21'>
+                                    February 21, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/cmd/">cmd的操作</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-19'>
+                                    February 19, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">查看更多</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f&amp;text=Hugo%e7%9a%84%e9%85%8d%e7%bd%ae&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f&amp;title=Hugo%e7%9a%84%e9%85%8d%e7%bd%ae" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/">Hugo的配置</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-10'>
+            February 10, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>5 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f&amp;text=Hugo%e7%9a%84%e9%85%8d%e7%bd%ae&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f&amp;title=Hugo%e7%9a%84%e9%85%8d%e7%bd%ae" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fhugo%25E7%259A%2584%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/" class="image featured">
+            <img src="/img/2020/02//pic05.jpg" alt="">
+        </a>
+    
+
+
+  <div id="content">
+    <ul>
+<li>首先需要将 <code>themes/future-imperfect/examplesite/config.toml</code> 复制到根目录替换原文件；</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">baseurl = <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#75715e"># 网站根路径，可以写成你后期站点对应的域名</span>
+languageCode = <span style="color:#e6db74">&#34;en-us&#34;</span> <span style="color:#75715e"># 网站支持语言</span>
+title = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span> <span style="color:#75715e"># 网站标题</span>
+theme = <span style="color:#e6db74">&#34;hugo-future-imperfect&#34;</span> <span style="color:#75715e"># 网站主题</span>
+preserveTaxonomyNames = <span style="color:#66d9ef">true</span>
+paginate = <span style="color:#ae81ff">3</span> <span style="color:#75715e"># 文章超出几篇后产生分页</span>
+disqusShortname = <span style="color:#e6db74">&#34;shortname&#34;</span>
+googleAnalytics = <span style="color:#e6db74">&#34;&#34;</span>
+pluralizeListTitles = <span style="color:#66d9ef">false</span>
+<span style="color:#75715e"># Set the followings to true as part of your site SEO</span>
+enableRobotsTXT = <span style="color:#66d9ef">true</span>
+canonifyURLs = <span style="color:#66d9ef">true</span>
+
+<span style="color:#75715e"># [params] 下面的值将会构成模板里的 .Site.Params 变量</span>
+[params]
+  <span style="color:#75715e"># Sets the meta tag description</span>
+  description          = <span style="color:#e6db74">&#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo&#34;</span>
+  <span style="color:#75715e"># Sets the navbarTitle that appears in the top left of the navigation bar</span>
+  <span style="color:#75715e"># 设置出现在导航栏左上角的导航栏标题</span>
+  navbarTitle          = <span style="color:#e6db74">&#34;Future Imperfect&#34;</span>
+  <span style="color:#75715e"># Sets where &#34;View More Posts&#34; links</span>
+  <span style="color:#75715e"># 设置“查看更多文章”链接的位置</span>
+  viewMorePostLink     = <span style="color:#e6db74">&#34;/blog/&#34;</span>
+
+<span style="color:#75715e"># Optional Params</span>
+  <span style="color:#75715e"># Sets navbarTitle to match the section of the website</span>
+  dynamicTitles        = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Sets RSS icons to appear on the sidebar with the social media buttons</span>
+  <span style="color:#75715e"># RSS是否显示在侧边栏</span>
+  rssAppearAtTop       = <span style="color:#66d9ef">true</span>
+  rssAppearAtBottom    = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Sets Social Media icons to appear on the sidebar</span>
+  <span style="color:#75715e"># 社交媒体图标是否显示在侧边栏</span>
+  socialAppearAtTop    = <span style="color:#66d9ef">true</span>
+  socialAppearAtBottom = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Sets Categories to sort by number of posts instead of alphabetical</span>
+  <span style="color:#75715e"># 分类信息是否按数量统计</span>
+  categoriesByCount    = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># set to show or to hide categories in the sidebar</span>
+  <span style="color:#75715e"># 分类信息是否显示在侧边栏</span>
+  showSidebarCategories = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Sets Estimated Reading Time to appear in post headers</span>
+  <span style="color:#75715e"># 是否显示估计阅读时间</span>
+  includeReadingTime   = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Sets the Favicon and Version for the site. Default support is for</span>
+  <span style="color:#75715e"># apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.</span>
+  <span style="color:#75715e"># These are stored in the favicon folder. See the following for more information:</span>
+  <span style="color:#75715e"># https://github.com/audreyr/favicon-cheat-sheet</span>
+  <span style="color:#75715e"># 设置网站 favicon 图标，默认加载 static/favicon/favicon.png</span>
+  loadFavicon          = <span style="color:#66d9ef">false</span>
+  faviconVersion       = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Sets Social Share links to appear on posts</span>
+  <span style="color:#75715e"># 文章滚动时是否显示右上角分享</span>
+  socialShare          = <span style="color:#66d9ef">true</span>
+  <span style="color:#75715e"># Sets specific share to appear on posts (default behavior is to appear)</span>
+  <span style="color:#75715e"># 文章滚动时显示在右上角分享中的社交媒体图标</span>
+  socialShareTwitter   = <span style="color:#66d9ef">true</span>
+  socialShareGoogleplus = <span style="color:#66d9ef">true</span>
+  socialShareFacebook  = <span style="color:#66d9ef">true</span>
+  socialShareReddit    = <span style="color:#66d9ef">true</span>
+  socialShareLinkedin  = <span style="color:#66d9ef">true</span>
+  socialShareStumbleupon = <span style="color:#66d9ef">true</span>
+  socialSharePinterest = <span style="color:#66d9ef">true</span>
+  socialShareEmail     = <span style="color:#66d9ef">true</span>
+
+  <span style="color:#75715e"># Load custom CSS or JavaScript files. The variable is an array so that you</span>
+  <span style="color:#75715e"># can load multiple files if necessary. You can also load the standard theme</span>
+  <span style="color:#75715e"># files by adding the value, &#34;default&#34;.</span>
+  <span style="color:#75715e"># customCSS            = [&#34;default&#34;, &#34;/path/to/file&#34;]</span>
+  <span style="color:#75715e"># customJS             = [&#34;default&#34;, &#34;/path/to/file&#34;]</span>
+  <span style="color:#75715e"># 加载自定义 css 或 javascript 文件地址</span>
+  customCSS            = [<span style="color:#e6db74">&#34;default&#34;</span>]
+  customJS             = [<span style="color:#e6db74">&#34;default&#34;</span>]
+
+  <span style="color:#75715e"># options for highlight.js (version, additional languages, and theme)</span>
+  <span style="color:#75715e"># 设置 highlight.js 的版本，主题</span>
+  disable_highlight = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># set to true to disable Highlight</span>
+  highlightjsVersion = <span style="color:#e6db74">&#34;9.11.0&#34;</span>
+  highlightjsCDN = <span style="color:#e6db74">&#34;//cdn.bootcss.com&#34;</span>
+  highlightjsLang = [<span style="color:#e6db74">&#34;r&#34;</span>, <span style="color:#e6db74">&#34;yaml&#34;</span>, <span style="color:#e6db74">&#34;css&#34;</span>]
+  highlightjsTheme = <span style="color:#e6db74">&#34;github&#34;</span>
+  MathJaxCDN = <span style="color:#e6db74">&#34;//cdn.bootcss.com&#34;</span>
+  MathJaxVersion = <span style="color:#e6db74">&#34;2.7.1&#34;</span>
+
+<span style="color:#75715e"># Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)</span>
+<span style="color:#75715e"># due to its ease of use. Feel free to check out both and decide what you would</span>
+<span style="color:#75715e"># prefer to use. See Staticman.yml for additional settings.</span>
+[params.staticman]
+  <span style="color:#75715e"># Sets Statiman to be active</span>
+  staticman = <span style="color:#66d9ef">false</span>
+  <span style="color:#75715e"># Sets the location for Staticman to connect to</span>
+  username  = <span style="color:#e6db74">&#34;&#34;</span>
+  repo      = <span style="color:#e6db74">&#34;&#34;</span>
+  branch    = <span style="color:#e6db74">&#34;&#34;</span>
+
+  [params.staticman.recaptcha]
+    sitekey = <span style="color:#e6db74">&#34;SITE_KEY&#34;</span>
+    secret  = <span style="color:#e6db74">&#34;ENCRYPTED_SECRET&#34;</span>
+
+  <span style="color:#75715e"># These are optional params related to the sidebar. They are recommended, but not</span>
+  <span style="color:#75715e"># required for proper functionality. HTML is supported within the params.</span>
+[params.intro]
+  <span style="color:#75715e"># 侧边栏自我介绍头部</span>
+  header    = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span>
+  <span style="color:#75715e"># 侧边栏自我介绍内容</span>
+  paragraph = <span style="color:#e6db74">&#34;Another fine responsive site template by &lt;a href=\&#34;http://html5up.net\&#34;&gt;HTML5 UP&lt;/a&gt;. Ported by Julio Pescador with some extra goodies &lt;i class=&#39;fa fa-hand-peace-o&#39;&gt;&lt;/i&gt;&#34;</span>
+  <span style="color:#75715e"># 侧边栏关于我</span>
+  about     = <span style="color:#e6db74">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris.&#34;</span>
+
+  <span style="color:#75715e"># This appears at the top of the sidebar above params.intro.header.</span>
+  <span style="color:#75715e"># A width of less than 100px is recommended from a design perspective.</span>
+  <span style="color:#75715e"># 首页侧边栏头像</span>
+  [params.intro.pic]
+    src       = <span style="color:#e6db74">&#34;/img/main/logo.jpg&#34;</span>
+    <span style="color:#75715e"># Sets Image to be a cirlce</span>
+    <span style="color:#75715e"># 头像图形 true 圆形 false 六边形</span>
+    circle    = <span style="color:#66d9ef">false</span>
+    <span style="color:#75715e"># Sets Image to be Future Imperfect&#39;s hexagon</span>
+    imperfect = <span style="color:#66d9ef">true</span>
+    width     = <span style="color:#e6db74">&#34;&#34;</span>
+    alt       = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span>
+
+[params.postAmount]
+<span style="color:#75715e"># Sets the number of recent posts to show in the sidebar. The default value is 5.</span>
+<span style="color:#75715e"># 侧边栏中显示的最近文章数，默认值为5</span>
+    sidebar = <span style="color:#ae81ff">5</span>
+
+<span style="color:#75715e"># Sets the menu items in the navigation bar</span>
+<span style="color:#75715e"># Identifier prepends a Font Awesome icon to the menu item</span>
+<span style="color:#75715e"># 导航菜单</span>
+[[menu.main]]
+  <span style="color:#75715e"># 菜单名称</span>
+  name = <span style="color:#e6db74">&#34;Home&#34;</span>
+  <span style="color:#75715e"># 请求地址</span>
+  url = <span style="color:#e6db74">&#34;/&#34;</span>
+  <span style="color:#75715e"># 菜单图标</span>
+  identifier = <span style="color:#e6db74">&#34;fa fa-home&#34;</span>
+  <span style="color:#75715e"># 权重，越小越靠前</span>
+  weight = <span style="color:#ae81ff">1</span>
+
+[[menu.main]]
+  name = <span style="color:#e6db74">&#34;About&#34;</span>
+  url = <span style="color:#e6db74">&#34;/about/&#34;</span>
+  identifier = <span style="color:#e6db74">&#34;fa fa-id-card-o&#34;</span>
+  weight = <span style="color:#ae81ff">2</span>
+
+[[menu.main]]
+  name = <span style="color:#e6db74">&#34;Blog&#34;</span>
+  url = <span style="color:#e6db74">&#34;/blog/&#34;</span>
+  identifier = <span style="color:#e6db74">&#34;fa fa-newspaper-o&#34;</span>
+  weight = <span style="color:#ae81ff">3</span>
+
+[[menu.main]]
+  name = <span style="color:#e6db74">&#34;Itemized&#34;</span>
+  url = <span style="color:#e6db74">&#34;/itemized/&#34;</span>
+  identifier = <span style="color:#e6db74">&#34;fa fa-list&#34;</span>
+  weight = <span style="color:#ae81ff">4</span>
+
+[[menu.main]]
+  name = <span style="color:#e6db74">&#34;Categories&#34;</span>
+  url = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+  identifier = <span style="color:#e6db74">&#34;fa fa-sitemap&#34;</span>
+  weight = <span style="color:#ae81ff">5</span>
+
+[[menu.main]]
+  name = <span style="color:#e6db74">&#34;Contact&#34;</span>
+  url = <span style="color:#e6db74">&#34;/contact/&#34;</span>
+  identifier = <span style="color:#e6db74">&#34;fa fa-envelope-o&#34;</span>
+  weight = <span style="color:#ae81ff">6</span>
+
+<span style="color:#75715e"># Sets Social Media icons to appear and link to your account. Value should be your</span>
+<span style="color:#75715e"># username unless otherwise noted. These are the icons affected by socialAppearAtTop</span>
+<span style="color:#75715e"># and socialAppearAtBottom.</span>
+<span style="color:#75715e"># 设置显示在侧边栏中的社交媒体图标</span>
+[social]
+  <span style="color:#75715e"># Coding Communities</span>
+  github           = <span style="color:#e6db74">&#34;jpescador/hugo-future-imperfect&#34;</span>
+  gitlab           = <span style="color:#e6db74">&#34;&#34;</span>
+  stackoverflow    = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># User Number</span>
+  bitbucket        = <span style="color:#e6db74">&#34;&#34;</span>
+  jsfiddle         = <span style="color:#e6db74">&#34;&#34;</span>
+  codepen          = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Visual Art Communities</span>
+  deviantart       = <span style="color:#e6db74">&#34;&#34;</span>
+  flickr           = <span style="color:#e6db74">&#34;example&#34;</span>
+  behance          = <span style="color:#e6db74">&#34;&#34;</span>
+  dribbble         = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Publishing Communities</span>
+  wordpress        = <span style="color:#e6db74">&#34;&#34;</span>
+  medium           = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Professional/Business Oriented Communities</span>
+  linkedin         = <span style="color:#e6db74">&#34;example&#34;</span>
+  linkedin_company = <span style="color:#e6db74">&#34;examplebusiness&#34;</span>
+  foursquare       = <span style="color:#e6db74">&#34;&#34;</span>
+  xing             = <span style="color:#e6db74">&#34;&#34;</span>
+  slideshare       = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># Social Networks</span>
+  facebook         = <span style="color:#e6db74">&#34;example&#34;</span>
+  googleplus       = <span style="color:#e6db74">&#34;&#34;</span>
+  reddit           = <span style="color:#e6db74">&#34;example&#34;</span>
+  quora            = <span style="color:#e6db74">&#34;&#34;</span>
+  youtube          = <span style="color:#e6db74">&#34;&#34;</span>
+  vimeo            = <span style="color:#e6db74">&#34;&#34;</span>
+  whatsapp         = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># WhatsApp Number</span>
+    <span style="color:#75715e"># WeChat and QQ need testing.</span>
+    wechat         = <span style="color:#e6db74">&#34;&#34;</span>
+    qq             = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># User ID Number</span>
+  instagram        = <span style="color:#e6db74">&#34;example&#34;</span>
+  tumblr           = <span style="color:#e6db74">&#34;&#34;</span>
+  twitter          = <span style="color:#e6db74">&#34;example&#34;</span>
+  skype            = <span style="color:#e6db74">&#34;&#34;</span>
+  snapchat         = <span style="color:#e6db74">&#34;&#34;</span>
+  pinterest        = <span style="color:#e6db74">&#34;example&#34;</span>
+  telegram         = <span style="color:#e6db74">&#34;example&#34;</span>
+  vine             = <span style="color:#e6db74">&#34;&#34;</span>
+  googlescholar    = <span style="color:#e6db74">&#34;&#34;</span>
+  orcid            = <span style="color:#e6db74">&#34;&#34;</span>
+  researchgate     = <span style="color:#e6db74">&#34;example&#34;</span>
+  <span style="color:#75715e"># Email</span>
+  email            = <span style="color:#e6db74">&#34;example&#34;</span>
+
+</code></pre></div><h3 id="heading">更改模版内容</h3>
+<p>进入 <code>/themes/hugo-future-impefect/layouts/</code> 找到所要修改部分的文件</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/hugo">hugo</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+ 
+ 
+ <div id="vcomments"></div>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+ 
+ <script type="text/javascript">
+     new Valine({
+         el: '#vcomments' ,
+         appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+         appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+         notify: 'false', 
+         verify: 'false', 
+         avatar:'retro', 
+         placeholder: '评论支持Markdown语法...',
+         visitor: 'true'
+     });
+ </script>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/toml/"
+                class="button big previous">toml文档格式的数据定义</a></li>
+    
+
+    
+        <li><a href="/blog/cmd/"
+                class="button big next">cmd的操作</a></li>
+    
+</ul>
+
+
+<article class="post">
+  
+ 
+ 
+ <div id="vcomments"></div>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+ 
+ <script type="text/javascript">
+     new Valine({
+         el: '#vcomments' ,
+         appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+         appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+         notify: 'false', 
+         verify: 'false', 
+         avatar:'retro', 
+         placeholder: '评论支持Markdown语法...',
+         visitor: 'true'
+     });
+ </script>
+</article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/me.jpg" class="intro-circle" width="150px" alt="么了" /></a>
+      
+    
+    
+      <header>
+        <h2>么了</h2>
+        <p>欢迎莅临 <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>最新文章</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/axios-note/">Axios笔记</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-22'>
+                February 22, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-21'>
+                February 21, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/cmd/">cmd的操作</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-19'>
+                February 19, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">查看更多</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>关于</h3>
+      <p>HTML 5 | CSS | JavaScript | React</p>
+      <a href="/about/" class="button">了解更多</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          么了&#39;s 博客
+        
+      .<br/>
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

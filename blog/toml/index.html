@@ -1,0 +1,999 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "toml文档格式的数据定义",
+        "headline" : "toml文档格式的数据定义",
+        "description" : "md文件配置规范",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-02-02 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2020-02-02 00:00:00 \x2b0000 UTC",
+        "url" : "\/blog\/toml\/",
+        "wordCount" : "136",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>toml文档格式的数据定义</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.62.0" />
+        
+  
+    
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed-3.png'>
+  <link rel="icon" href='/favicon/favicon-3.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile-3.png'>
+  <meta name="application-name" content="么了&#39;s 博客">
+  <meta name="msapplication-tooltip" content="么记">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="么了">
+        
+        
+            <meta name="description" content="md文件配置规范">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="toml文档格式的数据定义"/>
+<meta name="twitter:description" content="md文件配置规范"/>
+
+        <meta property="og:title" content="toml文档格式的数据定义" />
+<meta property="og:description" content="md文件配置规范" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/toml/" />
+<meta property="article:published_time" content="2020-02-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-02T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="toml文档格式的数据定义">
+<meta itemprop="description" content="md文件配置规范">
+<meta itemprop="datePublished" content="2020-02-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="136">
+
+
+
+<meta itemprop="keywords" content="" />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>主页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/music/">
+                            <i class="fa fa-list">&nbsp;</i>音乐
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>类别
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/gallery/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>画作
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="google" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="google" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>主页
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/music/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>音乐
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>类别
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/gallery/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>画作
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/axios-note/">Axios笔记</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-22'>
+                                    February 22, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-21'>
+                                    February 21, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/cmd/">cmd的操作</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-19'>
+                                    February 19, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">查看更多</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2ftoml%2f&amp;text=toml%e6%96%87%e6%a1%a3%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%95%b0%e6%8d%ae%e5%ae%9a%e4%b9%89&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftoml%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftoml%2f&amp;title=toml%e6%96%87%e6%a1%a3%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%95%b0%e6%8d%ae%e5%ae%9a%e4%b9%89" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ftoml%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/toml/">toml文档格式的数据定义</a></h1>
+            
+        
+        
+            <p>md文件配置规范</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-02'>
+            February 2, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2ftoml%2f&amp;text=toml%e6%96%87%e6%a1%a3%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%95%b0%e6%8d%ae%e5%ae%9a%e4%b9%89&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftoml%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftoml%2f&amp;title=toml%e6%96%87%e6%a1%a3%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%95%b0%e6%8d%ae%e5%ae%9a%e4%b9%89" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ftoml%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/toml/" class="image featured">
+            <img src="/img/2020/02/pic01.jpg" alt="">
+        </a>
+    
+
+
+  <div id="content">
+    <p>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。</p>
+<ul>
+<li>TOML是大小写敏感的</li>
+<li><strong>#</strong> 表示注释</li>
+<li>可以按照自己的意愿使用空格或者Tab缩进</li>
+</ul>
+<h2 id="-hugo-md">先写一个 Hugo 博客/md文档的配置规范</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">+++
+title = <span style="color:#e6db74">&#34;标题名称&#34;</span>
+description = <span style="color:#e6db74">&#34;&#34;</span> //副标题
+draft = <span style="color:#66d9ef">false</span> //草稿
+author = <span style="color:#e6db74">&#34;么了&#34;</span>
+date = <span style="color:#e6db74">&#34;2019-04-02&#34;</span>
+categories = [<span style="color:#e6db74">&#34;笔记&#34;</span>,博客<span style="color:#e6db74">&#34;&#34;</span>] // 设置分类，支持数组格式
+series = [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>]
+slug = <span style="color:#e6db74">&#34;url的尾部&#34;</span>
+tags = []
+keywords: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>]
+featured = <span style="color:#e6db74">&#34;pic01.jpg&#34;</span> //外部索引图片地址用文件夹 /年份/月份/pic.jpg
+featuredalt = <span style="color:#e6db74">&#34;Pic 1&#34;</span>
+featuredpath = <span style="color:#e6db74">&#34;date&#34;</span> // 也可使用绝对路径
+linktitle = <span style="color:#e6db74">&#34;&#34;</span>
+publishdate      // 定时未来发布的时间
+type = <span style="color:#e6db74">&#34;post&#34;</span>
+metaDataFormat = <span style="color:#e6db74">&#34;toml&#34;</span>
+languageCode = <span style="color:#e6db74">&#34;en-us&#34;</span>
+date = <span style="color:#e6db74">&#34;2014-09-29T21:54:53-05:00&#34;</span>
+weight         // 排序的权重，默认按时间降序
+
++++
+</code></pre></div><h2 id="hugo--markdown-">Hugo 的 markdown 文件前置数据定义结构，支持三种格式的语法类型</h2>
+<h3 id="heading">例如：</h3>
+<h3 id="yaml">yaml</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+title: <span style="color:#e6db74">&#34;My First Post&#34;</span>
+date: <span style="color:#e6db74">2019-03-26T08:47:11</span><span style="color:#ae81ff">+01</span>:<span style="color:#ae81ff">00</span>
+draft: <span style="color:#66d9ef">true</span>
+---
+</code></pre></div><h3 id="toml">toml</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">+++
+title: <span style="color:#e6db74">&#34;My First Post&#34;</span>
+date: <span style="color:#e6db74">2019-03-26T08:47:11</span><span style="color:#ae81ff">+01</span>:<span style="color:#ae81ff">00</span>
+draft: <span style="color:#66d9ef">true</span>
++++
+</code></pre></div><h3 id="json">json</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+	<span style="color:#e6db74">&#34;title&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ replace .Name &#34;</span><span style="color:#f92672">-</span><span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#34; | title }}&#34;</span>,
+	<span style="color:#e6db74">&#34;date&#34;</span><span style="color:#f92672">:</span> {{ .Date }},
+	<span style="color:#e6db74">&#34;draft&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+}
+</code></pre></div><h2 id="heading-1"></h2>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/toml">toml</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+ 
+ 
+ <div id="vcomments"></div>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+ 
+ <script type="text/javascript">
+     new Valine({
+         el: '#vcomments' ,
+         appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+         appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+         notify: 'false', 
+         verify: 'false', 
+         avatar:'retro', 
+         placeholder: '评论支持Markdown语法...',
+         visitor: 'true'
+     });
+ </script>
+<ul class="actions pagination">
+    
+
+    
+        <li><a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/"
+                class="button big next">Hugo的配置</a></li>
+    
+</ul>
+
+
+<article class="post">
+  
+ 
+ 
+ <div id="vcomments"></div>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+ 
+ <script type="text/javascript">
+     new Valine({
+         el: '#vcomments' ,
+         appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+         appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+         notify: 'false', 
+         verify: 'false', 
+         avatar:'retro', 
+         placeholder: '评论支持Markdown语法...',
+         visitor: 'true'
+     });
+ </script>
+</article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/me.jpg" class="intro-circle" width="150px" alt="么了" /></a>
+      
+    
+    
+      <header>
+        <h2>么了</h2>
+        <p>欢迎莅临 <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>最新文章</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/axios-note/">Axios笔记</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-22'>
+                February 22, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-21'>
+                February 21, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/cmd/">cmd的操作</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-19'>
+                February 19, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">查看更多</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>关于</h3>
+      <p>HTML 5 | CSS | JavaScript | React</p>
+      <a href="/about/" class="button">了解更多</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          么了&#39;s 博客
+        
+      .<br/>
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

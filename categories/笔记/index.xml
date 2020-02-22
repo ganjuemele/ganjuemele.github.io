@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>笔记 on 么了&#39;s 博客</title>
+    <link>/categories/%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 笔记 on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo的配置</title>
+      <link>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
+      <description>首先需要将 themes/future-imperfect/examplesite/config.toml 复制到根目录替换原文件；  baseurl = &amp;#34;/&amp;#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = &amp;#34;en-us&amp;#34; # 网站支持语言 title = &amp;#34;Hugo Future Imperfect&amp;#34; # 网站标题 theme = &amp;#34;hugo-future-imperfect&amp;#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = &amp;#34;shortname&amp;#34; googleAnalytics = &amp;#34;&amp;#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = &amp;#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador.</description>
+    </item>
+    
+    <item>
+      <title>toml文档格式的数据定义</title>
+      <link>/blog/my-first-blog/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/my-first-blog/</guid>
+      <description>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。
+ TOML是大小写敏感的 # 表示注释 可以按照自己的意愿使用空格或者Tab缩进  先写一个 Hugo 博客/md文档的配置规范 +++ title = &amp;#34;标题名称&amp;#34; description = &amp;#34;&amp;#34; //副标题 draft = false //草稿 author = &amp;#34;么了&amp;#34; date = &amp;#34;2019-04-02&amp;#34; categories = [&amp;#34;笔记&amp;#34;,博客&amp;#34;&amp;#34;] // 设置分类，支持数组格式 series = [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;] slug = &amp;#34;url的尾部&amp;#34; tags = [] keywords: [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;] featured = &amp;#34;pic01.jpg&amp;#34; //外部索引图片地址用文件夹 /年份/月份/pic.jpg featuredalt = &amp;#34;Pic 1&amp;#34; featuredpath = &amp;#34;date&amp;#34; // 也可使用绝对路径 linktitle = &amp;#34;&amp;#34; publishdate // 定时未来发布的时间 type = &amp;#34;post&amp;#34; metaDataFormat = &amp;#34;toml&amp;#34; languageCode = &amp;#34;en-us&amp;#34; date = &amp;#34;2014-09-29T21:54:53-05:00&amp;#34; weight // 排序的权重，默认按时间降序 +++ Hugo 的 markdown 文件前置数据定义结构，支持三种格式的语法类型 例如： yaml --- title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- toml +++ title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true +++ json { &amp;#34;title&amp;#34;: &amp;#34;{{ replace .</description>
+    </item>
+    
+  </channel>
+</rss>

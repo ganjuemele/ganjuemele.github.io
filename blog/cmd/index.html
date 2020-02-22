@@ -1,0 +1,1052 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "cmd的操作",
+        "headline" : "cmd的操作",
+        "description" : "npm i -g tldr 太长不想读\nrecursive 递归的\necho 回声 ::echo::\nforce 强制\nchange 改变 cd中的::c::\ndirectory 文件夹\/目录 cd中的::d::\nmake ::mk::\nmove ::mv::\nremove ::rm::\ncopy ::cp::\nlist ::ls::\nlink ::ln::\nfind ::find::\ntouch ::touch::\n::pwd:: 展示当前的绝对路径\nclear 清屏\n 查看文件内容 cat 路径 全部查看\nhead 路径 头10行\ntail 路径 尾10行\nless 路径 看其中一屏部分\n 增 touch 文件名\necho 内容 \x26gt; 1.js \/\/新建文件并添加内容\necho 内容 \x26gt;\x26gt; 1.js \/\/追加内容到文件\necho -e “内\/n容” \x26gt;\x26gt; 1.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-02-19 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2020-02-19 00:00:00 \x2b0000 UTC",
+        "url" : "\/blog\/cmd\/",
+        "wordCount" : "144",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>cmd的操作</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.62.0" />
+        
+  
+    
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed-3.png'>
+  <link rel="icon" href='/favicon/favicon-3.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile-3.png'>
+  <meta name="application-name" content="么了&#39;s 博客">
+  <meta name="msapplication-tooltip" content="么记">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="么了">
+        
+        
+            
+                <meta name="description" content="么记">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="cmd的操作"/>
+<meta name="twitter:description" content="npm i -g tldr 太长不想读
+recursive 递归的
+echo 回声 ::echo::
+force 强制
+change 改变 cd中的::c::
+directory 文件夹/目录 cd中的::d::
+make ::mk::
+move ::mv::
+remove ::rm::
+copy ::cp::
+list ::ls::
+link ::ln::
+find ::find::
+touch ::touch::
+::pwd:: 展示当前的绝对路径
+clear 清屏
+ 查看文件内容 cat 路径 全部查看
+head 路径 头10行
+tail 路径 尾10行
+less 路径 看其中一屏部分
+ 增 touch 文件名
+echo 内容 &gt; 1.js //新建文件并添加内容
+echo 内容 &gt;&gt; 1.js //追加内容到文件
+echo -e “内/n容” &gt;&gt; 1."/>
+
+        <meta property="og:title" content="cmd的操作" />
+<meta property="og:description" content="npm i -g tldr 太长不想读
+recursive 递归的
+echo 回声 ::echo::
+force 强制
+change 改变 cd中的::c::
+directory 文件夹/目录 cd中的::d::
+make ::mk::
+move ::mv::
+remove ::rm::
+copy ::cp::
+list ::ls::
+link ::ln::
+find ::find::
+touch ::touch::
+::pwd:: 展示当前的绝对路径
+clear 清屏
+ 查看文件内容 cat 路径 全部查看
+head 路径 头10行
+tail 路径 尾10行
+less 路径 看其中一屏部分
+ 增 touch 文件名
+echo 内容 &gt; 1.js //新建文件并添加内容
+echo 内容 &gt;&gt; 1.js //追加内容到文件
+echo -e “内/n容” &gt;&gt; 1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/cmd/" />
+<meta property="article:published_time" content="2020-02-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-19T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="cmd的操作">
+<meta itemprop="description" content="npm i -g tldr 太长不想读
+recursive 递归的
+echo 回声 ::echo::
+force 强制
+change 改变 cd中的::c::
+directory 文件夹/目录 cd中的::d::
+make ::mk::
+move ::mv::
+remove ::rm::
+copy ::cp::
+list ::ls::
+link ::ln::
+find ::find::
+touch ::touch::
+::pwd:: 展示当前的绝对路径
+clear 清屏
+ 查看文件内容 cat 路径 全部查看
+head 路径 头10行
+tail 路径 尾10行
+less 路径 看其中一屏部分
+ 增 touch 文件名
+echo 内容 &gt; 1.js //新建文件并添加内容
+echo 内容 &gt;&gt; 1.js //追加内容到文件
+echo -e “内/n容” &gt;&gt; 1.">
+<meta itemprop="datePublished" content="2020-02-19T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-19T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="144">
+
+
+
+<meta itemprop="keywords" content="" />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>主页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/music/">
+                            <i class="fa fa-list">&nbsp;</i>音乐
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>类别
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/gallery/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>画作
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="google" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="google" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>主页
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/music/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>音乐
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>类别
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/gallery/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>画作
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/axios-note/">Axios笔记</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-22'>
+                                    February 22, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-21'>
+                                    February 21, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/cmd/">cmd的操作</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-02-19'>
+                                    February 19, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">查看更多</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fcmd%2f&amp;text=cmd%e7%9a%84%e6%93%8d%e4%bd%9c&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcmd%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcmd%2f&amp;title=cmd%e7%9a%84%e6%93%8d%e4%bd%9c" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fcmd%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/cmd/">cmd的操作</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-19'>
+            February 19, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fcmd%2f&amp;text=cmd%e7%9a%84%e6%93%8d%e4%bd%9c&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcmd%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcmd%2f&amp;title=cmd%e7%9a%84%e6%93%8d%e4%bd%9c" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fcmd%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    <p><code>npm i -g tldr 太长不想读</code></p>
+<p>recursive 递归的</p>
+<p>echo 回声 ::echo::</p>
+<p>force 强制</p>
+<p>change 改变 cd中的::c::</p>
+<p>directory 文件夹/目录 cd中的::d::</p>
+<p>make ::mk::</p>
+<p>move ::mv::</p>
+<p>remove ::rm::</p>
+<p>copy ::cp::</p>
+<p>list ::ls::</p>
+<p>link ::ln::</p>
+<p>find ::find::</p>
+<p>touch ::touch::</p>
+<p>::pwd:: 展示当前的绝对路径</p>
+<p>clear 清屏</p>
+<hr>
+<h2 id="heading">查看文件内容</h2>
+<p>cat 路径 全部查看</p>
+<p>head 路径 头10行</p>
+<p>tail 路径 尾10行</p>
+<p>less 路径 看其中一屏部分</p>
+<hr>
+<h2 id="heading-1">增</h2>
+<p><code>touch 文件名</code></p>
+<p><code>echo 内容 &gt; 1.js</code>  //新建文件并添加内容</p>
+<p><code>echo 内容 &gt;&gt; 1.js</code>  //追加内容到文件</p>
+<p><code>echo  -e “内/n容” &gt;&gt; 1.js</code>  //换行符</p>
+<p><code>mkdir 创建文件夹</code></p>
+<p><code>mkdir -p 路径</code> //创建深层的目录</p>
+<p><code>cp 复制的文件名  新文件名</code></p>
+<p><code>cp -r 目录名 新目录名</code></p>
+<hr>
+<h2 id="heading-2">改</h2>
+<p>移动文件 mv 文件名 路径</p>
+<p>重命名 mv 文件名 新文件名</p>
+<p>touch 修改文件最后更新时间</p>
+<hr>
+<h2 id="heading-3">脚本文件</h2>
+<p>&amp;&amp; 然后</p>
+<p>;  并且</p>
+<p>先写一段脚本</p>
+<pre><code>mkdir $1 //$1是当前输入的参数
+cd $1
+touch index.html
+touch style.css
+touch main.js
+echo -e &quot;&lt;!DOCTYPE html&gt;\n&lt;p&gt;标题&lt;/p&gt;&quot; &gt;&gt; index.html
+</code></pre><p>再 chmod +x 脚本文件名</p>
+<p>./ 脚本名</p>
+<hr>
+<h2 id="webstorm">设置直接终端命令打开webstorm</h2>
+<p>webstorm程序中 ::<strong>Tools</strong>  &raquo;  <strong>Create Command-line Launcher</strong>::
+设置完成后在终端输入cd /usr/local/bin命令，可以看到在bin文件夹下面有webstorm.</p>
+<ul>
+<li>编辑 .zshrc 文件。<code>vim .zshrc</code></li>
+<li>为 Webstorm 添加别名。<code>alias ws=“webstorm”</code></li>
+<li>然后 <code>source .zshrc</code> 即可生效。</li>
+</ul>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/cmd">cmd</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+ 
+ 
+ <div id="vcomments"></div>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+ 
+ <script type="text/javascript">
+     new Valine({
+         el: '#vcomments' ,
+         appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+         appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+         notify: 'false', 
+         verify: 'false', 
+         avatar:'retro', 
+         placeholder: '评论支持Markdown语法...',
+         visitor: 'true'
+     });
+ </script>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/"
+                class="button big previous">Hugo的配置</a></li>
+    
+
+    
+        <li><a href="/blog/sublime%E7%A0%B4%E8%A7%A3/"
+                class="button big next">Mac 破解 sublime Text3</a></li>
+    
+</ul>
+
+
+<article class="post">
+  
+ 
+ 
+ <div id="vcomments"></div>
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+ 
+ <script type="text/javascript">
+     new Valine({
+         el: '#vcomments' ,
+         appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+         appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+         notify: 'false', 
+         verify: 'false', 
+         avatar:'retro', 
+         placeholder: '评论支持Markdown语法...',
+         visitor: 'true'
+     });
+ </script>
+</article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/me.jpg" class="intro-circle" width="150px" alt="么了" /></a>
+      
+    
+    
+      <header>
+        <h2>么了</h2>
+        <p>欢迎莅临 <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>最新文章</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/axios-note/">Axios笔记</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-22'>
+                February 22, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-21'>
+                February 21, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/cmd/">cmd的操作</a>
+              </h3>
+              
+              <time class="published" datetime='2020-02-19'>
+                February 19, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">查看更多</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>关于</h3>
+      <p>HTML 5 | CSS | JavaScript | React</p>
+      <a href="/about/" class="button">了解更多</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          么了&#39;s 博客
+        
+      .<br/>
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

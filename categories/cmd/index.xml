@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cmd on 么了&#39;s 博客</title>
+    <link>/categories/cmd/</link>
+    <description>Recent content in cmd on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/cmd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cmd的操作</title>
+      <link>/blog/cmd/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/cmd/</guid>
+      <description>npm i -g tldr 太长不想读
+recursive 递归的
+echo 回声 ::echo::
+force 强制
+change 改变 cd中的::c::
+directory 文件夹/目录 cd中的::d::
+make ::mk::
+move ::mv::
+remove ::rm::
+copy ::cp::
+list ::ls::
+link ::ln::
+find ::find::
+touch ::touch::
+::pwd:: 展示当前的绝对路径
+clear 清屏
+ 查看文件内容 cat 路径 全部查看
+head 路径 头10行
+tail 路径 尾10行
+less 路径 看其中一屏部分
+ 增 touch 文件名
+echo 内容 &amp;gt; 1.js //新建文件并添加内容
+echo 内容 &amp;gt;&amp;gt; 1.js //追加内容到文件
+echo -e “内/n容” &amp;gt;&amp;gt; 1.</description>
+    </item>
+    
+  </channel>
+</rss>
