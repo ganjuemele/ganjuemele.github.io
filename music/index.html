@@ -1,3 +1,18 @@
+<style>
+    #aplayer {
+        width: 50%;
+        margin: 0 auto;
+    }
+    @media screen and (max-device-width: 400px) {
+        #aplayer {
+            width: 100%;
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="/css/APlayer.min.css" />
+<script type="text/javascript" src="/js/APlayer.min.js"></script>
+
 
 
 
@@ -122,7 +137,7 @@
       
       <div id="wrapper">
 
-    
+
 <header id="header">
     
       <h1><a href="/">music</a></h1>
@@ -316,24 +331,20 @@
         
 </section>
 
-    
-    <div id="main">
-        
-        
 
-        
-<ul class="actions pagination">
-    
-        <li><a href="#" class="disabled button big previous">上一页</a></li>
-    
-
-    
-        <li><a href="#" class="disabled button big next">下一页</a></li>
-    
-</ul>
-
+<div id="main">
+    <article class="post">
+    <header>
+    <div class="title">
+    <h1><a href="/music/">音乐</a></h1>
+</div>
+</header>
+<div id="content">
+    <div id="aplayer" style="width: 80%;"></div>
     </div>
-    
+    </article>
+    </div>
+
 <section id="sidebar">
 
   
@@ -691,3 +702,51 @@ src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
   </body>
 </html>
 
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    mini: false,            
+    autoplay: true,        
+    theme: '#FADFA3',       
+    loop: 'all',            
+    order: 'list',          
+    preload: 'auto',        
+    volume: 0.37,            
+    mutex: true,            
+    listFolded: false,      
+    listMaxHeight: '600px', 
+    lrcType: 3,             
+    fixed: false,            
+    audio: [
+        {
+            name: 'One Time',                         
+            artist: 'Marian Hill',                       
+            url: '/music/Marian Hill-One Time.mp3',     
+            cover: '/music/pic/ot.png', 
+            theme: '#b7daff',                       
+            lrc: ''  
+        },{
+            name: "I Won\'t Let You Down",   
+            artist: 'OK Go',                       
+            url: '/music/OK Go-I Won\'t Let You Down.mp3',     
+            cover: '/music/pic/iwlyd.png', 
+            theme: '#b7daff',                       
+            lrc: ''  
+        },{
+            name: "Best Day Of My Life",   
+            artist: 'American Authors',                       
+            url: '/music/American Authors-Best Day Of My Life.mp3',     
+            cover: '/music/pic/bl.png', 
+            theme: '#b7daff',                       
+            lrc: ''  
+        },{
+            name: "Young Dumb & Broke",   
+            artist: 'Khalid',            
+            url: '/music/Khalid-Young Dumb & Broke.mp3',     
+            cover: '/music/pic/ydb.png', 
+            theme: '#b7daff',                       
+            lrc: ''  
+        }
+    ]
+});
+</script>
