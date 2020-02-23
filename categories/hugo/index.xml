@@ -6,7 +6,7 @@
     <description>Recent content in hugo on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Hugo的配置</title>
       <link>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
       <description>首先需要将 themes/future-imperfect/examplesite/config.toml 复制到根目录替换原文件；  baseurl = &amp;#34;/&amp;#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = &amp;#34;en-us&amp;#34; # 网站支持语言 title = &amp;#34;Hugo Future Imperfect&amp;#34; # 网站标题 theme = &amp;#34;hugo-future-imperfect&amp;#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = &amp;#34;shortname&amp;#34; googleAnalytics = &amp;#34;&amp;#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = &amp;#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador.</description>

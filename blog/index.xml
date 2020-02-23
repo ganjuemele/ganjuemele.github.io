@@ -6,7 +6,7 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Axios笔记</title>
       <link>/blog/axios-note/</link>
-      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 22 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/axios-note/</guid>
       <description>Axios笔记 this.$axios.get(’/toutiao/index’, { //::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, //请求头配置 headers: {&#39;token&#39;:token } }) .then(res =&amp;gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=&amp;gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：
@@ -24,16 +24,17 @@
     <item>
       <title>Mac 破解 sublime Text3</title>
       <link>/blog/sublime%E7%A0%B4%E8%A7%A3/</link>
-      <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/sublime%E7%A0%B4%E8%A7%A3/</guid>
-      <description>步骤  打开终端，输入 sudo vi /etc/hosts ，输入密码 打开编辑器，按 a 开始编辑模式 在文档最后插入  127.0.0.1 www.sublimetext.com 127.0.0.1 license.sublimehq.com 按 esc 退出编辑模式，输入 :wq 保存并退出 在sublime中输入如下license，即可激活  ----- BEGIN LICENSE ----- Member J2TeaM Single User License EA7E-1011316 D7DA350E 1B8B0760 972F8B60 F3E64036 B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD FA0A2ABE 25F65BD8 D51458E5 3923CE80 87428428 79079A01 AA69F319 A1AF29A4 A684C2DC 0B1583D4 19CBD290 217618CD 5653E0A0 BACE3948 BB2EE45E 422D2C87 DD9AF44B 99C49590 D2DBDEE1 75860FD2 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864 ------ END LICENSE ------ 以上license对，sublime V3.</description>
+      <description>最新破解教程
+步骤：  打开终端，输入 sudo vi /etc/hosts ，输入密码 打开编辑器，按 a 开始编辑模式 在文档最后插入  127.0.0.1 www.sublimetext.com 127.0.0.1 license.sublimehq.com 按 esc 退出编辑模式，输入 :wq 保存并退出 在sublime中输入如下license，即可激活  ----- BEGIN LICENSE ----- Member J2TeaM Single User License EA7E-1011316 D7DA350E 1B8B0760 972F8B60 F3E64036 B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD FA0A2ABE 25F65BD8 D51458E5 3923CE80 87428428 79079A01 AA69F319 A1AF29A4 A684C2DC 0B1583D4 19CBD290 217618CD 5653E0A0 BACE3948 BB2EE45E 422D2C87 DD9AF44B 99C49590 D2DBDEE1 75860FD2 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864 ------ END LICENSE ------ 以上license对，sublime V3.</description>
     </item>
     
     <item>
       <title>cmd的操作</title>
       <link>/blog/cmd/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/cmd/</guid>
       <description>npm i -g tldr 太长不想读
@@ -65,7 +66,7 @@ echo -e “内/n容” &amp;gt;&amp;gt; 1.</description>
     <item>
       <title>Hugo的配置</title>
       <link>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</guid>
       <description>首先需要将 themes/future-imperfect/examplesite/config.toml 复制到根目录替换原文件；  baseurl = &amp;#34;/&amp;#34; # 网站根路径，可以写成你后期站点对应的域名 languageCode = &amp;#34;en-us&amp;#34; # 网站支持语言 title = &amp;#34;Hugo Future Imperfect&amp;#34; # 网站标题 theme = &amp;#34;hugo-future-imperfect&amp;#34; # 网站主题 preserveTaxonomyNames = true paginate = 3 # 文章超出几篇后产生分页 disqusShortname = &amp;#34;shortname&amp;#34; googleAnalytics = &amp;#34;&amp;#34; pluralizeListTitles = false # Set the followings to true as part of your site SEO enableRobotsTXT = true canonifyURLs = true # [params] 下面的值将会构成模板里的 .Site.Params 变量 [params] # Sets the meta tag description description = &amp;#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador.</description>
@@ -74,7 +75,7 @@ echo -e “内/n容” &amp;gt;&amp;gt; 1.</description>
     <item>
       <title>toml文档格式的数据定义</title>
       <link>/blog/toml/</link>
-      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/toml/</guid>
       <description>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。

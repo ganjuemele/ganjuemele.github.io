@@ -1,17 +1,3 @@
-<style>
-	#aplayer {
-		width: 50%;
-		margin: 0 auto;
-	}
-	@media screen and (max-device-width: 400px) {
-		#aplayer {
-			width: 100%;
-		}
-	}
-</style>
-<link rel="stylesheet" href="/css/APlayer.min.css" />
-<script type="text/javascript" src="/js/APlayer.min.js"></script>
-
 
 
 
@@ -136,7 +122,7 @@
       
       <div id="wrapper">
 
-
+    
 <header id="header">
     
       <h1><a href="/">music</a></h1>
@@ -189,7 +175,7 @@
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
                 <form id="search" method="get" action="//google.com/search">
-                    <input type="text" name="q" placeholder="google" />
+                    <input type="text" name="q" placeholder="Search" />
                     <input type="hidden" name="as_sitesearch" value="/">
                 </form>
             </li>
@@ -206,7 +192,7 @@
     
         <section>
             <form class="search" method="get" action="//google.com/search">
-                <input type="text" name="q" placeholder="google" />
+                <input type="text" name="q" placeholder="Search" />
                 <input type="hidden" name="as_sitesearch" value="/">
             </form>
         </section>
@@ -330,20 +316,24 @@
         
 </section>
 
+    
+    <div id="main">
+        
+        
 
-<div id="main">
-	<article class="post">
-		<header>
-			<div class="title">
-				<h1><a href="/music/">音乐</a></h1>
-			</div>
-		</header>
-		<div id="content">
-			<div id="aplayer" style="width: 80%;"></div>
-		</div>
-	</article>
-</div>
+        
+<ul class="actions pagination">
+    
+        <li><a href="#" class="disabled button big previous">上一页</a></li>
+    
 
+    
+        <li><a href="#" class="disabled button big next">下一页</a></li>
+    
+</ul>
+
+    </div>
+    
 <section id="sidebar">
 
   
@@ -534,7 +524,7 @@
     <section id="mini-bio">
       <h3>关于</h3>
       <p>HTML 5 | CSS | JavaScript | React</p>
-      <a href="/about/" class="button">了解更多</a>
+      <a href="/about/" class="button">阅读更多</a>
     </section>
   
 
@@ -646,7 +636,7 @@
         
           么了&#39;s 博客
         
-      .<br/>
+      .</br>
       Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
     </p>
   </section>
@@ -701,77 +691,3 @@ src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
   </body>
 </html>
 
-<script>
-	const ap = new APlayer({
-		container: document.getElementById('aplayer'),
-		mini: false, 
-		autoplay: true, 
-		theme: '#FADFA3', 
-		loop: 'all', 
-		order: 'random', 
-		preload: 'auto', 
-		volume: 0.3, 
-		mutex: true, 
-		listFolded: false, 
-		listMaxHeight: '600px', 
-		lrcType: 3, 
-		fixed: false, 
-		audio: [{
-			name: 'One Time', 
-			artist: 'Marian Hill', 
-			url: '/music/Marian Hill-One Time.mp3', 
-			cover: '/music/pic/ot.png', 
-			theme: '#b7daff', 
-			lrc: '' 
-		}, {
-			name: "It’s Time",
-			artist: 'Imagine Dragons',
-			url: '/music/Imagine Dragons-It’s Time.mp3',
-			cover: '/music/',
-			theme: '#b7daff',
-			lrc: ''
-		}, {
-			name: "Young Dumb & Broke",
-			artist: 'Khalid',
-			url: '/music/Khalid-Young Dumb & Broke.mp3',
-			cover: '/music/pic/ydb.png',
-			theme: '#b7daff',
-			lrc: '' 
-		}, {
-			name: "Best Day Of My Life",
-			artist: 'American Authors',
-			url: '/music/American Authors-Best Day Of My Life.mp3',
-			cover: '/music/',
-			theme: '#b7daff',
-			lrc: '' 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		}, {
-			name: "I Won't Let You Down",
-			artist: 'OK Go',
-			url: "/music/OK Go-I Won't Let You Down.mp3",
-			cover: '/music/pic/iwlyd.png',
-			theme: '#b7daff',
-			lrc: '' 
-		}]
-	});
-</script>

@@ -4,81 +4,76 @@
   
   <url>
     <loc>/blog/axios-note/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/%E8%B7%A8%E5%9F%9F/</loc>
-    <lastmod>2020-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-22T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/sublime%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2020-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-21T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/sublime/</loc>
-    <lastmod>2020-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-21T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/cmd/</loc>
-    <lastmod>2020-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-19T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/cmd/</loc>
-    <lastmod>2020-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/gallery/</loc>
-    <lastmod>2020-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-19T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/hugo/</loc>
-    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-10T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-10T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/toml/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-02T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/toml/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-02T18:22:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>/gallery/</loc>
   </url>
   
   <url>
@@ -87,6 +82,10 @@
   
   <url>
     <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
   </url>
   
 </urlset>

@@ -6,7 +6,7 @@
     <description>Recent content in cmd on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/cmd/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>cmd的操作</title>
       <link>/blog/cmd/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/cmd/</guid>
       <description>npm i -g tldr 太长不想读

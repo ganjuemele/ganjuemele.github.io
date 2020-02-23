@@ -6,7 +6,7 @@
     <description>Recent content in 前端 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Axios笔记</title>
       <link>/blog/axios-note/</link>
-      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 22 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/axios-note/</guid>
       <description>Axios笔记 this.$axios.get(’/toutiao/index’, { //::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, //请求头配置 headers: {&#39;token&#39;:token } }) .then(res =&amp;gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=&amp;gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：

@@ -6,7 +6,7 @@
     <description>Recent content in toml on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/toml/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>toml文档格式的数据定义</title>
       <link>/blog/toml/</link>
-      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/toml/</guid>
       <description>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。
