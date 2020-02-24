@@ -6,10 +6,49 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 22 Feb 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 10:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git远程仓库</title>
+      <link>/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
+      <pubDate>Mon, 24 Feb 2020 10:22:40 +0800</pubDate>
+      
+      <guid>/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
+      <description>git 远程仓库 用SSH地址，复制ssh地址
+ssh-keygen -t rsa -b 4096 -C 你的邮箱 cat ~/.ssh/id_rsa.pub # 得到公钥内容 ssh -T git@github.com git remote add origin git@xxxxxxx git push -u origin master 新建了一个名为 ’19-12-26’ 的公钥 id_rsa 和 id_rsa.pub/n
+git remote add origin git@XXXXXX 在本地添加远程仓库地址
+origin是远程仓库的默认名字，可以换，建议不换
+⚠️不要使用https地址，因为每次都需要密码
+电脑上存放私钥，github留下公钥
+上传代码是用私钥加密，github用公钥解密
+git push -u origin master 推送本地 master 分支到远程 origin的master 分支
+⚠️如果 提示 应该git pull…，那就git pull 一下
+git pull是先把远程分支合并到本地对应的分支
+如果远程分支没有更新过，才能省略 git pull
+-u origin master 的意思是设置上游分支
+之后就不用设置上游分支课，直接git pull；git push；</description>
+    </item>
+    
+    <item>
+      <title>Git本地仓库</title>
+      <link>/blog/git-local/</link>
+      <pubDate>Sun, 23 Feb 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/git-local/</guid>
+      <description>使用github程序 &amp;raquo; install command line tool 来安装git
+git config --global user.name 你的英文名 git config --global user.email 你的邮箱 git config --global push.default simple git config --global core.quotepath false git config --global core.autocrlf input 新建目录 &amp;raquo; 进入 &amp;raquo; git init
+git add 路径 //选择哪些变动是需要提交的
+.gitignore 是设置不需要提交的文件 //常见有::node_modules::; ::.DS_Store::; ::.idea::; ::.vscode::
+git status 查看已经提交的文件
+git status -sb 查看哪些文件有冲突
+git commit -m “字符串”
+git commit -v
+git log 查看已提交更新的版本
+git add . git commit -v git reset —hard a2bv7r //commit的版本号值</description>
+    </item>
     
     <item>
       <title>Axios笔记</title>
