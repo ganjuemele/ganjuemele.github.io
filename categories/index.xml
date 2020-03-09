@@ -6,15 +6,42 @@
     <description>Recent content in Categories on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 25 Feb 2020 13:13:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 20:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Vue</title>
+      <link>/categories/vue/</link>
+      <pubDate>Mon, 09 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/categories/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webpack</title>
+      <link>/categories/webpack/</link>
+      <pubDate>Sat, 07 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/categories/webpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVC</title>
+      <link>/categories/mvc/</link>
+      <pubDate>Thu, 05 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/categories/mvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>前端</title>
       <link>/categories/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Tue, 25 Feb 2020 13:13:40 +0800</pubDate>
+      <pubDate>Thu, 05 Mar 2020 20:22:40 +0800</pubDate>
       
       <guid>/categories/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
@@ -35,15 +62,6 @@
       <pubDate>Sat, 22 Feb 2020 18:22:40 +0800</pubDate>
       
       <guid>/categories/%E8%B7%A8%E5%9F%9F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sublime</title>
-      <link>/categories/sublime/</link>
-      <pubDate>Fri, 21 Feb 2020 18:22:40 +0800</pubDate>
-      
-      <guid>/categories/sublime/</guid>
       <description></description>
     </item>
     

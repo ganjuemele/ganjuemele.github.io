@@ -29,8 +29,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-02-25 13:13:40 \x2b0800 CST",
-        "dateModified" : "2020-02-25 13:13:40 \x2b0800 CST",
+        "datePublished": "2020-03-09 20:22:40 \x2b0800 CST",
+        "dateModified" : "2020-03-09 20:22:40 \x2b0800 CST",
         "url" : "\/blog\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -46,16 +46,15 @@
         
   
     
-    
   
 
   
 
-  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed-3.png'>
-  <link rel="icon" href='/favicon/favicon-3.png'>
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='/favicon/favicon.png'>
   
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content='/favicon/mstile-3.png'>
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
   <meta name="application-name" content="么了&#39;s 博客">
   <meta name="msapplication-tooltip" content="么记">
   <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
@@ -77,7 +76,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" />
-<meta property="og:updated_time" content="2020-02-25T13:13:40+08:00" />
+<meta property="og:updated_time" content="2020-03-09T20:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -267,11 +266,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/http/">Http和Https</a></h3>
+                                <h3><a href="/blog/watch%E5%92%8Ccomputed/">watch和computed</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-02-25'>
-                                    February 25, 2020</time>
+                                    '2020-03-09'>
+                                    March 9, 2020</time>
                             </header>
                             
 
@@ -279,11 +278,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">Git远程仓库</a></h3>
+                                <h3><a href="/blog/webpack%E5%85%A5%E9%97%A8/">Webpack入门</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-02-24'>
-                                    February 24, 2020</time>
+                                    '2020-03-07'>
+                                    March 7, 2020</time>
                             </header>
                             
 
@@ -291,11 +290,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/git-local/">Git本地仓库</a></h3>
+                                <h3><a href="/blog/mvc/">MVC浅谈</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-02-23'>
-                                    February 23, 2020</time>
+                                    '2020-03-05'>
+                                    March 5, 2020</time>
                             </header>
                             
 
@@ -324,7 +323,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/axios-note/">Axios笔记</a></h2>
+            <h2><a href="/blog/http/">Http和Https</a></h2>
         
         
     </div>
@@ -332,8 +331,8 @@
         
 
         <time class="published"
-            datetime='2020-02-22'>
-            February 22, 2020</time>
+            datetime='2020-02-25'>
+            February 25, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -345,28 +344,18 @@
   
 
   
-  <pre><code>this.$axios.get(’/toutiao/index’, {
-		//::这里设置域名参数::
-    params:{
-      key:’4ac7dbb103ad3977c50735edb9651431’,
-      type:’tiyu’
-},
-//请求头配置   
-    headers: {'token':token }
-  })
-.then(res =&gt; {
-  this.newsList= res.data
-console.log(this.newsList)
-})
-.catch( err=&gt; {
-  console.log(’新闻异常’)
-})
-</code></pre><hr>
-<p><strong>Axios</strong> 是一个基于 promise 的 HTTP 库
-其特性：</p>
+  <pre><code>HTTP协议（HyperText Transfer Protocol超文本传输协议）是因特网上应用最广泛的一种网络协议，所有www文件都必须遵守这个标准。
+HTTP是一个基于TCP/IP通信协议来传递数据。
+</code></pre>
+<h3 id="http">HTTP工作原理</h3>
+<pre><code>HTTP协议工作于客户端—服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端（web服务器）发送所有请求。
+web服务器根据接受的请求，向客户端发送响应信息。
+HTTP默认端口：80，也可以改为8080或者其他端口。
+</code></pre>
+<p>⚠️<strong>注意事项：</strong></p>
   <footer>
     <ul class="actions">
-      <li><a href="/blog/axios-note/" class="button big">阅读更多</a></li>
+      <li><a href="/blog/http/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -379,8 +368,63 @@ console.log(this.newsList)
                 
                 <li><a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF">前端</a></li>
                 
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">Git远程仓库</a></h2>
+        
+        
+            <p>Git远程仓库的常用操作命令</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-24'>
+            February 24, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <p>用SSH地址，复制ssh地址</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
                 
-                <li><a class="article-category-link" href="/categories/%E8%B7%A8%E5%9F%9F">跨域</a></li>
+                
+                <li><a class="article-category-link" href="/categories/git">Git</a></li>
                 
             
         
@@ -401,16 +445,18 @@ console.log(this.newsList)
   <header>
     <div class="title">
         
-            <h2><a href="/blog/sublime%E7%A0%B4%E8%A7%A3/">Mac 破解 sublime Text3</a></h2>
+            <h2><a href="/blog/git-local/">Git本地仓库</a></h2>
         
+        
+            <p>Git本地仓库的常用操作命令</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-02-21'>
-            February 21, 2020</time>
+            datetime='2020-02-23'>
+            February 23, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -422,10 +468,10 @@ console.log(this.newsList)
   
 
   
-  <p>最新破解教程</p>
+  <p>使用github程序 &raquo; install command line tool 来安装git</p>
   <footer>
     <ul class="actions">
-      <li><a href="/blog/sublime%E7%A0%B4%E8%A7%A3/" class="button big">阅读更多</a></li>
+      <li><a href="/blog/git-local/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -436,63 +482,7 @@ console.log(this.newsList)
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/sublime">sublime</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/cmd/">cmd的操作</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-02-19'>
-            February 19, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <p><code>npm i -g tldr 太长不想读</code></p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/cmd/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/cmd">cmd</a></li>
+                <li><a class="article-category-link" href="/categories/git">Git</a></li>
                 
             
         
@@ -655,11 +645,11 @@ console.log(this.newsList)
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/http/">Http和Https</a>
+                <a href="/blog/watch%E5%92%8Ccomputed/">watch和computed</a>
               </h3>
               
-              <time class="published" datetime='2020-02-25'>
-                February 25, 2020
+              <time class="published" datetime='2020-03-09'>
+                March 9, 2020
               </time>
             </header>
             
@@ -669,11 +659,11 @@ console.log(this.newsList)
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">Git远程仓库</a>
+                <a href="/blog/webpack%E5%85%A5%E9%97%A8/">Webpack入门</a>
               </h3>
               
-              <time class="published" datetime='2020-02-24'>
-                February 24, 2020
+              <time class="published" datetime='2020-03-07'>
+                March 7, 2020
               </time>
             </header>
             
@@ -683,11 +673,11 @@ console.log(this.newsList)
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/git-local/">Git本地仓库</a>
+                <a href="/blog/mvc/">MVC浅谈</a>
               </h3>
               
-              <time class="published" datetime='2020-02-23'>
-                February 23, 2020
+              <time class="published" datetime='2020-03-05'>
+                March 5, 2020
               </time>
             </header>
             

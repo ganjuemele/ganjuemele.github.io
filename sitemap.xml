@@ -4,26 +4,56 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-02-25T13:13:40+08:00</lastmod>
+    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-02-25T13:13:40+08:00</lastmod>
+    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/http/</loc>
-    <lastmod>2020-02-25T13:13:40+08:00</lastmod>
+    <loc>/categories/vue/</loc>
+    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/watch%E5%92%8Ccomputed/</loc>
+    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-02-25T13:13:40+08:00</lastmod>
+    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/webpack/</loc>
+    <lastmod>2020-03-07T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/webpack%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2020-03-07T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/mvc/</loc>
+    <lastmod>2020-03-05T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/mvc/</loc>
+    <lastmod>2020-03-05T20:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2020-03-05T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/http/</loc>
     <lastmod>2020-02-25T13:13:40+08:00</lastmod>
   </url>
   
@@ -50,16 +80,6 @@
   <url>
     <loc>/categories/%E8%B7%A8%E5%9F%9F/</loc>
     <lastmod>2020-02-22T18:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/sublime%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2020-02-21T18:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/sublime/</loc>
-    <lastmod>2020-02-21T18:22:40+08:00</lastmod>
   </url>
   
   <url>

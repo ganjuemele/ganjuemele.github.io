@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MVC on 么了&#39;s 博客</title>
+    <link>/categories/mvc/</link>
+    <description>Recent content in MVC on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Thu, 05 Mar 2020 20:22:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/mvc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MVC浅谈</title>
+      <link>/blog/mvc/</link>
+      <pubDate>Thu, 05 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/mvc/</guid>
+      <description>MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller
+view： 放视图相关的，html 渲染
+controller： 监听并操作 view，调用 model 里面的数据
+const Model = { data: {} 增,删,改,查(){} } const View = { html:`&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法
+eventBus = $(window) m = { data: {&amp;#39;…&amp;#39;}, methods: { update(data){ 修改m.data eventBus.trigger(A) } } } 然后，用on方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的render重新渲染视图：
+eventBus.on(A, ()=&amp;gt;{ v.</description>
+    </item>
+    
+  </channel>
+</rss>

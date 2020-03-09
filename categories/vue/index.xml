@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on 么了&#39;s 博客</title>
+    <link>/categories/vue/</link>
+    <description>Recent content in Vue on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Mon, 09 Mar 2020 20:22:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>watch和computed</title>
+      <link>/blog/watch%E5%92%8Ccomputed/</link>
+      <pubDate>Mon, 09 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/watch%E5%92%8Ccomputed/</guid>
+      <description>watch watch 有数据监听回调的作用，用来观察和响应Vue实例上的数据变动。data数据变化执行回调，在方法中传入新的值和旧的值.
+immediate: true/false
+deep: true/false; //监听 obj 的时候是否往深处查。默认false
+⚠️不要使用箭头函数来定义 watch 函数
+watch允许执行异步操作，在得到最终结果前，设置中间状态，这些是 computed 无法做到的
+ computed computed 是计算属性，不需要加括号。
+会根据所依赖的数据动态显示计算结果。计算结果会被缓存，computed的值在getter执行后是会缓存的，只有在它依赖的属性值改变之后，下一次回去computed的值才会重新调用对应的getter来计算
+&amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt;{{ fullName }}&amp;lt;/div&amp;gt; var vm = new Vue({ el: &amp;#39;#demo&amp;#39;, data: { firstName: &amp;#39;Foo&amp;#39;, lastName: &amp;#39;Bar&amp;#39; }, computed: { fullName: function () { return this.firstName + &amp;#39; &amp;#39; + this.lastName } } }) 默认只有getter，在需要时可以提供setter
+// ... computed: { fullName: { // getter  get: function () { return this.</description>
+    </item>
+    
+  </channel>
+</rss>

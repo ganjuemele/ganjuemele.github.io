@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webpack on 么了&#39;s 博客</title>
+    <link>/categories/webpack/</link>
+    <description>Recent content in Webpack on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sat, 07 Mar 2020 20:22:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/webpack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webpack入门</title>
+      <link>/blog/webpack%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sat, 07 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/webpack%E5%85%A5%E9%97%A8/</guid>
+      <description>安装webpack npm init -y
+yarn add webpack webpack-cli --dev
+安装插件css-loader,mini-css-extract-plugin,html-webpack-plugin
+完成安装，创建 src 目录
+执行当前目录下的webpack npx webpack
+报出警告⚠️： WARNING in configuration The &#39;mode&#39; option has not been set, webpack will fallback to &#39;production&#39; for this value. Set &#39;mode&#39; option to &#39;development&#39; or &#39;production&#39; to enable defaults for each environment.
+初始化webpack.config.js 新建 webpack.config.js
+const path = require(&amp;#39;path&amp;#39;); module.exports = { mode: &amp;#39;development&amp;#39;,// 生产production /开发development 	entry: &amp;#39;./src/index.js&amp;#39;, devtool: &amp;#34;inline-source-map&amp;#34;, devServer: { contentBase: &amp;#39;.</description>
+    </item>
+    
+  </channel>
+</rss>
