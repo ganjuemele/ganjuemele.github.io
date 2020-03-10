@@ -53,8 +53,8 @@
   </url>
   
   <url>
-    <loc>/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2020-03-05T20:22:40+08:00</lastmod>
+    <loc>/categories/http/</loc>
+    <lastmod>2020-02-25T13:13:40+08:00</lastmod>
   </url>
   
   <url>
@@ -95,6 +95,16 @@
   <url>
     <loc>/blog/cmd/</loc>
     <lastmod>2020-02-19T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/css/</loc>
+    <lastmod>2020-02-12T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/flex-grid/</loc>
+    <lastmod>2020-02-12T18:22:40+08:00</lastmod>
   </url>
   
   <url>

@@ -18,7 +18,7 @@
       
       <guid>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
       <description>修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
-&amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!--&amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; </description>
+&amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!--&amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; ⚠️注意带有 .sync 修饰符的 v-bind 不能和表达式一起使用 例如 v-bind:title.sync=”doc.title + ‘!’” 是无效的。 取而代之的是，你只能提供你想要绑定的属性名，类似 v-model。</description>
     </item>
     
     <item>
@@ -160,6 +160,21 @@ less 路径 看其中一屏部分
 echo 内容 &amp;gt; 1.js //新建文件并添加内容
 echo 内容 &amp;gt;&amp;gt; 1.js //追加内容到文件
 echo -e “内/n容” &amp;gt;&amp;gt; 1.</description>
+    </item>
+    
+    <item>
+      <title>Flex &amp; Grid</title>
+      <link>/blog/flex-grid/</link>
+      <pubDate>Wed, 12 Feb 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/flex-grid/</guid>
+      <description>Flexbox display: flex; align-items纵向对齐元素，可选以下几个值：
+ flex-start: 元素与容器的顶部对齐。 flex-end: 元素与容器的底部对齐。 center: 元素纵向居中。 baseline: 元素在容器的基线位置显示。 stretch: 元素被拉伸以填满整个容器。  justify-content横向对齐元素:
+ space-between ：分散对齐 space-around ：平均等宽横向对齐 flex-start(default)：默认 左对齐 flex-end ：右对齐 center ：居中  flex-direction属性定义了元素在容器里摆放的方向:
+ row: 元素摆放的方向和文字方向一致。 row-reverse: 元素摆放的方向和文字方向相反。 column: 元素从上放到下。 column-reverse: 元素从下放到上。  order属性 设置单个元素的order。元素的属性默认值为0，但是我们设置这个属性为正数或负数。改变的单个flex元素的顺序
+align-self设置其中单个元素的交叉轴位置
+ flex-start: 元素与容器的顶部对齐。 flex-end: 元素与容器的底部对齐。 center: 元素纵向居中。 baseline: 元素在容器的基线位置显示。 stretch: 元素被拉伸以填满整个容器。  flex-wrap
+ nowrap: 所有的元素都在一行。 wrap: 元素自动换成多行。 wrap-reverse: 元素自动换成逆序的多行。  flex-flow 是 flex-direction + flex-wrap两个属性的合体 可以同时接受两个 属性值。</description>
     </item>
     
     <item>
