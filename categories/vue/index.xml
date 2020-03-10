@@ -6,10 +6,20 @@
     <description>Recent content in Vue on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 09 Mar 2020 20:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 15:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue的sync修饰符</title>
+      <link>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
+      <pubDate>Tue, 10 Mar 2020 15:22:40 +0800</pubDate>
+      
+      <guid>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
+      <description>修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
+&amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!--&amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; </description>
+    </item>
     
     <item>
       <title>watch和computed</title>
@@ -26,16 +36,6 @@ watch允许执行异步操作，在得到最终结果前，设置中间状态，
 会根据所依赖的数据动态显示计算结果。计算结果会被缓存，computed的值在getter执行后是会缓存的，只有在它依赖的属性值改变之后，下一次回去computed的值才会重新调用对应的getter来计算
 &amp;lt;div id=&amp;#34;demo&amp;#34;&amp;gt;{{ fullName }}&amp;lt;/div&amp;gt; var vm = new Vue({ el: &amp;#39;#demo&amp;#39;, data: { firstName: &amp;#39;Foo&amp;#39;, lastName: &amp;#39;Bar&amp;#39; }, computed: { fullName: function () { return this.firstName + &amp;#39; &amp;#39; + this.lastName } } }) 默认只有getter，在需要时可以提供setter
 // ... computed: { fullName: { // getter  get: function () { return this.</description>
-    </item>
-    
-    <item>
-      <title>Vue的sync修饰符</title>
-      <link>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
-      <pubDate>Sun, 08 Mar 2020 20:22:40 +0800</pubDate>
-      
-      <guid>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
-      <description>修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
-&amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!--&amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; </description>
     </item>
     
   </channel>

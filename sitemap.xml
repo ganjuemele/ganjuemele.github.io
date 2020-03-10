@@ -4,32 +4,32 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
+    <lastmod>2020-03-10T15:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
+    <lastmod>2020-03-10T15:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/vue/</loc>
-    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
+    <lastmod>2020-03-10T15:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</loc>
+    <lastmod>2020-03-10T15:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-03-10T15:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/watch%E5%92%8Ccomputed/</loc>
     <lastmod>2020-03-09T20:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-03-09T20:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</loc>
-    <lastmod>2020-03-08T20:22:40+08:00</lastmod>
   </url>
   
   <url>
