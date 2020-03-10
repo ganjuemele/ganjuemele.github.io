@@ -6,10 +6,26 @@
     <description>Recent content in CSS on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 12 Feb 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 20:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>transform &amp; transition</title>
+      <link>/blog/transformtransition/</link>
+      <pubDate>Tue, 10 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/transformtransition/</guid>
+      <description>Transform transform属性用于旋转、倾斜、缩放、平移
+有XYZ轴方向
+⚠️只能转换由盒模型定位的元素
+ scale(-2，2) 横向和纵向的缩放 translate(50%, 30px) 对象进行3D空间的位移  translate(-50%, -50%) // 可以做绝对定位元素的居中  rotate（30deg） 旋转30度 skew（30deg, 45deg）横向和纵向的倾斜 transform: none不应用任何转换 可以组合使用  对浏览器的兼容性支持
+ Transition 过渡 用来补充中间帧
+transition: 属性名 时长，属性名 时长 过渡方式 延迟
+ transition-property: 过渡效果的 css 属性名 transition-duration：过渡完成所需的时间 transition-timing-function：速度效果的曲线。（复杂） transition-delay：延迟  all 代表所有属性
+⚠️并不是所有属性都能过渡</description>
+    </item>
     
     <item>
       <title>Flex &amp; Grid</title>

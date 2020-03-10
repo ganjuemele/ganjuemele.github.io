@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-10 15:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-10 15:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-10 20:22:40 \x2b0800 CST",
+        "dateModified" : "2020-03-10 20:22:40 \x2b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2020-03-10T15:22:40+08:00" />
+<meta property="og:updated_time" content="2020-03-10T20:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -265,6 +265,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/transformtransition/">transform &amp; transition</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-03-10'>
+                                    March 10, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a></h3>
                                 
                                 <time class="published" datetime=
@@ -282,18 +294,6 @@
                                 <time class="published" datetime=
                                     '2020-03-09'>
                                     March 9, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/webpack%E5%85%A5%E9%97%A8/">Webpack入门</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-03-07'>
-                                    March 7, 2020</time>
                             </header>
                             
 
@@ -321,10 +321,10 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a></h2>
+            <h2><a href="/blog/transformtransition/">transform &amp; transition</a></h2>
         
         
-            <p>Vue 笔记</p>
+            <p>css笔记</p>
         
     </div>
     <div class="meta">
@@ -350,7 +350,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;text=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2ftransformtransition%2f&amp;text=transform%20%26%20transition&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -364,7 +364,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -377,7 +377,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;title=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftransformtransition%2f&amp;title=transform%20%26%20transition" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -393,7 +393,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -407,35 +407,36 @@
   
 
   <div id="content">
-    <h3 id="sync">修饰符sync</h3>
-<p>让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span>&gt;{{bar}}&lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">my-comp</span> <span style="color:#a6e22e">:foo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">sync</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bar&#34;</span>&gt;&lt;/<span style="color:#f92672">my-comp</span>&gt;
-    // 下面扩展出来的写法
-    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> &lt;my</span><span style="color:#75715e">-</span><span style="color:#75715e">comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my</span><span style="color:#75715e">-</span><span style="color:#75715e">comp&gt; </span><span style="color:#75715e">--&gt;</span>
-&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;<span style="color:#f92672">script</span>&gt;
-    <span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">component</span>(<span style="color:#e6db74">&#39;my-comp&#39;</span>, {
-        <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&lt;div @click=&#34;increment&#34;&gt;点我+1&lt;/div&gt;&#39;</span>,
-        <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
-            <span style="color:#66d9ef">return</span> {<span style="color:#a6e22e">copyFoo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">foo</span>}
-        },
-        <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;foo&#39;</span>],
-        <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
-            <span style="color:#a6e22e">increment</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
-                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$emit</span>(<span style="color:#e6db74">&#39;update:foo&#39;</span>, <span style="color:#f92672">++</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">copyFoo</span>);
-            }
-        }
-    });
-    <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
-        <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#app&#39;</span>,
-        <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">bar</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>}
-    });
-&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><p>⚠️注意带有 .sync 修饰符的 v-bind 不能和表达式一起使用
-例如 <code>v-bind:title.sync=”doc.title + ‘!’”</code> 是无效的。
-取而代之的是，你只能提供你想要绑定的属性名，类似 v-model。</p>
+    <h2 id="transform">Transform</h2>
+<p>transform属性用于旋转、倾斜、缩放、平移</p>
+<p>有XYZ轴方向</p>
+<p>⚠️只能转换由盒模型定位的元素</p>
+<ul>
+<li>scale(-2，2) 横向和纵向的缩放</li>
+<li>translate(50%, 30px) 对象进行3D空间的位移</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">translate</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%</span><span style="color:#f92672">,</span> <span style="color:#f92672">-50</span><span style="color:#f92672">%</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">/</span><span style="color:#f92672">/</span> <span style="color:#f92672">可以做绝对定位元素的居中</span>
+</code></pre></div><ul>
+<li>rotate（30deg） 旋转30度</li>
+<li>skew（30deg, 45deg）横向和纵向的倾斜</li>
+<li>transform: none不应用任何转换
+可以组合使用</li>
+</ul>
+<p>对浏览器的兼容性支持</p>
+<p><img src="/img/2020/03/transform.png" alt="图片"></p>
+<hr>
+<h2 id="transition-">Transition 过渡</h2>
+<p>用来补充中间帧</p>
+<p><code>transition: 属性名 时长，属性名 时长 过渡方式 延迟</code></p>
+<ol>
+<li>transition-property:  过渡效果的 css 属性名</li>
+<li>transition-duration：过渡完成所需的时间</li>
+<li>transition-timing-function：速度效果的曲线。（复杂）</li>
+<li>transition-delay：延迟</li>
+</ol>
+<p><code>all</code> 代表所有属性</p>
+<p>⚠️并不是所有属性都能过渡</p>
 
   </div>
 
@@ -449,7 +450,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                <li><a class="article-category-link" href="/categories/css">css</a></li>
                 
             
         
@@ -485,8 +486,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/watch%E5%92%8Ccomputed/"
-                class="button big previous">watch和computed</a></li>
+        <li><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/"
+                class="button big previous">Vue的sync修饰符</a></li>
     
 
     
@@ -526,7 +527,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;text=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2ftransformtransition%2f&amp;text=transform%20%26%20transition&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -540,7 +541,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -553,7 +554,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;title=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftransformtransition%2f&amp;title=transform%20%26%20transition" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -569,7 +570,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -713,6 +714,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/transformtransition/">transform &amp; transition</a>
+              </h3>
+              
+              <time class="published" datetime='2020-03-10'>
+                March 10, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a>
               </h3>
               
@@ -732,20 +747,6 @@
               
               <time class="published" datetime='2020-03-09'>
                 March 9, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/webpack%E5%85%A5%E9%97%A8/">Webpack入门</a>
-              </h3>
-              
-              <time class="published" datetime='2020-03-07'>
-                March 7, 2020
               </time>
             </header>
             
