@@ -11,9 +11,9 @@
              "@id": "\/"
         },
         "articleSection" : "blog",
-        "name" : "Axios笔记",
-        "headline" : "Axios笔记",
-        "description" : "Axios笔记 this.$axios.get(’\/toutiao\/index’, { \/\/::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, \/\/请求头配置 headers: {\x27token\x27:token } }) .then(res =\x26gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=\x26gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：\n 可以在浏览器中发送 XMLHttpRequests 可以在 node.js 中发送 http 请求 支持 Promise API 拦截请求和响应 能取消请求 转换请求数据和相应数据 自动转换 Json 数据 客户端支持保护安全免受 XSRF 攻击  ",
+        "name" : "Vue的sync修饰符",
+        "headline" : "Vue的sync修饰符",
+        "description" : "修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。\n\x26lt;div id=\x26#34;app\x26#34;\x26gt; \x26lt;div\x26gt;{{bar}}\x26lt;\/div\x26gt; \x26lt;my-comp :foo.sync=\x26#34;bar\x26#34;\x26gt;\x26lt;\/my-comp\x26gt; \/\/ 下面扩展出来的写法 \x26lt;!--\x26lt;my-comp :foo=\x26#34;bar\x26#34; @update:foo=\x26#34;val =\x26gt; bar = val\x26#34;\x26gt;\x26lt;\/my-comp\x26gt; --\x26gt; \x26lt;\/div\x26gt; \x26lt;script\x26gt; Vue.component(\x26#39;my-comp\x26#39;, { template: \x26#39;\x26lt;div @click=\x26#34;increment\x26#34;\x26gt;点我\x2b1\x26lt;\/div\x26gt;\x26#39;, data: function() { return {copyFoo: this.foo} }, props: [\x26#39;foo\x26#39;], methods: { increment: function() { this.$emit(\x26#39;update:foo\x26#39;, \x2b\x2bthis.copyFoo); } } }); new Vue({ el: \x26#39;#app\x26#39;, data: {bar: 0} }); \x26lt;\/script\x26gt; ",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,16 +21,16 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-02-22 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-02-22 18:22:40 \x2b0800 CST",
-        "url" : "\/blog\/axios-note\/",
-        "wordCount" : "51",
+        "datePublished": "2020-03-08 20:22:40 \x2b0800 CST",
+        "dateModified" : "2020-03-08 20:22:40 \x2b0800 CST",
+        "url" : "\/blog\/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6\/",
+        "wordCount" : "52",
         "keywords" : [ "Blog" ]
     }
     </script>
         
             
-                <title>Axios笔记</title>
+                <title>Vue的sync修饰符</title>
             
         
 
@@ -65,28 +65,28 @@
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Axios笔记"/>
-<meta name="twitter:description" content="Axios笔记 this.$axios.get(’/toutiao/index’, { //::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, //请求头配置 headers: {&#39;token&#39;:token } }) .then(res =&gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=&gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：
- 可以在浏览器中发送 XMLHttpRequests 可以在 node.js 中发送 http 请求 支持 Promise API 拦截请求和响应 能取消请求 转换请求数据和相应数据 自动转换 Json 数据 客户端支持保护安全免受 XSRF 攻击  "/>
+<meta name="twitter:title" content="Vue的sync修饰符"/>
+<meta name="twitter:description" content="修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
+&lt;div id=&#34;app&#34;&gt; &lt;div&gt;{{bar}}&lt;/div&gt; &lt;my-comp :foo.sync=&#34;bar&#34;&gt;&lt;/my-comp&gt; // 下面扩展出来的写法 &lt;!--&lt;my-comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my-comp&gt; --&gt; &lt;/div&gt; &lt;script&gt; Vue.component(&#39;my-comp&#39;, { template: &#39;&lt;div @click=&#34;increment&#34;&gt;点我&#43;1&lt;/div&gt;&#39;, data: function() { return {copyFoo: this.foo} }, props: [&#39;foo&#39;], methods: { increment: function() { this.$emit(&#39;update:foo&#39;, &#43;&#43;this.copyFoo); } } }); new Vue({ el: &#39;#app&#39;, data: {bar: 0} }); &lt;/script&gt; "/>
 
-        <meta property="og:title" content="Axios笔记" />
-<meta property="og:description" content="Axios笔记 this.$axios.get(’/toutiao/index’, { //::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, //请求头配置 headers: {&#39;token&#39;:token } }) .then(res =&gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=&gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：
- 可以在浏览器中发送 XMLHttpRequests 可以在 node.js 中发送 http 请求 支持 Promise API 拦截请求和响应 能取消请求 转换请求数据和相应数据 自动转换 Json 数据 客户端支持保护安全免受 XSRF 攻击  " />
+        <meta property="og:title" content="Vue的sync修饰符" />
+<meta property="og:description" content="修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
+&lt;div id=&#34;app&#34;&gt; &lt;div&gt;{{bar}}&lt;/div&gt; &lt;my-comp :foo.sync=&#34;bar&#34;&gt;&lt;/my-comp&gt; // 下面扩展出来的写法 &lt;!--&lt;my-comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my-comp&gt; --&gt; &lt;/div&gt; &lt;script&gt; Vue.component(&#39;my-comp&#39;, { template: &#39;&lt;div @click=&#34;increment&#34;&gt;点我&#43;1&lt;/div&gt;&#39;, data: function() { return {copyFoo: this.foo} }, props: [&#39;foo&#39;], methods: { increment: function() { this.$emit(&#39;update:foo&#39;, &#43;&#43;this.copyFoo); } } }); new Vue({ el: &#39;#app&#39;, data: {bar: 0} }); &lt;/script&gt; " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/axios-note/" />
-<meta property="article:published_time" content="2020-02-22T18:22:40+08:00" />
-<meta property="article:modified_time" content="2020-02-22T18:22:40+08:00" />
+<meta property="og:url" content="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/" />
+<meta property="article:published_time" content="2020-03-08T20:22:40+08:00" />
+<meta property="article:modified_time" content="2020-03-08T20:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta itemprop="name" content="Axios笔记">
-<meta itemprop="description" content="Axios笔记 this.$axios.get(’/toutiao/index’, { //::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, //请求头配置 headers: {&#39;token&#39;:token } }) .then(res =&gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=&gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：
- 可以在浏览器中发送 XMLHttpRequests 可以在 node.js 中发送 http 请求 支持 Promise API 拦截请求和响应 能取消请求 转换请求数据和相应数据 自动转换 Json 数据 客户端支持保护安全免受 XSRF 攻击  ">
-<meta itemprop="datePublished" content="2020-02-22T18:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-22T18:22:40&#43;08:00" />
-<meta itemprop="wordCount" content="51">
+        <meta itemprop="name" content="Vue的sync修饰符">
+<meta itemprop="description" content="修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
+&lt;div id=&#34;app&#34;&gt; &lt;div&gt;{{bar}}&lt;/div&gt; &lt;my-comp :foo.sync=&#34;bar&#34;&gt;&lt;/my-comp&gt; // 下面扩展出来的写法 &lt;!--&lt;my-comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my-comp&gt; --&gt; &lt;/div&gt; &lt;script&gt; Vue.component(&#39;my-comp&#39;, { template: &#39;&lt;div @click=&#34;increment&#34;&gt;点我&#43;1&lt;/div&gt;&#39;, data: function() { return {copyFoo: this.foo} }, props: [&#39;foo&#39;], methods: { increment: function() { this.$emit(&#39;update:foo&#39;, &#43;&#43;this.copyFoo); } } }); new Vue({ el: &#39;#app&#39;, data: {bar: 0} }); &lt;/script&gt; ">
+<meta itemprop="datePublished" content="2020-03-08T20:22:40&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-08T20:22:40&#43;08:00" />
+<meta itemprop="wordCount" content="52">
 
 
 
@@ -338,7 +338,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2faxios-note%2f&amp;text=Axios%e7%ac%94%e8%ae%b0&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;text=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -352,7 +352,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2faxios-note%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -365,7 +365,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2faxios-note%2f&amp;title=Axios%e7%ac%94%e8%ae%b0" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;title=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -381,7 +381,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2faxios-note%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -400,7 +400,7 @@
   <header>
     <div class="title">
         
-            <h1><a href="/blog/axios-note/">Axios笔记</a></h1>
+            <h1><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a></h1>
             
         
         
@@ -409,8 +409,8 @@
         
 
         <time class="published"
-            datetime='2020-02-22'>
-            February 22, 2020</time>
+            datetime='2020-03-08'>
+            March 8, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -428,7 +428,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2faxios-note%2f&amp;text=Axios%e7%ac%94%e8%ae%b0&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;text=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -442,7 +442,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2faxios-note%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -455,7 +455,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2faxios-note%2f&amp;title=Axios%e7%ac%94%e8%ae%b0" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f&amp;title=Vue%e7%9a%84sync%e4%bf%ae%e9%a5%b0%e7%ac%a6" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -471,7 +471,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2faxios-note%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fsync%25E4%25BF%25AE%25E9%25A5%25B0%25E7%25AC%25A6%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -485,37 +485,33 @@
   
 
   <div id="content">
-    <h1 id="axios">Axios笔记</h1>
-<pre><code>this.$axios.get(’/toutiao/index’, {
-		//::这里设置域名参数::
-    params:{
-      key:’4ac7dbb103ad3977c50735edb9651431’,
-      type:’tiyu’
-},
-//请求头配置   
-    headers: {'token':token }
-  })
-.then(res =&gt; {
-  this.newsList= res.data
-console.log(this.newsList)
-})
-.catch( err=&gt; {
-  console.log(’新闻异常’)
-})
-</code></pre><hr>
-<p><strong>Axios</strong> 是一个基于 promise 的 HTTP 库
-其特性：</p>
-<ol>
-<li>可以在浏览器中发送 XMLHttpRequests</li>
-<li>可以在 node.js 中发送 http 请求</li>
-<li>支持 Promise API</li>
-<li>拦截请求和响应</li>
-<li>能取消请求</li>
-<li>转换请求数据和相应数据</li>
-<li>自动转换 Json 数据</li>
-<li>客户端支持保护安全免受 XSRF 攻击</li>
-</ol>
-
+    <h3 id="sync">修饰符sync</h3>
+<p>让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;{{bar}}&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">my-comp</span> <span style="color:#a6e22e">:foo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">sync</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bar&#34;</span>&gt;&lt;/<span style="color:#f92672">my-comp</span>&gt;
+    // 下面扩展出来的写法
+    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> &lt;my</span><span style="color:#75715e">-</span><span style="color:#75715e">comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my</span><span style="color:#75715e">-</span><span style="color:#75715e">comp&gt; </span><span style="color:#75715e">--&gt;</span>
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">script</span>&gt;
+    <span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">component</span>(<span style="color:#e6db74">&#39;my-comp&#39;</span>, {
+        <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&lt;div @click=&#34;increment&#34;&gt;点我+1&lt;/div&gt;&#39;</span>,
+        <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+            <span style="color:#66d9ef">return</span> {<span style="color:#a6e22e">copyFoo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">foo</span>}
+        },
+        <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;foo&#39;</span>],
+        <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">increment</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>() {
+                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$emit</span>(<span style="color:#e6db74">&#39;update:foo&#39;</span>, <span style="color:#f92672">++</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">copyFoo</span>);
+            }
+        }
+    });
+    <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
+        <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#app&#39;</span>,
+        <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">bar</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>}
+    });
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div>
   </div>
 
   <footer>
@@ -528,10 +524,7 @@ console.log(this.newsList)
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF">前端</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/%E8%B7%A8%E5%9F%9F">跨域</a></li>
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
                 
             
         
@@ -567,13 +560,13 @@ console.log(this.newsList)
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/cmd/"
-                class="button big previous">cmd的操作</a></li>
+        <li><a href="/blog/webpack%E5%85%A5%E9%97%A8/"
+                class="button big previous">Webpack入门</a></li>
     
 
     
-        <li><a href="/blog/git-local/"
-                class="button big next">Git本地仓库</a></li>
+        <li><a href="/blog/watch%E5%92%8Ccomputed/"
+                class="button big next">watch和computed</a></li>
     
 </ul>
 
