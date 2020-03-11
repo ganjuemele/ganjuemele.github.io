@@ -71,6 +71,18 @@ const path = require(&amp;#39;path&amp;#39;); module.exports = { mode: &amp;#39;
     </item>
     
     <item>
+      <title>浏览器渲染过程</title>
+      <link>/blog/render/</link>
+      <pubDate>Fri, 06 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/render/</guid>
+      <description>浏览器渲染过程  根据HTML构建html树（DOM） 根据css构建css树（cssom） 将两棵树合并成一颗渲染树（render tree） layout布局（文档流、盒模型、计算大小和位置） paint绘制（把边框颜色、文字颜色、阴影等画出来） compose合成（根据层叠关系展示页面）  如何更新样式
+一般采用 js 来更新样式
+div.style.display=&amp;#39;none&amp;#39; div.classList.add(&amp;#39;red&amp;#39;) div.remove() //直接删除节点 样式更新方式
+ </description>
+    </item>
+    
+    <item>
       <title>MVC浅谈</title>
       <link>/blog/mvc/</link>
       <pubDate>Thu, 05 Mar 2020 20:22:40 +0800</pubDate>

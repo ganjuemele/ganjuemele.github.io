@@ -11,9 +11,9 @@
              "@id": "\/"
         },
         "articleSection" : "blog",
-        "name" : "MVC浅谈",
-        "headline" : "MVC浅谈",
-        "description" : "MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller\nview： 放视图相关的，html 渲染\ncontroller： 监听并操作 view，调用 model 里面的数据\nconst Model = { data: {} 增,删,改,查(){} } const View = { html:`\x26lt;div\x26gt;\x26lt;p\x26gt;hello\x26lt;\/p\x26gt;\x26lt;\/div\x26gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法\neventBus = $(window) m = { data: {\x26#39;…\x26#39;}, methods: { update(data){ 修改m.data eventBus.trigger(A) } } } 然后，用on方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的render重新渲染视图：\neventBus.on(A, ()=\x26gt;{ v.",
+        "name" : "浏览器渲染过程",
+        "headline" : "浏览器渲染过程",
+        "description" : "css笔记",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,16 +21,16 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-05 20:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-05 20:22:40 \x2b0800 CST",
-        "url" : "\/blog\/mvc\/",
-        "wordCount" : "134",
+        "datePublished": "2020-03-06 20:22:40 \x2b0800 CST",
+        "dateModified" : "2020-03-06 20:22:40 \x2b0800 CST",
+        "url" : "\/blog\/render\/",
+        "wordCount" : "17",
         "keywords" : [ "Blog" ]
     }
     </script>
         
             
-                <title>MVC浅谈</title>
+                <title>浏览器渲染过程</title>
             
         
 
@@ -59,46 +59,29 @@
             <meta name="author" content="么了">
         
         
-            
-                <meta name="description" content="么记">
-            
+            <meta name="description" content="css笔记">
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="MVC浅谈"/>
-<meta name="twitter:description" content="MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller
-view： 放视图相关的，html 渲染
-controller： 监听并操作 view，调用 model 里面的数据
-const Model = { data: {} 增,删,改,查(){} } const View = { html:`&lt;div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法
-eventBus = $(window) m = { data: {&#39;…&#39;}, methods: { update(data){ 修改m.data eventBus.trigger(A) } } } 然后，用on方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的render重新渲染视图：
-eventBus.on(A, ()=&gt;{ v."/>
+<meta name="twitter:title" content="浏览器渲染过程"/>
+<meta name="twitter:description" content="css笔记"/>
 
-        <meta property="og:title" content="MVC浅谈" />
-<meta property="og:description" content="MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller
-view： 放视图相关的，html 渲染
-controller： 监听并操作 view，调用 model 里面的数据
-const Model = { data: {} 增,删,改,查(){} } const View = { html:`&lt;div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法
-eventBus = $(window) m = { data: {&#39;…&#39;}, methods: { update(data){ 修改m.data eventBus.trigger(A) } } } 然后，用on方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的render重新渲染视图：
-eventBus.on(A, ()=&gt;{ v." />
+        <meta property="og:title" content="浏览器渲染过程" />
+<meta property="og:description" content="css笔记" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/mvc/" />
-<meta property="article:published_time" content="2020-03-05T20:22:40+08:00" />
-<meta property="article:modified_time" content="2020-03-05T20:22:40+08:00" />
+<meta property="og:url" content="/blog/render/" />
+<meta property="article:published_time" content="2020-03-06T20:22:40+08:00" />
+<meta property="article:modified_time" content="2020-03-06T20:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta itemprop="name" content="MVC浅谈">
-<meta itemprop="description" content="MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller
-view： 放视图相关的，html 渲染
-controller： 监听并操作 view，调用 model 里面的数据
-const Model = { data: {} 增,删,改,查(){} } const View = { html:`&lt;div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法
-eventBus = $(window) m = { data: {&#39;…&#39;}, methods: { update(data){ 修改m.data eventBus.trigger(A) } } } 然后，用on方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的render重新渲染视图：
-eventBus.on(A, ()=&gt;{ v.">
-<meta itemprop="datePublished" content="2020-03-05T20:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-05T20:22:40&#43;08:00" />
-<meta itemprop="wordCount" content="134">
+        <meta itemprop="name" content="浏览器渲染过程">
+<meta itemprop="description" content="css笔记">
+<meta itemprop="datePublished" content="2020-03-06T20:22:40&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-06T20:22:40&#43;08:00" />
+<meta itemprop="wordCount" content="17">
 
 
 
@@ -350,7 +333,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fmvc%2f&amp;text=MVC%e6%b5%85%e8%b0%88&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2frender%2f&amp;text=%e6%b5%8f%e8%a7%88%e5%99%a8%e6%b8%b2%e6%9f%93%e8%bf%87%e7%a8%8b&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -364,7 +347,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fmvc%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2frender%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -377,7 +360,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fmvc%2f&amp;title=MVC%e6%b5%85%e8%b0%88" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2frender%2f&amp;title=%e6%b5%8f%e8%a7%88%e5%99%a8%e6%b8%b2%e6%9f%93%e8%bf%87%e7%a8%8b" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -393,7 +376,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fmvc%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2frender%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -412,17 +395,19 @@ eventBus.on(A, ()=&gt;{ v.">
   <header>
     <div class="title">
         
-            <h1><a href="/blog/mvc/">MVC浅谈</a></h1>
+            <h1><a href="/blog/render/">浏览器渲染过程</a></h1>
             
         
+        
+            <p>css笔记</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-03-05'>
-            March 5, 2020</time>
+            datetime='2020-03-06'>
+            March 6, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -440,7 +425,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fmvc%2f&amp;text=MVC%e6%b5%85%e8%b0%88&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2frender%2f&amp;text=%e6%b5%8f%e8%a7%88%e5%99%a8%e6%b8%b2%e6%9f%93%e8%bf%87%e7%a8%8b&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -454,7 +439,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fmvc%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2frender%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -467,7 +452,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fmvc%2f&amp;title=MVC%e6%b5%85%e8%b0%88" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2frender%2f&amp;title=%e6%b5%8f%e8%a7%88%e5%99%a8%e6%b8%b2%e6%9f%93%e8%bf%87%e7%a8%8b" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -483,7 +468,7 @@ eventBus.on(A, ()=&gt;{ v.">
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fmvc%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2frender%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -497,77 +482,22 @@ eventBus.on(A, ()=&gt;{ v.">
   
 
   <div id="content">
-    <h2 id="mvc-">MVC 三个对象分别的作用，伪代码示例</h2>
-<p><code>model：</code> 数据管理，请求到的数据给 controller</p>
-<p><code>view：</code> 放视图相关的，html 渲染</p>
-<p><code>controller：</code> 监听并操作 view，调用 model 里面的数据</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Model</span> <span style="color:#f92672">=</span> {
-	<span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {}
-	<span style="color:#a6e22e">增</span>,<span style="color:#a6e22e">删</span>,<span style="color:#a6e22e">改</span>,<span style="color:#a6e22e">查</span>(){}
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">View</span> <span style="color:#f92672">=</span> {
-	<span style="color:#a6e22e">html</span><span style="color:#f92672">:</span><span style="color:#e6db74">`</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">		&lt;div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt;
-</span><span style="color:#e6db74">	</span><span style="color:#e6db74">`</span>,
-	<span style="color:#a6e22e">init</span>(){}
-	<span style="color:#a6e22e">render</span>(){}
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">C</span> <span style="color:#f92672">=</span> {
-	<span style="color:#a6e22e">init</span>() {
-		<span style="color:#a6e22e">v</span>.<span style="color:#a6e22e">init</span>()
-		<span style="color:#a6e22e">v</span>.<span style="color:#a6e22e">render</span>()
-	}
-	<span style="color:#a6e22e">methods</span>(){}
-}
-</code></pre></div><hr>
-<h2 id="eventbus--api">EventBus 有哪些 API，是做什么用的，给出伪代码示例</h2>
-<p>提供了 constructor; on; remove; trigger 等等方法</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">eventBus</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(window)
-
-<span style="color:#a6e22e">m</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {<span style="color:#e6db74">&#39;…&#39;</span>},
-    <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
-        
-        <span style="color:#a6e22e">update</span>(<span style="color:#a6e22e">data</span>){
-            <span style="color:#a6e22e">修改m</span>.<span style="color:#a6e22e">data</span>
-            <span style="color:#a6e22e">eventBus</span>.<span style="color:#a6e22e">trigger</span>(<span style="color:#a6e22e">A</span>)
-        }
-    }
-}
-</code></pre></div><p>然后，用<code>on</code>方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的<code>render</code>重新渲染视图：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">eventBus</span>.<span style="color:#a6e22e">on</span>(<span style="color:#a6e22e">A</span>, ()=&gt;{
-    <span style="color:#a6e22e">v</span>.<span style="color:#a6e22e">render</span>(<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">data</span>)
-})
-</code></pre></div><p>如此，就实现了M和V之间的沟通，使得视图和数据保持同步。</p>
-<hr>
-<h2 id="heading">表驱动编程是做什么的（可以自己查查资料）</h2>
-<p>表驱动编程是一种很重要的编程思想，它的理念是从大量相似的代码中抽取出本质的东西，组成哈希表，利用表进行编程，以减少重复代码。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#el1&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;事件a&#39;</span>, <span style="color:#a6e22e">fn1</span>) 
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#el2&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;事件B&#39;</span>, <span style="color:#a6e22e">fn2</span>) 
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#el3&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;事件C&#39;</span>, <span style="color:#a6e22e">fn3</span>) 
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#el4&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;事件D&#39;</span>, <span style="color:#a6e22e">fn4</span>) 
-<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#el5&#39;</span>).<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;事件E&#39;</span>, <span style="color:#a6e22e">fn5</span>)
-<span style="color:#75715e">// jQuery 风格写法
-</span></code></pre></div><p>一旦重复次数过多，代码就会变得冗余、臃肿。纵观整体，可以发现每行代码最关键的信息其实就是’#el&rsquo;、&lsquo;事件'和fn，将关键信息抽离，组成一个对象：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">events</span> <span style="color:#f92672">=</span> {
-	<span style="color:#e6db74">&#39;#el1 事件A&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;fn1&#39;</span>, 
-	<span style="color:#e6db74">&#39;#el2 事件B&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;fn2&#39;</span>, 
-	<span style="color:#e6db74">&#39;#el3 事件C&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;fn3&#39;</span>, 
-	<span style="color:#e6db74">&#39;#el4 事件D&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;fn4&#39;</span>,
-	<span style="color:#e6db74">&#39;#el5 事件E&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;fn5&#39;</span> 
-} 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">eventFunctions</span> <span style="color:#f92672">=</span> { 
-	<span style="color:#75715e">//事件处理函数 
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">fn1</span>(){} 
-	<span style="color:#a6e22e">fn2</span>(){} 
-	<span style="color:#a6e22e">fn3</span>(){}
-	<span style="color:#a6e22e">fn4</span>(){} 
-	<span style="color:#a6e22e">fn5</span>(){}
- }
-</code></pre></div><h2 id="heading-1">我是如何理解模块化的</h2>
-<p>将网页应用分为各个独立的模块单独开发，每个模块之间互不影响，可以使程序的结构更加清晰，方便维护。
-使用 <strong>export</strong> 和 <strong>import</strong> 语句就可以实现。有了模块化的思想,在 main.js 中引入各个模块的 js，各个 js 再各自引用自己的 css、创建自己的 html。还可以把这些模块用到的类，也封装成单独的模块，然后再将其引入到各个模块中。
-如此，所有的模块都是独立的，互不影响，代码的层次结构会变得异常清晰。</p>
+    <h2 id="heading">浏览器渲染过程</h2>
+<ol>
+<li>根据HTML构建html树（DOM）</li>
+<li>根据css构建css树（cssom）</li>
+<li>将两棵树合并成一颗渲染树（render tree）</li>
+<li>layout布局（文档流、盒模型、计算大小和位置）</li>
+<li>paint绘制（把边框颜色、文字颜色、阴影等画出来）</li>
+<li>compose合成（根据层叠关系展示页面）</li>
+</ol>
+<p><strong>如何更新样式</strong></p>
+<p>一般采用 js 来更新样式</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">div</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;none&#39;</span>
+<span style="color:#f92672">div</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;red&#39;</span><span style="color:#f92672">)</span>
+<span style="color:#f92672">div</span>.<span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">直接删除节点</span>
+</code></pre></div><p>样式更新方式</p>
+<h2 id="img202003renderpng"><img src="/img/2020/03/render.png" alt="图片"></h2>
 
   </div>
 
@@ -581,7 +511,7 @@ eventBus.on(A, ()=&gt;{ v.">
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/mvc">MVC</a></li>
+                <li><a class="article-category-link" href="/categories/css">css</a></li>
                 
             
         
@@ -617,13 +547,13 @@ eventBus.on(A, ()=&gt;{ v.">
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/http/"
-                class="button big previous">Http和Https</a></li>
+        <li><a href="/blog/mvc/"
+                class="button big previous">MVC浅谈</a></li>
     
 
     
-        <li><a href="/blog/render/"
-                class="button big next">浏览器渲染过程</a></li>
+        <li><a href="/blog/webpack%E5%85%A5%E9%97%A8/"
+                class="button big next">Webpack入门</a></li>
     
 </ul>
 

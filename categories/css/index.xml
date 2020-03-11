@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CSS on 么了&#39;s 博客</title>
+    <title>css on 么了&#39;s 博客</title>
     <link>/categories/css/</link>
-    <description>Recent content in CSS on 么了&#39;s 博客</description>
+    <description>Recent content in css on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Tue, 10 Mar 2020 20:22:40 +0800</lastBuildDate>
@@ -25,6 +25,18 @@
 transition: 属性名 时长，属性名 时长 过渡方式 延迟
  transition-property: 过渡效果的 css 属性名 transition-duration：过渡完成所需的时间 transition-timing-function：速度效果的曲线。（复杂） transition-delay：延迟  all 代表所有属性
 ⚠️并不是所有属性都能过渡</description>
+    </item>
+    
+    <item>
+      <title>浏览器渲染过程</title>
+      <link>/blog/render/</link>
+      <pubDate>Fri, 06 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/render/</guid>
+      <description>浏览器渲染过程  根据HTML构建html树（DOM） 根据css构建css树（cssom） 将两棵树合并成一颗渲染树（render tree） layout布局（文档流、盒模型、计算大小和位置） paint绘制（把边框颜色、文字颜色、阴影等画出来） compose合成（根据层叠关系展示页面）  如何更新样式
+一般采用 js 来更新样式
+div.style.display=&amp;#39;none&amp;#39; div.classList.add(&amp;#39;red&amp;#39;) div.remove() //直接删除节点 样式更新方式
+ </description>
     </item>
     
     <item>

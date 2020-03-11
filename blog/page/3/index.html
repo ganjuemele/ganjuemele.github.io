@@ -323,6 +323,72 @@
   <header>
     <div class="title">
         
+            <h2><a href="/blog/http/">Http和Https</a></h2>
+        
+        
+            <p>HTTP 笔记</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-25'>
+            February 25, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre><code>HTTP协议（HyperText Transfer Protocol超文本传输协议）是因特网上应用最广泛的一种网络协议，所有www文件都必须遵守这个标准。
+HTTP是一个基于TCP/IP通信协议来传递数据。
+</code></pre>
+<h3 id="http">HTTP工作原理</h3>
+<pre><code>HTTP协议工作于客户端—服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端（web服务器）发送所有请求。
+web服务器根据接受的请求，向客户端发送响应信息。
+HTTP默认端口：80，也可以改为8080或者其他端口。
+</code></pre>
+<p>⚠️<strong>注意事项：</strong></p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/http/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/http">HTTP</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
             <h2><a href="/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">Git远程仓库</a></h2>
         
         
@@ -419,82 +485,6 @@
                 
                 
                 <li><a class="article-category-link" href="/categories/git">Git</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/axios-note/">Axios笔记</a></h2>
-        
-        
-            <p>Axios跨域</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-02-22'>
-            February 22, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <pre><code>this.$axios.get(’/toutiao/index’, {
-		//::这里设置域名参数::
-    params:{
-      key:’4ac7dbb103ad3977c50735edb9651431’,
-      type:’tiyu’
-},
-//请求头配置   
-    headers: {'token':token }
-  })
-.then(res =&gt; {
-  this.newsList= res.data
-console.log(this.newsList)
-})
-.catch( err=&gt; {
-  console.log(’新闻异常’)
-})
-</code></pre><hr>
-<p><strong>Axios</strong> 是一个基于 promise 的 HTTP 库
-其特性：</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/axios-note/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/%E8%B7%A8%E5%9F%9F">跨域</a></li>
                 
             
         
