@@ -6,10 +6,19 @@
     <description>Recent content in css on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 10 Mar 2020 20:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 23:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>box-shadow样式</title>
+      <link>/blog/box-shadow/</link>
+      <pubDate>Mon, 16 Mar 2020 23:22:40 +0800</pubDate>
+      
+      <guid>/blog/box-shadow/</guid>
+      <description>button { font-size: 24px; height: 64px; width: 25%; border: #fff solid 1px; box-shadow: inset -2px -2px 1px rgba(0,0,0,0.45); $bg: #f2f2f2; &amp;amp;:nth-child(1) { background: $bg; } &amp;amp;:nth-child(2), &amp;amp;:nth-child(5) { background: darken($bg, 4%); } &amp;amp;:nth-child(3), &amp;amp;:nth-child(6), &amp;amp;:nth-child(9) { background: darken($bg, 8%); } &amp;amp;:nth-child(4), &amp;amp;:nth-child(7), &amp;amp;:nth-child(10), &amp;amp;:nth-child(13) { background: darken($bg, 12%); } &amp;amp;:nth-child(8), &amp;amp;:nth-child(11) { background: darken($bg, 16%); } &amp;amp;:nth-child(12), &amp;amp;:nth-child(14) { background: darken($bg, 20%); } &amp;amp;:nth-child(15) { background: darken($bg, 25%); } } -2px 就是未按下状态的样式;</description>
+    </item>
     
     <item>
       <title>transform &amp; transition</title>
@@ -17,7 +26,7 @@
       <pubDate>Tue, 10 Mar 2020 20:22:40 +0800</pubDate>
       
       <guid>/blog/transformtransition/</guid>
-      <description>Transform transform属性用于旋转、倾斜、缩放、平移
+      <description>Transform transform 属性用于旋转、倾斜、缩放、平移
 有XYZ轴方向
 ⚠️只能转换由盒模型定位的元素
  scale(-2，2) 横向和纵向的缩放 translate(50%, 30px) 对象进行3D空间的位移  translate(-50%, -50%) // 可以做绝对定位元素的居中  rotate（30deg） 旋转30度 skew（30deg, 45deg）横向和纵向的倾斜 transform: none不应用任何转换 可以组合使用  对浏览器的兼容性支持

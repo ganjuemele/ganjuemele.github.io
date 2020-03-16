@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-10 20:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-10 20:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-16 23:22:40 \x2b0800 CST",
+        "dateModified" : "2020-03-16 23:22:40 \x2b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2020-03-10T20:22:40+08:00" />
+<meta property="og:updated_time" content="2020-03-16T23:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -265,11 +265,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/transformtransition/">transform &amp; transition</a></h3>
+                                <h3><a href="/blog/box-shadow/">box-shadow样式</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-10'>
-                                    March 10, 2020</time>
+                                    '2020-03-16'>
+                                    March 16, 2020</time>
                             </header>
                             
 
@@ -277,7 +277,7 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/%E6%96%B9%E5%8F%AF%E6%A2%A6/">宝可梦大探险</a></h3>
+                                <h3><a href="/blog/transformtransition/">transform &amp; transition</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2020-03-10'>
@@ -321,18 +321,18 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/transformtransition/">transform &amp; transition</a></h2>
+            <h2><a href="/blog/box-shadow/">box-shadow样式</a></h2>
         
         
-            <p>css笔记</p>
+            <p>CSS box-shadow记录</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-03-10'>
-            March 10, 2020</time>
+            datetime='2020-03-16'>
+            March 16, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -350,7 +350,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2ftransformtransition%2f&amp;text=transform%20%26%20transition&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fbox-shadow%2f&amp;text=box-shadow%e6%a0%b7%e5%bc%8f&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -364,7 +364,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fbox-shadow%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -377,7 +377,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftransformtransition%2f&amp;title=transform%20%26%20transition" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fbox-shadow%2f&amp;title=box-shadow%e6%a0%b7%e5%bc%8f" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -393,7 +393,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fbox-shadow%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -407,36 +407,40 @@
   
 
   <div id="content">
-    <h2 id="transform">Transform</h2>
-<p>transform属性用于旋转、倾斜、缩放、平移</p>
-<p>有XYZ轴方向</p>
-<p>⚠️只能转换由盒模型定位的元素</p>
-<ul>
-<li>scale(-2，2) 横向和纵向的缩放</li>
-<li>translate(50%, 30px) 对象进行3D空间的位移</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">translate</span><span style="color:#f92672">(</span><span style="color:#f92672">-50</span><span style="color:#f92672">%</span><span style="color:#f92672">,</span> <span style="color:#f92672">-50</span><span style="color:#f92672">%</span><span style="color:#f92672">)</span>
-<span style="color:#f92672">/</span><span style="color:#f92672">/</span> <span style="color:#f92672">可以做绝对定位元素的居中</span>
-</code></pre></div><ul>
-<li>rotate（30deg） 旋转30度</li>
-<li>skew（30deg, 45deg）横向和纵向的倾斜</li>
-<li>transform: none不应用任何转换
-可以组合使用</li>
-</ul>
-<p>对浏览器的兼容性支持</p>
-<p><img src="/img/2020/03/transform.png" alt="图片"></p>
-<hr>
-<h2 id="transition-">Transition 过渡</h2>
-<p>用来补充中间帧</p>
-<p><code>transition: 属性名 时长，属性名 时长 过渡方式 延迟</code></p>
-<ol>
-<li>transition-property:  过渡效果的 css 属性名</li>
-<li>transition-duration：过渡完成所需的时间</li>
-<li>transition-timing-function：速度效果的曲线。（复杂）</li>
-<li>transition-delay：延迟</li>
-</ol>
-<p><code>all</code> 代表所有属性</p>
-<p>⚠️并不是所有属性都能过渡</p>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#f92672">button</span> {
+    <span style="color:#f92672">font-size</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">24px</span>;
+    <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">64px</span>;
+    <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">25</span><span style="color:#960050;background-color:#1e0010">%</span>;
+    <span style="color:#f92672">border</span><span style="color:#a6e22e">:</span> #fff <span style="color:#f92672">solid</span> <span style="color:#f92672">1px</span>;
+	<span style="color:#f92672">box-shadow</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">inset</span> <span style="color:#f92672">-2px</span> <span style="color:#f92672">-2px</span> <span style="color:#f92672">1px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#a6e22e">.</span><span style="color:#a6e22e">45</span><span style="color:#f92672">)</span>;
+    $bg<span style="color:#f92672">:</span> <span style="color:#ae81ff">#f2f2f2</span>;
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">5</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">4</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">6</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">9</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">8</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">7</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">10</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">13</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">12</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">8</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">11</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">16</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">12</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">14</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">20</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
+    }
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">15</span><span style="color:#f92672">)</span> {
+        <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">25</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
+    }
+}
+</code></pre></div><p>-2px 就是未按下状态的样式;</p>
+<p><img src="/img/2020/03/boxshadow.jpg" alt="图片"></p>
+<p>反之 2px 就是呈现按下状态的样式;</p>
+<h3 id="scss-">scss 色彩算法</h3>
+<p><code>background: darken($bg, 25%);</code> 在$bg的色彩基础上，颜色加深25%；</p>
 
   </div>
 
@@ -450,7 +454,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/css">css</a></li>
+                <li><a class="article-category-link" href="/categories/css">CSS</a></li>
                 
             
         
@@ -486,8 +490,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/%E6%96%B9%E5%8F%AF%E6%A2%A6/"
-                class="button big previous">宝可梦大探险</a></li>
+        <li><a href="/blog/transformtransition/"
+                class="button big previous">transform &amp; transition</a></li>
     
 
     
@@ -527,7 +531,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2ftransformtransition%2f&amp;text=transform%20%26%20transition&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fbox-shadow%2f&amp;text=box-shadow%e6%a0%b7%e5%bc%8f&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -541,7 +545,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fbox-shadow%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -554,7 +558,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftransformtransition%2f&amp;title=transform%20%26%20transition" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fbox-shadow%2f&amp;title=box-shadow%e6%a0%b7%e5%bc%8f" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -570,7 +574,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ftransformtransition%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fbox-shadow%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -714,11 +718,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/transformtransition/">transform &amp; transition</a>
+                <a href="/blog/box-shadow/">box-shadow样式</a>
               </h3>
               
-              <time class="published" datetime='2020-03-10'>
-                March 10, 2020
+              <time class="published" datetime='2020-03-16'>
+                March 16, 2020
               </time>
             </header>
             
@@ -728,7 +732,7 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/%E6%96%B9%E5%8F%AF%E6%A2%A6/">宝可梦大探险</a>
+                <a href="/blog/transformtransition/">transform &amp; transition</a>
               </h3>
               
               <time class="published" datetime='2020-03-10'>
