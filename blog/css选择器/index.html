@@ -1,0 +1,957 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "CSS 的各种选择器",
+        "headline" : "CSS 的各种选择器",
+        "description" : "组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E\x26gt;F` 子元素选择器，用`\x26gt;`分隔，匹配E元素的所有直接子元素 `E\x2bF` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  ",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-03-26 20:22:40 \x2b0800 CST",
+        "dateModified" : "2020-03-26 20:22:40 \x2b0800 CST",
+        "url" : "\/blog\/css%E9%80%89%E6%8B%A9%E5%99%A8\/",
+        "wordCount" : "56",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>CSS 的各种选择器</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.62.0" />
+        
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='/favicon/favicon.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
+  <meta name="application-name" content="么了&#39;s 博客">
+  <meta name="msapplication-tooltip" content="么记">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="么了">
+        
+        
+            
+                <meta name="description" content="么记">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS 的各种选择器"/>
+<meta name="twitter:description" content="组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E&gt;F` 子元素选择器，用`&gt;`分隔，匹配E元素的所有直接子元素 `E&#43;F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  "/>
+
+        <meta property="og:title" content="CSS 的各种选择器" />
+<meta property="og:description" content="组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E&gt;F` 子元素选择器，用`&gt;`分隔，匹配E元素的所有直接子元素 `E&#43;F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/" />
+<meta property="article:published_time" content="2020-03-26T20:22:40+08:00" />
+<meta property="article:modified_time" content="2020-03-26T20:22:40+08:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="CSS 的各种选择器">
+<meta itemprop="description" content="组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E&gt;F` 子元素选择器，用`&gt;`分隔，匹配E元素的所有直接子元素 `E&#43;F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  ">
+<meta itemprop="datePublished" content="2020-03-26T20:22:40&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-26T20:22:40&#43;08:00" />
+<meta itemprop="wordCount" content="56">
+
+
+
+<meta itemprop="keywords" content="" />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>主页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/music/">
+                            <i class="fa fa-list">&nbsp;</i>音乐
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>类别
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/gallery/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>画作
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>主页
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/music/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>音乐
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>类别
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/gallery/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>画作
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/js-defect/">javascript的十个设计缺陷</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-03-29'>
+                                    March 29, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/note-2/">vue</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-03-27'>
+                                    March 27, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/vuex/">Vuex的总结</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-03-27'>
+                                    March 27, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">查看更多</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f&amp;text=CSS%20%e7%9a%84%e5%90%84%e7%a7%8d%e9%80%89%e6%8b%a9%e5%99%a8&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f&amp;title=CSS%20%e7%9a%84%e5%90%84%e7%a7%8d%e9%80%89%e6%8b%a9%e5%99%a8" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/">CSS 的各种选择器</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-03-26'>
+            March 26, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f&amp;text=CSS%20%e7%9a%84%e5%90%84%e7%a7%8d%e9%80%89%e6%8b%a9%e5%99%a8&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f&amp;title=CSS%20%e7%9a%84%e5%90%84%e7%a7%8d%e9%80%89%e6%8b%a9%e5%99%a8" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fcss%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    <h2 id="heading">组合选择器</h2>
+<pre><code>`E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F
+`E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F
+`E&gt;F` 子元素选择器，用`&gt;`分隔，匹配E元素的所有直接子元素
+`E+F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F
+`E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F
+`element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素
+</code></pre>
+<h2 id="heading-1">属性选择器</h2>
+<pre><code>`E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div)
+`E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div)
+`E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素
+`E[attr^=value]` 匹配属性attr值以value开头的元素
+`E[attr$=value]` 匹配属性attr值以value结尾的元素
+`E[attr^=value]` 匹配属性attr值包含value的元素
+</code></pre>
+<h2 id="heading-2">伪类选择器</h2>
+<pre><code>`E:first-child` 匹配元素E的第一个子元素
+`E:last-child` 最后一个子元素
+`E:nth-child(n)` 匹配其父元素的第n个子元素，1开始
+`E:hover` 匹配鼠标悬停位置的E元素
+`E:focus` 匹配获得焦点的E元素
+`E:link` 匹配未被点击的链接
+`E:active` 匹配鼠标已经按下、还没有释放的E元素
+`E:visited` 匹配所有已被点击的链接
+`E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)
+</code></pre>
+<h2 id="heading-3">伪元素选择器</h2>
+<pre><code>`E::before` 在E元素之前插入生成的内容
+`E::after` 在E元素之后插入生成的内容
+`E::first-line` 匹配E元素的第一行
+`E::first-letter` 匹配E元素的第一个字母
+</code></pre>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/css">css</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/ls%E5%B1%9E%E6%80%A7/"
+                class="button big previous">localStorage属性</a></li>
+    
+
+    
+        <li><a href="/blog/vuex/"
+                class="button big next">Vuex的总结</a></li>
+    
+</ul>
+
+
+
+<article class="post">
+  
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+</article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/me.jpg" class="intro-circle" width="150px" alt="么了" /></a>
+      
+    
+    
+      <header>
+        <h2>么了</h2>
+        <p>欢迎莅临 <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>最新文章</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/js-defect/">javascript的十个设计缺陷</a>
+              </h3>
+              
+              <time class="published" datetime='2020-03-29'>
+                March 29, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/note-2/">vue</a>
+              </h3>
+              
+              <time class="published" datetime='2020-03-27'>
+                March 27, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/vuex/">Vuex的总结</a>
+              </h3>
+              
+              <time class="published" datetime='2020-03-27'>
+                March 27, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">查看更多</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>关于</h3>
+      <p>HTML 5 | CSS | JavaScript | React</p>
+      <a href="/about/" class="button">阅读更多</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          么了&#39;s 博客
+        
+      .</br>
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

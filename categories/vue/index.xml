@@ -6,10 +6,41 @@
     <description>Recent content in vue on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 10 Mar 2020 15:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 20:40:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue</title>
+      <link>/blog/note-2/</link>
+      <pubDate>Fri, 27 Mar 2020 20:40:40 +0800</pubDate>
+      
+      <guid>/blog/note-2/</guid>
+      <description>&amp;lt;stylescopedlang=&amp;#39;scss&amp;#39;&amp;gt; .x::v-deep li { // 或者使用 /deep/ border: 1px solid red; } &amp;lt;/style&amp;gt; 往深处继续找 deep语法</description>
+    </item>
+    
+    <item>
+      <title>Vuex的总结</title>
+      <link>/blog/vuex/</link>
+      <pubDate>Fri, 27 Mar 2020 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/vuex/</guid>
+      <description>Vue.use(Vuex)
+// ~/main.ts  new Vue({ router, store, //引用进去  render: h =&amp;gt; h(App) }).$mount(&amp;#39;#app&amp;#39;); const store = new Vuex.store({ state: { count:0 ... ... }, mutations: { method1 (state){ state.count }, ... } }) 组件components中使用
+读：对象 computed获取 @Component({ components: {xxx}, computed: { tags() { return this.$store.state.count } } }) 类 js/ts export default class EditLabel extends Vue { get currentTag (){ return this.$store.state.currentTag } } 写： this.$store.commit(&amp;#39;updateTag&amp;#39;,{id:this.currentTag.id, name}); </description>
+    </item>
+    
+    <item>
+      <title>写Vue组件的三种方式</title>
+      <link>/blog/vue-component/</link>
+      <pubDate>Tue, 17 Mar 2020 20:40:40 +0800</pubDate>
+      
+      <guid>/blog/vue-component/</guid>
+      <description>  使用 JS 对象 export default { data, props, methods, created, ……}
+  使用 TS 类 &amp;lt;script lang=&amp;quot;ts&amp;quot;&amp;gt; import {Component,Prop} from &#39;vue-property-decorator&#39;
+  @Compotent export default class XXX extends Vue { xxx: string = &amp;#39;hi&amp;#39;; @Prop(Number) xxx: number | undefined; } //(Number)运行时检查xxx的参数类型是否为number //编译时 `xxx: number | undefined` 中的xxx可以为number也可以是undefined  使用 JS 类 &amp;lt;script lang=&amp;quot;js&amp;quot;&amp;gt;  @Compotent export default class XXX extends Vue { xxx = &amp;#39;hi&amp;#39; } </description>
+    </item>
     
     <item>
       <title>Vue的sync修饰符</title>

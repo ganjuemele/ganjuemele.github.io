@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on 么了&#39;s 博客</title>
+    <link>/categories/javascript/</link>
+    <description>Recent content in javascript on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 22 Mar 2020 16:40:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>prompt的确定和取消事件</title>
+      <link>/blog/prompt/</link>
+      <pubDate>Sun, 22 Mar 2020 16:40:40 +0800</pubDate>
+      
+      <guid>/blog/prompt/</guid>
+      <description>prompt事件触发，未输入标签名点击取消，也会新增一个空白标签， 这是因为点击取消， name === null
+const name = window.prompt(&amp;#39;请输入标签名&amp;#39;); if (name === null){ // console.log(name,&amp;#39;null&amp;#39;) }else if (name === &amp;#39;&amp;#39;) { window.alert(&amp;#39;标签名不能为空&amp;#39;) } else (this.dataSource) { this.$emit(&amp;#39;update:dataSource&amp;#39;, [...this.dataSource, name]) } ⚠️这里要把（name===null）的情况放在较前位置进行判断
+优化下
+if (name === &amp;#39;&amp;#39;) {window.alert(&amp;#39;标签名不能为空&amp;#39;)} else if (name !== null &amp;amp;&amp;amp; this.dataSource) { this.$emit(&amp;#39;update:dataSource&amp;#39;, [...this.dataSource, name]) } </description>
+    </item>
+    
+  </channel>
+</rss>

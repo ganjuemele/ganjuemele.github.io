@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on 么了&#39;s 博客</title>
+    <link>/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Fri, 20 Mar 2020 16:40:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据库版本更新</title>
+      <link>/blog/localstorage-v/</link>
+      <pubDate>Fri, 20 Mar 2020 16:40:40 +0800</pubDate>
+      
+      <guid>/blog/localstorage-v/</guid>
+      <description>window.localStorage.setItem(&#39;version&#39;,&#39;1.0.0&#39;)
+初始的 Version &amp;lsquo;1.0.0&amp;rsquo;, 更改为 &amp;lsquo;2.0.0&amp;rsquo;，在 localStrage 中的数据需要新加入个 Date
+const version = window.localStorage.getItem(&amp;#39;version&amp;#39;) || &amp;#39;0&amp;#39;； const recordList: Record[] = JSON.parse(window.localStorage.getItem(&amp;#39;recordList&amp;#39;) || &amp;#39;[]&amp;#39;); if(version &amp;lt; &amp;#39;2.0.0&amp;#39;){ //数据库升级 	//遍历之前的数据给添加日期，使数据结构相同 	recordList.forEach(record =&amp;gt; { record.createdAt = new Date(0) }) //保存数据 	window.localStorage.setItem(&amp;#39;recordList&amp;#39;,JSON.stringify(recordList)) } //设置新版本号 window.localStorage.setItem(&amp;#39;version&amp;#39;,&amp;#39;2.0.0&amp;#39;) 版本更新前先获取之前的版本号
+数据迁移到新版本</description>
+    </item>
+    
+  </channel>
+</rss>

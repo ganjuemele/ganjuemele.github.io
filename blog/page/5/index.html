@@ -29,8 +29,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-16 23:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-16 23:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-29 01:40:40 \x2b0800 CST",
+        "dateModified" : "2020-03-29 01:40:40 \x2b0800 CST",
         "url" : "\/blog\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -76,7 +76,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" />
-<meta property="og:updated_time" content="2020-03-16T23:22:40+08:00" />
+<meta property="og:updated_time" content="2020-03-29T01:40:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -266,11 +266,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/box-shadow/">box-shadow样式</a></h3>
+                                <h3><a href="/blog/js-defect/">javascript的十个设计缺陷</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-16'>
-                                    March 16, 2020</time>
+                                    '2020-03-29'>
+                                    March 29, 2020</time>
                             </header>
                             
 
@@ -278,11 +278,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/transformtransition/">transform &amp; transition</a></h3>
+                                <h3><a href="/blog/note-2/">vue</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-10'>
-                                    March 10, 2020</time>
+                                    '2020-03-27'>
+                                    March 27, 2020</time>
                             </header>
                             
 
@@ -290,11 +290,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a></h3>
+                                <h3><a href="/blog/vuex/">Vuex的总结</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-10'>
-                                    March 10, 2020</time>
+                                    '2020-03-27'>
+                                    March 27, 2020</time>
                             </header>
                             
 
@@ -323,16 +323,18 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/cmd/">cmd的操作</a></h2>
+            <h2><a href="/blog/box-shadow/">box-shadow样式</a></h2>
         
+        
+            <p>CSS box-shadow记录</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-02-19'>
-            February 19, 2020</time>
+            datetime='2020-03-16'>
+            March 16, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -344,70 +346,26 @@
   
 
   
-  <p><code>npm i -g tldr 太长不想读</code></p>
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">button {
+    font<span style="color:#f92672">-</span><span style="color:#e6db74">size</span>: <span style="color:#ae81ff">24</span><span style="color:#f92672"></span>px;
+    <span style="color:#e6db74">height</span>: <span style="color:#ae81ff">64</span><span style="color:#f92672"></span>px;
+    <span style="color:#e6db74">width</span>: <span style="color:#ae81ff">25</span><span style="color:#f92672"></span><span style="color:#e6db74">%;
+</span><span style="color:#e6db74">    border: #fff solid 1px;</span>
+	box<span style="color:#f92672">-</span><span style="color:#e6db74">shadow</span>: inset <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span><span style="color:#f92672"></span>px <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span><span style="color:#f92672"></span>px <span style="color:#ae81ff">1</span><span style="color:#f92672"></span>px rgba(<span style="color:#ae81ff">0</span><span style="color:#f92672"></span>,<span style="color:#ae81ff">0</span><span style="color:#f92672"></span>,<span style="color:#ae81ff">0</span><span style="color:#f92672"></span>,<span style="color:#ae81ff">0</span><span style="color:#f92672"></span><span style="color:#f92672">.</span><span style="color:#ae81ff">45</span><span style="color:#f92672"></span>);
+    $bg: <span style="color:#75715e">#f2f2f2;</span>
+    <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">1</span><span style="color:#f92672"></span>) {
+        <span style="color:#e6db74">background</span>: $bg;
+    }
+    <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">2</span><span style="color:#f92672"></span>), <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">5</span><span style="color:#f92672"></span>) {
+        <span style="color:#e6db74">background</span>: darken($bg, <span style="color:#ae81ff">4</span><span style="color:#f92672"></span><span style="color:#e6db74">%);
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">    &:nth-child(3)</span>, <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">6</span><span style="color:#f92672"></span>), <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">9</span><span style="color:#f92672"></span>) {
+        <span style="color:#e6db74">background</span>: darken($bg, <span style="color:#ae81ff">8</span><span style="color:#f92672"></span><span style="color:#e6db74">%);
+</span><span style="color:#e6db74">    }
+</span><span style="color:#e6db74">    &:nth-child(4)</span>, <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">7</span><span style="color:#f92672"></span>), <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">10</span><span style="color:#f92672"></span>), <span style="color:#f92672">&</span><span style="color:#e6db74">:nth</span><span style="color:#f92672">-</span>child(<span style="color:#ae81ff">13</span><span style="color:#f92672"></span>) {&hellip;</code></pre>
   <footer>
     <ul class="actions">
-      <li><a href="/blog/cmd/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/cmd">cmd</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/flex-grid/">Flex &amp; Grid</a></h2>
-        
-        
-            <p>CSS 笔记</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-02-12'>
-            February 12, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <p>Flexbox
-<code>display: flex;</code>
-<strong>align-items</strong>纵向对齐元素，可选以下几个值：</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/flex-grid/" class="button big">阅读更多</a></li>
+      <li><a href="/blog/box-shadow/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -439,72 +397,33 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/">Hugo的配置</a></h2>
+            <h2><a href="/blog/transformtransition/">transform &amp; transition</a></h2>
         
         
-            <p>hugo搭建博客</p>
+            <p>css笔记</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-02-10'>
-            February 10, 2020</time>
+            datetime='2020-03-10'>
+            March 10, 2020</time>
         <span class="author">么了</span>
         
-            <p>5 分钟阅读</p>
+            <p>1 分钟阅读</p>
         
 
     </div>
 </header>
 
   
-    
-
-    
-        
-        
-
-
-
-
-
-
 
   
-
-
-        
-        
-        
-
-        <a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/" class="image featured">
-            <img src="/img/2020/02//pic05.jpg" alt="">
-        </a>
-    
-
-
-  
-  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">baseurl = <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#75715e"># 网站根路径，可以写成你后期站点对应的域名</span>
-languageCode = <span style="color:#e6db74">&#34;en-us&#34;</span> <span style="color:#75715e"># 网站支持语言</span>
-title = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span> <span style="color:#75715e"># 网站标题</span>
-theme = <span style="color:#e6db74">&#34;hugo-future-imperfect&#34;</span> <span style="color:#75715e"># 网站主题</span>
-preserveTaxonomyNames = <span style="color:#66d9ef">true</span>
-paginate = <span style="color:#ae81ff">3</span> <span style="color:#75715e"># 文章超出几篇后产生分页</span>
-disqusShortname = <span style="color:#e6db74">&#34;shortname&#34;</span>
-googleAnalytics = <span style="color:#e6db74">&#34;&#34;</span>
-pluralizeListTitles = <span style="color:#66d9ef">false</span>
-<span style="color:#75715e"># Set the followings to true as part of your site SEO</span>
-enableRobotsTXT = <span style="color:#66d9ef">true</span>
-canonifyURLs = <span style="color:#66d9ef">true</span>
-
-<span style="color:#75715e"># [params] 下面的值将会构成模板里的 .Site.Params 变量</span>
-[params]
-  <span style="color:#75715e"># Sets the meta tag&hellip;</span></code></pre>
+  <p>transform 属性用于旋转、倾斜、缩放、平移</p>
   <footer>
     <ul class="actions">
-      <li><a href="/blog/hugo%E7%9A%84%E9%85%8D%E7%BD%AE/" class="button big">阅读更多</a></li>
+      <li><a href="/blog/transformtransition/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -515,7 +434,65 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/hugo">hugo</a></li>
+                <li><a class="article-category-link" href="/categories/css">css</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a></h2>
+        
+        
+            <p>Vue 笔记</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-03-10'>
+            March 10, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <p>让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
                 
             
         
@@ -678,11 +655,11 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/box-shadow/">box-shadow样式</a>
+                <a href="/blog/js-defect/">javascript的十个设计缺陷</a>
               </h3>
               
-              <time class="published" datetime='2020-03-16'>
-                March 16, 2020
+              <time class="published" datetime='2020-03-29'>
+                March 29, 2020
               </time>
             </header>
             
@@ -692,11 +669,11 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/transformtransition/">transform &amp; transition</a>
+                <a href="/blog/note-2/">vue</a>
               </h3>
               
-              <time class="published" datetime='2020-03-10'>
-                March 10, 2020
+              <time class="published" datetime='2020-03-27'>
+                March 27, 2020
               </time>
             </header>
             
@@ -706,11 +683,11 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Vue的sync修饰符</a>
+                <a href="/blog/vuex/">Vuex的总结</a>
               </h3>
               
-              <time class="published" datetime='2020-03-10'>
-                March 10, 2020
+              <time class="published" datetime='2020-03-27'>
+                March 27, 2020
               </time>
             </header>
             

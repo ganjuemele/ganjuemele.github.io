@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on 么了&#39;s 博客</title>
+    <link>/categories/markdown/</link>
+    <description>Recent content in Markdown on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Tue, 17 Mar 2020 01:02:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown代码块支持的语言</title>
+      <link>/blog/markdown/</link>
+      <pubDate>Tue, 17 Mar 2020 01:02:40 +0800</pubDate>
+      
+      <guid>/blog/markdown/</guid>
+      <description>//``` 	代码块 //``` Markdown 代码块支持不同的语言高亮；会根据语言的不同，代码的高亮现实也会不同。
+支持哪些语言    &amp;mdash; 语言 关键字 语言 关键字      Shell bash,shell C c,cpp    JSON json Perl perl,pl    C# c#,c-sharp,csharp CSS css    Java java JavaScript js,jscript,javascript    PHP php text text,plain    Python py,python Ruby ruby,ror,rb,rails    XML xml,xhtml,xslt,html F# f#,f-sharp,fsarp    SASS/SCSS sass,scss Scala scala    SQL sql Visual Basic vb,vbnet    Swift swift Go go,golang    diff&amp;amp;patch diff patch Erlang erl,erlang    Groovy groovy JavaFX jfx,javafx    ColdFusion coldfusion,cf Delphi delphi,pas,pascal    Objective C objc,obj-c &amp;ndash; xpp,dynamics-xpp    R r,s,splus matlab matlab    AppleScript applescript ActionScript3.</description>
+    </item>
+    
+  </channel>
+</rss>

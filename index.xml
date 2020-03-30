@@ -6,10 +6,142 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 16 Mar 2020 23:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 01:40:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>javascript的十个设计缺陷</title>
+      <link>/blog/js-defect/</link>
+      <pubDate>Sun, 29 Mar 2020 01:40:40 +0800</pubDate>
+      
+      <guid>/blog/js-defect/</guid>
+      <description>为什么会有设计缺陷 设计阶段过于仓促 由于javascript的设计只用了十天，而且是为了向公司交差其本人并不愿意这样设计 另外这语言的设计初衷，是为了解决一些简单的网页互动，并没有考虑复杂应用的需要。
+没有先例 Javascript同时结合了函数式编程和面向对象编程的特点，直到今天，js 仍是世界上唯一使用 Prototype继承模型的主要语言，使它没有设计先例作为参考。
+过早的标准化 Javascript的发展非常快，根本没有时间调整设计。
+95年5月，设计方案定稿；10月解释器开发成功；12月，向市场推出，立刻被广泛接受，全世界的用户大量使用。js缺乏从小到大慢慢累计用户的过程，而是连续的爆炸式增长。js的规格还没来得及调整就固化了。
+96年8月，微软强势介入推出自己的脚本语言Jscript；11月，网景公司为了压制微软决定申请js的国际标准；
+97年6月，第一个国际标准ECMA-262正式颁布。
+相比之下，C语言问世20年才颁布国际标准。
+Javascript的十个设计缺陷  不适合开发大型程序 非常小的标准库 null 和 undefined 全局变量难以控制 自动插入行尾分号 加号运算符 NAN 数组和对象的区分 == 和 === 基本类型的包装对象  如何看待Javascript Javascript其实并不算太糟，它的编程能力很强大。 如果遵守良好的编程规范，加上第三方函数库的帮助，JS的缺陷大部分可以规避。 还有JS目前是网页编程的唯一语言，许多新项目大大的扩展了它的用途，例如node.js,coffeeScript</description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>/blog/note-2/</link>
+      <pubDate>Fri, 27 Mar 2020 20:40:40 +0800</pubDate>
+      
+      <guid>/blog/note-2/</guid>
+      <description>&amp;lt;stylescopedlang=&amp;#39;scss&amp;#39;&amp;gt; .x::v-deep li { // 或者使用 /deep/ border: 1px solid red; } &amp;lt;/style&amp;gt; 往深处继续找 deep语法</description>
+    </item>
+    
+    <item>
+      <title>Vuex的总结</title>
+      <link>/blog/vuex/</link>
+      <pubDate>Fri, 27 Mar 2020 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/vuex/</guid>
+      <description>Vue.use(Vuex)
+// ~/main.ts  new Vue({ router, store, //引用进去  render: h =&amp;gt; h(App) }).$mount(&amp;#39;#app&amp;#39;); const store = new Vuex.store({ state: { count:0 ... ... }, mutations: { method1 (state){ state.count }, ... } }) 组件components中使用
+读：对象 computed获取 @Component({ components: {xxx}, computed: { tags() { return this.$store.state.count } } }) 类 js/ts export default class EditLabel extends Vue { get currentTag (){ return this.$store.state.currentTag } } 写： this.$store.commit(&amp;#39;updateTag&amp;#39;,{id:this.currentTag.id, name}); </description>
+    </item>
+    
+    <item>
+      <title>CSS 的各种选择器</title>
+      <link>/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</link>
+      <pubDate>Thu, 26 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
+      <description>组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E&amp;gt;F` 子元素选择器，用`&amp;gt;`分隔，匹配E元素的所有直接子元素 `E+F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  </description>
+    </item>
+    
+    <item>
+      <title>localStorage属性</title>
+      <link>/blog/ls%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Tue, 24 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/ls%E5%B1%9E%E6%80%A7/</guid>
+      <description>window.localStorage.setItem(&#39;_key&amp;rsquo;,&#39;_value&amp;rsquo;);
+window.localStorage.getItem(&#39;_key&amp;rsquo;)
+window.localStorage.removeItem(&#39;_key&amp;rsquo;)</description>
+    </item>
+    
+    <item>
+      <title>prompt的确定和取消事件</title>
+      <link>/blog/prompt/</link>
+      <pubDate>Sun, 22 Mar 2020 16:40:40 +0800</pubDate>
+      
+      <guid>/blog/prompt/</guid>
+      <description>prompt事件触发，未输入标签名点击取消，也会新增一个空白标签， 这是因为点击取消， name === null
+const name = window.prompt(&amp;#39;请输入标签名&amp;#39;); if (name === null){ // console.log(name,&amp;#39;null&amp;#39;) }else if (name === &amp;#39;&amp;#39;) { window.alert(&amp;#39;标签名不能为空&amp;#39;) } else (this.dataSource) { this.$emit(&amp;#39;update:dataSource&amp;#39;, [...this.dataSource, name]) } ⚠️这里要把（name===null）的情况放在较前位置进行判断
+优化下
+if (name === &amp;#39;&amp;#39;) {window.alert(&amp;#39;标签名不能为空&amp;#39;)} else if (name !== null &amp;amp;&amp;amp; this.dataSource) { this.$emit(&amp;#39;update:dataSource&amp;#39;, [...this.dataSource, name]) } </description>
+    </item>
+    
+    <item>
+      <title>数据库版本更新</title>
+      <link>/blog/localstorage-v/</link>
+      <pubDate>Fri, 20 Mar 2020 16:40:40 +0800</pubDate>
+      
+      <guid>/blog/localstorage-v/</guid>
+      <description>window.localStorage.setItem(&#39;version&#39;,&#39;1.0.0&#39;)
+初始的 Version &amp;lsquo;1.0.0&amp;rsquo;, 更改为 &amp;lsquo;2.0.0&amp;rsquo;，在 localStrage 中的数据需要新加入个 Date
+const version = window.localStorage.getItem(&amp;#39;version&amp;#39;) || &amp;#39;0&amp;#39;； const recordList: Record[] = JSON.parse(window.localStorage.getItem(&amp;#39;recordList&amp;#39;) || &amp;#39;[]&amp;#39;); if(version &amp;lt; &amp;#39;2.0.0&amp;#39;){ //数据库升级 	//遍历之前的数据给添加日期，使数据结构相同 	recordList.forEach(record =&amp;gt; { record.createdAt = new Date(0) }) //保存数据 	window.localStorage.setItem(&amp;#39;recordList&amp;#39;,JSON.stringify(recordList)) } //设置新版本号 window.localStorage.setItem(&amp;#39;version&amp;#39;,&amp;#39;2.0.0&amp;#39;) 版本更新前先获取之前的版本号
+数据迁移到新版本</description>
+    </item>
+    
+    <item>
+      <title>css的calc属性</title>
+      <link>/blog/css-calc/</link>
+      <pubDate>Wed, 18 Mar 2020 22:40:40 +0800</pubDate>
+      
+      <guid>/blog/css-calc/</guid>
+      <description>当不能确定一个页面元素的 width/height，需要计算之后才能取得值；
+calc() 计算 calc() 函数用于动态计算长度值。
+需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+calc()函数支持&#39;+&amp;rsquo;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运算
+.tags { padding: 12px 0; height: calc(100vh - 495px); overflow: auto; .current { display: flex; flex-flow: wrap; li { width: 16vw; height: 16vw; text-align: center; margin: 4px calc(10vw - 30px); } } } </description>
+    </item>
+    
+    <item>
+      <title>meta标签个各种作用</title>
+      <link>/blog/meta/</link>
+      <pubDate>Wed, 18 Mar 2020 20:40:40 +0800</pubDate>
+      
+      <guid>/blog/meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typescript</title>
+      <link>/blog/typescript/</link>
+      <pubDate>Tue, 17 Mar 2020 20:40:40 +0800</pubDate>
+      
+      <guid>/blog/typescript/</guid>
+      <description>优点  类型提示更加智能 编译时，还没运行代码就知道写错了 类型检查：无法点出错误的属性  TS 的一些语法 export default class Types extends Vue { type = &amp;#39;-&amp;#39;; selectType(type:string) { //需要给type加上类型 	if (type !== &amp;#39;-&amp;#39; &amp;amp;&amp;amp; type !== &amp;#39;+&amp;#39;) { throw new Error(&amp;#39;未知Type&amp;#39;) } this.type = type; } } </description>
+    </item>
+    
+    <item>
+      <title>写Vue组件的三种方式</title>
+      <link>/blog/vue-component/</link>
+      <pubDate>Tue, 17 Mar 2020 20:40:40 +0800</pubDate>
+      
+      <guid>/blog/vue-component/</guid>
+      <description>  使用 JS 对象 export default { data, props, methods, created, ……}
+  使用 TS 类 &amp;lt;script lang=&amp;quot;ts&amp;quot;&amp;gt; import {Component,Prop} from &#39;vue-property-decorator&#39;
+  @Compotent export default class XXX extends Vue { xxx: string = &amp;#39;hi&amp;#39;; @Prop(Number) xxx: number | undefined; } //(Number)运行时检查xxx的参数类型是否为number //编译时 `xxx: number | undefined` 中的xxx可以为number也可以是undefined  使用 JS 类 &amp;lt;script lang=&amp;quot;js&amp;quot;&amp;gt;  @Compotent export default class XXX extends Vue { xxx = &amp;#39;hi&amp;#39; } </description>
+    </item>
+    
+    <item>
+      <title>Markdown代码块支持的语言</title>
+      <link>/blog/markdown/</link>
+      <pubDate>Tue, 17 Mar 2020 01:02:40 +0800</pubDate>
+      
+      <guid>/blog/markdown/</guid>
+      <description>//``` 	代码块 //``` Markdown 代码块支持不同的语言高亮；会根据语言的不同，代码的高亮现实也会不同。
+支持哪些语言    &amp;mdash; 语言 关键字 语言 关键字      Shell bash,shell C c,cpp    JSON json Perl perl,pl    C# c#,c-sharp,csharp CSS css    Java java JavaScript js,jscript,javascript    PHP php text text,plain    Python py,python Ruby ruby,ror,rb,rails    XML xml,xhtml,xslt,html F# f#,f-sharp,fsarp    SASS/SCSS sass,scss Scala scala    SQL sql Visual Basic vb,vbnet    Swift swift Go go,golang    diff&amp;amp;patch diff patch Erlang erl,erlang    Groovy groovy JavaFX jfx,javafx    ColdFusion coldfusion,cf Delphi delphi,pas,pascal    Objective C objc,obj-c &amp;ndash; xpp,dynamics-xpp    R r,s,splus matlab matlab    AppleScript applescript ActionScript3.</description>
+    </item>
     
     <item>
       <title>box-shadow样式</title>
@@ -107,10 +239,10 @@ eventBus.on(A, ()=&amp;gt;{ v.</description>
     
     <item>
       <title>宝可梦大探险</title>
-      <link>/blog/%E6%96%B9%E5%8F%AF%E6%A2%A6/</link>
+      <link>/blog/poke/</link>
       <pubDate>Sun, 01 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/%E6%96%B9%E5%8F%AF%E6%A2%A6/</guid>
+      <guid>/blog/poke/</guid>
       <description>方可梦小秘诀  宝可梦的品质分为四种，普通，好，非常好，特殊 宝可梦在乐园里最多可以叠3层 点击图鉴可以更换查看闪光形态，遇到闪光宝可梦进化，激活图鉴信息 商店购入10个装饰物品就可以解锁纪念球，效果是每天190的礼券变为200个 签到送礼券 每天是22小时并不是24小时 探险奖励需要10次才能激活，激活后下一颗获得的P石必定为金色（拥有3种加成） 在队伍组建页面长按右边的宝可梦头像可以快速查看信息 每隔22小时你会在地图左上角免费领到一只宝可梦，当然也有可能是闪光的或者是进化的 点击名字可以给宝可梦改名  热门宝可梦料理 妙蛙种子/皮卡丘：四大黄+任意一个大方块
 杰尼龟：四大蓝+任意一个大方块
 小火龙/伊布：四大红+任意一个大方块
@@ -127,7 +259,7 @@ eventBus.on(A, ()=&amp;gt;{ v.</description>
 飞天螳螂：五大黄；蓝大黄大黄大黄大彩；三大蓝两大黄；
 袋龙：五大黄
 吸盘魔偶：五大灰；蓝黄大蓝大黄大黄
-超梦：彩虹海螺大黄各1；大红2
+超梦：彩虹海螺大黄各1大红2；
 好用的技能以及可以学会这些技能的宝可梦 除了大岩蛇，三地鼠也会落石 隆隆岩，大钳蟹也可以变硬 藤鞭：妙蛙种子（一家），口呆花，大食花都可以学会。 水炮：很多水系精灵都会，水箭龟，哥达鸭，宝石海星、毒刺水母，海刺龙，乘龙还有水伊布。 龙星群：只有快龙。 缩入壳中：呆壳兽、菊石兽，化石盔，大舌贝，水箭龟 极光幕：迷唇姐，急冻鸟还有乘龙这 健美：超梦，腕力家族还有飞腿郎可以学会。 吹捧：尼多兰、尼多朗、催眠貘</description>
     </item>
     
@@ -257,6 +389,15 @@ align-self设置其中单个元素的交叉轴位置
       <guid>/blog/toml/</guid>
       <description>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。
  TOML是大小写敏感的 # 表示注释 可以按照自己的意愿使用空格或者Tab缩进  先写一个 Hugo 博客/md文档的配置规范 +++ title = &amp;#34;标题名称&amp;#34; description = &amp;#34;&amp;#34; //副标题 draft = false //草稿 author = &amp;#34;么了&amp;#34; date = &amp;#34;2019-04-02&amp;#34; categories = [&amp;#34;笔记&amp;#34;,博客&amp;#34;&amp;#34;] // 设置分类，支持数组格式 series = [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;] slug = &amp;#34;url的尾部&amp;#34; tags = [] keywords: [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;] featured = &amp;#34;pic01.jpg&amp;#34; //外部索引图片地址用文件夹 /年份/月份/pic.jpg featuredalt = &amp;#34;Pic 1&amp;#34; featuredpath = &amp;#34;date&amp;#34; // 也可使用绝对路径 linktitle = &amp;#34;&amp;#34; publishdate // 定时未来发布的时间 type = &amp;#34;post&amp;#34; metaDataFormat = &amp;#34;toml&amp;#34; languageCode = &amp;#34;en-us&amp;#34; date = &amp;#34;2014-09-29T21:54:53-05:00&amp;#34; weight // 排序的权重，默认按时间降序 +++ Hugo 的 markdown 文件前置数据定义结构，支持三种格式的语法类型 例如： yaml --- title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- toml +++ title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true +++ json { &amp;#34;title&amp;#34;: &amp;#34;{{ replace .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/blog/typescript-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/typescript-1/</guid>
+      <description></description>
     </item>
     
   </channel>

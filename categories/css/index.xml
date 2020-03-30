@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>css on 么了&#39;s 博客</title>
+    <title>CSS on 么了&#39;s 博客</title>
     <link>/categories/css/</link>
-    <description>Recent content in css on 么了&#39;s 博客</description>
+    <description>Recent content in CSS on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 16 Mar 2020 23:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 20:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS 的各种选择器</title>
+      <link>/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</link>
+      <pubDate>Thu, 26 Mar 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
+      <description>组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E&amp;gt;F` 子元素选择器，用`&amp;gt;`分隔，匹配E元素的所有直接子元素 `E+F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  </description>
+    </item>
+    
+    <item>
+      <title>css的calc属性</title>
+      <link>/blog/css-calc/</link>
+      <pubDate>Wed, 18 Mar 2020 22:40:40 +0800</pubDate>
+      
+      <guid>/blog/css-calc/</guid>
+      <description>当不能确定一个页面元素的 width/height，需要计算之后才能取得值；
+calc() 计算 calc() 函数用于动态计算长度值。
+需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+calc()函数支持&#39;+&amp;rsquo;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运算
+.tags { padding: 12px 0; height: calc(100vh - 495px); overflow: auto; .current { display: flex; flex-flow: wrap; li { width: 16vw; height: 16vw; text-align: center; margin: 4px calc(10vw - 30px); } } } </description>
+    </item>
     
     <item>
       <title>box-shadow样式</title>

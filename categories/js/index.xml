@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>js on 么了&#39;s 博客</title>
+    <link>/categories/js/</link>
+    <description>Recent content in js on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 29 Mar 2020 01:40:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>javascript的十个设计缺陷</title>
+      <link>/blog/js-defect/</link>
+      <pubDate>Sun, 29 Mar 2020 01:40:40 +0800</pubDate>
+      
+      <guid>/blog/js-defect/</guid>
+      <description>为什么会有设计缺陷 设计阶段过于仓促 由于javascript的设计只用了十天，而且是为了向公司交差其本人并不愿意这样设计 另外这语言的设计初衷，是为了解决一些简单的网页互动，并没有考虑复杂应用的需要。
+没有先例 Javascript同时结合了函数式编程和面向对象编程的特点，直到今天，js 仍是世界上唯一使用 Prototype继承模型的主要语言，使它没有设计先例作为参考。
+过早的标准化 Javascript的发展非常快，根本没有时间调整设计。
+95年5月，设计方案定稿；10月解释器开发成功；12月，向市场推出，立刻被广泛接受，全世界的用户大量使用。js缺乏从小到大慢慢累计用户的过程，而是连续的爆炸式增长。js的规格还没来得及调整就固化了。
+96年8月，微软强势介入推出自己的脚本语言Jscript；11月，网景公司为了压制微软决定申请js的国际标准；
+97年6月，第一个国际标准ECMA-262正式颁布。
+相比之下，C语言问世20年才颁布国际标准。
+Javascript的十个设计缺陷  不适合开发大型程序 非常小的标准库 null 和 undefined 全局变量难以控制 自动插入行尾分号 加号运算符 NAN 数组和对象的区分 == 和 === 基本类型的包装对象  如何看待Javascript Javascript其实并不算太糟，它的编程能力很强大。 如果遵守良好的编程规范，加上第三方函数库的帮助，JS的缺陷大部分可以规避。 还有JS目前是网页编程的唯一语言，许多新项目大大的扩展了它的用途，例如node.js,coffeeScript</description>
+    </item>
+    
+  </channel>
+</rss>
