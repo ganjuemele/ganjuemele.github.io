@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小程序 on 么了&#39;s 博客</title>
+    <link>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    <description>Recent content in 小程序 on 么了&#39;s 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 03 May 2020 20:22:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>小程序-加载云数据库</title>
+      <link>/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Sun, 03 May 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description>const db = wx.cloud.database() db.collection(&amp;#34;数据库集合名&amp;#34;).get({ success: function (res) { console.log(res) } }) </description>
+    </item>
+    
+    <item>
+      <title>小程序-图片预览</title>
+      <link>/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</link>
+      <pubDate>Sun, 03 May 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</guid>
+      <description>wx.previewImage({ current: &amp;#39;cloud://wp-5moue.7770-wp-5moue-1302009781/wallpaper/pic1@2x.png&amp;#39;, // 当前显示图片的http链接  urls: [`cloud://wp-5moue.7770-wp-5moue-1302009781/wallpaper/pic1@2x.png`] // 需要预览的图片http链接列表  // current: &amp;#39;https://7770-wp-5moue-1302009781.tcb.qcloud.la/wallpaper/pic%402x.png&amp;#39;,  // urls: [`https://7770-wp-5moue-1302009781.tcb.qcloud.la/wallpaper/pic%402x.png`]  }) </description>
+    </item>
+    
+  </channel>
+</rss>

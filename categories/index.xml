@@ -6,31 +6,49 @@
     <description>Recent content in Categories on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 29 Mar 2020 01:40:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 20:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>小程序</title>
+      <link>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Sun, 03 May 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>js</title>
       <link>/categories/js/</link>
-      <pubDate>Sun, 29 Mar 2020 01:40:40 +0800</pubDate>
+      <pubDate>Fri, 10 Apr 2020 14:22:40 +0800</pubDate>
       
       <guid>/categories/js/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>vue,git</title>
+      <link>/categories/vuegit/</link>
+      <pubDate>Fri, 10 Apr 2020 14:22:40 +0800</pubDate>
+      
+      <guid>/categories/vuegit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>vue</title>
       <link>/categories/vue/</link>
-      <pubDate>Fri, 27 Mar 2020 20:40:40 +0800</pubDate>
+      <pubDate>Thu, 09 Apr 2020 14:22:40 +0800</pubDate>
       
       <guid>/categories/vue/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CSS</title>
+      <title>css</title>
       <link>/categories/css/</link>
       <pubDate>Thu, 26 Mar 2020 20:22:40 +0800</pubDate>
       
@@ -39,7 +57,7 @@
     </item>
     
     <item>
-      <title>Html</title>
+      <title>html</title>
       <link>/categories/html/</link>
       <pubDate>Tue, 24 Mar 2020 20:22:40 +0800</pubDate>
       

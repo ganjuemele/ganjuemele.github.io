@@ -4,32 +4,67 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-03-29T01:40:40+08:00</lastmod>
+    <lastmod>2020-05-03T20:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-03-29T01:40:40+08:00</lastmod>
+    <lastmod>2020-05-03T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-03T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2020-05-03T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2020-05-03T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</loc>
+    <lastmod>2020-05-03T20:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/git-note/</loc>
+    <lastmod>2020-04-10T14:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/js/</loc>
+    <lastmod>2020-04-10T14:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/vuegit/</loc>
+    <lastmod>2020-04-10T14:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/drag/</loc>
+    <lastmod>2020-04-10T14:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/vue/</loc>
+    <lastmod>2020-04-09T14:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/vue-note/</loc>
+    <lastmod>2020-04-09T14:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/js-defect/</loc>
     <lastmod>2020-03-29T01:40:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/js/</loc>
-    <lastmod>2020-03-29T01:40:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-03-29T01:40:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/vue/</loc>
-    <lastmod>2020-03-27T20:40:40+08:00</lastmod>
   </url>
   
   <url>
@@ -240,11 +275,6 @@
   <url>
     <loc>/blog/toml/</loc>
     <lastmod>2020-02-02T18:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/typescript-1/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

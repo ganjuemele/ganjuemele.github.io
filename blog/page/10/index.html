@@ -29,8 +29,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-29 01:40:40 \x2b0800 CST",
-        "dateModified" : "2020-03-29 01:40:40 \x2b0800 CST",
+        "datePublished": "2020-05-03 20:22:40 \x2b0800 CST",
+        "dateModified" : "2020-05-03 20:22:40 \x2b0800 CST",
         "url" : "\/blog\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -76,7 +76,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" />
-<meta property="og:updated_time" content="2020-03-29T01:40:40+08:00" />
+<meta property="og:updated_time" content="2020-05-03T20:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -266,11 +266,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/js-defect/">javascript的十个设计缺陷</a></h3>
+                                <h3><a href="/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/">小程序-加载云数据库</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-29'>
-                                    March 29, 2020</time>
+                                    '2020-05-03'>
+                                    May 3, 2020</time>
                             </header>
                             
 
@@ -278,11 +278,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/note-2/">vue</a></h3>
+                                <h3><a href="/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/">小程序-图片预览</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-27'>
-                                    March 27, 2020</time>
+                                    '2020-05-03'>
+                                    May 3, 2020</time>
                             </header>
                             
 
@@ -290,11 +290,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/vuex/">Vuex的总结</a></h3>
+                                <h3><a href="/blog/git-note/">github部署vue项目</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-03-27'>
-                                    March 27, 2020</time>
+                                    '2020-04-10'>
+                                    April 10, 2020</time>
                             </header>
                             
 
@@ -323,18 +323,18 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/toml/">toml文档格式的数据定义</a></h2>
+            <h2><a href="/blog/axios-note/">Axios笔记</a></h2>
         
         
-            <p>md文件配置规范</p>
+            <p>Axios跨域</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-02-02'>
-            February 2, 2020</time>
+            datetime='2020-02-22'>
+            February 22, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -344,39 +344,30 @@
 </header>
 
   
-    
-
-    
-        
-        
-
-
-
-
-
-
 
   
-  
-    
-  
-
-
-        
-        
-        
-
-        <a href="/blog/toml/" class="image featured">
-            <img src="/img/2020/02/pic01.jpg" alt="">
-        </a>
-    
-
-
-  
-  <p>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。</p>
+  <pre><code>this.$axios.get(’/toutiao/index’, {
+		//::这里设置域名参数::
+    params:{
+      key:’4ac7dbb103ad3977c50735edb9651431’,
+      type:’tiyu’
+},
+//请求头配置   
+    headers: {'token':token }
+  })
+.then(res =&gt; {
+  this.newsList= res.data
+console.log(this.newsList)
+})
+.catch( err=&gt; {
+  console.log(’新闻异常’)
+})
+</code></pre><hr>
+<p><strong>Axios</strong> 是一个基于 promise 的 HTTP 库
+其特性：</p>
   <footer>
     <ul class="actions">
-      <li><a href="/blog/toml/" class="button big">阅读更多</a></li>
+      <li><a href="/blog/axios-note/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -387,7 +378,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/toml">toml</a></li>
+                <li><a class="article-category-link" href="/categories/%E8%B7%A8%E5%9F%9F">跨域</a></li>
                 
             
         
@@ -404,7 +395,121 @@
 </article>
 
         
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/cmd/">cmd的操作</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-19'>
+            February 19, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <p><code>npm i -g tldr 太长不想读</code></p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/cmd/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
             
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/cmd">cmd</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/flex-grid/">Flex &amp; Grid</a></h2>
+        
+        
+            <p>CSS 笔记</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-02-12'>
+            February 12, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <p>Flexbox
+<code>display: flex;</code>
+<strong>align-items</strong>纵向对齐元素，可选以下几个值：</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/flex-grid/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/css">CSS</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
 
         
@@ -415,7 +520,8 @@
     
 
     
-        <li><a href="#" class="disabled button big next">下一页</a></li>
+        <li><a href="/blog/page/11/"
+                class="button big next">下一页</a></li>
     
 </ul>
 
@@ -551,11 +657,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/js-defect/">javascript的十个设计缺陷</a>
+                <a href="/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/">小程序-加载云数据库</a>
               </h3>
               
-              <time class="published" datetime='2020-03-29'>
-                March 29, 2020
+              <time class="published" datetime='2020-05-03'>
+                May 3, 2020
               </time>
             </header>
             
@@ -565,11 +671,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/note-2/">vue</a>
+                <a href="/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/">小程序-图片预览</a>
               </h3>
               
-              <time class="published" datetime='2020-03-27'>
-                March 27, 2020
+              <time class="published" datetime='2020-05-03'>
+                May 3, 2020
               </time>
             </header>
             
@@ -579,11 +685,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/vuex/">Vuex的总结</a>
+                <a href="/blog/git-note/">github部署vue项目</a>
               </h3>
               
-              <time class="published" datetime='2020-03-27'>
-                March 27, 2020
+              <time class="published" datetime='2020-04-10'>
+                April 10, 2020
               </time>
             </header>
             
