@@ -6,10 +6,20 @@
     <description>Recent content in 小程序 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 03 May 2020 20:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 20:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data-**的用法</title>
+      <link>/blog/wp-data-%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 05 May 2020 20:22:40 +0800</pubDate>
+      
+      <guid>/blog/wp-data-%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>&amp;lt;image src=&amp;quot;{{item.picCloudURL}}&amp;quot; class=&amp;quot;pic&amp;quot; data-picUrl=&amp;quot;{{item.picCloudURL}}&amp;quot; bindtap=&amp;quot;onPicPreview&amp;quot;/&amp;gt; data-picUrl可以用来传递参数
+当图片的点击事件触发，可以用e.currentTarget.dataset.picurl来获取传输的值</description>
+    </item>
     
     <item>
       <title>小程序-加载云数据库</title>
