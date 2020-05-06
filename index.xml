@@ -6,10 +6,22 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 05 May 2020 20:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 00:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>小程序保存图片到相册</title>
+      <link>/blog/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87/</link>
+      <pubDate>Thu, 07 May 2020 00:22:40 +0800</pubDate>
+      
+      <guid>/blog/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87/</guid>
+      <description>保存图片的到相册
+判断权限问题，使用了wx.getSetting 和 wx.authorize的scpoe 获取和设置权限；
+使用wx.downloadFile 和 wx.saveImageToPhotosAlbum 下载图片至相册；
+onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast({ icon: &amp;#39;loading&amp;#39;, title: &amp;#39;正在保存图片&amp;#39;, duration: 1200 }) //判断用户是否授权&amp;#34;保存到相册&amp;#34;  wx.getSetting({ success(res) { //没有权限，发起授权  if (!res.authSetting[&amp;#39;scope.writePhotosAlbum&amp;#39;]) { wx.authorize({ scope: &amp;#39;scope.writePhotosAlbum&amp;#39;, success() { //用户允许授权，保存图片到相册  that.setData({ picUrl: picUrl, }) that.savePhoto(); }, fail() { //用户点击拒绝授权，跳转到设置页，引导用户授权  wx.openSetting({ success() { wx.authorize({ scope: &amp;#39;scope.writePhotosAlbum&amp;#39;, success() { that.setData({ picUrl: picUrl, }) that.savePhoto(); } }) } }) } }) } else { that.</description>
+    </item>
     
     <item>
       <title>data-**的用法</title>
