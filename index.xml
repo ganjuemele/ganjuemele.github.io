@@ -6,10 +6,19 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 07 May 2020 00:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>复制到粘贴板</title>
+      <link>/blog/copy/</link>
+      <pubDate>Mon, 29 Jun 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/copy/</guid>
+      <description>&amp;lt;text class=&amp;#34;info-copy&amp;#34; onTap=&amp;#34;clickCopy&amp;#34;&amp;gt;复制&amp;lt;/text&amp;gt; data: { orderNumber: 232322333, copyNumber: &amp;#39;&amp;#39; }, clickCopy() { //复制功能 	my.setClipboard({ text: this.data.orderNumber, }); // 粘贴功能 	// my.getClipboard({ 	// success: ({ text }) =&amp;gt; { 	// this.setData({ copyNumber: text }); 	// }, 	// });  } </description>
+    </item>
     
     <item>
       <title>小程序保存图片到相册</title>
@@ -393,6 +402,21 @@ git add . git commit -v git reset —hard a2bv7r //commit的版本号值</descri
       <guid>/blog/axios-note/</guid>
       <description>Axios笔记 this.$axios.get(’/toutiao/index’, { //::这里设置域名参数:: params:{ key:’4ac7dbb103ad3977c50735edb9651431’, type:’tiyu’ }, //请求头配置 headers: {&#39;token&#39;:token } }) .then(res =&amp;gt; { this.newsList= res.data console.log(this.newsList) }) .catch( err=&amp;gt; { console.log(’新闻异常’) })  Axios 是一个基于 promise 的 HTTP 库 其特性：
  可以在浏览器中发送 XMLHttpRequests 可以在 node.js 中发送 http 请求 支持 Promise API 拦截请求和响应 能取消请求 转换请求数据和相应数据 自动转换 Json 数据 客户端支持保护安全免受 XSRF 攻击  </description>
+    </item>
+    
+    <item>
+      <title>SEO的站内优化</title>
+      <link>/blog/seo/</link>
+      <pubDate>Sat, 22 Feb 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/seo/</guid>
+      <description>网站结构优化的要素：  物理链接结构 清晰的导航 分配好子域名和目录 禁止收录机制 nofollow 使用 URL 静态化 URL 设计 404 页面 网站地图 sitemap 内部链接及权重分配 复制内容 网址规范化  物理及链接结构 物理结构是指网站真实目录和文件所在的位置决定的结构。通常有扁平式和树形结构； 扁平式适合页面数量少的网站，更多的是采用树形结构。
+链接结构是指网站内部页面的链接所形成的。可以理解为复杂的树形结构。
+对于搜索引擎来说，链接结构会比物理结构来的更有意义。与首页点击距离越近的页面被爬去的概率更大，权重越高。这里的点击距离就是链接结构的距离
+设置合理的网站链接结构有利于页面的权重分配。
+清晰的导航 是网站设计的重要目标。混乱的导航会降低被爬的概率。
+ 文字导航 尽量使用HTML静态文字作为导航，不要使用JS生成的动态导航，这样爬取的阻力最小。导航系统链接是整个网站收录最重要的内部链接。 点击距离扁平化 导航的目标就是让所有页面与首页点击距离越短越好，其中的页面最好不要超过4-5次点击深度。要在结构上做到扁平化。 锚文字包含关键词 导航的关键词尽量使用目标关键词 面包屑导航 中大型网站面包屑是必不可少的，它是帮助用户和搜索引擎建立页面在网站整个结构中最好的方法。 避免页脚堆积 页脚堆积关键词的做法不受搜索引擎欢迎了，尽量避免。  子域名和目录 搜索引擎通常会把子域名当成独立的站点。而目录就是该域名名下的一部分。比如http://api.abc.com 只是 http://www.abc.com 的一个子域名。 http://www.abc.com/tags 就是一个目录。 因此对主域名所做的优化，对于子域名的网站而言，同样需要再做一遍。一般的网站和博客不需要子域名。只有大型的网站才会需要。
+robots 文件 该文件是搜索引擎爬行网站第一个访问的，用于告诉搜索引擎那些内容可以爬取，哪些内容禁止爬取。如果没有写规则或者没有 robots 文件的话，就是默认全部没有都可以爬取。 但是由于有的网站服务器设置问题，如果不存在 robots.txt 文件的时候，会返回 200 状态码及一些错误信息。可能会导致 spider 错误解读信息。所以建议，至少也要放一个空的 robots.txt 文件在网站根目录下。 robots 的格式如下： User-agent: * Disallow: / 复制代码上面的文件代表禁止所有搜索引擎爬取所有内容。User-agent: * 表示运行所有的搜索引擎。我们知道，不同的搜索引擎的 spider 名称也不同。在 User-agent 上你也可以设置名称，只允许特定的搜索引擎爬取。如 User-agent: Googlebot Disallow 不添加任何路径就表示运行爬取任何内容。需要注意的是：如果要 Disallow 多个文件夹或者文件，需要写成多行。每一行 Disallow 只能写一个。 meta robots 标签 通过 也可以设置禁止搜索引擎索引本页的内容，禁止跟踪本页的链接。其中 content 的参数有：</description>
     </item>
     
     <item>

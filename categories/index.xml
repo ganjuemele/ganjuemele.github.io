@@ -6,7 +6,7 @@
     <description>Recent content in Categories on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 07 May 2020 00:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>小程序</title>
       <link>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
-      <pubDate>Thu, 07 May 2020 00:22:40 +0800</pubDate>
+      <pubDate>Mon, 29 Jun 2020 18:22:40 +0800</pubDate>
       
       <guid>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
       <description></description>
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>CSS</title>
+      <title>css</title>
       <link>/categories/css/</link>
       <pubDate>Thu, 26 Mar 2020 20:22:40 +0800</pubDate>
       
@@ -143,6 +143,15 @@
       <pubDate>Mon, 24 Feb 2020 10:22:40 +0800</pubDate>
       
       <guid>/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SEO</title>
+      <link>/categories/seo/</link>
+      <pubDate>Sat, 22 Feb 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/categories/seo/</guid>
       <description></description>
     </item>
     
