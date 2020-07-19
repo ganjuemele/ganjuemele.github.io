@@ -6,10 +6,20 @@
     <description>Recent content in 小程序 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 29 Jun 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>组件中props的使用</title>
+      <link>/blog/my-component-1/</link>
+      <pubDate>Sat, 18 Jul 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/my-component-1/</guid>
+      <description>//index.axml &amp;lt;my-component ruleList= &amp;#34;{{ruleList}}&amp;#34;/&amp;gt; //这里给组件传一个ruleList ⚠对象和数组只能stringify后传值️
+//component.js 	Component({ mixins: [], data: { ruleList: [] }, props: { ruleList: &amp;#39;&amp;#39;, //接收传入的ruleList 	}, didUpdate() { this.setData({ ruleList: JSON.parse(this.props.ruleList) }); } }); //component.axml &amp;lt;view&amp;gt; {{ruleList[0].属性}} &amp;lt;/view&amp;gt; //在页面中就能调用ruleLIst的参数，并渲染 </description>
+    </item>
     
     <item>
       <title>复制到粘贴板</title>

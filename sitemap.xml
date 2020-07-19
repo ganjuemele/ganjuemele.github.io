@@ -4,26 +4,31 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-06-29T18:22:40+08:00</lastmod>
+    <lastmod>2020-07-18T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-06-29T18:22:40+08:00</lastmod>
+    <lastmod>2020-07-18T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-29T18:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/copy/</loc>
-    <lastmod>2020-06-29T18:22:40+08:00</lastmod>
+    <lastmod>2020-07-18T18:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2020-07-18T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/my-component-1/</loc>
+    <lastmod>2020-07-18T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/copy/</loc>
     <lastmod>2020-06-29T18:22:40+08:00</lastmod>
   </url>
   
