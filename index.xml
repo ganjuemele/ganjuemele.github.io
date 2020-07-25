@@ -6,10 +6,19 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 20 Jul 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>支付宝小程序中slot的使用</title>
+      <link>/blog/slot/</link>
+      <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/slot/</guid>
+      <description>&amp;lt;!--/components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;view&amp;gt;other&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; // /pages/index/index.json { &amp;#34;usingComponents&amp;#34;: { &amp;#34;my-component&amp;#34;: &amp;#34;/components/index/index&amp;#34; } } &amp;lt;!--/pages/index/index.axml --&amp;gt; &amp;lt;my-component /&amp;gt; 输出 default slot &amp;amp; default value other  &amp;lt;!--/components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;slot name=&amp;#34;header&amp;#34;/&amp;gt; &amp;lt;view&amp;gt;body&amp;lt;/view&amp;gt; &amp;lt;slot name=&amp;#34;footer&amp;#34;/&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;!--/pages/index/index.axml --&amp;gt; &amp;lt;my-component&amp;gt; &amp;lt;view slot=&amp;#34;header&amp;#34;&amp;gt;header&amp;lt;/view&amp;gt; &amp;lt;view slot=&amp;#34;footer&amp;#34;&amp;gt;footer&amp;lt;/view&amp;gt; &amp;lt;/my-component&amp;gt; 输出 default slot &amp;amp; default value header body footer </description>
+    </item>
     
     <item>
       <title>模版字符串的使用</title>
