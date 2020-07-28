@@ -6,10 +6,22 @@
     <description>Recent content in js on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 10 Apr 2020 14:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>页面跳转并传参</title>
+      <link>/blog/jumpwithparam/</link>
+      <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/jumpwithparam/</guid>
+      <description>页面跳转并传参 不能传列表
+入参url 跳转链接
+入参JSON Object 自动转换 key:value value只能为字符串
+var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(/&amp;#34;/g,&amp;#39;&amp;#39;); let jsonList = jsonStr.split(&amp;#39;,&amp;#39;); for(let i=0;i&amp;lt;jsonList.length;i++){ if(i!==0){ url=url+&amp;#39;&amp;amp;&amp;#39;; } else{ url=url+&amp;#39;?&amp;#39;; } let KVpair = jsonList[i].split(&amp;#39;:&amp;#39;); url = url + KVpair[0]+&amp;#39;=&amp;#39;+KVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; </description>
+    </item>
     
     <item>
       <title>鼠标拖动实现</title>

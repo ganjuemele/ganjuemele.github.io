@@ -1,13 +1,3 @@
-
-
-
-    
-        
-    
-
-
-
-
 <!DOCTYPE HTML>
 
 <html>
@@ -20,10 +10,10 @@
              "@type": "WebPage",
              "@id": "\/"
         },
-        "articleSection" : "categories",
-        "name" : "HTTP",
-        "headline" : "HTTP",
-        "description" : "",
+        "articleSection" : "blog",
+        "name" : "页面跳转并传参",
+        "headline" : "页面跳转并传参",
+        "description" : "页面跳转并传参 不能传列表\n入参url 跳转链接\n入参JSON Object 自动转换 key:value value只能为字符串\nvar jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(\/\x26#34;\/g,\x26#39;\x26#39;); let jsonList = jsonStr.split(\x26#39;,\x26#39;); for(let i=0;i\x26lt;jsonList.length;i\x2b\x2b){ if(i!==0){ url=url\x2b\x26#39;\x26amp;\x26#39;; } else{ url=url\x2b\x26#39;?\x26#39;; } let KVpair = jsonList[i].split(\x26#39;:\x26#39;); url = url \x2b KVpair[0]\x2b\x26#39;=\x26#39;\x2bKVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; ",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -31,15 +21,17 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-02-25 13:13:40 \x2b0800 CST",
-        "dateModified" : "2020-02-25 13:13:40 \x2b0800 CST",
-        "url" : "\/categories\/http\/",
-        "wordCount" : "0",
+        "datePublished": "2020-07-25 18:22:40 \x2b0800 CST",
+        "dateModified" : "2020-07-25 18:22:40 \x2b0800 CST",
+        "url" : "\/blog\/jumpwithparam\/",
+        "wordCount" : "49",
         "keywords" : [ "Blog" ]
     }
     </script>
         
-            <title>HTTP Posts - 么了&#39;s 博客</title>
+            
+                <title>页面跳转并传参</title>
+            
         
 
         <meta charset="utf-8" />
@@ -64,6 +56,8 @@
 
 
         
+            <meta name="author" content="么了">
+        
         
             
                 <meta name="description" content="么记">
@@ -71,21 +65,38 @@
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="HTTP"/>
-<meta name="twitter:description" content="么记"/>
+<meta name="twitter:title" content="页面跳转并传参"/>
+<meta name="twitter:description" content="页面跳转并传参 不能传列表
+入参url 跳转链接
+入参JSON Object 自动转换 key:value value只能为字符串
+var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(/&#34;/g,&#39;&#39;); let jsonList = jsonStr.split(&#39;,&#39;); for(let i=0;i&lt;jsonList.length;i&#43;&#43;){ if(i!==0){ url=url&#43;&#39;&amp;&#39;; } else{ url=url&#43;&#39;?&#39;; } let KVpair = jsonList[i].split(&#39;:&#39;); url = url &#43; KVpair[0]&#43;&#39;=&#39;&#43;KVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; "/>
 
-        <meta property="og:title" content="HTTP" />
-<meta property="og:description" content="么记" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/categories/http/" />
-<meta property="og:updated_time" content="2020-02-25T13:13:40+08:00" />
+        <meta property="og:title" content="页面跳转并传参" />
+<meta property="og:description" content="页面跳转并传参 不能传列表
+入参url 跳转链接
+入参JSON Object 自动转换 key:value value只能为字符串
+var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(/&#34;/g,&#39;&#39;); let jsonList = jsonStr.split(&#39;,&#39;); for(let i=0;i&lt;jsonList.length;i&#43;&#43;){ if(i!==0){ url=url&#43;&#39;&amp;&#39;; } else{ url=url&#43;&#39;?&#39;; } let KVpair = jsonList[i].split(&#39;:&#39;); url = url &#43; KVpair[0]&#43;&#39;=&#39;&#43;KVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/jumpwithparam/" />
+<meta property="article:published_time" content="2020-07-25T18:22:40+08:00" />
+<meta property="article:modified_time" content="2020-07-25T18:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta itemprop="name" content="HTTP">
-<meta itemprop="description" content="么记">
+        <meta itemprop="name" content="页面跳转并传参">
+<meta itemprop="description" content="页面跳转并传参 不能传列表
+入参url 跳转链接
+入参JSON Object 自动转换 key:value value只能为字符串
+var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(/&#34;/g,&#39;&#39;); let jsonList = jsonStr.split(&#39;,&#39;); for(let i=0;i&lt;jsonList.length;i&#43;&#43;){ if(i!==0){ url=url&#43;&#39;&amp;&#39;; } else{ url=url&#43;&#39;?&#39;; } let KVpair = jsonList[i].split(&#39;:&#39;); url = url &#43; KVpair[0]&#43;&#39;=&#39;&#43;KVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; ">
+<meta itemprop="datePublished" content="2020-07-25T18:22:40&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-25T18:22:40&#43;08:00" />
+<meta itemprop="wordCount" content="49">
+
+
+
+<meta itemprop="keywords" content="" />
         
 
         
@@ -124,9 +135,10 @@
       <div id="wrapper">
 
     
+    
 <header id="header">
     
-      <h1><a href="/">categories</a></h1>
+      <h1><a href="/">blog</a></h1>
     
 
     <nav class="links">
@@ -172,6 +184,10 @@
     </nav>
     <nav class="main">
         <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
             
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
@@ -317,27 +333,90 @@
         
 </section>
 
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fjumpwithparam%2f&amp;text=%e9%a1%b5%e9%9d%a2%e8%b7%b3%e8%bd%ac%e5%b9%b6%e4%bc%a0%e5%8f%82&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fjumpwithparam%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fjumpwithparam%2f&amp;title=%e9%a1%b5%e9%9d%a2%e8%b7%b3%e8%bd%ac%e5%b9%b6%e4%bc%a0%e5%8f%82" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fjumpwithparam%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
     
     <div id="main">
-        <h1>HTTP</h1>
         
         
-            <article class="post">
+        <article class="post">
   <header>
     <div class="title">
         
-            <h2><a href="/blog/http/">Http和Https</a></h2>
+            <h1><a href="/blog/jumpwithparam/">页面跳转并传参</a></h1>
+            
         
-        
-            <p>HTTP 笔记</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-02-25'>
-            February 25, 2020</time>
+            datetime='2020-07-25'>
+            July 25, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -346,23 +425,98 @@
     </div>
 </header>
 
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fjumpwithparam%2f&amp;text=%e9%a1%b5%e9%9d%a2%e8%b7%b3%e8%bd%ac%e5%b9%b6%e4%bc%a0%e5%8f%82&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fjumpwithparam%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fjumpwithparam%2f&amp;title=%e9%a1%b5%e9%9d%a2%e8%b7%b3%e8%bd%ac%e5%b9%b6%e4%bc%a0%e5%8f%82" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fjumpwithparam%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
   
 
   
-  <pre><code>HTTP协议（HyperText Transfer Protocol超文本传输协议）是因特网上应用最广泛的一种网络协议，所有www文件都必须遵守这个标准。
-HTTP是一个基于TCP/IP通信协议来传递数据。
-</code></pre>
-<h3 id="http">HTTP工作原理</h3>
-<pre><code>HTTP协议工作于客户端—服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端（web服务器）发送所有请求。
-web服务器根据接受的请求，向客户端发送响应信息。
-HTTP默认端口：80，也可以改为8080或者其他端口。
-</code></pre>
-<p>⚠️<strong>注意事项：</strong></p>
+
+  <div id="content">
+    <p>页面跳转并传参 不能传列表</p>
+<p>入参url  跳转链接</p>
+<p>入参JSON Object  自动转换 key:value  value只能为字符串</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">jumpWithParam</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">obj</span>){
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">jsonStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">obj</span>);
+    <span style="color:#a6e22e">jsonStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jsonStr</span>.<span style="color:#a6e22e">substr</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">jsonStr</span>.<span style="color:#a6e22e">length</span><span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>).<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">/&#34;/g</span>,<span style="color:#e6db74">&#39;&#39;</span>);
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">jsonList</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jsonStr</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;,&#39;</span>);
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;<span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">jsonList</span>.<span style="color:#a6e22e">length</span>;<span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">i</span><span style="color:#f92672">!==</span><span style="color:#ae81ff">0</span>){
+            <span style="color:#a6e22e">url</span><span style="color:#f92672">=</span><span style="color:#a6e22e">url</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;&amp;&#39;</span>;
+        } <span style="color:#66d9ef">else</span>{
+            <span style="color:#a6e22e">url</span><span style="color:#f92672">=</span><span style="color:#a6e22e">url</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;?&#39;</span>;
+        }
+        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">KVpair</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jsonList</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;:&#39;</span>);
+        <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">KVpair</span>[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;=&#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">KVpair</span>[<span style="color:#ae81ff">1</span>];
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">url</span>);
+    <span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">navigateTo</span>({
+      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">url</span>
+    });
+};
+</code></pre></div>
+  </div>
+
   <footer>
-    <ul class="actions">
-      <li><a href="/blog/http/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
+    <ul class="stats">
   <li class="categories">
     <ul>
         
@@ -371,7 +525,10 @@ HTTP默认端口：80，也可以改为8080或者其他端口。
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/http">HTTP</a></li>
+                <li><a class="article-category-link" href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F">小程序</a></li>
+                
+                
+                <li><a class="article-category-link" href="/categories/js">js</a></li>
                 
             
         
@@ -385,21 +542,60 @@ HTTP默认端口：80，也可以改为8080或者其他端口。
 </ul>
 
   </footer>
+
 </article>
 
-        
 
-        
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
 <ul class="actions pagination">
     
-        <li><a href="#" class="disabled button big previous">上一页</a></li>
+        <li><a href="/blog/template-string/"
+                class="button big previous">模版字符串的使用</a></li>
     
 
     
-        <li><a href="#" class="disabled button big next">下一页</a></li>
+        <li><a href="/blog/slot/"
+                class="button big next">支付宝小程序中slot的使用</a></li>
     
 </ul>
 
+
+
+<article class="post">
+  
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+</article>
     </div>
     
 <section id="sidebar">
@@ -602,7 +798,7 @@ HTTP默认端口：80，也可以改为8080或者其他端口。
       <ul class="icons">
         
           
-    <li><a href="/categories/http/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
 
 
         

@@ -28,7 +28,17 @@
   </url>
   
   <url>
+    <loc>/categories/js/</loc>
+    <lastmod>2020-07-25T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/slot/</loc>
+    <lastmod>2020-07-25T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/jumpwithparam/</loc>
     <lastmod>2020-07-25T18:22:40+08:00</lastmod>
   </url>
   
@@ -74,11 +84,6 @@
   
   <url>
     <loc>/blog/git-note/</loc>
-    <lastmod>2020-04-10T14:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/js/</loc>
     <lastmod>2020-04-10T14:22:40+08:00</lastmod>
   </url>
   
