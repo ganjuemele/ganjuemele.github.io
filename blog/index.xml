@@ -19,7 +19,7 @@
       <guid>/blog/qrcodebarcode/</guid>
       <description>&amp;lt;canvas class=&amp;#34;barcode&amp;#34; id=&amp;#34;barcode&amp;#34;/&amp;gt; &amp;lt;canvas class=&amp;#34;qrcode&amp;#34; id=&amp;#34;qrcode&amp;#34;/&amp;gt; npm install wxbarcode
 从wxbarcode中拿出demo/utils文件夹。 把文件内的wx换成my就能使用。
-import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp;#39;barcode&amp;#39;, that.data.orderNo, 658, 140); mybarcode.qrcode(&amp;#39;qrcode&amp;#39;, that.data.orderNo, 440, 440); </description>
+import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp;#39;barcode&amp;#39;, that.data.orderNo, 658, 140); mybarcode.qrcode(&amp;#39;qrcode&amp;#39;, that.data.orderNo, 440, 440); (编码格式, 编译的内容, width, height)</description>
     </item>
     
     <item>
@@ -119,6 +119,15 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
       
       <guid>/blog/git-note/</guid>
       <description>git run build git branch P-pages //创建gh-pages分支 git checkout P-pages //切换到gh-pages分支 git add -f dist //强制把dist文件夹提交到github $ git subtree push --prefix dist origin P-pages //把dist文件夹单独部署到P-pages分支 这样就把dist目录和项目文件分开了</description>
+    </item>
+    
+    <item>
+      <title>鼠标拖动实现</title>
+      <link>/blog/drag/</link>
+      <pubDate>Fri, 10 Apr 2020 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/drag/</guid>
+      <description>/html &amp;lt;div id=&amp;#34;xxx&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; /javascript let dragging = false; let position = null; xxx.addEventListener(&amp;#39;mousedown&amp;#39;,function(e){ dragging = true position = [e.clientX, e.clientY] }) document.addEventListener(&amp;#39;mousemove&amp;#39;, function(e){ if(dragging === false){return} console.log(&amp;#39;hi&amp;#39;) const x = e.clientX const y = e.clientY const deltaX = x - position[0] const deltaY = y - position[1] const left = parseInt(xxx.style.left || 0) const top = parseInt(xxx.style.top || 0) xxx.style.left = left + deltaX + &amp;#39;px&amp;#39; xxx.style.top = top + deltaY + &amp;#39;px&amp;#39; position = [x, y] }) document.</description>
     </item>
     
     <item>

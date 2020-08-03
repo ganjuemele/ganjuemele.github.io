@@ -19,7 +19,7 @@
       <guid>/blog/qrcodebarcode/</guid>
       <description>&amp;lt;canvas class=&amp;#34;barcode&amp;#34; id=&amp;#34;barcode&amp;#34;/&amp;gt; &amp;lt;canvas class=&amp;#34;qrcode&amp;#34; id=&amp;#34;qrcode&amp;#34;/&amp;gt; npm install wxbarcode
 从wxbarcode中拿出demo/utils文件夹。 把文件内的wx换成my就能使用。
-import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp;#39;barcode&amp;#39;, that.data.orderNo, 658, 140); mybarcode.qrcode(&amp;#39;qrcode&amp;#39;, that.data.orderNo, 440, 440); </description>
+import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp;#39;barcode&amp;#39;, that.data.orderNo, 658, 140); mybarcode.qrcode(&amp;#39;qrcode&amp;#39;, that.data.orderNo, 440, 440); (编码格式, 编译的内容, width, height)</description>
     </item>
     
     <item>
