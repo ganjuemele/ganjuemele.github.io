@@ -6,10 +6,19 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 26 Jul 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>运行脚本</title>
+      <link>/blog/run-script/</link>
+      <pubDate>Thu, 13 Aug 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/run-script/</guid>
+      <description>// gp.bat cd public git add . git commit -m &#39;hugo&#39; git push origin master cd .. 打开终端进入文件夹，直接 ./gp.bat 回车. 一键 hugo转译 直接 push上传</description>
+    </item>
     
     <item>
       <title>小程序中生成条形码和二维码</title>
