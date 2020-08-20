@@ -17,7 +17,7 @@
       <pubDate>Thu, 13 Aug 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/run-script/</guid>
-      <description>// gp.bat cd public git add . git commit -m &#39;hugo&#39; git push origin master cd .. 打开终端进入文件夹，直接 ./gp.bat 回车. 一键 hugo转译 直接 push上传</description>
+      <description>// gp.bat  hugo cd public git add . git commit -m &amp;#39;hugo&amp;#39; git push origin master cd .. 打开终端进入文件夹，直接 ./gp.bat 回车. 一键 hugo转译 直接 push上传</description>
     </item>
     
     <item>

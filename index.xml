@@ -6,10 +6,21 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 13 Aug 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 18:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/blog/note-3/</link>
+      <pubDate>Sat, 15 Aug 2020 18:22:40 +0800</pubDate>
+      
+      <guid>/blog/note-3/</guid>
+      <description>支付宝小程序开发工具 v1.12.15中
+0 &amp;lt; t &amp;lt; 10 这种写法在支付宝小程序中连写不会识别
+需要写成0&amp;lt; t &amp;amp;&amp;amp; t&amp;lt; 10</description>
+    </item>
     
     <item>
       <title>运行脚本</title>
@@ -17,7 +28,7 @@
       <pubDate>Thu, 13 Aug 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/run-script/</guid>
-      <description>// gp.bat cd public git add . git commit -m &#39;hugo&#39; git push origin master cd .. 打开终端进入文件夹，直接 ./gp.bat 回车. 一键 hugo转译 直接 push上传</description>
+      <description>// gp.bat  hugo cd public git add . git commit -m &amp;#39;hugo&amp;#39; git push origin master cd .. 打开终端进入文件夹，直接 ./gp.bat 回车. 一键 hugo转译 直接 push上传</description>
     </item>
     
     <item>
