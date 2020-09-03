@@ -6,10 +6,19 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 15 Aug 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2020 14:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>小程序调用高德地图</title>
+      <link>/blog/amap/</link>
+      <pubDate>Wed, 02 Sep 2020 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/amap/</guid>
+      <description>调用高德地图小程序 function AMapWX(a) { this.key = a.key; this.requestConfig = { key: a.key, s: &amp;#39;rsx&amp;#39;, platform: &amp;#39;WXJS&amp;#39;, appname: a.key, sdkversion: &amp;#39;1.2.0&amp;#39;, logversion: &amp;#39;2.0&amp;#39; }; } AMapWX.prototype.getWxLocation = function (a, b) { my.getLocation({ type: &amp;#39;gcj02&amp;#39;, success: function (a) { var c = a.longitude + &amp;#39;,&amp;#39; + a.latitude; my.setStorage({key: &amp;#39;userLocation&amp;#39;, data: c}), b(c); }, fail: function (c) { my.getStorage({ key: &amp;#39;userLocation&amp;#39;, success: function (a) { a.data &amp;amp;&amp;amp; b(a.data); } }), a.fail({errCode: &amp;#39;0&amp;#39;, errMsg: c.</description>
+    </item>
     
     <item>
       <title></title>
