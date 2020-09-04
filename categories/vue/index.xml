@@ -6,10 +6,33 @@
     <description>Recent content in vue on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 20 Jul 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2020 10:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>App加载状态的几种类型</title>
+      <link>/blog/note-4/</link>
+      <pubDate>Fri, 04 Sep 2020 10:22:40 +0800</pubDate>
+      
+      <guid>/blog/note-4/</guid>
+      <description>全页面加载 优点：适用于各个场景
+缺点：时间不确定性，加载过慢容易丢失用户
+例：常见的菊花图，和各种有意思的动画gif图
+占位色块 优点：适合固定布局的页面，体验比全页面流畅
+缺点：不适用于 布局多变的页面
+分部加载 优点：先加载页面框架和文字信息，在网速较慢时，能提前预览即将出现的内容
+缺点：只加载了部分内容的页面会影响整体的美观度，也会影响用户对页面内容的理解
+懒加载 优点：只加载用户看的到的内容，页面加载速度快，服务器压力小，节省流量，体验好
+缺点：网络状态不佳时，会出现体验不流畅，加载延迟等状况
+预加载 优点：预先加载即将出现的内容，用户可以顺畅的交互，享受极快的加载速度
+缺点：服务器压力增加，流量耗费增加
+进度条加载 优点：反馈明确，易懂
+缺点：页面无内容，美观度差
+混合加载 优点：根据场景不同来设计，体验升级
+缺点：需要对各个场景制定相应的规范，保证交互一致性</description>
+    </item>
     
     <item>
       <title>模版字符串的使用</title>

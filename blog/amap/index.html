@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "小程序调用高德地图",
         "headline" : "小程序调用高德地图",
-        "description" : "调用高德地图小程序 function AMapWX(a) { this.key = a.key; this.requestConfig = { key: a.key, s: \x26#39;rsx\x26#39;, platform: \x26#39;WXJS\x26#39;, appname: a.key, sdkversion: \x26#39;1.2.0\x26#39;, logversion: \x26#39;2.0\x26#39; }; } AMapWX.prototype.getWxLocation = function (a, b) { my.getLocation({ type: \x26#39;gcj02\x26#39;, success: function (a) { var c = a.longitude \x2b \x26#39;,\x26#39; \x2b a.latitude; my.setStorage({key: \x26#39;userLocation\x26#39;, data: c}), b(c); }, fail: function (c) { my.getStorage({ key: \x26#39;userLocation\x26#39;, success: function (a) { a.data \x26amp;\x26amp; b(a.data); } }), a.fail({errCode: \x26#39;0\x26#39;, errMsg: c.",
+        "description" : "在地图上显示驾车路线图",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -59,17 +59,15 @@
             <meta name="author" content="么了">
         
         
-            
-                <meta name="description" content="么记">
-            
+            <meta name="description" content="在地图上显示驾车路线图">
         
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="小程序调用高德地图"/>
-<meta name="twitter:description" content="调用高德地图小程序 function AMapWX(a) { this.key = a.key; this.requestConfig = { key: a.key, s: &#39;rsx&#39;, platform: &#39;WXJS&#39;, appname: a.key, sdkversion: &#39;1.2.0&#39;, logversion: &#39;2.0&#39; }; } AMapWX.prototype.getWxLocation = function (a, b) { my.getLocation({ type: &#39;gcj02&#39;, success: function (a) { var c = a.longitude &#43; &#39;,&#39; &#43; a.latitude; my.setStorage({key: &#39;userLocation&#39;, data: c}), b(c); }, fail: function (c) { my.getStorage({ key: &#39;userLocation&#39;, success: function (a) { a.data &amp;&amp; b(a.data); } }), a.fail({errCode: &#39;0&#39;, errMsg: c."/>
+<meta name="twitter:description" content="在地图上显示驾车路线图"/>
 
         <meta property="og:title" content="小程序调用高德地图" />
-<meta property="og:description" content="调用高德地图小程序 function AMapWX(a) { this.key = a.key; this.requestConfig = { key: a.key, s: &#39;rsx&#39;, platform: &#39;WXJS&#39;, appname: a.key, sdkversion: &#39;1.2.0&#39;, logversion: &#39;2.0&#39; }; } AMapWX.prototype.getWxLocation = function (a, b) { my.getLocation({ type: &#39;gcj02&#39;, success: function (a) { var c = a.longitude &#43; &#39;,&#39; &#43; a.latitude; my.setStorage({key: &#39;userLocation&#39;, data: c}), b(c); }, fail: function (c) { my.getStorage({ key: &#39;userLocation&#39;, success: function (a) { a.data &amp;&amp; b(a.data); } }), a.fail({errCode: &#39;0&#39;, errMsg: c." />
+<meta property="og:description" content="在地图上显示驾车路线图" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/amap/" />
 <meta property="article:published_time" content="2020-09-02T14:22:40+08:00" />
@@ -80,7 +78,7 @@
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="小程序调用高德地图">
-<meta itemprop="description" content="调用高德地图小程序 function AMapWX(a) { this.key = a.key; this.requestConfig = { key: a.key, s: &#39;rsx&#39;, platform: &#39;WXJS&#39;, appname: a.key, sdkversion: &#39;1.2.0&#39;, logversion: &#39;2.0&#39; }; } AMapWX.prototype.getWxLocation = function (a, b) { my.getLocation({ type: &#39;gcj02&#39;, success: function (a) { var c = a.longitude &#43; &#39;,&#39; &#43; a.latitude; my.setStorage({key: &#39;userLocation&#39;, data: c}), b(c); }, fail: function (c) { my.getStorage({ key: &#39;userLocation&#39;, success: function (a) { a.data &amp;&amp; b(a.data); } }), a.fail({errCode: &#39;0&#39;, errMsg: c.">
+<meta itemprop="description" content="在地图上显示驾车路线图">
 <meta itemprop="datePublished" content="2020-09-02T14:22:40&#43;08:00" />
 <meta itemprop="dateModified" content="2020-09-02T14:22:40&#43;08:00" />
 <meta itemprop="wordCount" content="717">
@@ -275,6 +273,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/note-4/">App加载状态的几种类型</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-09-04'>
+                                    September 4, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/amap/">小程序调用高德地图</a></h3>
                                 
                                 <time class="published" datetime=
@@ -292,18 +302,6 @@
                                 <time class="published" datetime=
                                     '2020-08-15'>
                                     August 15, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/run-script/">运行脚本</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-08-13'>
-                                    August 13, 2020</time>
                             </header>
                             
 
@@ -401,6 +399,8 @@
             
         
         
+            <p>在地图上显示驾车路线图</p>
+        
     </div>
     <div class="meta">
         
@@ -482,7 +482,7 @@
   
 
   <div id="content">
-    <h2 id="heading">调用高德地图小程序</h2>
+    <h2 id="heading">小程序调用高德地图接口</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">AMapWX</span>(<span style="color:#a6e22e">a</span>) {
     <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">key</span>;
     <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">requestConfig</span> <span style="color:#f92672">=</span> {
@@ -735,6 +735,9 @@
     
 
     
+        <li><a href="/blog/note-4/"
+                class="button big next">App加载状态的几种类型</a></li>
+    
 </ul>
 
 
@@ -891,6 +894,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/note-4/">App加载状态的几种类型</a>
+              </h3>
+              
+              <time class="published" datetime='2020-09-04'>
+                September 4, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/amap/">小程序调用高德地图</a>
               </h3>
               
@@ -910,20 +927,6 @@
               
               <time class="published" datetime='2020-08-15'>
                 August 15, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/run-script/">运行脚本</a>
-              </h3>
-              
-              <time class="published" datetime='2020-08-13'>
-                August 13, 2020
               </time>
             </header>
             
