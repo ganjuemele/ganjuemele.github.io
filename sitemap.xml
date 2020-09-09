@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-09-08T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-09-08T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/js/</loc>
+    <lastmod>2020-09-08T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/promise-note/</loc>
+    <lastmod>2020-09-08T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-08T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/note-5/</loc>
+    <lastmod>2020-09-07T18:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/note-4/</loc>
     <lastmod>2020-09-04T10:22:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-09-04T10:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-09-04T10:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/vue/</loc>
-    <lastmod>2020-09-04T10:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-09-04T10:22:40+08:00</lastmod>
   </url>
   
@@ -65,11 +80,6 @@
   <url>
     <loc>/blog/qrcodebarcode/</loc>
     <lastmod>2020-07-26T18:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/js/</loc>
-    <lastmod>2020-07-25T18:22:40+08:00</lastmod>
   </url>
   
   <url>
