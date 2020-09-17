@@ -6,10 +6,20 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 08 Sep 2020 18:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 12:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue小知识</title>
+      <link>/blog/vue-note1/</link>
+      <pubDate>Thu, 17 Sep 2020 12:22:40 +0800</pubDate>
+      
+      <guid>/blog/vue-note1/</guid>
+      <description>v-cloak解决页面闪烁问题 页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验， v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则 [v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕
+// template 中 &amp;lt;div class=&amp;#34;#app&amp;#34; v-cloak&amp;gt; &amp;lt;p&amp;gt;{{value.name}}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; // css 中 [v-cloak] { display: none; } ⚠️需要注意:虽然解决了闪烁的问题，但这段时间内如果什么都不处理的话，会直接白屏，这并不是我们想要的效果，我们应该加一个 loading 或者骨架屏的效果，提升用户体验</description>
+    </item>
     
     <item>
       <title>promise</title>
@@ -30,6 +40,7 @@ let p = Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34
       <guid>/blog/note-5/</guid>
       <description>var a= &amp;#39;7.7&amp;#39;; var d = a * 687; // d = 5289.900000000001 会产生精度差的问题
 加法 function (arg1, arg2){ var r1, r2, m; try {r1 = arg1.toString().split(&amp;#39;.&amp;#39;)[1].length} catch(e) {r1 = 0} // arg1小数点后的数字长度 	try {r2 = arg1.toString().split(&amp;#39;.&amp;#39;)[1].length} catch(e) {r2 = 0} // arg2小数点后的数字长度 	m = Math.pow(10, Math.max(r1, r2)) // 取(r1,r2)中最大值，10的 次方 	return ( arg1*m + arg2*m ) / m } 此方法解决 加法函数的精度问题
+⚠️可以直接toFixed
 乘法 function (arg1, arg2){ var m; try {m += arg1.</description>
     </item>
     

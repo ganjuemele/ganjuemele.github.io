@@ -6,10 +6,20 @@
     <description>Recent content in vue on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 04 Sep 2020 10:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 12:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue小知识</title>
+      <link>/blog/vue-note1/</link>
+      <pubDate>Thu, 17 Sep 2020 12:22:40 +0800</pubDate>
+      
+      <guid>/blog/vue-note1/</guid>
+      <description>v-cloak解决页面闪烁问题 页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验， v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则 [v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕
+// template 中 &amp;lt;div class=&amp;#34;#app&amp;#34; v-cloak&amp;gt; &amp;lt;p&amp;gt;{{value.name}}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; // css 中 [v-cloak] { display: none; } ⚠️需要注意:虽然解决了闪烁的问题，但这段时间内如果什么都不处理的话，会直接白屏，这并不是我们想要的效果，我们应该加一个 loading 或者骨架屏的效果，提升用户体验</description>
+    </item>
     
     <item>
       <title>App加载状态的几种类型</title>

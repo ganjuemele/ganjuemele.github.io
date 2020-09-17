@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-09-08 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-09-08 18:22:40 \x2b0800 CST",
+        "datePublished": "2020-09-17 12:22:40 \x2b0800 CST",
+        "dateModified" : "2020-09-17 12:22:40 \x2b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2020-09-08T18:22:40+08:00" />
+<meta property="og:updated_time" content="2020-09-17T12:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -265,6 +265,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/vue-note1/">vue小知识</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-09-17'>
+                                    September 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/promise-note/">promise</a></h3>
                                 
                                 <time class="published" datetime=
@@ -282,18 +294,6 @@
                                 <time class="published" datetime=
                                     '2020-09-07'>
                                     September 7, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/note-4/">App加载状态的几种类型</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-04'>
-                                    September 4, 2020</time>
                             </header>
                             
 
@@ -321,18 +321,18 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/promise-note/">promise</a></h2>
+            <h2><a href="/blog/vue-note1/">vue小知识</a></h2>
         
         
-            <p>promise小知识</p>
+            <p>vue:[v-cloak]</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-09-08'>
-            September 8, 2020</time>
+            datetime='2020-09-17'>
+            September 17, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -350,7 +350,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fpromise-note%2f&amp;text=promise&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fvue-note1%2f&amp;text=vue%e5%b0%8f%e7%9f%a5%e8%af%86&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -364,7 +364,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fpromise-note%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -377,7 +377,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fpromise-note%2f&amp;title=promise" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvue-note1%2f&amp;title=vue%e5%b0%8f%e7%9f%a5%e8%af%86" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -393,7 +393,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fpromise-note%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -407,74 +407,21 @@
   
 
   <div id="content">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">Promise.<span style="color:#a6e22e">resolve</span>()
-  .<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1&#34;</span>);
-    Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
-      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-1&#34;</span>);
-    });
-  })
-  .<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then2&#34;</span>);
-  });
-  
-  <span style="color:#75715e">// then1 → then1-1 → then2
-</span></code></pre></div><p><strong>结论：链式调用中，只有前一个 then 的回调执行完毕后，跟着的 then 中的回调才会被加入至微任务队列。</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> Promise.<span style="color:#a6e22e">resolve</span>();
-<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">then</span>(() =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1&#34;</span>);
-  Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-1&#34;</span>);
-  });
-}).<span style="color:#a6e22e">then</span>(() =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-2&#34;</span>);
-});
+    <h2 id="v-cloak">v-cloak解决页面闪烁问题</h2>
+<p>页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验，
+v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则
+[v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// template 中
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#app&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cloak</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>{{<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">name</span>}}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">p</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
 
-<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">then</span>(() =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then2&#34;</span>);
-}); 
+<span style="color:#75715e">// css 中
+</span><span style="color:#75715e"></span>[<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cloak</span>] {
+    <span style="color:#a6e22e">display</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">none</span>;
+}
+</code></pre></div><p>⚠️需要注意:虽然解决了闪烁的问题，但这段时间内如果什么都不处理的话，会直接白屏，这并不是我们想要的效果，我们应该加一个 loading 或者骨架屏的效果，提升用户体验</p>
 
-<span style="color:#75715e">// then1 → then2 → then1-1 → then1-2
-</span></code></pre></div><p><strong>结论：每个链式调用的开端会首先依次进入微任务队列。</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1&#34;</span>);
-  Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-1&#34;</span>);
-  });
-}).<span style="color:#a6e22e">then</span>(() =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then2&#34;</span>);
-});
-
-<span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">then</span>(() =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then3&#34;</span>);
-});
-
-<span style="color:#75715e">// then1 → then1-1 → then2 → then3
-</span></code></pre></div><p><strong>结论优化为：同一个 Promise 的每个链式调用的开端会首先依次进入微任务队列。</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">Promise.<span style="color:#a6e22e">resolve</span>()
-  .<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1&#34;</span>);
-    Promise.<span style="color:#a6e22e">resolve</span>()
-      .<span style="color:#a6e22e">then</span>(() =&gt; {
-        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-1&#34;</span>);
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
-      })
-      .<span style="color:#a6e22e">then</span>(() =&gt; {
-        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-2&#34;</span>);
-      });
-  })
-  .<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then2&#34;</span>);
-  })
-  .<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then3&#34;</span>);
-  })
-  .<span style="color:#a6e22e">then</span>(() =&gt; {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then4&#34;</span>);
-  });
-  
-  <span style="color:#75715e">// then1 → then1-1 → then2 → then1-2 → then3 → then4
-</span></code></pre></div>
   </div>
 
   <footer>
@@ -487,7 +434,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/js">js</a></li>
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
                 
             
         
@@ -523,8 +470,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/note-5/"
-                class="button big previous">数字算法的精度问题</a></li>
+        <li><a href="/blog/promise-note/"
+                class="button big previous">promise</a></li>
     
 
     
@@ -564,7 +511,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fpromise-note%2f&amp;text=promise&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fvue-note1%2f&amp;text=vue%e5%b0%8f%e7%9f%a5%e8%af%86&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -578,7 +525,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fpromise-note%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -591,7 +538,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fpromise-note%2f&amp;title=promise" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvue-note1%2f&amp;title=vue%e5%b0%8f%e7%9f%a5%e8%af%86" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -607,7 +554,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fpromise-note%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -751,6 +698,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/vue-note1/">vue小知识</a>
+              </h3>
+              
+              <time class="published" datetime='2020-09-17'>
+                September 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/promise-note/">promise</a>
               </h3>
               
@@ -770,20 +731,6 @@
               
               <time class="published" datetime='2020-09-07'>
                 September 7, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/note-4/">App加载状态的几种类型</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-04'>
-                September 4, 2020
               </time>
             </header>
             

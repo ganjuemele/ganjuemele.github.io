@@ -30,6 +30,7 @@ let p = Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34
       <guid>/blog/note-5/</guid>
       <description>var a= &amp;#39;7.7&amp;#39;; var d = a * 687; // d = 5289.900000000001 会产生精度差的问题
 加法 function (arg1, arg2){ var r1, r2, m; try {r1 = arg1.toString().split(&amp;#39;.&amp;#39;)[1].length} catch(e) {r1 = 0} // arg1小数点后的数字长度 	try {r2 = arg1.toString().split(&amp;#39;.&amp;#39;)[1].length} catch(e) {r2 = 0} // arg2小数点后的数字长度 	m = Math.pow(10, Math.max(r1, r2)) // 取(r1,r2)中最大值，10的 次方 	return ( arg1*m + arg2*m ) / m } 此方法解决 加法函数的精度问题
+⚠️可以直接toFixed
 乘法 function (arg1, arg2){ var m; try {m += arg1.</description>
     </item>
     
