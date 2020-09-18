@@ -265,6 +265,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/css-transition/">css动画</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-09-17'>
+                                    September 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue-note1/">vue小知识</a></h3>
                                 
                                 <time class="published" datetime=
@@ -282,18 +294,6 @@
                                 <time class="published" datetime=
                                     '2020-09-08'>
                                     September 8, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/note-5/">数字算法的精度问题</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-07'>
-                                    September 7, 2020</time>
                             </header>
                             
 
@@ -321,10 +321,10 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/vue-note1/">vue小知识</a></h2>
+            <h2><a href="/blog/css-transition/">css动画</a></h2>
         
         
-            <p>vue:[v-cloak]</p>
+            <p>transition过渡效果</p>
         
     </div>
     <div class="meta">
@@ -350,7 +350,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fvue-note1%2f&amp;text=vue%e5%b0%8f%e7%9f%a5%e8%af%86&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fcss-transition%2f&amp;text=css%e5%8a%a8%e7%94%bb&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -364,7 +364,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcss-transition%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -377,7 +377,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvue-note1%2f&amp;title=vue%e5%b0%8f%e7%9f%a5%e8%af%86" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcss-transition%2f&amp;title=css%e5%8a%a8%e7%94%bb" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -393,7 +393,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fcss-transition%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -407,21 +407,28 @@
   
 
   <div id="content">
-    <h2 id="v-cloak">v-cloak解决页面闪烁问题</h2>
-<p>页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验，
-v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则
-[v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// template 中
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#app&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cloak</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>{{<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">name</span>}}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">p</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
-
-<span style="color:#75715e">// css 中
-</span><span style="color:#75715e"></span>[<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cloak</span>] {
-    <span style="color:#a6e22e">display</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">none</span>;
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">coupon-type</span> .<span style="color:#a6e22e">selected</span> {
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#00B893</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">vw</span>;
+    <span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">2.6</span><span style="color:#66d9ef">vw</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
 }
-</code></pre></div><p>⚠️需要注意:虽然解决了闪烁的问题，但这段时间内如果什么都不处理的话，会直接白屏，这并不是我们想要的效果，我们应该加一个 loading 或者骨架屏的效果，提升用户体验</p>
+.<span style="color:#a6e22e">coupon-tab</span> .<span style="color:#a6e22e">selected</span>::<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">vw</span>;
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">animation</span>: tabBorder <span style="color:#ae81ff">500</span><span style="color:#66d9ef">ms</span> <span style="color:#66d9ef">ease</span> <span style="color:#66d9ef">alternate</span>; <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">b</span><span style="color:#960050;background-color:#1e0010">B</span><span style="color:#960050;background-color:#1e0010">o</span><span style="color:#960050;background-color:#1e0010">r</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">r</span><span style="color:#960050;background-color:#1e0010">是</span><span style="color:#960050;background-color:#1e0010">动</span><span style="color:#960050;background-color:#1e0010">画</span><span style="color:#960050;background-color:#1e0010">的</span><span style="color:#960050;background-color:#1e0010">事</span><span style="color:#960050;background-color:#1e0010">件</span><span style="color:#960050;background-color:#1e0010">名</span>
+    <span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">.6</span><span style="color:#66d9ef">vw</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#00B893</span>;
+}
 
+@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">tabBorder</span> {
+	<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">过渡left和width属性</span>
+    <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {<span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">left</span>,<span style="color:#66d9ef">width</span>;<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">0</span>;}
+    <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {<span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">left</span>,<span style="color:#66d9ef">width</span>;<span style="color:#66d9ef">width</span>:<span style="color:#ae81ff">20</span><span style="color:#66d9ef">vw</span>;<span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;}
+}
+</code></pre></div>
   </div>
 
   <footer>
@@ -434,7 +441,7 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                <li><a class="article-category-link" href="/categories/css">css</a></li>
                 
             
         
@@ -470,8 +477,8 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/promise-note/"
-                class="button big previous">promise</a></li>
+        <li><a href="/blog/vue-note1/"
+                class="button big previous">vue小知识</a></li>
     
 
     
@@ -511,7 +518,7 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fvue-note1%2f&amp;text=vue%e5%b0%8f%e7%9f%a5%e8%af%86&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fcss-transition%2f&amp;text=css%e5%8a%a8%e7%94%bb&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -525,7 +532,7 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcss-transition%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -538,7 +545,7 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvue-note1%2f&amp;title=vue%e5%b0%8f%e7%9f%a5%e8%af%86" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcss-transition%2f&amp;title=css%e5%8a%a8%e7%94%bb" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -554,7 +561,7 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvue-note1%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fcss-transition%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -698,6 +705,20 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/css-transition/">css动画</a>
+              </h3>
+              
+              <time class="published" datetime='2020-09-17'>
+                September 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue-note1/">vue小知识</a>
               </h3>
               
@@ -717,20 +738,6 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
               
               <time class="published" datetime='2020-09-08'>
                 September 8, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/note-5/">数字算法的精度问题</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-07'>
-                September 7, 2020
               </time>
             </header>
             

@@ -13,6 +13,16 @@
   </url>
   
   <url>
+    <loc>/categories/css/</loc>
+    <lastmod>2020-09-17T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/css-transition/</loc>
+    <lastmod>2020-09-17T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/vue/</loc>
     <lastmod>2020-09-17T12:22:40+08:00</lastmod>
   </url>
@@ -165,11 +175,6 @@
   <url>
     <loc>/blog/vuex/</loc>
     <lastmod>2020-03-27T14:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/css/</loc>
-    <lastmod>2020-03-26T20:22:40+08:00</lastmod>
   </url>
   
   <url>
