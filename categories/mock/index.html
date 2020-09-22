@@ -2,6 +2,8 @@
 
 
     
+        
+    
 
 
 
@@ -18,9 +20,9 @@
              "@type": "WebPage",
              "@id": "\/"
         },
-        "articleSection" : "blog",
-        "name" : "Blog",
-        "headline" : "Blog",
+        "articleSection" : "categories",
+        "name" : "mock",
+        "headline" : "mock",
         "description" : "",
         "inLanguage" : "en",
         "author" : "",
@@ -31,13 +33,13 @@
         "copyrightYear" : "2020",
         "datePublished": "2020-09-22 17:22:40 \x2b0800 CST",
         "dateModified" : "2020-09-22 17:22:40 \x2b0800 CST",
-        "url" : "\/blog\/",
+        "url" : "\/categories\/mock\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
     }
     </script>
         
-            <title>Blog - 么了&#39;s 博客</title>
+            <title>mock Posts - 么了&#39;s 博客</title>
         
 
         <meta charset="utf-8" />
@@ -69,20 +71,20 @@
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blog"/>
+<meta name="twitter:title" content="mock"/>
 <meta name="twitter:description" content="么记"/>
 
-        <meta property="og:title" content="Blog" />
+        <meta property="og:title" content="mock" />
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/blog/" />
+<meta property="og:url" content="/categories/mock/" />
 <meta property="og:updated_time" content="2020-09-22T17:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta itemprop="name" content="Blog">
+        <meta itemprop="name" content="mock">
 <meta itemprop="description" content="么记">
         
 
@@ -124,7 +126,7 @@
     
 <header id="header">
     
-      <h1><a href="/">blog</a></h1>
+      <h1><a href="/">categories</a></h1>
     
 
     <nav class="links">
@@ -317,25 +319,28 @@
 
     
     <div id="main">
+        <h1>mock</h1>
         
         
             <article class="post">
   <header>
     <div class="title">
         
-            <h2><a href="/blog/vue-note/">Vue实例&amp;模版语法</a></h2>
+            <h2><a href="/blog/mock/">mock数据</a></h2>
         
+        
+            <p>模拟接口数据</p>
         
     </div>
     <div class="meta">
         
 
         <time class="published"
-            datetime='2020-04-09'>
-            April 9, 2020</time>
+            datetime='2020-09-22'>
+            September 22, 2020</time>
         <span class="author">么了</span>
         
-            <p>1 分钟阅读</p>
+            <p>2 分钟阅读</p>
         
 
     </div>
@@ -344,12 +349,30 @@
   
 
   
-  <p><code>Object.freeze()</code> 方法可以冻结一个对象，
-冻结指的是不能向这个对象添加新的属性，不能修改其已有属性的值，不能删除已有属性，
-以及不能修改该对象已有属性的可枚举性、可配置性、可写性。</p>
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">Random</span>.<span style="color:#a6e22e">pick</span>([<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;i&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;u&#39;</span>])
+<span style="color:#75715e">// =&gt; &#34;o&#34;
+</span></code></pre></div><ol start="2">
+<li>Random.cname() 随机生成一个常见的中文姓名。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">Random</span>.<span style="color:#a6e22e">cname</span>()
+<span style="color:#75715e">// =&gt; &#34;袁军&#34;
+</span></code></pre></div><ol start="3">
+<li>Random.csentence()
+Random.csentence( len ),
+Random.csentence( min, max ) 随机生成一段中文文本。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">Random</span>.<span style="color:#a6e22e">csentence</span>() 
+<span style="color:#75715e">// =&gt; &#34;第任人九同段形位第律认得。&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">Random</span>.<span style="color:#a6e22e">csentence</span>(<span style="color:#ae81ff">2</span>)
+<span style="color:#75715e">// =&gt; &#34;维总。&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">Random</span>.<span style="color:#a6e22e">csentence</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>)
+<span style="color:#75715e">// =&gt; &#34;厂存。&#34;
+</span></code></pre></div><ol start="4">
+<li>
+<p>Random.word() Random.word( len ) Random.word( min, max ) 随机生成一个单词。</p>
   <footer>
     <ul class="actions">
-      <li><a href="/blog/vue-note/" class="button big">阅读更多</a></li>
+      <li><a href="/blog/mock/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -360,131 +383,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/js-defect/">javascript的十个设计缺陷</a></h2>
-        
-        
-            <p>JS 记录</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-03-29'>
-            March 29, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <p>由于javascript的设计只用了十天，而且是为了向公司交差其本人并不愿意这样设计
-另外这语言的设计初衷，是为了解决一些简单的网页互动，并没有考虑复杂应用的需要。</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/js-defect/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/js">js</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/note-2/">vue</a></h2>
-        
-        
-            <p>TS 记录</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-03-27'>
-            March 27, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#a6e22e"></span><span style="color:#a6e22e">&lt;style</span><span style="color:#960050;background-color:#1e0010"> </span><span style="color:#a6e22e">scoped</span><span style="color:#960050;background-color:#1e0010"> </span><span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">scss</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">&gt;</span>
-<span style="color:#a6e22e"></span><span style="color:#a6e22e">.x</span><span style="color:#f92672"> :</span><span style="color:#f92672">:</span>v-deep li <span style="color:#960050;background-color:#1e0010">{</span>  
-<span style="color:#f92672">/</span><span style="color:#f92672">/</span>  <span style="color:#f92672">或者使用</span> <span style="color:#f92672">/</span><span style="color:#f92672">deep</span><span style="color:#f92672">/</span>
-<span style="color:#a6e22e"></span><span style="color:#960050;background-color:#1e0010">	</span><span style="color:#a6e22e">border</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> red<span style="color:#960050;background-color:#1e0010">;</span>
-<span style="color:#960050;background-color:#1e0010">}</span>
-<span style="color:#f92672">&lt;</span><span style="color:#f92672">/</span><span style="color:#f92672">style</span><span style="color:#f92672">&gt;</span>
-</code></pre></div><p>往深处继续找
-deep语法</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/note-2/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                <li><a class="article-category-link" href="/categories/mock">mock</a></li>
                 
             
         
@@ -505,13 +404,11 @@ deep语法</p>
         
 <ul class="actions pagination">
     
-        <li><a href="/blog/page/7/"
-                class="button big previous">上一页</a></li>
+        <li><a href="#" class="disabled button big previous">上一页</a></li>
     
 
     
-        <li><a href="/blog/page/9/"
-                class="button big next">下一页</a></li>
+        <li><a href="#" class="disabled button big next">下一页</a></li>
     
 </ul>
 
@@ -717,7 +614,7 @@ deep语法</p>
       <ul class="icons">
         
           
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+    <li><a href="/categories/mock/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
 
 
         
