@@ -6,10 +6,22 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 22 Sep 2020 17:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 12:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>字体font-family</title>
+      <link>/blog/font-family/</link>
+      <pubDate>Wed, 23 Sep 2020 12:22:40 +0800</pubDate>
+      
+      <guid>/blog/font-family/</guid>
+      <description>// 为什么这样写 font-family // 答案见 https://github.com/zenozeng/fonts.css/
+font-family: -apple-system, &amp;#34;Noto Sans&amp;#34;, &amp;#34;Helvetica Neue&amp;#34;, Helvetica, &amp;#34;Nimbus Sans L&amp;#34;, Arial, &amp;#34;Liberation Sans&amp;#34;, &amp;#34;PingFang SC&amp;#34;, &amp;#34;Hiragino Sans GB&amp;#34;, &amp;#34;Noto Sans CJK SC&amp;#34;, &amp;#34;Source Han Sans SC&amp;#34;, &amp;#34;Source Han Sans CN&amp;#34;, &amp;#34;Microsoft YaHei&amp;#34;, &amp;#34;Wenquanyi Micro Hei&amp;#34;, &amp;#34;WenQuanYi Zen Hei&amp;#34;, &amp;#34;ST Heiti&amp;#34;, SimHei, &amp;#34;WenQuanYi Zen Hei Sharp&amp;#34;, sans-serif; 能使各个平台的字体看起来统一
+中文字体也有英文名称
+永远不要忘记声明英文字体，并且英文字体应该在中文字体之前 记住这个事实：绝大部分中文字体里包含英文字母（但是基本上都很丑），而英文字体里不包含中文字符。</description>
+    </item>
     
     <item>
       <title>mock数据</title>
