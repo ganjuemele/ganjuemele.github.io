@@ -6,10 +6,19 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 23 Sep 2020 12:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 16:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue3.0 记录01</title>
+      <link>/blog/vue3-note1/</link>
+      <pubDate>Sun, 27 Sep 2020 16:22:40 +0800</pubDate>
+      
+      <guid>/blog/vue3-note1/</guid>
+      <description>//SwitchDemo 父组件 &amp;lt;template&amp;gt; &amp;lt;div v-for=&amp;#34;(item, index) in evo&amp;#34; :item=&amp;#34;item&amp;#34; &amp;gt; &amp;lt;Switch v-model:value=&amp;#34;clickStatus&amp;#34; :evo=&amp;#34;evo[index]&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script lang=&amp;#34;ts&amp;#34;&amp;gt; import Switch from &amp;#39;../lib/Switch.vue&amp;#39;; import { ref } from &amp;#39;vue&amp;#39; export default { components: { Switch }, data(){ return { evo: [&amp;#34;Normal&amp;#34;, &amp;#34;Shadow&amp;#34;, &amp;#34;Disabled&amp;#34;, &amp;#34;Text&amp;#34;], } }, setup(){ const clickStatus = ref(!0); return { clickStatus } } } &amp;lt;/script&amp;gt; // Switch 子组件 &amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;switch-module&amp;#34;&amp;gt; &amp;lt;button @click=&amp;#34;toggle&amp;#34; :class=&amp;#34;[{checked:value, orange:value}, {&amp;#39;switchShadow switchShadow-orange&amp;#39;:evo===&amp;#39;Shadow&amp;#39;}, {&amp;#39;checkedDisBgc-orange&amp;#39;:value===true&amp;amp;&amp;amp;toggleDisable===true}, {uncheckedDisBgc:value===false&amp;amp;&amp;amp;toggleDisable===true}]&amp;#34; :disabled=&amp;#34;evo===&amp;#39;Disabled&amp;#39;&amp;amp;&amp;amp;toggleDisable&amp;#34; &amp;gt; &amp;lt;span class=&amp;#34;switchControl&amp;#34; /&amp;gt; &amp;lt;span v-if=&amp;#34;evo===&amp;#39;Text&amp;#39;&amp;#34; class=&amp;#34;switchText&amp;#34; :class=&amp;#34;value?</description>
+    </item>
     
     <item>
       <title>字体font-family</title>

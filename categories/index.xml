@@ -6,10 +6,19 @@
     <description>Recent content in Categories on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 23 Sep 2020 12:22:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 16:22:40 +0800</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue</title>
+      <link>/categories/vue/</link>
+      <pubDate>Sun, 27 Sep 2020 16:22:40 +0800</pubDate>
+      
+      <guid>/categories/vue/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>css</title>
@@ -26,15 +35,6 @@
       <pubDate>Tue, 22 Sep 2020 17:22:40 +0800</pubDate>
       
       <guid>/categories/mock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vue</title>
-      <link>/categories/vue/</link>
-      <pubDate>Thu, 17 Sep 2020 12:22:40 +0800</pubDate>
-      
-      <guid>/categories/vue/</guid>
       <description></description>
     </item>
     
