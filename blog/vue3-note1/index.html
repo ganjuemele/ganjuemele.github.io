@@ -24,7 +24,7 @@
         "datePublished": "2020-09-27 16:22:40 \x2b0800 CST",
         "dateModified" : "2020-09-27 16:22:40 \x2b0800 CST",
         "url" : "\/blog\/vue3-note1\/",
-        "wordCount" : "157",
+        "wordCount" : "153",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -81,7 +81,7 @@
 <meta itemprop="description" content="vue">
 <meta itemprop="datePublished" content="2020-09-27T16:22:40&#43;08:00" />
 <meta itemprop="dateModified" content="2020-09-27T16:22:40&#43;08:00" />
-<meta itemprop="wordCount" content="157">
+<meta itemprop="wordCount" content="153">
 
 
 
@@ -545,13 +545,11 @@
             <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">toggleDisable</span><span style="color:#f92672">:</span> <span style="color:#f92672">!</span><span style="color:#ae81ff">1</span> }
         },
         <span style="color:#a6e22e">setup</span>(<span style="color:#a6e22e">props</span>, <span style="color:#a6e22e">context</span>) {
-            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">evo</span>)
             <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">toggle</span><span style="color:#f92672">=</span> () =&gt; {
                 <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">emit</span>(<span style="color:#e6db74">&#39;update:value&#39;</span>, <span style="color:#f92672">!</span><span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">value</span>)
             };
             <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">switchControl</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() { <span style="color:#75715e">//箭头函数无this
-</span><span style="color:#75715e"></span>                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;dis&#39;</span>, <span style="color:#a6e22e">context</span>, <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">toggleDisable</span>)
-                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">toggleDisable</span><span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">toggleDisable</span>;
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">toggleDisable</span><span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">toggleDisable</span>;
             };
             <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">toggle</span>, <span style="color:#a6e22e">switchControl</span> }
         }
