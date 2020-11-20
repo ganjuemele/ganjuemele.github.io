@@ -6,6 +6,7 @@
     <description>Recent content in js on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
+<<<<<<< HEAD
     <lastBuildDate>Tue, 17 Nov 2020 22:22:40 +0800</lastBuildDate><atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建优雅结束的函数</title>
@@ -18,6 +19,21 @@
 function* taskRunner(){ console.log(&amp;#39;doing sth&amp;#39;) yield function(){ console.log(&amp;#39;第一步&amp;#39;)	} console.log(&amp;#39;doing sth after first&amp;#39;) yield function(){ console.log(&amp;#39;second&amp;#39;) } console.log(&amp;#39;after second&amp;#39;) } var task = taskRunner(); task.next().value() task.next().value() task.next() 输出：
 // doing sth // 第一步  // doing sth after first // second  // after second // {value: undefined, done: true} 可以用来遍历一组任务，每次通过一条yield语句和一个函数表达式前进一步
 function* idMaker(){ var index = 0; while(true){ yield index++; } } var gen = idMaker(); console.log(gen.next().value)	// 0 console.</description>
+    </item>
+=======
+    <lastBuildDate>Wed, 28 Oct 2020 14:22:40 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    
+>>>>>>> f90f7dd74f40e9174b0e3590717760cfc4d225e7
+    
+    <item>
+      <title>如何快速、高效的将“false”转换为false</title>
+      <link>/blog/note-6/</link>
+      <pubDate>Wed, 28 Oct 2020 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/note-6/</guid>
+      <description>var myBoolean=new Boolean(); //下面的所有的代码行均会创建初始值为 false 的 Boolean 对象。 var myBoolean=new Boolean(0); var myBoolean=new Boolean(null); var myBoolean=new Boolean(&amp;#34;&amp;#34;); var myBoolean=new Boolean(false);//不带单引号的是false var myBoolean=new Boolean(NaN); //下面的所有的代码行均会创初始值为 true 的 Boolean 对象： var myBoolean=new Boolean(1); var myBoolean=new Boolean(true); var myBoolean=new Boolean(&amp;#34;true&amp;#34;); var myBoolean=new Boolean(&amp;#34;false&amp;#34;);//带单引号的字符串false最终等于true var myBoolean=new Boolean(&amp;#34;Bill Gates&amp;#34;); 解决方法    let bool = result === &amp;#39;false&amp;#39; ? false : true   let bool = { &amp;#39;true&amp;#39;: true, &amp;#39;false&amp;#39;: false }; bool[ v ] !</description>
     </item>
     
     <item>
