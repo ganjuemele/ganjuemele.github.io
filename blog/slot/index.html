@@ -21,10 +21,10 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-07-25 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-07-25 18:22:40 \x2b0800 CST",
+        "datePublished": "2020-07-25 18:22:40 \u002b0800 CST",
+        "dateModified" : "2020-07-25 18:22:40 \u002b0800 CST",
         "url" : "\/blog\/slot\/",
-        "wordCount" : "65",
+        "wordCount" : "69",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="支付宝小程序中slot的使用">
 <meta itemprop="description" content="插槽 slot">
-<meta itemprop="datePublished" content="2020-07-25T18:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-07-25T18:22:40&#43;08:00" />
-<meta itemprop="wordCount" content="65">
+<meta itemprop="datePublished" content="2020-07-25T18:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-07-25T18:22:40+08:00" />
+<meta itemprop="wordCount" content="69">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -482,26 +483,26 @@
   
 
   <div id="content">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> /components/index/index.axml </span><span style="color:#75715e">--&gt;</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- /components/index/index.axml --&gt;</span>
 &lt;<span style="color:#f92672">view</span>&gt;
   &lt;<span style="color:#f92672">slot</span>&gt;
     &lt;<span style="color:#f92672">view</span>&gt;default slot <span style="color:#960050;background-color:#1e0010">&amp;</span> default value&lt;/<span style="color:#f92672">view</span>&gt;
   &lt;/<span style="color:#f92672">slot</span>&gt;
   &lt;<span style="color:#f92672">view</span>&gt;other&lt;/<span style="color:#f92672">view</span>&gt;
 &lt;/<span style="color:#f92672">view</span>&gt;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">/</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">p</span><span style="color:#960050;background-color:#1e0010">a</span><span style="color:#960050;background-color:#1e0010">g</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">x</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">x</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#960050;background-color:#1e0010">j</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">o</span><span style="color:#960050;background-color:#1e0010">n</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#960050;background-color:#1e0010">/pages/index/index.json</span>
 {
    <span style="color:#f92672">&#34;usingComponents&#34;</span>: {
      <span style="color:#f92672">&#34;my-component&#34;</span>: <span style="color:#e6db74">&#34;/components/index/index&#34;</span>
    }
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> /pages/index/index.axml </span><span style="color:#75715e">--&gt;</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- /pages/index/index.axml --&gt;</span>
 &lt;<span style="color:#f92672">my-component</span> /&gt;
 </code></pre></div><pre><code>输出
 default slot &amp; default value
 other
 </code></pre><hr>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> /components/index/index.axml </span><span style="color:#75715e">--&gt;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- /components/index/index.axml --&gt;</span>
 &lt;<span style="color:#f92672">view</span>&gt;
   &lt;<span style="color:#f92672">slot</span>&gt;
     &lt;<span style="color:#f92672">view</span>&gt;default slot <span style="color:#960050;background-color:#1e0010">&amp;</span> default value&lt;/<span style="color:#f92672">view</span>&gt;
@@ -510,7 +511,7 @@ other
   &lt;<span style="color:#f92672">view</span>&gt;body&lt;/<span style="color:#f92672">view</span>&gt;
   &lt;<span style="color:#f92672">slot</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;footer&#34;</span>/&gt;
 &lt;/<span style="color:#f92672">view</span>&gt;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> /pages/index/index.axml </span><span style="color:#75715e">--&gt;</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- /pages/index/index.axml --&gt;</span>
 &lt;<span style="color:#f92672">my-component</span>&gt;
   &lt;<span style="color:#f92672">view</span> <span style="color:#a6e22e">slot</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;header&#34;</span>&gt;header&lt;/<span style="color:#f92672">view</span>&gt;
   &lt;<span style="color:#f92672">view</span> <span style="color:#a6e22e">slot</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;footer&#34;</span>&gt;footer&lt;/<span style="color:#f92672">view</span>&gt;
@@ -734,6 +735,20 @@ footer
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -753,20 +768,6 @@ footer
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

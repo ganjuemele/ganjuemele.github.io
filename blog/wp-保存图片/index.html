@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "小程序保存图片到相册",
         "headline" : "小程序保存图片到相册",
-        "description" : "保存图片的到相册\n判断权限问题，使用了wx.getSetting 和 wx.authorize的scpoe 获取和设置权限；\n使用wx.downloadFile 和 wx.saveImageToPhotosAlbum 下载图片至相册；\nonPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast({ icon: \x26#39;loading\x26#39;, title: \x26#39;正在保存图片\x26#39;, duration: 1200 }) \/\/判断用户是否授权\x26#34;保存到相册\x26#34;  wx.getSetting({ success(res) { \/\/没有权限，发起授权  if (!res.authSetting[\x26#39;scope.writePhotosAlbum\x26#39;]) { wx.authorize({ scope: \x26#39;scope.writePhotosAlbum\x26#39;, success() { \/\/用户允许授权，保存图片到相册  that.setData({ picUrl: picUrl, }) that.savePhoto(); }, fail() { \/\/用户点击拒绝授权，跳转到设置页，引导用户授权  wx.openSetting({ success() { wx.authorize({ scope: \x26#39;scope.writePhotosAlbum\x26#39;, success() { that.setData({ picUrl: picUrl, }) that.savePhoto(); } }) } }) } }) } else { that.",
+        "description" : "保存图片的到相册\n判断权限问题，使用了wx.getSetting 和 wx.authorize的scpoe 获取和设置权限；\n使用wx.downloadFile 和 wx.saveImageToPhotosAlbum 下载图片至相册；\nonPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast({ icon: \u0026#39;loading\u0026#39;, title: \u0026#39;正在保存图片\u0026#39;, duration: 1200 }) \/\/判断用户是否授权\u0026#34;保存到相册\u0026#34;  wx.getSetting({ success(res) { \/\/没有权限，发起授权  if (!res.authSetting[\u0026#39;scope.writePhotosAlbum\u0026#39;]) { wx.authorize({ scope: \u0026#39;scope.writePhotosAlbum\u0026#39;, success() { \/\/用户允许授权，保存图片到相册  that.setData({ picUrl: picUrl, }) that.savePhoto(); }, fail() { \/\/用户点击拒绝授权，跳转到设置页，引导用户授权  wx.openSetting({ success() { wx.authorize({ scope: \u0026#39;scope.writePhotosAlbum\u0026#39;, success() { that.setData({ picUrl: picUrl, }) that.savePhoto(); } }) } }) } }) } else { that.",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-05-07 00:22:40 \x2b0800 CST",
-        "dateModified" : "2020-05-07 00:22:40 \x2b0800 CST",
+        "datePublished": "2020-05-07 00:22:40 \u002b0800 CST",
+        "dateModified" : "2020-05-07 00:22:40 \u002b0800 CST",
         "url" : "\/blog\/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87\/",
         "wordCount" : "250",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -90,13 +90,14 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
 判断权限问题，使用了wx.getSetting 和 wx.authorize的scpoe 获取和设置权限；
 使用wx.downloadFile 和 wx.saveImageToPhotosAlbum 下载图片至相册；
 onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast({ icon: &#39;loading&#39;, title: &#39;正在保存图片&#39;, duration: 1200 }) //判断用户是否授权&#34;保存到相册&#34;  wx.getSetting({ success(res) { //没有权限，发起授权  if (!res.authSetting[&#39;scope.writePhotosAlbum&#39;]) { wx.authorize({ scope: &#39;scope.writePhotosAlbum&#39;, success() { //用户允许授权，保存图片到相册  that.setData({ picUrl: picUrl, }) that.savePhoto(); }, fail() { //用户点击拒绝授权，跳转到设置页，引导用户授权  wx.openSetting({ success() { wx.authorize({ scope: &#39;scope.writePhotosAlbum&#39;, success() { that.setData({ picUrl: picUrl, }) that.savePhoto(); } }) } }) } }) } else { that.">
-<meta itemprop="datePublished" content="2020-05-07T00:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-05-07T00:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-05-07T00:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-05-07T00:22:40+08:00" />
 <meta itemprop="wordCount" content="250">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -284,6 +285,18 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -301,18 +314,6 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -859,6 +860,20 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -878,20 +893,6 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

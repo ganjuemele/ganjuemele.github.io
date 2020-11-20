@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-09-17 12:22:40 \x2b0800 CST",
-        "dateModified" : "2020-09-17 12:22:40 \x2b0800 CST",
+        "datePublished": "2020-09-17 12:22:40 \u002b0800 CST",
+        "dateModified" : "2020-09-17 12:22:40 \u002b0800 CST",
         "url" : "\/blog\/vue-note1\/",
         "wordCount" : "33",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="vue小知识">
 <meta itemprop="description" content="vue:[v-cloak]">
-<meta itemprop="datePublished" content="2020-09-17T12:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-09-17T12:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-09-17T12:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-09-17T12:22:40+08:00" />
 <meta itemprop="wordCount" content="33">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -482,14 +483,14 @@
   
 
   <div id="content">
-    <h2 id="v-cloak">v-cloak解决页面闪烁问题</h2>
+    <h2 id="v-cloak解决页面闪烁问题">v-cloak解决页面闪烁问题</h2>
 <p>页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验，
 v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则
 [v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// template 中
 </span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span> <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#app&#34;</span> <span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cloak</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>{{<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">name</span>}}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">p</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
-<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">p</span><span style="color:#f92672">&gt;</span>{{<span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">name</span>}}<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/p&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/div&gt;</span>
 
 <span style="color:#75715e">// css 中
 </span><span style="color:#75715e"></span>[<span style="color:#a6e22e">v</span><span style="color:#f92672">-</span><span style="color:#a6e22e">cloak</span>] {
@@ -709,6 +710,20 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -728,20 +743,6 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

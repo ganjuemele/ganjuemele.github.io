@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-02-25 13:13:40 \x2b0800 CST",
-        "dateModified" : "2020-02-25 13:13:40 \x2b0800 CST",
+        "datePublished": "2020-02-25 13:13:40 \u002b0800 CST",
+        "dateModified" : "2020-02-25 13:13:40 \u002b0800 CST",
         "url" : "\/blog\/http\/",
         "wordCount" : "159",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="Http和Https">
 <meta itemprop="description" content="HTTP 笔记">
-<meta itemprop="datePublished" content="2020-02-25T13:13:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-25T13:13:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-02-25T13:13:40+08:00" />
+<meta itemprop="dateModified" content="2020-02-25T13:13:40+08:00" />
 <meta itemprop="wordCount" content="159">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -485,7 +486,7 @@
     <pre><code>HTTP协议（HyperText Transfer Protocol超文本传输协议）是因特网上应用最广泛的一种网络协议，所有www文件都必须遵守这个标准。
 HTTP是一个基于TCP/IP通信协议来传递数据。
 </code></pre>
-<h3 id="http">HTTP工作原理</h3>
+<h3 id="http工作原理">HTTP工作原理</h3>
 <pre><code>HTTP协议工作于客户端—服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服务端（web服务器）发送所有请求。
 web服务器根据接受的请求，向客户端发送响应信息。
 HTTP默认端口：80，也可以改为8080或者其他端口。
@@ -496,12 +497,12 @@ HTTP默认端口：80，也可以改为8080或者其他端口。
 <li>HTTP是媒体独立的：只要客户端和服务器知道如何处理的数据内容，任何类型的数据都可以通过HTTP发送</li>
 <li>HTTP是无状态：无状态是指协议对于事物处理没有记忆能力。缺少状态意味着如果后续处理需要之前的信息，则必须重新传，导致每次连接传送的数据量增大</li>
 </ol>
-<h3 id="heading">通信流程：</h3>
+<h3 id="通信流程">通信流程：</h3>
 <p><strong>Web Browser网络浏览器</strong>  &lt;——  <strong>HTTP协议</strong>  ——&gt;  <strong>HTTP Server</strong>  &lt;———&gt; <strong>CGI Program(Common Gateway Interface通用网关接口)</strong> &lt;———&gt; <strong>Database数据库</strong></p>
-<h3 id="http-1">HTTP请求方法</h3>
+<h3 id="http请求方法">HTTP请求方法</h3>
 <p>1.0： GET，POST，HEAD
 1.1：OPTIONS，PUT，PATCH，DELETE，TRACE和CONNECT</p>
-<h3 id="heading-1">状态码</h3>
+<h3 id="状态码">状态码</h3>
 <p>200  —  请求成功
 301  —  资源被永久转移到其它URL
 404  —  请求的资源不存在
@@ -517,7 +518,7 @@ HTTP默认端口：80，也可以改为8080或者其他端口。
 <li>身份校验安全性：保证数据到达期望的目的地</li>
 </ol>
 <hr>
-<h2 id="heading-2">优缺点</h2>
+<h2 id="优缺点">优缺点</h2>
 <ol>
 <li>
 <p>确保数据发送到正确的客户机和服务器</p>
@@ -539,7 +540,7 @@ HTTP默认端口：80，也可以改为8080或者其他端口。
 </li>
 </ol>
 <hr>
-<h4 id="-port">端口 port</h4>
+<h4 id="端口-port">端口 port</h4>
 <p>一台机器可以提供不同的端口
 http服务最好使用 80 端口
 https最好使用443端口
@@ -567,20 +568,20 @@ localhost 通过 hosts 指定为自己
 一个域名可以对应不同的 IP
 一个 IP 可以对应不同的域名，</p>
 <hr>
-<h3 id="--ip-">域名 和 IP 是怎么对应起来的</h3>
-<h4 id="--dns-domain-name-system">是 通过 DNS （Domain Name system）</h4>
+<h3 id="域名-和-ip-是怎么对应起来的">域名 和 IP 是怎么对应起来的</h3>
+<h4 id="是-通过-dns-domain-name-system">是 通过 DNS （Domain Name system）</h4>
 <p>浏览器会向 DNS 服务器询问 域名 对应的 IP ——————&raquo; 返回一个 IP  ——————&raquo; 浏览器向对应 IP 的 80/443 端口发送请求</p>
 <h3 id="url">URL</h3>
 <p>协议 + 域名（IP）+ 端口号 + 路径 + 查询字符串 + 锚点
 ⚠️锚点是不会发送到服务器的</p>
-<h3 id="curl">curl命令*</h3>
+<h3 id="curl命令">curl命令*</h3>
 <p>用curl 发http请求
 <code>curl -v http://www/baidu.com</code></p>
-<h3 id="nslookup">nslookup命令</h3>
+<h3 id="nslookup命令">nslookup命令</h3>
 <p><code>nslookup 域名</code>
 查询一个域名的A记录</p>
 <hr>
-<h4 id="heading-3">请求</h4>
+<h4 id="请求">请求</h4>
 <p>请求动词 路径+查询参数 协议名/版本
 Content-Type: 响应体的格式</p>
 
@@ -796,6 +797,20 @@ Content-Type: 响应体的格式</p>
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -815,20 +830,6 @@ Content-Type: 响应体的格式</p>
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

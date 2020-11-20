@@ -21,10 +21,10 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-10 15:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-10 15:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-10 15:22:40 \u002b0800 CST",
+        "dateModified" : "2020-03-10 15:22:40 \u002b0800 CST",
         "url" : "\/blog\/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6\/",
-        "wordCount" : "64",
+        "wordCount" : "65",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="Vue的sync修饰符">
 <meta itemprop="description" content="Vue 笔记">
-<meta itemprop="datePublished" content="2020-03-10T15:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-10T15:22:40&#43;08:00" />
-<meta itemprop="wordCount" content="64">
+<meta itemprop="datePublished" content="2020-03-10T15:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-10T15:22:40+08:00" />
+<meta itemprop="wordCount" content="65">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -482,13 +483,13 @@
   
 
   <div id="content">
-    <h3 id="sync">修饰符sync</h3>
+    <h3 id="修饰符sync">修饰符sync</h3>
 <p>让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app&#34;</span>&gt;
     &lt;<span style="color:#f92672">div</span>&gt;{{bar}}&lt;/<span style="color:#f92672">div</span>&gt;
     &lt;<span style="color:#f92672">my-comp</span> <span style="color:#a6e22e">:foo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">sync</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bar&#34;</span>&gt;&lt;/<span style="color:#f92672">my-comp</span>&gt;
     // 下面扩展出来的写法
-    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> &lt;my</span><span style="color:#75715e">-</span><span style="color:#75715e">comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my</span><span style="color:#75715e">-</span><span style="color:#75715e">comp&gt; </span><span style="color:#75715e">--&gt;</span>
+    <span style="color:#75715e">&lt;!-- &lt;my-comp :foo=&#34;bar&#34; @update:foo=&#34;val =&gt; bar = val&#34;&gt;&lt;/my-comp&gt; --&gt;</span>
 &lt;/<span style="color:#f92672">div</span>&gt;
 &lt;<span style="color:#f92672">script</span>&gt;
     <span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">component</span>(<span style="color:#e6db74">&#39;my-comp&#39;</span>, {
@@ -724,6 +725,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -743,20 +758,6 @@
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

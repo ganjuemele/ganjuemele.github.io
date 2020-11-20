@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-17 20:40:40 \x2b0800 CST",
-        "dateModified" : "2020-03-17 20:40:40 \x2b0800 CST",
+        "datePublished": "2020-03-17 20:40:40 \u002b0800 CST",
+        "dateModified" : "2020-03-17 20:40:40 \u002b0800 CST",
         "url" : "\/blog\/typescript\/",
         "wordCount" : "38",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="Typescript">
 <meta itemprop="description" content="TS 记录">
-<meta itemprop="datePublished" content="2020-03-17T20:40:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-17T20:40:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-17T20:40:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-17T20:40:40+08:00" />
 <meta itemprop="wordCount" content="38">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -483,20 +484,20 @@
 
   <div id="content">
     <p>TS是一个强类型语言，使得开发更加严谨</p>
-<h2 id="heading">优点</h2>
+<h2 id="优点">优点</h2>
 <ol>
 <li>类型提示更加智能</li>
 <li>编译时，还没运行代码就知道写错了</li>
 <li>类型检查：无法点出错误的属性</li>
 </ol>
-<h2 id="ts-">TS 的一些语法</h2>
+<h2 id="ts-的一些语法">TS 的一些语法</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Types</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Vue</span> {
-	<span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>;
-	<span style="color:#a6e22e">selectType</span>(<span style="color:#a6e22e">type</span>:<span style="color:#66d9ef">string</span>) { <span style="color:#75715e">//需要给type加上类型
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">type</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;-&#39;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">type</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;+&#39;</span>) {
+	<span style="color:#66d9ef">type</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span>;
+	<span style="color:#a6e22e">selectType</span>(<span style="color:#66d9ef">type</span><span style="color:#f92672">:</span><span style="color:#66d9ef">string</span>) { <span style="color:#75715e">//需要给type加上类型
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">type</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;-&#39;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">type</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;+&#39;</span>) {
 			<span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;未知Type&#39;</span>)
 		}
-		<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">type</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">type</span>;
+		<span style="color:#66d9ef">this</span>.<span style="color:#66d9ef">type</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">type</span>;
 	}
 }
 </code></pre></div>
@@ -712,6 +713,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -731,20 +746,6 @@
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

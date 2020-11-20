@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "prompt的确定和取消事件",
         "headline" : "prompt的确定和取消事件",
-        "description" : "prompt事件触发，未输入标签名点击取消，也会新增一个空白标签， 这是因为点击取消， name === null\nconst name = window.prompt(\x26#39;请输入标签名\x26#39;); if (name === null){ \/\/ console.log(name,\x26#39;null\x26#39;) }else if (name === \x26#39;\x26#39;) { window.alert(\x26#39;标签名不能为空\x26#39;) } else (this.dataSource) { this.$emit(\x26#39;update:dataSource\x26#39;, [...this.dataSource, name]) } ⚠️这里要把（name===null）的情况放在较前位置进行判断\n优化下\nif (name === \x26#39;\x26#39;) {window.alert(\x26#39;标签名不能为空\x26#39;)} else if (name !== null \x26amp;\x26amp; this.dataSource) { this.$emit(\x26#39;update:dataSource\x26#39;, [...this.dataSource, name]) } ",
+        "description" : "prompt事件触发，未输入标签名点击取消，也会新增一个空白标签， 这是因为点击取消， name === null\nconst name = window.prompt(\u0026#39;请输入标签名\u0026#39;); if (name === null){ \/\/ console.log(name,\u0026#39;null\u0026#39;) }else if (name === \u0026#39;\u0026#39;) { window.alert(\u0026#39;标签名不能为空\u0026#39;) } else (this.dataSource) { this.$emit(\u0026#39;update:dataSource\u0026#39;, [...this.dataSource, name]) } ⚠️这里要把（name===null）的情况放在较前位置进行判断\n优化下\nif (name === \u0026#39;\u0026#39;) {window.alert(\u0026#39;标签名不能为空\u0026#39;)} else if (name !== null \u0026amp;\u0026amp; this.dataSource) { this.$emit(\u0026#39;update:dataSource\u0026#39;, [...this.dataSource, name]) } ",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-22 16:40:40 \x2b0800 CST",
-        "dateModified" : "2020-03-22 16:40:40 \x2b0800 CST",
+        "datePublished": "2020-03-22 16:40:40 \u002b0800 CST",
+        "dateModified" : "2020-03-22 16:40:40 \u002b0800 CST",
         "url" : "\/blog\/prompt\/",
         "wordCount" : "49",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -90,13 +90,14 @@ if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if
 const name = window.prompt(&#39;请输入标签名&#39;); if (name === null){ // console.log(name,&#39;null&#39;) }else if (name === &#39;&#39;) { window.alert(&#39;标签名不能为空&#39;) } else (this.dataSource) { this.$emit(&#39;update:dataSource&#39;, [...this.dataSource, name]) } ⚠️这里要把（name===null）的情况放在较前位置进行判断
 优化下
 if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if (name !== null &amp;&amp; this.dataSource) { this.$emit(&#39;update:dataSource&#39;, [...this.dataSource, name]) } ">
-<meta itemprop="datePublished" content="2020-03-22T16:40:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-22T16:40:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-22T16:40:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-22T16:40:40+08:00" />
 <meta itemprop="wordCount" content="49">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -284,6 +285,18 @@ if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -301,18 +314,6 @@ if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -406,7 +407,8 @@ if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if
   <header>
     <div class="title">
         
-            <h2><a href="/blog/prompt/">prompt的确定和取消事件</a></h2>
+            <h1><a href="/blog/prompt/">prompt的确定和取消事件</a></h1>
+            
         
         
     </div>
@@ -719,6 +721,20 @@ if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -738,20 +754,6 @@ if (name === &#39;&#39;) {window.alert(&#39;标签名不能为空&#39;)} else if
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

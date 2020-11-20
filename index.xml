@@ -6,10 +6,19 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 27 Sep 2020 16:22:40 +0800</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 17 Nov 2020 22:22:40 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建优雅结束的函数</title>
+      <link>/blog/js-note1/</link>
+      <pubDate>Tue, 17 Nov 2020 22:22:40 +0800</pubDate>
+      
+      <guid>/blog/js-note1/</guid>
+      <description>用return结束一个函数很简单，但是，想要能够在将来的某个时刻返回函数，然后再继续执行。
+使用ES6中的生成器函数（generator function） 这是可以进入和退出并记住其状态的函数。
+function* taskRunner(){ console.log(&amp;#39;doing sth&amp;#39;) yield function(){ console.log(&amp;#39;第一步&amp;#39;)	} console.log(&amp;#39;doing sth after first&amp;#39;) yield function(){ console.log(&amp;#39;second&amp;#39;) } console.log(&amp;#39;after second&amp;#39;) } var task = taskRunner(); task.next().value() task.next().value() task.next() 输出：
+// doing sth // 第一步  // doing sth after first // second  // after second // {value: undefined, done: true} 可以用来遍历一组任务，每次通过一条yield语句和一个函数表达式前进一步
+function* idMaker(){ var index = 0; while(true){ yield index++; } } var gen = idMaker(); console.log(gen.next().value)	// 0 console.</description>
+    </item>
     
     <item>
       <title>Vue3.0 记录01</title>
@@ -156,7 +165,7 @@ import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp
       <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/slot/</guid>
-      <description>&amp;lt;!--/components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;view&amp;gt;other&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; // /pages/index/index.json { &amp;#34;usingComponents&amp;#34;: { &amp;#34;my-component&amp;#34;: &amp;#34;/components/index/index&amp;#34; } } &amp;lt;!--/pages/index/index.axml --&amp;gt; &amp;lt;my-component /&amp;gt; 输出 default slot &amp;amp; default value other  &amp;lt;!--/components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;slot name=&amp;#34;header&amp;#34;/&amp;gt; &amp;lt;view&amp;gt;body&amp;lt;/view&amp;gt; &amp;lt;slot name=&amp;#34;footer&amp;#34;/&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;!--/pages/index/index.axml --&amp;gt; &amp;lt;my-component&amp;gt; &amp;lt;view slot=&amp;#34;header&amp;#34;&amp;gt;header&amp;lt;/view&amp;gt; &amp;lt;view slot=&amp;#34;footer&amp;#34;&amp;gt;footer&amp;lt;/view&amp;gt; &amp;lt;/my-component&amp;gt; 输出 default slot &amp;amp; default value header body footer </description>
+      <description>&amp;lt;!-- /components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;view&amp;gt;other&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; // /pages/index/index.json { &amp;#34;usingComponents&amp;#34;: { &amp;#34;my-component&amp;#34;: &amp;#34;/components/index/index&amp;#34; } } &amp;lt;!-- /pages/index/index.axml --&amp;gt; &amp;lt;my-component /&amp;gt; 输出 default slot &amp;amp; default value other  &amp;lt;!-- /components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;slot name=&amp;#34;header&amp;#34;/&amp;gt; &amp;lt;view&amp;gt;body&amp;lt;/view&amp;gt; &amp;lt;slot name=&amp;#34;footer&amp;#34;/&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;!-- /pages/index/index.axml --&amp;gt; &amp;lt;my-component&amp;gt; &amp;lt;view slot=&amp;#34;header&amp;#34;&amp;gt;header&amp;lt;/view&amp;gt; &amp;lt;view slot=&amp;#34;footer&amp;#34;&amp;gt;footer&amp;lt;/view&amp;gt; &amp;lt;/my-component&amp;gt; 输出 default slot &amp;amp; default value header body footer </description>
     </item>
     
     <item>
@@ -320,9 +329,9 @@ Javascript的十个设计缺陷  不适合开发大型程序 非常小的标准�
       <pubDate>Tue, 24 Mar 2020 20:22:40 +0800</pubDate>
       
       <guid>/blog/ls%E5%B1%9E%E6%80%A7/</guid>
-      <description>window.localStorage.setItem(&#39;_key&amp;rsquo;,&#39;_value&amp;rsquo;);
-window.localStorage.getItem(&#39;_key&amp;rsquo;)
-window.localStorage.removeItem(&#39;_key&amp;rsquo;)</description>
+      <description>window.localStorage.setItem(&#39;_key&#39;,&#39;_value&#39;);
+window.localStorage.getItem(&#39;_key&#39;)
+window.localStorage.removeItem(&#39;_key&#39;)</description>
     </item>
     
     <item>
@@ -358,7 +367,7 @@ const version = window.localStorage.getItem(&amp;#39;version&amp;#39;) || &amp;#
       <description>当不能确定一个页面元素的 width/height，需要计算之后才能取得值；
 calc() 计算 calc() 函数用于动态计算长度值。
 需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
-calc()函数支持&#39;+&amp;rsquo;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运算
+calc()函数支持&#39;+&#39;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运算
 .tags { padding: 12px 0; height: calc(100vh - 495px); overflow: auto; .current { display: flex; flex-flow: wrap; li { width: 16vw; height: 16vw; text-align: center; margin: 4px calc(10vw - 30px); } } } </description>
     </item>
     
@@ -434,7 +443,7 @@ transition: 属性名 时长，属性名 时长 过渡方式 延迟
       
       <guid>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
       <description>修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
-&amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!--&amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; ⚠️注意带有 .sync 修饰符的 v-bind 不能和表达式一起使用 例如 v-bind:title.sync=”doc.title + ‘!’” 是无效的。 取而代之的是，你只能提供你想要绑定的属性名，类似 v-model。</description>
+&amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!-- &amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; ⚠️注意带有 .sync 修饰符的 v-bind 不能和表达式一起使用 例如 v-bind:title.sync=”doc.title + ‘!’” 是无效的。 取而代之的是，你只能提供你想要绑定的属性名，类似 v-model。</description>
     </item>
     
     <item>
@@ -491,7 +500,7 @@ div.style.display=&amp;#39;none&amp;#39; div.classList.add(&amp;#39;red&amp;#39;
       <description>MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller
 view： 放视图相关的，html 渲染
 controller： 监听并操作 view，调用 model 里面的数据
-const Model = { data: {} 增,删,改,查(){} } const View = { html:`&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法
+const Model = { data: {} 增,删,改,查(){} } const View = { html:` &amp;lt;div&amp;gt;&amp;lt;p&amp;gt;hello&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; `, init(){} render(){} } const C = { init() { v.init() v.render() } methods(){} }  EventBus 有哪些 API，是做什么用的，给出伪代码示例 提供了 constructor; on; remove; trigger 等等方法
 eventBus = $(window) m = { data: {&amp;#39;…&amp;#39;}, methods: { update(data){ 修改m.data eventBus.trigger(A) } } } 然后，用on方法监听这个事件A，一旦事件A触发（即数据变化了），就调用V的render重新渲染视图：
 eventBus.on(A, ()=&amp;gt;{ v.</description>
     </item>

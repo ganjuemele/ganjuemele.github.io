@@ -6,10 +6,19 @@
     <description>Recent content in js on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 08 Sep 2020 18:22:40 +0800</lastBuildDate>
-    
-	<atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 17 Nov 2020 22:22:40 +0800</lastBuildDate><atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建优雅结束的函数</title>
+      <link>/blog/js-note1/</link>
+      <pubDate>Tue, 17 Nov 2020 22:22:40 +0800</pubDate>
+      
+      <guid>/blog/js-note1/</guid>
+      <description>用return结束一个函数很简单，但是，想要能够在将来的某个时刻返回函数，然后再继续执行。
+使用ES6中的生成器函数（generator function） 这是可以进入和退出并记住其状态的函数。
+function* taskRunner(){ console.log(&amp;#39;doing sth&amp;#39;) yield function(){ console.log(&amp;#39;第一步&amp;#39;)	} console.log(&amp;#39;doing sth after first&amp;#39;) yield function(){ console.log(&amp;#39;second&amp;#39;) } console.log(&amp;#39;after second&amp;#39;) } var task = taskRunner(); task.next().value() task.next().value() task.next() 输出：
+// doing sth // 第一步  // doing sth after first // second  // after second // {value: undefined, done: true} 可以用来遍历一组任务，每次通过一条yield语句和一个函数表达式前进一步
+function* idMaker(){ var index = 0; while(true){ yield index++; } } var gen = idMaker(); console.log(gen.next().value)	// 0 console.</description>
+    </item>
     
     <item>
       <title>promise</title>

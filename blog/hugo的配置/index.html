@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-02-10 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-02-10 18:22:40 \x2b0800 CST",
+        "datePublished": "2020-02-10 18:22:40 \u002b0800 CST",
+        "dateModified" : "2020-02-10 18:22:40 \u002b0800 CST",
         "url" : "\/blog\/hugo%E7%9A%84%E9%85%8D%E7%BD%AE\/",
         "wordCount" : "986",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="Hugo的配置">
 <meta itemprop="description" content="hugo搭建博客">
-<meta itemprop="datePublished" content="2020-02-10T18:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-10T18:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-02-10T18:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-02-10T18:22:40+08:00" />
 <meta itemprop="wordCount" content="986">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -509,70 +510,70 @@
     <ul>
 <li>首先需要将 <code>themes/future-imperfect/examplesite/config.toml</code> 复制到根目录替换原文件；</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">baseurl = <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#75715e"># 网站根路径，可以写成你后期站点对应的域名</span>
-languageCode = <span style="color:#e6db74">&#34;en-us&#34;</span> <span style="color:#75715e"># 网站支持语言</span>
-title = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span> <span style="color:#75715e"># 网站标题</span>
-theme = <span style="color:#e6db74">&#34;hugo-future-imperfect&#34;</span> <span style="color:#75715e"># 网站主题</span>
-preserveTaxonomyNames = <span style="color:#66d9ef">true</span>
-paginate = <span style="color:#ae81ff">3</span> <span style="color:#75715e"># 文章超出几篇后产生分页</span>
-disqusShortname = <span style="color:#e6db74">&#34;shortname&#34;</span>
-googleAnalytics = <span style="color:#e6db74">&#34;&#34;</span>
-pluralizeListTitles = <span style="color:#66d9ef">false</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">baseurl = &#34;/&#34;</span> <span style="color:#75715e"># 网站根路径，可以写成你后期站点对应的域名</span>
+<span style="color:#ae81ff">languageCode = &#34;en-us&#34;</span> <span style="color:#75715e"># 网站支持语言</span>
+<span style="color:#ae81ff">title = &#34;Hugo Future Imperfect&#34;</span> <span style="color:#75715e"># 网站标题</span>
+<span style="color:#ae81ff">theme = &#34;hugo-future-imperfect&#34;</span> <span style="color:#75715e"># 网站主题</span>
+<span style="color:#ae81ff">preserveTaxonomyNames = true</span>
+<span style="color:#ae81ff">paginate = 3</span> <span style="color:#75715e"># 文章超出几篇后产生分页</span>
+<span style="color:#ae81ff">disqusShortname = &#34;shortname&#34;</span>
+<span style="color:#ae81ff">googleAnalytics = &#34;&#34;</span>
+<span style="color:#ae81ff">pluralizeListTitles = false</span>
 <span style="color:#75715e"># Set the followings to true as part of your site SEO</span>
-enableRobotsTXT = <span style="color:#66d9ef">true</span>
-canonifyURLs = <span style="color:#66d9ef">true</span>
+<span style="color:#ae81ff">enableRobotsTXT = true</span>
+<span style="color:#ae81ff">canonifyURLs = true</span>
 
 <span style="color:#75715e"># [params] 下面的值将会构成模板里的 .Site.Params 变量</span>
-[params]
+[<span style="color:#ae81ff">params]</span>
   <span style="color:#75715e"># Sets the meta tag description</span>
-  description          = <span style="color:#e6db74">&#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo&#34;</span>
+  <span style="color:#ae81ff">description          = &#34;HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo&#34;</span>
   <span style="color:#75715e"># Sets the navbarTitle that appears in the top left of the navigation bar</span>
   <span style="color:#75715e"># 设置出现在导航栏左上角的导航栏标题</span>
-  navbarTitle          = <span style="color:#e6db74">&#34;Future Imperfect&#34;</span>
+  <span style="color:#ae81ff">navbarTitle          = &#34;Future Imperfect&#34;</span>
   <span style="color:#75715e"># Sets where &#34;View More Posts&#34; links</span>
   <span style="color:#75715e"># 设置“查看更多文章”链接的位置</span>
-  viewMorePostLink     = <span style="color:#e6db74">&#34;/blog/&#34;</span>
+  <span style="color:#ae81ff">viewMorePostLink     = &#34;/blog/&#34;</span>
 
 <span style="color:#75715e"># Optional Params</span>
   <span style="color:#75715e"># Sets navbarTitle to match the section of the website</span>
-  dynamicTitles        = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">dynamicTitles        = true</span>
   <span style="color:#75715e"># Sets RSS icons to appear on the sidebar with the social media buttons</span>
   <span style="color:#75715e"># RSS是否显示在侧边栏</span>
-  rssAppearAtTop       = <span style="color:#66d9ef">true</span>
-  rssAppearAtBottom    = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">rssAppearAtTop       = true</span>
+  <span style="color:#ae81ff">rssAppearAtBottom    = true</span>
   <span style="color:#75715e"># Sets Social Media icons to appear on the sidebar</span>
   <span style="color:#75715e"># 社交媒体图标是否显示在侧边栏</span>
-  socialAppearAtTop    = <span style="color:#66d9ef">true</span>
-  socialAppearAtBottom = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">socialAppearAtTop    = true</span>
+  <span style="color:#ae81ff">socialAppearAtBottom = true</span>
   <span style="color:#75715e"># Sets Categories to sort by number of posts instead of alphabetical</span>
   <span style="color:#75715e"># 分类信息是否按数量统计</span>
-  categoriesByCount    = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">categoriesByCount    = true</span>
   <span style="color:#75715e"># set to show or to hide categories in the sidebar</span>
   <span style="color:#75715e"># 分类信息是否显示在侧边栏</span>
-  showSidebarCategories = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">showSidebarCategories = true</span>
   <span style="color:#75715e"># Sets Estimated Reading Time to appear in post headers</span>
   <span style="color:#75715e"># 是否显示估计阅读时间</span>
-  includeReadingTime   = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">includeReadingTime   = true</span>
   <span style="color:#75715e"># Sets the Favicon and Version for the site. Default support is for</span>
   <span style="color:#75715e"># apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.</span>
   <span style="color:#75715e"># These are stored in the favicon folder. See the following for more information:</span>
   <span style="color:#75715e"># https://github.com/audreyr/favicon-cheat-sheet</span>
   <span style="color:#75715e"># 设置网站 favicon 图标，默认加载 static/favicon/favicon.png</span>
-  loadFavicon          = <span style="color:#66d9ef">false</span>
-  faviconVersion       = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#ae81ff">loadFavicon          = false</span>
+  <span style="color:#ae81ff">faviconVersion       = &#34;&#34;</span>
   <span style="color:#75715e"># Sets Social Share links to appear on posts</span>
   <span style="color:#75715e"># 文章滚动时是否显示右上角分享</span>
-  socialShare          = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">socialShare          = true</span>
   <span style="color:#75715e"># Sets specific share to appear on posts (default behavior is to appear)</span>
   <span style="color:#75715e"># 文章滚动时显示在右上角分享中的社交媒体图标</span>
-  socialShareTwitter   = <span style="color:#66d9ef">true</span>
-  socialShareGoogleplus = <span style="color:#66d9ef">true</span>
-  socialShareFacebook  = <span style="color:#66d9ef">true</span>
-  socialShareReddit    = <span style="color:#66d9ef">true</span>
-  socialShareLinkedin  = <span style="color:#66d9ef">true</span>
-  socialShareStumbleupon = <span style="color:#66d9ef">true</span>
-  socialSharePinterest = <span style="color:#66d9ef">true</span>
-  socialShareEmail     = <span style="color:#66d9ef">true</span>
+  <span style="color:#ae81ff">socialShareTwitter   = true</span>
+  <span style="color:#ae81ff">socialShareGoogleplus = true</span>
+  <span style="color:#ae81ff">socialShareFacebook  = true</span>
+  <span style="color:#ae81ff">socialShareReddit    = true</span>
+  <span style="color:#ae81ff">socialShareLinkedin  = true</span>
+  <span style="color:#ae81ff">socialShareStumbleupon = true</span>
+  <span style="color:#ae81ff">socialSharePinterest = true</span>
+  <span style="color:#ae81ff">socialShareEmail     = true</span>
 
   <span style="color:#75715e"># Load custom CSS or JavaScript files. The variable is an array so that you</span>
   <span style="color:#75715e"># can load multiple files if necessary. You can also load the standard theme</span>
@@ -580,157 +581,157 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
   <span style="color:#75715e"># customCSS            = [&#34;default&#34;, &#34;/path/to/file&#34;]</span>
   <span style="color:#75715e"># customJS             = [&#34;default&#34;, &#34;/path/to/file&#34;]</span>
   <span style="color:#75715e"># 加载自定义 css 或 javascript 文件地址</span>
-  customCSS            = [<span style="color:#e6db74">&#34;default&#34;</span>]
-  customJS             = [<span style="color:#e6db74">&#34;default&#34;</span>]
+  <span style="color:#ae81ff">customCSS            = [&#34;default&#34;]</span>
+  <span style="color:#ae81ff">customJS             = [&#34;default&#34;]</span>
 
   <span style="color:#75715e"># options for highlight.js (version, additional languages, and theme)</span>
   <span style="color:#75715e"># 设置 highlight.js 的版本，主题</span>
-  disable_highlight = <span style="color:#66d9ef">false</span> <span style="color:#75715e"># set to true to disable Highlight</span>
-  highlightjsVersion = <span style="color:#e6db74">&#34;9.11.0&#34;</span>
-  highlightjsCDN = <span style="color:#e6db74">&#34;//cdn.bootcss.com&#34;</span>
-  highlightjsLang = [<span style="color:#e6db74">&#34;r&#34;</span>, <span style="color:#e6db74">&#34;yaml&#34;</span>, <span style="color:#e6db74">&#34;css&#34;</span>]
-  highlightjsTheme = <span style="color:#e6db74">&#34;github&#34;</span>
-  MathJaxCDN = <span style="color:#e6db74">&#34;//cdn.bootcss.com&#34;</span>
-  MathJaxVersion = <span style="color:#e6db74">&#34;2.7.1&#34;</span>
+  <span style="color:#ae81ff">disable_highlight = false</span> <span style="color:#75715e"># set to true to disable Highlight</span>
+  <span style="color:#ae81ff">highlightjsVersion = &#34;9.11.0&#34;</span>
+  <span style="color:#ae81ff">highlightjsCDN = &#34;//cdn.bootcss.com&#34;</span>
+  <span style="color:#ae81ff">highlightjsLang = [&#34;r&#34;, &#34;yaml&#34;, &#34;css&#34;]</span>
+  <span style="color:#ae81ff">highlightjsTheme = &#34;github&#34;</span>
+  <span style="color:#ae81ff">MathJaxCDN = &#34;//cdn.bootcss.com&#34;</span>
+  <span style="color:#ae81ff">MathJaxVersion = &#34;2.7.1&#34;</span>
 
 <span style="color:#75715e"># Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)</span>
 <span style="color:#75715e"># due to its ease of use. Feel free to check out both and decide what you would</span>
 <span style="color:#75715e"># prefer to use. See Staticman.yml for additional settings.</span>
-[params.staticman]
+[<span style="color:#ae81ff">params.staticman]</span>
   <span style="color:#75715e"># Sets Statiman to be active</span>
-  staticman = <span style="color:#66d9ef">false</span>
+  <span style="color:#ae81ff">staticman = false</span>
   <span style="color:#75715e"># Sets the location for Staticman to connect to</span>
-  username  = <span style="color:#e6db74">&#34;&#34;</span>
-  repo      = <span style="color:#e6db74">&#34;&#34;</span>
-  branch    = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#ae81ff">username  = &#34;&#34;</span>
+  <span style="color:#ae81ff">repo      = &#34;&#34;</span>
+  <span style="color:#ae81ff">branch    = &#34;&#34;</span>
 
-  [params.staticman.recaptcha]
-    sitekey = <span style="color:#e6db74">&#34;SITE_KEY&#34;</span>
-    secret  = <span style="color:#e6db74">&#34;ENCRYPTED_SECRET&#34;</span>
+  [<span style="color:#ae81ff">params.staticman.recaptcha]</span>
+    <span style="color:#ae81ff">sitekey = &#34;SITE_KEY&#34;</span>
+    <span style="color:#ae81ff">secret  = &#34;ENCRYPTED_SECRET&#34;</span>
 
   <span style="color:#75715e"># These are optional params related to the sidebar. They are recommended, but not</span>
   <span style="color:#75715e"># required for proper functionality. HTML is supported within the params.</span>
-[params.intro]
+[<span style="color:#ae81ff">params.intro]</span>
   <span style="color:#75715e"># 侧边栏自我介绍头部</span>
-  header    = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span>
+  <span style="color:#ae81ff">header    = &#34;Hugo Future Imperfect&#34;</span>
   <span style="color:#75715e"># 侧边栏自我介绍内容</span>
-  paragraph = <span style="color:#e6db74">&#34;Another fine responsive site template by &lt;a href=\&#34;http://html5up.net\&#34;&gt;HTML5 UP&lt;/a&gt;. Ported by Julio Pescador with some extra goodies &lt;i class=&#39;fa fa-hand-peace-o&#39;&gt;&lt;/i&gt;&#34;</span>
+  <span style="color:#ae81ff">paragraph = &#34;Another fine responsive site template by &lt;a href=\&#34;http://html5up.net\&#34;&gt;HTML5 UP&lt;/a&gt;. Ported by Julio Pescador with some extra goodies &lt;i class=&#39;fa fa-hand-peace-o&#39;&gt;&lt;/i&gt;&#34;</span>
   <span style="color:#75715e"># 侧边栏关于我</span>
-  about     = <span style="color:#e6db74">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris.&#34;</span>
+  <span style="color:#ae81ff">about     = &#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris.&#34;</span>
 
   <span style="color:#75715e"># This appears at the top of the sidebar above params.intro.header.</span>
   <span style="color:#75715e"># A width of less than 100px is recommended from a design perspective.</span>
   <span style="color:#75715e"># 首页侧边栏头像</span>
-  [params.intro.pic]
-    src       = <span style="color:#e6db74">&#34;/img/main/logo.jpg&#34;</span>
+  [<span style="color:#ae81ff">params.intro.pic]</span>
+    <span style="color:#ae81ff">src       = &#34;/img/main/logo.jpg&#34;</span>
     <span style="color:#75715e"># Sets Image to be a cirlce</span>
     <span style="color:#75715e"># 头像图形 true 圆形 false 六边形</span>
-    circle    = <span style="color:#66d9ef">false</span>
+    <span style="color:#ae81ff">circle    = false</span>
     <span style="color:#75715e"># Sets Image to be Future Imperfect&#39;s hexagon</span>
-    imperfect = <span style="color:#66d9ef">true</span>
-    width     = <span style="color:#e6db74">&#34;&#34;</span>
-    alt       = <span style="color:#e6db74">&#34;Hugo Future Imperfect&#34;</span>
+    <span style="color:#ae81ff">imperfect = true</span>
+    <span style="color:#ae81ff">width     = &#34;&#34;</span>
+    <span style="color:#ae81ff">alt       = &#34;Hugo Future Imperfect&#34;</span>
 
-[params.postAmount]
+[<span style="color:#ae81ff">params.postAmount]</span>
 <span style="color:#75715e"># Sets the number of recent posts to show in the sidebar. The default value is 5.</span>
 <span style="color:#75715e"># 侧边栏中显示的最近文章数，默认值为5</span>
-    sidebar = <span style="color:#ae81ff">5</span>
+    <span style="color:#ae81ff">sidebar = 5</span>
 
 <span style="color:#75715e"># Sets the menu items in the navigation bar</span>
 <span style="color:#75715e"># Identifier prepends a Font Awesome icon to the menu item</span>
 <span style="color:#75715e"># 导航菜单</span>
-[[menu.main]]
+[[<span style="color:#ae81ff">menu.main]]</span>
   <span style="color:#75715e"># 菜单名称</span>
-  name = <span style="color:#e6db74">&#34;Home&#34;</span>
+  <span style="color:#ae81ff">name = &#34;Home&#34;</span>
   <span style="color:#75715e"># 请求地址</span>
-  url = <span style="color:#e6db74">&#34;/&#34;</span>
+  <span style="color:#ae81ff">url = &#34;/&#34;</span>
   <span style="color:#75715e"># 菜单图标</span>
-  identifier = <span style="color:#e6db74">&#34;fa fa-home&#34;</span>
+  <span style="color:#ae81ff">identifier = &#34;fa fa-home&#34;</span>
   <span style="color:#75715e"># 权重，越小越靠前</span>
-  weight = <span style="color:#ae81ff">1</span>
+  <span style="color:#ae81ff">weight = 1</span>
 
-[[menu.main]]
-  name = <span style="color:#e6db74">&#34;About&#34;</span>
-  url = <span style="color:#e6db74">&#34;/about/&#34;</span>
-  identifier = <span style="color:#e6db74">&#34;fa fa-id-card-o&#34;</span>
-  weight = <span style="color:#ae81ff">2</span>
+[[<span style="color:#ae81ff">menu.main]]</span>
+  <span style="color:#ae81ff">name = &#34;About&#34;</span>
+  <span style="color:#ae81ff">url = &#34;/about/&#34;</span>
+  <span style="color:#ae81ff">identifier = &#34;fa fa-id-card-o&#34;</span>
+  <span style="color:#ae81ff">weight = 2</span>
 
-[[menu.main]]
-  name = <span style="color:#e6db74">&#34;Blog&#34;</span>
-  url = <span style="color:#e6db74">&#34;/blog/&#34;</span>
-  identifier = <span style="color:#e6db74">&#34;fa fa-newspaper-o&#34;</span>
-  weight = <span style="color:#ae81ff">3</span>
+[[<span style="color:#ae81ff">menu.main]]</span>
+  <span style="color:#ae81ff">name = &#34;Blog&#34;</span>
+  <span style="color:#ae81ff">url = &#34;/blog/&#34;</span>
+  <span style="color:#ae81ff">identifier = &#34;fa fa-newspaper-o&#34;</span>
+  <span style="color:#ae81ff">weight = 3</span>
 
-[[menu.main]]
-  name = <span style="color:#e6db74">&#34;Itemized&#34;</span>
-  url = <span style="color:#e6db74">&#34;/itemized/&#34;</span>
-  identifier = <span style="color:#e6db74">&#34;fa fa-list&#34;</span>
-  weight = <span style="color:#ae81ff">4</span>
+[[<span style="color:#ae81ff">menu.main]]</span>
+  <span style="color:#ae81ff">name = &#34;Itemized&#34;</span>
+  <span style="color:#ae81ff">url = &#34;/itemized/&#34;</span>
+  <span style="color:#ae81ff">identifier = &#34;fa fa-list&#34;</span>
+  <span style="color:#ae81ff">weight = 4</span>
 
-[[menu.main]]
-  name = <span style="color:#e6db74">&#34;Categories&#34;</span>
-  url = <span style="color:#e6db74">&#34;/categories/&#34;</span>
-  identifier = <span style="color:#e6db74">&#34;fa fa-sitemap&#34;</span>
-  weight = <span style="color:#ae81ff">5</span>
+[[<span style="color:#ae81ff">menu.main]]</span>
+  <span style="color:#ae81ff">name = &#34;Categories&#34;</span>
+  <span style="color:#ae81ff">url = &#34;/categories/&#34;</span>
+  <span style="color:#ae81ff">identifier = &#34;fa fa-sitemap&#34;</span>
+  <span style="color:#ae81ff">weight = 5</span>
 
-[[menu.main]]
-  name = <span style="color:#e6db74">&#34;Contact&#34;</span>
-  url = <span style="color:#e6db74">&#34;/contact/&#34;</span>
-  identifier = <span style="color:#e6db74">&#34;fa fa-envelope-o&#34;</span>
-  weight = <span style="color:#ae81ff">6</span>
+[[<span style="color:#ae81ff">menu.main]]</span>
+  <span style="color:#ae81ff">name = &#34;Contact&#34;</span>
+  <span style="color:#ae81ff">url = &#34;/contact/&#34;</span>
+  <span style="color:#ae81ff">identifier = &#34;fa fa-envelope-o&#34;</span>
+  <span style="color:#ae81ff">weight = 6</span>
 
 <span style="color:#75715e"># Sets Social Media icons to appear and link to your account. Value should be your</span>
 <span style="color:#75715e"># username unless otherwise noted. These are the icons affected by socialAppearAtTop</span>
 <span style="color:#75715e"># and socialAppearAtBottom.</span>
 <span style="color:#75715e"># 设置显示在侧边栏中的社交媒体图标</span>
-[social]
+[<span style="color:#ae81ff">social]</span>
   <span style="color:#75715e"># Coding Communities</span>
-  github           = <span style="color:#e6db74">&#34;jpescador/hugo-future-imperfect&#34;</span>
-  gitlab           = <span style="color:#e6db74">&#34;&#34;</span>
-  stackoverflow    = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># User Number</span>
-  bitbucket        = <span style="color:#e6db74">&#34;&#34;</span>
-  jsfiddle         = <span style="color:#e6db74">&#34;&#34;</span>
-  codepen          = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#ae81ff">github           = &#34;jpescador/hugo-future-imperfect&#34;</span>
+  <span style="color:#ae81ff">gitlab           = &#34;&#34;</span>
+  <span style="color:#ae81ff">stackoverflow    = &#34;&#34;</span> <span style="color:#75715e"># User Number</span>
+  <span style="color:#ae81ff">bitbucket        = &#34;&#34;</span>
+  <span style="color:#ae81ff">jsfiddle         = &#34;&#34;</span>
+  <span style="color:#ae81ff">codepen          = &#34;&#34;</span>
   <span style="color:#75715e"># Visual Art Communities</span>
-  deviantart       = <span style="color:#e6db74">&#34;&#34;</span>
-  flickr           = <span style="color:#e6db74">&#34;example&#34;</span>
-  behance          = <span style="color:#e6db74">&#34;&#34;</span>
-  dribbble         = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#ae81ff">deviantart       = &#34;&#34;</span>
+  <span style="color:#ae81ff">flickr           = &#34;example&#34;</span>
+  <span style="color:#ae81ff">behance          = &#34;&#34;</span>
+  <span style="color:#ae81ff">dribbble         = &#34;&#34;</span>
   <span style="color:#75715e"># Publishing Communities</span>
-  wordpress        = <span style="color:#e6db74">&#34;&#34;</span>
-  medium           = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#ae81ff">wordpress        = &#34;&#34;</span>
+  <span style="color:#ae81ff">medium           = &#34;&#34;</span>
   <span style="color:#75715e"># Professional/Business Oriented Communities</span>
-  linkedin         = <span style="color:#e6db74">&#34;example&#34;</span>
-  linkedin_company = <span style="color:#e6db74">&#34;examplebusiness&#34;</span>
-  foursquare       = <span style="color:#e6db74">&#34;&#34;</span>
-  xing             = <span style="color:#e6db74">&#34;&#34;</span>
-  slideshare       = <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#ae81ff">linkedin         = &#34;example&#34;</span>
+  <span style="color:#ae81ff">linkedin_company = &#34;examplebusiness&#34;</span>
+  <span style="color:#ae81ff">foursquare       = &#34;&#34;</span>
+  <span style="color:#ae81ff">xing             = &#34;&#34;</span>
+  <span style="color:#ae81ff">slideshare       = &#34;&#34;</span>
   <span style="color:#75715e"># Social Networks</span>
-  facebook         = <span style="color:#e6db74">&#34;example&#34;</span>
-  googleplus       = <span style="color:#e6db74">&#34;&#34;</span>
-  reddit           = <span style="color:#e6db74">&#34;example&#34;</span>
-  quora            = <span style="color:#e6db74">&#34;&#34;</span>
-  youtube          = <span style="color:#e6db74">&#34;&#34;</span>
-  vimeo            = <span style="color:#e6db74">&#34;&#34;</span>
-  whatsapp         = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># WhatsApp Number</span>
+  <span style="color:#ae81ff">facebook         = &#34;example&#34;</span>
+  <span style="color:#ae81ff">googleplus       = &#34;&#34;</span>
+  <span style="color:#ae81ff">reddit           = &#34;example&#34;</span>
+  <span style="color:#ae81ff">quora            = &#34;&#34;</span>
+  <span style="color:#ae81ff">youtube          = &#34;&#34;</span>
+  <span style="color:#ae81ff">vimeo            = &#34;&#34;</span>
+  <span style="color:#ae81ff">whatsapp         = &#34;&#34;</span> <span style="color:#75715e"># WhatsApp Number</span>
     <span style="color:#75715e"># WeChat and QQ need testing.</span>
-    wechat         = <span style="color:#e6db74">&#34;&#34;</span>
-    qq             = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># User ID Number</span>
-  instagram        = <span style="color:#e6db74">&#34;example&#34;</span>
-  tumblr           = <span style="color:#e6db74">&#34;&#34;</span>
-  twitter          = <span style="color:#e6db74">&#34;example&#34;</span>
-  skype            = <span style="color:#e6db74">&#34;&#34;</span>
-  snapchat         = <span style="color:#e6db74">&#34;&#34;</span>
-  pinterest        = <span style="color:#e6db74">&#34;example&#34;</span>
-  telegram         = <span style="color:#e6db74">&#34;example&#34;</span>
-  vine             = <span style="color:#e6db74">&#34;&#34;</span>
-  googlescholar    = <span style="color:#e6db74">&#34;&#34;</span>
-  orcid            = <span style="color:#e6db74">&#34;&#34;</span>
-  researchgate     = <span style="color:#e6db74">&#34;example&#34;</span>
+    <span style="color:#ae81ff">wechat         = &#34;&#34;</span>
+    <span style="color:#ae81ff">qq             = &#34;&#34;</span> <span style="color:#75715e"># User ID Number</span>
+  <span style="color:#ae81ff">instagram        = &#34;example&#34;</span>
+  <span style="color:#ae81ff">tumblr           = &#34;&#34;</span>
+  <span style="color:#ae81ff">twitter          = &#34;example&#34;</span>
+  <span style="color:#ae81ff">skype            = &#34;&#34;</span>
+  <span style="color:#ae81ff">snapchat         = &#34;&#34;</span>
+  <span style="color:#ae81ff">pinterest        = &#34;example&#34;</span>
+  <span style="color:#ae81ff">telegram         = &#34;example&#34;</span>
+  <span style="color:#ae81ff">vine             = &#34;&#34;</span>
+  <span style="color:#ae81ff">googlescholar    = &#34;&#34;</span>
+  <span style="color:#ae81ff">orcid            = &#34;&#34;</span>
+  <span style="color:#ae81ff">researchgate     = &#34;example&#34;</span>
   <span style="color:#75715e"># Email</span>
-  email            = <span style="color:#e6db74">&#34;example&#34;</span>
+  <span style="color:#ae81ff">email            = &#34;example&#34;</span>
 
-</code></pre></div><h3 id="heading">更改模版内容</h3>
+</code></pre></div><h3 id="更改模版内容">更改模版内容</h3>
 <p>进入 <code>/themes/hugo-future-impefect/layouts/</code> 找到所要修改部分的文件</p>
 
   </div>
@@ -945,6 +946,20 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -964,20 +979,6 @@ canonifyURLs = <span style="color:#66d9ef">true</span>
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

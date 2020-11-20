@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "Vuex的总结",
         "headline" : "Vuex的总结",
-        "description" : "Vue.use(Vuex)\n\/\/ ~\/main.ts  new Vue({ router, store, \/\/引用进去  render: h =\x26gt; h(App) }).$mount(\x26#39;#app\x26#39;); const store = new Vuex.store({ state: { count:0 ... ... }, mutations: { method1 (state){ state.count }, ... } }) 组件components中使用\n读：对象 computed获取 @Component({ components: {xxx}, computed: { tags() { return this.$store.state.count } } }) 类 js\/ts export default class EditLabel extends Vue { get currentTag (){ return this.$store.state.currentTag } } 写： this.$store.commit(\x26#39;updateTag\x26#39;,{id:this.currentTag.id, name}); ",
+        "description" : "Vue.use(Vuex)\n\/\/ ~\/main.ts  new Vue({ router, store, \/\/引用进去  render: h =\u0026gt; h(App) }).$mount(\u0026#39;#app\u0026#39;); const store = new Vuex.store({ state: { count:0 ... ... }, mutations: { method1 (state){ state.count }, ... } }) 组件components中使用\n读：对象 computed获取 @Component({ components: {xxx}, computed: { tags() { return this.$store.state.count } } }) 类 js\/ts export default class EditLabel extends Vue { get currentTag (){ return this.$store.state.currentTag } } 写： this.$store.commit(\u0026#39;updateTag\u0026#39;,{id:this.currentTag.id, name}); ",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-27 14:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-27 14:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-27 14:22:40 \u002b0800 CST",
+        "dateModified" : "2020-03-27 14:22:40 \u002b0800 CST",
         "url" : "\/blog\/vuex\/",
         "wordCount" : "67",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -87,13 +87,14 @@
 <meta itemprop="description" content="Vue.use(Vuex)
 // ~/main.ts  new Vue({ router, store, //引用进去  render: h =&gt; h(App) }).$mount(&#39;#app&#39;); const store = new Vuex.store({ state: { count:0 ... ... }, mutations: { method1 (state){ state.count }, ... } }) 组件components中使用
 读：对象 computed获取 @Component({ components: {xxx}, computed: { tags() { return this.$store.state.count } } }) 类 js/ts export default class EditLabel extends Vue { get currentTag (){ return this.$store.state.currentTag } } 写： this.$store.commit(&#39;updateTag&#39;,{id:this.currentTag.id, name}); ">
-<meta itemprop="datePublished" content="2020-03-27T14:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-27T14:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-27T14:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-27T14:22:40+08:00" />
 <meta itemprop="wordCount" content="67">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -281,6 +282,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -298,18 +311,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -493,7 +494,7 @@
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vue</span>({
        <span style="color:#a6e22e">router</span>,
        <span style="color:#a6e22e">store</span>, <span style="color:#75715e">//引用进去
-</span><span style="color:#75715e"></span>       <span style="color:#a6e22e">render</span>: <span style="color:#66d9ef">h</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">h</span>(<span style="color:#a6e22e">App</span>)
+</span><span style="color:#75715e"></span>       <span style="color:#a6e22e">render</span>: <span style="color:#66d9ef">h</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">h</span>(<span style="color:#a6e22e">App</span>)
    }).<span style="color:#a6e22e">$mount</span>(<span style="color:#e6db74">&#39;#app&#39;</span>);
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">store</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Vuex</span>.<span style="color:#a6e22e">store</span>({
 	<span style="color:#a6e22e">state</span><span style="color:#f92672">:</span> {
@@ -510,7 +511,7 @@
 	}
 })
 </code></pre></div><p>组件components中使用</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#960050;background-color:#1e0010">读</span><span style="color:#960050;background-color:#1e0010">：</span><span style="color:#960050;background-color:#1e0010">对</span><span style="color:#960050;background-color:#1e0010">象</span> <span style="color:#a6e22e">computed获取</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#960050;background-color:#1e0010">读：对象</span> <span style="color:#a6e22e">computed获取</span>
 	<span style="color:#66d9ef">@Component</span>({
 	        <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">xxx</span>},
 	        <span style="color:#a6e22e">computed</span><span style="color:#f92672">:</span> {
@@ -522,12 +523,12 @@
 	
 	<span style="color:#960050;background-color:#1e0010">类</span> <span style="color:#a6e22e">js</span><span style="color:#f92672">/</span><span style="color:#a6e22e">ts</span>
 	<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EditLabel</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Vue</span> {
-		<span style="color:#a6e22e">get</span> <span style="color:#a6e22e">currentTag</span> (){
+		<span style="color:#66d9ef">get</span> <span style="color:#a6e22e">currentTag</span> (){
 			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$store</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">currentTag</span>
 		}
 	}
 	
-<span style="color:#960050;background-color:#1e0010">写</span><span style="color:#960050;background-color:#1e0010">：</span>
+<span style="color:#960050;background-color:#1e0010">写：</span>
 	<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$store</span>.<span style="color:#a6e22e">commit</span>(<span style="color:#e6db74">&#39;updateTag&#39;</span>,{<span style="color:#a6e22e">id</span>:<span style="color:#66d9ef">this.currentTag.id</span>, <span style="color:#a6e22e">name</span>});
 
 </code></pre></div>
@@ -743,6 +744,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -762,20 +777,6 @@
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

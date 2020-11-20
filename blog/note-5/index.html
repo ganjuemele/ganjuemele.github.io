@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "数字算法的精度问题",
         "headline" : "数字算法的精度问题",
-        "description" : "var a= \x26#39;7.7\x26#39;; var d = a * 687; \/\/ d = 5289.900000000001 会产生精度差的问题\n加法 function (arg1, arg2){ var r1, r2, m; try {r1 = arg1.toString().split(\x26#39;.\x26#39;)[1].length} catch(e) {r1 = 0} \/\/ arg1小数点后的数字长度 \ttry {r2 = arg1.toString().split(\x26#39;.\x26#39;)[1].length} catch(e) {r2 = 0} \/\/ arg2小数点后的数字长度 \tm = Math.pow(10, Math.max(r1, r2)) \/\/ 取(r1,r2)中最大值，10的 次方 \treturn ( arg1*m \x2b arg2*m ) \/ m } 此方法解决 加法函数的精度问题\n⚠️可以直接toFixed\n乘法 function (arg1, arg2){ var m; try {m \x2b= arg1.",
+        "description" : "var a= \u0026#39;7.7\u0026#39;; var d = a * 687; \/\/ d = 5289.900000000001 会产生精度差的问题\n加法 function (arg1, arg2){ var r1, r2, m; try {r1 = arg1.toString().split(\u0026#39;.\u0026#39;)[1].length} catch(e) {r1 = 0} \/\/ arg1小数点后的数字长度 \ttry {r2 = arg1.toString().split(\u0026#39;.\u0026#39;)[1].length} catch(e) {r2 = 0} \/\/ arg2小数点后的数字长度 \tm = Math.pow(10, Math.max(r1, r2)) \/\/ 取(r1,r2)中最大值，10的 次方 \treturn ( arg1*m \u002b arg2*m ) \/ m } 此方法解决 加法函数的精度问题\n⚠️可以直接toFixed\n乘法 function (arg1, arg2){ var m; try {m \u002b= arg1.",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-09-07 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-09-07 18:22:40 \x2b0800 CST",
+        "datePublished": "2020-09-07 18:22:40 \u002b0800 CST",
+        "dateModified" : "2020-09-07 18:22:40 \u002b0800 CST",
         "url" : "\/blog\/note-5\/",
         "wordCount" : "89",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -90,13 +90,14 @@
 加法 function (arg1, arg2){ var r1, r2, m; try {r1 = arg1.toString().split(&#39;.&#39;)[1].length} catch(e) {r1 = 0} // arg1小数点后的数字长度 	try {r2 = arg1.toString().split(&#39;.&#39;)[1].length} catch(e) {r2 = 0} // arg2小数点后的数字长度 	m = Math.pow(10, Math.max(r1, r2)) // 取(r1,r2)中最大值，10的 次方 	return ( arg1*m &#43; arg2*m ) / m } 此方法解决 加法函数的精度问题
 ⚠️可以直接toFixed
 乘法 function (arg1, arg2){ var m; try {m &#43;= arg1.">
-<meta itemprop="datePublished" content="2020-09-07T18:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-09-07T18:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-09-07T18:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-09-07T18:22:40+08:00" />
 <meta itemprop="wordCount" content="89">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -284,6 +285,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -301,18 +314,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -495,7 +496,7 @@
 <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">687</span>;
 <span style="color:#75715e">// d = 5289.900000000001
 </span></code></pre></div><p>会产生精度差的问题</p>
-<h3 id="heading">加法</h3>
+<h3 id="加法">加法</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">arg1</span>, <span style="color:#a6e22e">arg2</span>){
 	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">r1</span>, <span style="color:#a6e22e">r2</span>, <span style="color:#a6e22e">m</span>;
 	<span style="color:#66d9ef">try</span> {<span style="color:#a6e22e">r1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arg1</span>.<span style="color:#a6e22e">toString</span>().<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">length</span>} <span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">e</span>) {<span style="color:#a6e22e">r1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>} <span style="color:#75715e">// arg1小数点后的数字长度
@@ -505,7 +506,7 @@
 }
 </code></pre></div><p>此方法解决 加法函数的精度问题</p>
 <p><strong>⚠️可以直接toFixed</strong></p>
-<h3 id="heading-1">乘法</h3>
+<h3 id="乘法">乘法</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">arg1</span>, <span style="color:#a6e22e">arg2</span>){
 	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span>;
 	<span style="color:#66d9ef">try</span> {<span style="color:#a6e22e">m</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">arg1</span>.<span style="color:#a6e22e">toString</span>().<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">length</span>} <span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">e</span>){} <span style="color:#75715e">// arg1小数点后的数字长度
@@ -726,6 +727,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -745,20 +760,6 @@
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

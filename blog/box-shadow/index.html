@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-16 23:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-16 23:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-16 23:22:40 \u002b0800 CST",
+        "dateModified" : "2020-03-16 23:22:40 \u002b0800 CST",
         "url" : "\/blog\/box-shadow\/",
         "wordCount" : "95",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="box-shadow样式">
 <meta itemprop="description" content="CSS box-shadow记录">
-<meta itemprop="datePublished" content="2020-03-16T23:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-16T23:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-16T23:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-16T23:22:40+08:00" />
 <meta itemprop="wordCount" content="95">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -487,27 +488,27 @@
     <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">64px</span>;
     <span style="color:#f92672">width</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">25</span><span style="color:#960050;background-color:#1e0010">%</span>;
     <span style="color:#f92672">border</span><span style="color:#a6e22e">:</span> #fff <span style="color:#f92672">solid</span> <span style="color:#f92672">1px</span>;
-	<span style="color:#f92672">box-shadow</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">inset</span> <span style="color:#f92672">-2px</span> <span style="color:#f92672">-2px</span> <span style="color:#f92672">1px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#a6e22e">.</span><span style="color:#a6e22e">45</span><span style="color:#f92672">)</span>;
+	<span style="color:#f92672">box-shadow</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">inset</span> <span style="color:#f92672">-2px</span> <span style="color:#f92672">-2px</span> <span style="color:#f92672">1px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#a6e22e">.45</span><span style="color:#f92672">)</span>;
     $bg<span style="color:#f92672">:</span> <span style="color:#ae81ff">#f2f2f2</span>;
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span>;
     }
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">5</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">5</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">4</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
     }
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">6</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">9</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">6</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">9</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">8</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
     }
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">7</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">10</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">13</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">7</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">10</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">13</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">12</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
     }
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">8</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">11</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">8</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">11</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">16</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
     }
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">12</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">14</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">12</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">14</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">20</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
     }
-    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:</span><span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">15</span><span style="color:#f92672">)</span> {
+    <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">15</span><span style="color:#f92672">)</span> {
         <span style="color:#f92672">background</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">darken</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">bg</span><span style="color:#f92672">,</span> <span style="color:#f92672">25</span><span style="color:#960050;background-color:#1e0010">%</span><span style="color:#f92672">)</span>;
     }
 }
@@ -515,9 +516,9 @@
 <p><img src="/img/2020/03/boxshadow.jpg" alt="图片"></p>
 <p>反之 2px 就是呈现按下状态的样式;</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">box-shadow</span><span style="color:#f92672">:</span> <span style="color:#f92672">inset</span> <span style="color:#f92672">浮-5px</span> <span style="color:#f92672">沉2px</span> <span style="color:#f92672">向内5px</span> <span style="color:#f92672">向外10px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span>.<span style="color:#a6e22e">45</span><span style="color:#f92672">)</span><span style="color:#960050;background-color:#1e0010">，</span>
-			<span style="color:#f92672">inset</span> <span style="color:#f92672">浮-5px</span> <span style="color:#f92672">沉2px</span> <span style="color:#f92672">向内5px</span> <span style="color:#f92672">向外10px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span>.<span style="color:#a6e22e">45</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-			<span style="color:#f92672">/</span><span style="color:#f92672">/</span><span style="color:#f92672">可以多次设置</span>
-</code></pre></div><h3 id="scss-">scss 色彩算法</h3>
+			<span style="color:#f92672">inset</span> <span style="color:#f92672">浮-5px</span> <span style="color:#f92672">沉2px</span> <span style="color:#f92672">向内5px</span> <span style="color:#f92672">向外10px</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span><span style="color:#f92672">,</span><span style="color:#f92672">0</span>.<span style="color:#a6e22e">45</span><span style="color:#f92672">);</span>
+			<span style="color:#f92672">//</span><span style="color:#f92672">可以多次设置</span>
+</code></pre></div><h3 id="scss-色彩算法">scss 色彩算法</h3>
 <p><code>background: darken($bg, 25%);</code> 在$bg的色彩基础上，颜色加深25%；</p>
 
   </div>
@@ -732,6 +733,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -751,20 +766,6 @@
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

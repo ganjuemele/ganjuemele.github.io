@@ -6,11 +6,7 @@
     <description>Recent content in 小程序 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 04 Sep 2020 10:22:40 +0800</lastBuildDate>
-    
-	<atom:link href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 04 Sep 2020 10:22:40 +0800</lastBuildDate><atom:link href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App加载状态的几种类型</title>
       <link>/blog/note-4/</link>
@@ -60,7 +56,7 @@ import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp
       <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
       
       <guid>/blog/slot/</guid>
-      <description>&amp;lt;!--/components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;view&amp;gt;other&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; // /pages/index/index.json { &amp;#34;usingComponents&amp;#34;: { &amp;#34;my-component&amp;#34;: &amp;#34;/components/index/index&amp;#34; } } &amp;lt;!--/pages/index/index.axml --&amp;gt; &amp;lt;my-component /&amp;gt; 输出 default slot &amp;amp; default value other  &amp;lt;!--/components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;slot name=&amp;#34;header&amp;#34;/&amp;gt; &amp;lt;view&amp;gt;body&amp;lt;/view&amp;gt; &amp;lt;slot name=&amp;#34;footer&amp;#34;/&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;!--/pages/index/index.axml --&amp;gt; &amp;lt;my-component&amp;gt; &amp;lt;view slot=&amp;#34;header&amp;#34;&amp;gt;header&amp;lt;/view&amp;gt; &amp;lt;view slot=&amp;#34;footer&amp;#34;&amp;gt;footer&amp;lt;/view&amp;gt; &amp;lt;/my-component&amp;gt; 输出 default slot &amp;amp; default value header body footer </description>
+      <description>&amp;lt;!-- /components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;view&amp;gt;other&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; // /pages/index/index.json { &amp;#34;usingComponents&amp;#34;: { &amp;#34;my-component&amp;#34;: &amp;#34;/components/index/index&amp;#34; } } &amp;lt;!-- /pages/index/index.axml --&amp;gt; &amp;lt;my-component /&amp;gt; 输出 default slot &amp;amp; default value other  &amp;lt;!-- /components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;slot name=&amp;#34;header&amp;#34;/&amp;gt; &amp;lt;view&amp;gt;body&amp;lt;/view&amp;gt; &amp;lt;slot name=&amp;#34;footer&amp;#34;/&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;!-- /pages/index/index.axml --&amp;gt; &amp;lt;my-component&amp;gt; &amp;lt;view slot=&amp;#34;header&amp;#34;&amp;gt;header&amp;lt;/view&amp;gt; &amp;lt;view slot=&amp;#34;footer&amp;#34;&amp;gt;footer&amp;lt;/view&amp;gt; &amp;lt;/my-component&amp;gt; 输出 default slot &amp;amp; default value header body footer </description>
     </item>
     
     <item>

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>css on 么了&#39;s 博客</title>
+    <title>CSS on 么了&#39;s 博客</title>
     <link>/categories/css/</link>
-    <description>Recent content in css on 么了&#39;s 博客</description>
+    <description>Recent content in CSS on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 23 Sep 2020 12:22:40 +0800</lastBuildDate>
-    
-	<atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 23 Sep 2020 12:22:40 +0800</lastBuildDate><atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>字体font-family</title>
       <link>/blog/font-family/</link>
@@ -50,7 +46,7 @@ font-family: -apple-system, &amp;#34;Noto Sans&amp;#34;, &amp;#34;Helvetica Neue
       <description>当不能确定一个页面元素的 width/height，需要计算之后才能取得值；
 calc() 计算 calc() 函数用于动态计算长度值。
 需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
-calc()函数支持&#39;+&amp;rsquo;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运算
+calc()函数支持&#39;+&#39;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运算
 .tags { padding: 12px 0; height: calc(100vh - 495px); overflow: auto; .current { display: flex; flex-flow: wrap; li { width: 16vw; height: 16vw; text-align: center; margin: 4px calc(10vw - 30px); } } } </description>
     </item>
     

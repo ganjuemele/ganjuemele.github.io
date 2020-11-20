@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-02-02 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-02-02 18:22:40 \x2b0800 CST",
+        "datePublished": "2020-02-02 18:22:40 \u002b0800 CST",
+        "dateModified" : "2020-02-02 18:22:40 \u002b0800 CST",
         "url" : "\/blog\/toml\/",
         "wordCount" : "136",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="toml文档格式的数据定义">
 <meta itemprop="description" content="md文件配置规范">
-<meta itemprop="datePublished" content="2020-02-02T18:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-02T18:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-02-02T18:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-02-02T18:22:40+08:00" />
 <meta itemprop="wordCount" content="136">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -515,44 +516,44 @@
 <li><strong>#</strong> 表示注释</li>
 <li>可以按照自己的意愿使用空格或者Tab缩进</li>
 </ul>
-<h2 id="-hugo-md">先写一个 Hugo 博客/md文档的配置规范</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">+++
-title = <span style="color:#e6db74">&#34;标题名称&#34;</span>
-description = <span style="color:#e6db74">&#34;&#34;</span> //副标题
-draft = <span style="color:#66d9ef">false</span> //草稿
-author = <span style="color:#e6db74">&#34;么了&#34;</span>
-date = <span style="color:#e6db74">&#34;2019-04-02&#34;</span>
-categories = [<span style="color:#e6db74">&#34;笔记&#34;</span>,博客<span style="color:#e6db74">&#34;&#34;</span>] // 设置分类，支持数组格式
-series = [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>]
-slug = <span style="color:#e6db74">&#34;url的尾部&#34;</span>
-tags = []
-keywords: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>]
-featured = <span style="color:#e6db74">&#34;pic01.jpg&#34;</span> //外部索引图片地址用文件夹 /年份/月份/pic.jpg
-featuredalt = <span style="color:#e6db74">&#34;Pic 1&#34;</span>
-featuredpath = <span style="color:#e6db74">&#34;date&#34;</span> // 也可使用绝对路径
-linktitle = <span style="color:#e6db74">&#34;&#34;</span>
-publishdate      // 定时未来发布的时间
-type = <span style="color:#e6db74">&#34;post&#34;</span>
-metaDataFormat = <span style="color:#e6db74">&#34;toml&#34;</span>
-languageCode = <span style="color:#e6db74">&#34;en-us&#34;</span>
-date = <span style="color:#e6db74">&#34;2014-09-29T21:54:53-05:00&#34;</span>
-weight         // 排序的权重，默认按时间降序
+<h2 id="先写一个-hugo-博客md文档的配置规范">先写一个 Hugo 博客/md文档的配置规范</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">+++</span>
+<span style="color:#ae81ff">title = &#34;标题名称&#34;</span>
+<span style="color:#ae81ff">description = &#34;&#34; //副标题</span>
+<span style="color:#ae81ff">draft = false //草稿</span>
+<span style="color:#ae81ff">author = &#34;么了&#34;</span>
+<span style="color:#ae81ff">date = &#34;2019-04-02&#34;</span>
+<span style="color:#ae81ff">categories = [&#34;笔记&#34;,博客&#34;&#34;] // 设置分类，支持数组格式</span>
+<span style="color:#ae81ff">series = [&#34;A&#34;, &#34;B&#34;]</span>
+<span style="color:#ae81ff">slug = &#34;url的尾部&#34;</span>
+<span style="color:#ae81ff">tags = []</span>
+<span style="color:#f92672">keywords</span>: [<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>]
+<span style="color:#ae81ff">featured = &#34;pic01.jpg&#34; //外部索引图片地址用文件夹 /年份/月份/pic.jpg</span>
+<span style="color:#ae81ff">featuredalt = &#34;Pic 1&#34;</span>
+<span style="color:#ae81ff">featuredpath = &#34;date&#34; // 也可使用绝对路径</span>
+<span style="color:#ae81ff">linktitle = &#34;&#34;</span>
+<span style="color:#ae81ff">publishdate      // 定时未来发布的时间</span>
+<span style="color:#ae81ff">type = &#34;post&#34;</span>
+<span style="color:#ae81ff">metaDataFormat = &#34;toml&#34;</span>
+<span style="color:#ae81ff">languageCode = &#34;en-us&#34;</span>
+<span style="color:#ae81ff">date = &#34;2014-09-29T21:54:53-05:00&#34;</span>
+<span style="color:#ae81ff">weight         // 排序的权重，默认按时间降序</span>
 
-+++
-</code></pre></div><h2 id="hugo--markdown-">Hugo 的 markdown 文件前置数据定义结构，支持三种格式的语法类型</h2>
-<h3 id="heading">例如：</h3>
+<span style="color:#ae81ff">+++</span>
+</code></pre></div><h2 id="hugo-的-markdown-文件前置数据定义结构支持三种格式的语法类型">Hugo 的 markdown 文件前置数据定义结构，支持三种格式的语法类型</h2>
+<h3 id="例如">例如：</h3>
 <h3 id="yaml">yaml</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-title: <span style="color:#e6db74">&#34;My First Post&#34;</span>
-date: <span style="color:#e6db74">2019-03-26T08:47:11</span><span style="color:#ae81ff">+01</span>:<span style="color:#ae81ff">00</span>
-draft: <span style="color:#66d9ef">true</span>
+<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My First Post&#34;</span>
+<span style="color:#f92672">date</span>: <span style="color:#e6db74">2019-03-26T08:47:11</span><span style="color:#ae81ff">+01</span>:<span style="color:#ae81ff">00</span>
+<span style="color:#f92672">draft</span>: <span style="color:#66d9ef">true</span>
 ---
 </code></pre></div><h3 id="toml">toml</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">+++
-title: <span style="color:#e6db74">&#34;My First Post&#34;</span>
-date: <span style="color:#e6db74">2019-03-26T08:47:11</span><span style="color:#ae81ff">+01</span>:<span style="color:#ae81ff">00</span>
-draft: <span style="color:#66d9ef">true</span>
-+++
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ae81ff">+++</span>
+<span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;My First Post&#34;</span>
+<span style="color:#f92672">date</span>: <span style="color:#e6db74">2019-03-26T08:47:11</span><span style="color:#ae81ff">+01</span>:<span style="color:#ae81ff">00</span>
+<span style="color:#f92672">draft</span>: <span style="color:#66d9ef">true</span>
+<span style="color:#ae81ff">+++</span>
 </code></pre></div><h3 id="json">json</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
 	<span style="color:#e6db74">&#34;title&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;{{ replace .Name &#34;</span><span style="color:#f92672">-</span><span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#34; | title }}&#34;</span>,
@@ -769,6 +770,20 @@ draft: <span style="color:#66d9ef">true</span>
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -788,20 +803,6 @@ draft: <span style="color:#66d9ef">true</span>
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

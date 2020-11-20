@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "页面跳转并传参",
         "headline" : "页面跳转并传参",
-        "description" : "页面跳转并传参 不能传列表\n入参url 跳转链接\n入参JSON Object 自动转换 key:value value只能为字符串\nvar jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(\/\x26#34;\/g,\x26#39;\x26#39;); let jsonList = jsonStr.split(\x26#39;,\x26#39;); for(let i=0;i\x26lt;jsonList.length;i\x2b\x2b){ if(i!==0){ url=url\x2b\x26#39;\x26amp;\x26#39;; } else{ url=url\x2b\x26#39;?\x26#39;; } let KVpair = jsonList[i].split(\x26#39;:\x26#39;); url = url \x2b KVpair[0]\x2b\x26#39;=\x26#39;\x2bKVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; ",
+        "description" : "页面跳转并传参 不能传列表\n入参url 跳转链接\n入参JSON Object 自动转换 key:value value只能为字符串\nvar jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(\/\u0026#34;\/g,\u0026#39;\u0026#39;); let jsonList = jsonStr.split(\u0026#39;,\u0026#39;); for(let i=0;i\u0026lt;jsonList.length;i\u002b\u002b){ if(i!==0){ url=url\u002b\u0026#39;\u0026amp;\u0026#39;; } else{ url=url\u002b\u0026#39;?\u0026#39;; } let KVpair = jsonList[i].split(\u0026#39;:\u0026#39;); url = url \u002b KVpair[0]\u002b\u0026#39;=\u0026#39;\u002bKVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; ",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-07-25 18:22:40 \x2b0800 CST",
-        "dateModified" : "2020-07-25 18:22:40 \x2b0800 CST",
+        "datePublished": "2020-07-25 18:22:40 \u002b0800 CST",
+        "dateModified" : "2020-07-25 18:22:40 \u002b0800 CST",
         "url" : "\/blog\/jumpwithparam\/",
         "wordCount" : "49",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -90,13 +90,14 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
 入参url 跳转链接
 入参JSON Object 自动转换 key:value value只能为字符串
 var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonStr = jsonStr.substr(1,jsonStr.length-2).replace(/&#34;/g,&#39;&#39;); let jsonList = jsonStr.split(&#39;,&#39;); for(let i=0;i&lt;jsonList.length;i&#43;&#43;){ if(i!==0){ url=url&#43;&#39;&amp;&#39;; } else{ url=url&#43;&#39;?&#39;; } let KVpair = jsonList[i].split(&#39;:&#39;); url = url &#43; KVpair[0]&#43;&#39;=&#39;&#43;KVpair[1]; } console.log(url); my.navigateTo({ url: url }); }; ">
-<meta itemprop="datePublished" content="2020-07-25T18:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-07-25T18:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-07-25T18:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-07-25T18:22:40+08:00" />
 <meta itemprop="wordCount" content="49">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -284,6 +285,18 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -301,18 +314,6 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -728,6 +729,20 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -747,20 +762,6 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

@@ -6,11 +6,7 @@
     <description>Recent content in toml on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 02 Feb 2020 18:22:40 +0800</lastBuildDate>
-    
-	<atom:link href="/categories/toml/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 02 Feb 2020 18:22:40 +0800</lastBuildDate><atom:link href="/categories/toml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>toml文档格式的数据定义</title>
       <link>/blog/toml/</link>

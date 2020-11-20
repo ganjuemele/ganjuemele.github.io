@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-07 20:22:40 \x2b0800 CST",
-        "dateModified" : "2020-03-07 20:22:40 \x2b0800 CST",
+        "datePublished": "2020-03-07 20:22:40 \u002b0800 CST",
+        "dateModified" : "2020-03-07 20:22:40 \u002b0800 CST",
         "url" : "\/blog\/webpack%E5%85%A5%E9%97%A8\/",
         "wordCount" : "199",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="Webpack入门">
 <meta itemprop="description" content="webpack 笔记">
-<meta itemprop="datePublished" content="2020-03-07T20:22:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-07T20:22:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-07T20:22:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-07T20:22:40+08:00" />
 <meta itemprop="wordCount" content="199">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -482,7 +483,7 @@
   
 
   <div id="content">
-    <h3 id="webpack">安装webpack</h3>
+    <h3 id="安装webpack">安装webpack</h3>
 <p><code>npm init -y</code></p>
 <p><code>yarn add webpack webpack-cli --dev</code></p>
 <p>安装插件<code>css-loader,mini-css-extract-plugin,html-webpack-plugin</code></p>
@@ -490,7 +491,7 @@
 <p>执行当前目录下的webpack <code>npx webpack</code></p>
 <p><strong>报出警告</strong>⚠️：
 <code>WARNING in configuration The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.</code></p>
-<h3 id="webpackconfigjs">初始化webpack.config.js</h3>
+<h3 id="初始化webpackconfigjs">初始化webpack.config.js</h3>
 <p>新建 webpack.config.js</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
 
@@ -537,10 +538,10 @@
 <p><code>&quot;start&quot;: &quot;webpack-dev-server --open&quot;</code>在浏览器中预览开发的项目</p>
 <p>使用<code>yarn build</code>命令,来构建新的dist目录用在项目上线的时候</p>
 <p>使用<code>yarn start</code>命令，便于开发调试</p>
-<h3 id="webpackloaderplugin">Webpack中loader和plugin的差别</h3>
+<h3 id="webpack中loader和plugin的差别">Webpack中loader和plugin的差别</h3>
 <p>plugin就是插件，用来拓展webpack的功能
 loader就是加载器，用来加载一些文件的内容</p>
-<h3 id="scss">引入SCSS</h3>
+<h3 id="引入scss">引入SCSS</h3>
 <p><code>yarn add sass-loader dart-sass --dev</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> [
 			{
@@ -552,7 +553,7 @@ loader就是加载器，用来加载一些文件的内容</p>
 						}}]
 			},
 		],
-</code></pre></div><h3 id="-devserver">使用 DevServer</h3>
+</code></pre></div><h3 id="使用-devserver">使用 DevServer</h3>
 <p>DevServer 会启动一个 HTTP 服务器用于服务网页请求，同时会帮助启动 Webpack ，并接收 Webpack 发出的文件更变信号，通过 WebSocket 协议自动刷新网页做到实时预览。
 <code>npm i -D webpack-dev-server</code>DevServer 就启动了</p>
 <pre><code>Project is running at http://localhost:8080/
@@ -772,6 +773,20 @@ webpack output is served from /
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -791,20 +806,6 @@ webpack output is served from /
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             

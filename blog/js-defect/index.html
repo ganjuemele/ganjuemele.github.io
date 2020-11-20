@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-03-29 01:40:40 \x2b0800 CST",
-        "dateModified" : "2020-03-29 01:40:40 \x2b0800 CST",
+        "datePublished": "2020-03-29 01:40:40 \u002b0800 CST",
+        "dateModified" : "2020-03-29 01:40:40 \u002b0800 CST",
         "url" : "\/blog\/js-defect\/",
         "wordCount" : "33",
         "keywords" : [ "Blog" ]
@@ -36,7 +36,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.62.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
   
     
@@ -79,13 +79,14 @@
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="javascript的十个设计缺陷">
 <meta itemprop="description" content="JS 记录">
-<meta itemprop="datePublished" content="2020-03-29T01:40:40&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-29T01:40:40&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-29T01:40:40+08:00" />
+<meta itemprop="dateModified" content="2020-03-29T01:40:40+08:00" />
 <meta itemprop="wordCount" content="33">
 
 
 
 <meta itemprop="keywords" content="" />
+
         
 
         
@@ -273,6 +274,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-11-17'>
+                                    November 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
                                 
                                 <time class="published" datetime=
@@ -290,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2020-09-23'>
                                     September 23, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/mock/">mock数据</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-09-22'>
-                                    September 22, 2020</time>
                             </header>
                             
 
@@ -482,19 +483,19 @@
   
 
   <div id="content">
-    <h1 id="heading">为什么会有设计缺陷</h1>
-<h2 id="heading-1">设计阶段过于仓促</h2>
+    <h1 id="为什么会有设计缺陷">为什么会有设计缺陷</h1>
+<h2 id="设计阶段过于仓促">设计阶段过于仓促</h2>
 <p>由于javascript的设计只用了十天，而且是为了向公司交差其本人并不愿意这样设计
 另外这语言的设计初衷，是为了解决一些简单的网页互动，并没有考虑复杂应用的需要。</p>
-<h2 id="heading-2">没有先例</h2>
+<h2 id="没有先例">没有先例</h2>
 <p>Javascript同时结合了函数式编程和面向对象编程的特点，直到今天，js 仍是世界上唯一使用 Prototype继承模型的主要语言，使它没有设计先例作为参考。</p>
-<h2 id="heading-3">过早的标准化</h2>
+<h2 id="过早的标准化">过早的标准化</h2>
 <p>Javascript的发展非常快，根本没有时间调整设计。</p>
 <p>95年5月，设计方案定稿；10月解释器开发成功；12月，向市场推出，立刻被广泛接受，全世界的用户大量使用。js缺乏从小到大慢慢累计用户的过程，而是连续的爆炸式增长。js的规格还没来得及调整就固化了。</p>
 <p>96年8月，微软强势介入推出自己的脚本语言Jscript；11月，网景公司为了压制微软决定申请js的国际标准；</p>
 <p>97年6月，第一个国际标准ECMA-262正式颁布。</p>
 <p>相比之下，C语言问世20年才颁布国际标准。</p>
-<h2 id="javascript">Javascript的十个设计缺陷</h2>
+<h2 id="javascript的十个设计缺陷">Javascript的十个设计缺陷</h2>
 <ol>
 <li>不适合开发大型程序</li>
 <li>非常小的标准库</li>
@@ -507,7 +508,7 @@
 <li>== 和 ===</li>
 <li>基本类型的包装对象</li>
 </ol>
-<h2 id="javascript-1">如何看待Javascript</h2>
+<h2 id="如何看待javascript">如何看待Javascript</h2>
 <p>Javascript其实并不算太糟，它的编程能力很强大。
 如果遵守良好的编程规范，加上第三方函数库的帮助，JS的缺陷大部分可以规避。
 还有JS目前是网页编程的唯一语言，许多新项目大大的扩展了它的用途，例如node.js,coffeeScript</p>
@@ -725,6 +726,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+              </h3>
+              
+              <time class="published" datetime='2020-11-17'>
+                November 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
               </h3>
               
@@ -744,20 +759,6 @@
               
               <time class="published" datetime='2020-09-23'>
                 September 23, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/mock/">mock数据</a>
-              </h3>
-              
-              <time class="published" datetime='2020-09-22'>
-                September 22, 2020
               </time>
             </header>
             
