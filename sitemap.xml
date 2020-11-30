@@ -4,22 +4,27 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-11-17T22:22:40+08:00</lastmod>
+    <lastmod>2020-11-28T19:47:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-11-17T22:22:40+08:00</lastmod>
+    <lastmod>2020-11-28T19:47:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/js/</loc>
-    <lastmod>2020-11-17T22:22:40+08:00</lastmod>
+    <lastmod>2020-11-28T19:47:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-11-17T22:22:40+08:00</lastmod>
+    <lastmod>2020-11-28T19:47:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/js-note2/</loc>
+    <lastmod>2020-11-28T19:47:40+08:00</lastmod>
   </url>
   
   <url>
@@ -400,10 +405,6 @@
   <url>
     <loc>/blog/toml/</loc>
     <lastmod>2020-02-02T18:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/gallery/</loc>
   </url>
   
   <url>
