@@ -6,7 +6,16 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 17 Nov 2020 22:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 09:47:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小程序开发笔记-触底加载更多</title>
+      <link>/blog/mini-note1/</link>
+      <pubDate>Thu, 10 Dec 2020 09:47:40 +0800</pubDate>
+      
+      <guid>/blog/mini-note1/</guid>
+      <description>onReachBottom() { // ... // 监听最外层的page是否滑动到底部 // 触发事件 } &amp;lt;scroll-view scroll-y=&amp;quot;{{true}}&amp;quot; onScrollToLower=&amp;quot;scrollMytrip&amp;quot;&amp;gt; &amp;lt;view&amp;gt;......&amp;lt;/view&amp;gt; &amp;lt;/scroll-view&amp;gt; scrollMytrip(){ // ... // 给带滚动条的模块 // onScrollToLower=&amp;quot;scrollMytrip&amp;quot; // 定义一个监听事件，监听模块内部是否触底 // 触发事件 } </description>
+    </item>
+    
     <item>
       <title>创建优雅结束的函数</title>
       <link>/blog/js-note1/</link>
