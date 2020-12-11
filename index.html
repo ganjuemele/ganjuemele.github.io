@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-12-10 11:47:40 \u002b0800 CST",
-        "dateModified" : "2020-12-10 11:47:40 \u002b0800 CST",
+        "datePublished": "2020-12-11 00:07:40 \u002b0800 CST",
+        "dateModified" : "2020-12-11 00:07:40 \u002b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2020-12-10T11:47:40+08:00" />
+<meta property="og:updated_time" content="2020-12-11T00:07:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -252,6 +252,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/js-note2/">深拷贝</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-12-11'>
+                                    December 11, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/flex-grow/">flex-grow自动填充宽度高度</a></h3>
                                 
                                 <time class="published" datetime=
@@ -269,18 +281,6 @@
                                 <time class="published" datetime=
                                     '2020-12-10'>
                                     December 10, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-11-17'>
-                                    November 17, 2020</time>
                             </header>
                             
 
@@ -308,7 +308,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/flex-grow/">flex-grow自动填充宽度高度</a></h2>
+            <h2><a href="/blog/js-note2/">深拷贝</a></h2>
         
         
     </div>
@@ -316,8 +316,8 @@
         
 
         <time class="published"
-            datetime='2020-12-10'>
-            December 10, 2020</time>
+            datetime='2020-12-11'>
+            December 11, 2020</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -335,7 +335,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fflex-grow%2f&amp;text=flex-grow%e8%87%aa%e5%8a%a8%e5%a1%ab%e5%85%85%e5%ae%bd%e5%ba%a6%e9%ab%98%e5%ba%a6&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fjs-note2%2f&amp;text=%e6%b7%b1%e6%8b%b7%e8%b4%9d&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -349,7 +349,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fflex-grow%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fjs-note2%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -362,7 +362,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fflex-grow%2f&amp;title=flex-grow%e8%87%aa%e5%8a%a8%e5%a1%ab%e5%85%85%e5%ae%bd%e5%ba%a6%e9%ab%98%e5%ba%a6" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fjs-note2%2f&amp;title=%e6%b7%b1%e6%8b%b7%e8%b4%9d" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -378,7 +378,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fflex-grow%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fjs-note2%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -392,17 +392,60 @@
   
 
   <div id="content">
-    <pre><code>    display: flex;
-// 占满宽度
-    flex-direction: row;
-// 占满高度
-    flex-direction: column;
-// 给父元素定义高度
-    height/min-height/max-height
-</code></pre><pre><code>子元素元素
-    flex-grow: 1;
-</code></pre><p>当只有一个子元素的时候<code>flex-grow:1;</code>自动填充剩余的高度/宽度。</p>
-<p>多个子元素时，会按照flex-grow的总值按比例分配剩余的空间</p>
+    <h3 id="浅拷贝的场景">浅拷贝的场景</h3>
+<h5 id="展开运算符">展开运算符</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">en</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bye&#39;</span>,
+  <span style="color:#a6e22e">de</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Tschüss&#39;</span>
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">a</span>}
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Ciao&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Ciao
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Tschüss
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">a</span>,...<span style="color:#a6e22e">b</span>}
+</code></pre></div><h5 id="objectassign">Object.assign()</h5>
+<p>用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。</p>
+<p>第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">en</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bye&#39;</span>,
+  <span style="color:#a6e22e">de</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Tschüss&#39;</span>
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">a</span>)
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Ciao&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Ciao
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Tschüss
+</span></code></pre></div><h5 id="拷贝数组">拷贝数组</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">a</span>]
+<span style="color:#a6e22e">b</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e">// 4
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e">// 2
+</span></code></pre></div><h5 id="数组方法map-filter-reduce-arrayslice">数组方法——map, filter, reduce, Array.slice</h5>
+<h3 id="上面的场景全部都只实现了浅拷贝不能对深层对象内嵌套的对象进行拷贝">上面的场景全部都只实现了浅拷贝,不能对深层对象内嵌套的对象进行拷贝</h3>
+<h3 id="深拷贝">深拷贝</h3>
+<p>拷贝所有属性，并拷贝属性指向的动态分配的内存。深拷贝时对象和所引用的对象一起拷贝，相比浅拷贝速度较慢且花销大。拷贝对象和原对象互不影响。</p>
+<h5 id="使用-jsonstringify-和-jsonparse">使用 JSON.stringify 和 JSON.parse</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">foods</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">dinner</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Pasta&#39;</span>
+  }
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">a</span>))
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Soup&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Soup
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Pasta
+</span></code></pre></div><h5 id="手动拷贝">手动拷贝</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">foods</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">dinner</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Pasta&#39;</span>
+  }
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">foods</span><span style="color:#f92672">:</span> {...<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>}}
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Soup&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Soup
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Pasta
+</span></code></pre></div><p>⚠️<strong>注意</strong>： <code>只能使用这种方法拷贝 JavaScript 原生的数据类型</code>
+⚠️<strong>注意</strong>： <code>此方法会忽略 undefined, 会忽略 symbol, 不能序列化函数, 不能解决循环引用的对象</code></p>
 
   </div>
 
@@ -416,7 +459,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/css">css</a></li>
+                <li><a class="article-category-link" href="/categories/js">js</a></li>
                 
             
         
@@ -452,8 +495,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/mini-note1/"
-                class="button big previous">小程序开发笔记-触底加载更多</a></li>
+        <li><a href="/blog/flex-grow/"
+                class="button big previous">flex-grow自动填充宽度高度</a></li>
     
 
     
@@ -493,7 +536,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2fflex-grow%2f&amp;text=flex-grow%e8%87%aa%e5%8a%a8%e5%a1%ab%e5%85%85%e5%ae%bd%e5%ba%a6%e9%ab%98%e5%ba%a6&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fjs-note2%2f&amp;text=%e6%b7%b1%e6%8b%b7%e8%b4%9d&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -507,7 +550,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fflex-grow%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fjs-note2%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -520,7 +563,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fflex-grow%2f&amp;title=flex-grow%e8%87%aa%e5%8a%a8%e5%a1%ab%e5%85%85%e5%ae%bd%e5%ba%a6%e9%ab%98%e5%ba%a6" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fjs-note2%2f&amp;title=%e6%b7%b1%e6%8b%b7%e8%b4%9d" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -536,7 +579,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fflex-grow%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fjs-note2%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -680,6 +723,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/js-note2/">深拷贝</a>
+              </h3>
+              
+              <time class="published" datetime='2020-12-11'>
+                December 11, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/flex-grow/">flex-grow自动填充宽度高度</a>
               </h3>
               
@@ -699,20 +756,6 @@
               
               <time class="published" datetime='2020-12-10'>
                 December 10, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/js-note1/">创建优雅结束的函数</a>
-              </h3>
-              
-              <time class="published" datetime='2020-11-17'>
-                November 17, 2020
               </time>
             </header>
             

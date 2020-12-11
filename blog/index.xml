@@ -6,7 +6,18 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 10 Dec 2020 11:47:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 00:07:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深拷贝</title>
+      <link>/blog/js-note2/</link>
+      <pubDate>Fri, 11 Dec 2020 00:07:40 +0800</pubDate>
+      
+      <guid>/blog/js-note2/</guid>
+      <description>浅拷贝的场景 展开运算符 const a = { en: &amp;#39;Bye&amp;#39;, de: &amp;#39;Tschüss&amp;#39; } let b = {...a} b.de = &amp;#39;Ciao&amp;#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss const c = {...a,...b} Object.assign() 用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。
+第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。
+const a = { en: &amp;#39;Bye&amp;#39;, de: &amp;#39;Tschüss&amp;#39; } let b = Object.assign({}, a) b.de = &amp;#39;Ciao&amp;#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss 拷贝数组 const a = [1,2,3] let b = [...a] b[1] = 4 console.log(b[1]) // 4 console.log(a[1]) // 2 数组方法——map, filter, reduce, Array.</description>
+    </item>
+    
     <item>
       <title>flex-grow自动填充宽度高度</title>
       <link>/blog/flex-grow/</link>

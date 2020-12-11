@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "深拷贝",
         "headline" : "深拷贝",
-        "description" : "",
+        "description" : "浅拷贝的场景 展开运算符 const a = { en: \u0026#39;Bye\u0026#39;, de: \u0026#39;Tschüss\u0026#39; } let b = {...a} b.de = \u0026#39;Ciao\u0026#39; console.log(b.de) \/\/ Ciao console.log(a.de) \/\/ Tschüss const c = {...a,...b} Object.assign() 用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。\n第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。\nconst a = { en: \u0026#39;Bye\u0026#39;, de: \u0026#39;Tschüss\u0026#39; } let b = Object.assign({}, a) b.de = \u0026#39;Ciao\u0026#39; console.log(b.de) \/\/ Ciao console.log(a.de) \/\/ Tschüss 拷贝数组 const a = [1,2,3] let b = [...a] b[1] = 4 console.log(b[1]) \/\/ 4 console.log(a[1]) \/\/ 2 数组方法——map, filter, reduce, Array.",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,10 +21,10 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-11-28 19:47:40 \u002b0800 CST",
-        "dateModified" : "2020-11-28 19:47:40 \u002b0800 CST",
+        "datePublished": "2020-12-11 00:07:40 \u002b0800 CST",
+        "dateModified" : "2020-12-11 00:07:40 \u002b0800 CST",
         "url" : "\/blog\/js-note2\/",
-        "wordCount" : "0",
+        "wordCount" : "142",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -66,24 +66,30 @@
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="深拷贝"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="浅拷贝的场景 展开运算符 const a = { en: &#39;Bye&#39;, de: &#39;Tschüss&#39; } let b = {...a} b.de = &#39;Ciao&#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss const c = {...a,...b} Object.assign() 用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。
+第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。
+const a = { en: &#39;Bye&#39;, de: &#39;Tschüss&#39; } let b = Object.assign({}, a) b.de = &#39;Ciao&#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss 拷贝数组 const a = [1,2,3] let b = [...a] b[1] = 4 console.log(b[1]) // 4 console.log(a[1]) // 2 数组方法——map, filter, reduce, Array."/>
 
         <meta property="og:title" content="深拷贝" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="浅拷贝的场景 展开运算符 const a = { en: &#39;Bye&#39;, de: &#39;Tschüss&#39; } let b = {...a} b.de = &#39;Ciao&#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss const c = {...a,...b} Object.assign() 用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。
+第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。
+const a = { en: &#39;Bye&#39;, de: &#39;Tschüss&#39; } let b = Object.assign({}, a) b.de = &#39;Ciao&#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss 拷贝数组 const a = [1,2,3] let b = [...a] b[1] = 4 console.log(b[1]) // 4 console.log(a[1]) // 2 数组方法——map, filter, reduce, Array." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/js-note2/" />
-<meta property="article:published_time" content="2020-11-28T19:47:40+08:00" />
-<meta property="article:modified_time" content="2020-11-28T19:47:40+08:00" />
+<meta property="article:published_time" content="2020-12-11T00:07:40+08:00" />
+<meta property="article:modified_time" content="2020-12-11T00:07:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="深拷贝">
-<meta itemprop="description" content="">
-<meta itemprop="datePublished" content="2020-11-28T19:47:40+08:00" />
-<meta itemprop="dateModified" content="2020-11-28T19:47:40+08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="description" content="浅拷贝的场景 展开运算符 const a = { en: &#39;Bye&#39;, de: &#39;Tschüss&#39; } let b = {...a} b.de = &#39;Ciao&#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss const c = {...a,...b} Object.assign() 用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。
+第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。
+const a = { en: &#39;Bye&#39;, de: &#39;Tschüss&#39; } let b = Object.assign({}, a) b.de = &#39;Ciao&#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss 拷贝数组 const a = [1,2,3] let b = [...a] b[1] = 4 console.log(b[1]) // 4 console.log(a[1]) // 2 数组方法——map, filter, reduce, Array.">
+<meta itemprop="datePublished" content="2020-12-11T00:07:40+08:00" />
+<meta itemprop="dateModified" content="2020-12-11T00:07:40+08:00" />
+<meta itemprop="wordCount" content="142">
 
 
 
@@ -265,8 +271,8 @@
                                 <h3><a href="/blog/js-note2/">深拷贝</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-11-28'>
-                                    November 28, 2020</time>
+                                    '2020-12-11'>
+                                    December 11, 2020</time>
                             </header>
                             
 
@@ -274,11 +280,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/js-note1/">创建优雅结束的函数</a></h3>
+                                <h3><a href="/blog/flex-grow/">flex-grow自动填充宽度高度</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-11-17'>
-                                    November 17, 2020</time>
+                                    '2020-12-10'>
+                                    December 10, 2020</time>
                             </header>
                             
 
@@ -286,11 +292,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/vue3-note1/">Vue3.0 记录01</a></h3>
+                                <h3><a href="/blog/mini-note1/">小程序开发笔记-触底加载更多</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-09-27'>
-                                    September 27, 2020</time>
+                                    '2020-12-10'>
+                                    December 10, 2020</time>
                             </header>
                             
 
@@ -393,11 +399,11 @@
         
 
         <time class="published"
-            datetime='2020-11-28'>
-            November 28, 2020</time>
+            datetime='2020-12-11'>
+            December 11, 2020</time>
         <span class="author">么了</span>
         
-            <p>0 分钟阅读</p>
+            <p>1 分钟阅读</p>
         
 
     </div>
@@ -469,7 +475,61 @@
   
 
   <div id="content">
-    
+    <h3 id="浅拷贝的场景">浅拷贝的场景</h3>
+<h5 id="展开运算符">展开运算符</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">en</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bye&#39;</span>,
+  <span style="color:#a6e22e">de</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Tschüss&#39;</span>
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">a</span>}
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Ciao&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Ciao
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Tschüss
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> {...<span style="color:#a6e22e">a</span>,...<span style="color:#a6e22e">b</span>}
+</code></pre></div><h5 id="objectassign">Object.assign()</h5>
+<p>用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。</p>
+<p>第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">en</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bye&#39;</span>,
+  <span style="color:#a6e22e">de</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Tschüss&#39;</span>
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">a</span>)
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Ciao&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Ciao
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">de</span>) <span style="color:#75715e">// Tschüss
+</span></code></pre></div><h5 id="拷贝数组">拷贝数组</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> [...<span style="color:#a6e22e">a</span>]
+<span style="color:#a6e22e">b</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e">// 4
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e">// 2
+</span></code></pre></div><h5 id="数组方法map-filter-reduce-arrayslice">数组方法——map, filter, reduce, Array.slice</h5>
+<h3 id="上面的场景全部都只实现了浅拷贝不能对深层对象内嵌套的对象进行拷贝">上面的场景全部都只实现了浅拷贝,不能对深层对象内嵌套的对象进行拷贝</h3>
+<h3 id="深拷贝">深拷贝</h3>
+<p>拷贝所有属性，并拷贝属性指向的动态分配的内存。深拷贝时对象和所引用的对象一起拷贝，相比浅拷贝速度较慢且花销大。拷贝对象和原对象互不影响。</p>
+<h5 id="使用-jsonstringify-和-jsonparse">使用 JSON.stringify 和 JSON.parse</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">foods</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">dinner</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Pasta&#39;</span>
+  }
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">a</span>))
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Soup&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Soup
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Pasta
+</span></code></pre></div><h5 id="手动拷贝">手动拷贝</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">foods</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">dinner</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Pasta&#39;</span>
+  }
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">foods</span><span style="color:#f92672">:</span> {...<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>}}
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Soup&#39;</span>
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Soup
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Pasta
+</span></code></pre></div><p>⚠️<strong>注意</strong>： <code>只能使用这种方法拷贝 JavaScript 原生的数据类型</code>
+⚠️<strong>注意</strong>： <code>此方法会忽略 undefined, 会忽略 symbol, 不能序列化函数, 不能解决循环引用的对象</code></p>
+
   </div>
 
   <footer>
@@ -518,8 +578,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/js-note1/"
-                class="button big previous">创建优雅结束的函数</a></li>
+        <li><a href="/blog/flex-grow/"
+                class="button big previous">flex-grow自动填充宽度高度</a></li>
     
 
     
@@ -682,8 +742,8 @@
                 <a href="/blog/js-note2/">深拷贝</a>
               </h3>
               
-              <time class="published" datetime='2020-11-28'>
-                November 28, 2020
+              <time class="published" datetime='2020-12-11'>
+                December 11, 2020
               </time>
             </header>
             
@@ -693,11 +753,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/js-note1/">创建优雅结束的函数</a>
+                <a href="/blog/flex-grow/">flex-grow自动填充宽度高度</a>
               </h3>
               
-              <time class="published" datetime='2020-11-17'>
-                November 17, 2020
+              <time class="published" datetime='2020-12-10'>
+                December 10, 2020
               </time>
             </header>
             
@@ -707,11 +767,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/vue3-note1/">Vue3.0 记录01</a>
+                <a href="/blog/mini-note1/">小程序开发笔记-触底加载更多</a>
               </h3>
               
-              <time class="published" datetime='2020-09-27'>
-                September 27, 2020
+              <time class="published" datetime='2020-12-10'>
+                December 10, 2020
               </time>
             </header>
             
