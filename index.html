@@ -446,6 +446,36 @@
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">foods</span>.<span style="color:#a6e22e">dinner</span>) <span style="color:#75715e">// Pasta
 </span></code></pre></div><p>⚠️<strong>注意</strong>： <code>只能使用这种方法拷贝 JavaScript 原生的数据类型</code>
 ⚠️<strong>注意</strong>： <code>此方法会忽略 undefined, 会忽略 symbol, 不能序列化函数, 不能解决循环引用的对象</code></p>
+<table>
+<thead>
+<tr>
+<th>&mdash;</th>
+<th>原数据是否指向同一对象</th>
+<th>第一层数据为基本数据类型</th>
+<th>原数据中包含子对象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>赋  值</strong></td>
+<td>是</td>
+<td>改变会使原数据一同改变</td>
+<td>改变会使原数据一同改变</td>
+</tr>
+<tr>
+<td><strong>浅拷贝</strong></td>
+<td>否</td>
+<td>改变不会使原数据一同改变</td>
+<td>改变会使原数据一同改变</td>
+</tr>
+<tr>
+<td><strong>深拷贝</strong></td>
+<td>否</td>
+<td>改变不会使原数据一同改变</td>
+<td>改变不会使原数据一同改变</td>
+</tr>
+</tbody>
+</table>
 
   </div>
 
