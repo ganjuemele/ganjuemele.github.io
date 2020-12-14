@@ -6,7 +6,19 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 14 Dec 2020 17:00:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 22:50:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>electron 笔记</title>
+      <link>/blog/electron-note1/</link>
+      <pubDate>Mon, 14 Dec 2020 22:50:40 +0800</pubDate>
+      
+      <guid>/blog/electron-note1/</guid>
+      <description>初始化一个electron 使用npm install &amp;amp; npm start 报错
+改用yarn add electron@latest --save-dev来安装
+npm start成功运行
+// 从 electron 软件包导入了 app 和 BrowserWindow模块 。 const {app, BrowserWindow} = require(&amp;#39;electron&amp;#39;) const path = require(&amp;#39;path&amp;#39;) // 定义一个函数，该函数创建一个 新的浏览窗口 启用了节点集成 function createWindow () { const mainWindow = new BrowserWindow({ width: 800, height: 600, webPreferences: { preload: path.join(__dirname, &amp;#39;preload.js&amp;#39;) } }) // 将 index.html 文件加载到此窗口中 // 并打开开发人员工具  mainWindow.loadFile(&amp;#39;index.html&amp;#39;) } app.whenReady().then(() =&amp;gt; { // 通过调用 createWindow方法，在 electron app 第一次被初始化时创建了一个新的窗口。  createWindow() // 添加了一个新的侦听器，当应用程序不再有任何打开窗口时试图退出。 因为操作系统 窗口管理行为 ，此监听器在 macOS 上是一个禁门。  app.</description>
+    </item>
+    
     <item>
       <title>fetch的使用</title>
       <link>/blog/fetch/</link>
