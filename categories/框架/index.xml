@@ -6,14 +6,26 @@
     <description>Recent content in 框架 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 14 Dec 2020 11:00:40 +0800</lastBuildDate><atom:link href="/categories/%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 17:00:40 +0800</lastBuildDate><atom:link href="/categories/%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>G2笔记</title>
+      <title>fetch的使用</title>
+      <link>/blog/fetch/</link>
+      <pubDate>Mon, 14 Dec 2020 17:00:40 +0800</pubDate>
+      
+      <guid>/blog/fetch/</guid>
+      <description>fetch方法提供了一个接口，用来跨域异步获取资源
+⚠️注意 fetch 的特性  当接收到一个错误的HTTP状态码时，从fetch()返回的Promise不会被标记为reject，即使响应的状态码为404或者500。会被标记为resolve，但是resolve的返回属性ok的值为false。只有网络故障或者请求被阻止时才会标记为reject。 fetch可以接收跨域cookies，也可以使用fetch建立跨域会话。 fetch不会发送cookies，  // 第二个可选参数，可配置请求体的对象 fetch(url, { body: JSON.stringify(data), // must match &amp;#39;Content-Type&amp;#39; header  cache: &amp;#39;no-cache&amp;#39;, // *default, no-cache, reload, force-cache, only-if-cached  credentials: &amp;#39;same-origin&amp;#39;, // include, same-origin, *omit  headers: { &amp;#39;user-agent&amp;#39;: &amp;#39;Mozilla/4.0 MDN Example&amp;#39;, &amp;#39;content-type&amp;#39;: &amp;#39;application/json&amp;#39; }, method: &amp;#39;POST&amp;#39;, // *GET, POST, PUT, DELETE, etc.  mode: &amp;#39;cors&amp;#39;, // no-cors, cors, *same-origin  redirect: &amp;#39;follow&amp;#39;, // manual, *follow, error  referrer: &amp;#39;no-referrer&amp;#39;, // *client, no-referrer  }) POST JSON数据 var url = &amp;#39;https://example.</description>
+    </item>
+    
+    <item>
+      <title>electron 笔记</title>
       <link>/blog/antv-note/</link>
       <pubDate>Mon, 14 Dec 2020 11:00:40 +0800</pubDate>
       
       <guid>/blog/antv-note/</guid>
-      <description></description>
+      <description>使用npm install &amp;amp; npm start 报错
+改用yarn add electron@latest --save-dev来安装
+npm start成功运行</description>
     </item>
     
   </channel>
