@@ -6,16 +6,26 @@
     <description>Recent content in electron on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 14 Dec 2020 22:50:40 +0800</lastBuildDate><atom:link href="/categories/electron/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 10:50:40 +0800</lastBuildDate><atom:link href="/categories/electron/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>electron 笔记</title>
+      <link>/blog/electron-note2/</link>
+      <pubDate>Tue, 15 Dec 2020 10:50:40 +0800</pubDate>
+      
+      <guid>/blog/electron-note2/</guid>
+      <description>electron的应用结构 由三个支柱组成
+ Chromium 用于显示网页内容。 Node.js 用于本地文件系统和操作系统。 自定义 APIs 用于使用经常需要的 OS 本机函数。 就是构建一个带有网页界面的node.js应用程序，或者说是一个无缝集成的网页  Main and Renderer 进程  主进程在浏览窗口中创建网页实例，每个浏览窗口实例中renderer进程运行网页。当一个浏览窗口实例被destroyed，对应的renderer进程也会被终止。 主进程管理 所有的页面，及其对应的renderer进程。 renderer进程只负责管理对应的网页,一个renderer进程崩溃不会影响到别的renderer进程。 渲染进程 通过IPC 与主进程通信 在网页上执行GUI操作。 由于安全考虑和可能的资源泄漏，直接从渲染器过程中调用与本地GUI有关的API受到限制。  进程间的通信可以通过： ipcMain 和 ipcRenderer</description>
+    </item>
+    
+    <item>
+      <title>electron的起手笔记</title>
       <link>/blog/electron-note1/</link>
       <pubDate>Mon, 14 Dec 2020 22:50:40 +0800</pubDate>
       
       <guid>/blog/electron-note1/</guid>
       <description>初始化一个electron 使用npm install &amp;amp; npm start 报错
 改用yarn add electron@latest --save-dev来安装
-npm start成功运行
+npm start / yarn run start成功运行
 // 从 electron 软件包导入了 app 和 BrowserWindow模块 。 const {app, BrowserWindow} = require(&amp;#39;electron&amp;#39;) const path = require(&amp;#39;path&amp;#39;) // 定义一个函数，该函数创建一个 新的浏览窗口 启用了节点集成 function createWindow () { const mainWindow = new BrowserWindow({ width: 800, height: 600, webPreferences: { preload: path.join(__dirname, &amp;#39;preload.js&amp;#39;) } }) // 将 index.html 文件加载到此窗口中 // 并打开开发人员工具  mainWindow.loadFile(&amp;#39;index.html&amp;#39;) } app.whenReady().then(() =&amp;gt; { // 通过调用 createWindow方法，在 electron app 第一次被初始化时创建了一个新的窗口。  createWindow() // 添加了一个新的侦听器，当应用程序不再有任何打开窗口时试图退出。 因为操作系统 窗口管理行为 ，此监听器在 macOS 上是一个禁门。  app.</description>
     </item>
     
