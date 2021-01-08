@@ -24,7 +24,7 @@
         "datePublished": "2020-12-14 22:50:40 \u002b0800 CST",
         "dateModified" : "2020-12-14 22:50:40 \u002b0800 CST",
         "url" : "\/blog\/electron-note1\/",
-        "wordCount" : "119",
+        "wordCount" : "189",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -92,7 +92,7 @@ npm start / yarn run start成功运行
 // 从 electron 软件包导入了 app 和 BrowserWindow模块 。 const {app, BrowserWindow} = require(&#39;electron&#39;) const path = require(&#39;path&#39;) // 定义一个函数，该函数创建一个 新的浏览窗口 启用了节点集成 function createWindow () { const mainWindow = new BrowserWindow({ width: 800, height: 600, webPreferences: { preload: path.join(__dirname, &#39;preload.js&#39;) } }) // 将 index.html 文件加载到此窗口中 // 并打开开发人员工具  mainWindow.loadFile(&#39;index.html&#39;) } app.whenReady().then(() =&gt; { // 通过调用 createWindow方法，在 electron app 第一次被初始化时创建了一个新的窗口。  createWindow() // 添加了一个新的侦听器，当应用程序不再有任何打开窗口时试图退出。 因为操作系统 窗口管理行为 ，此监听器在 macOS 上是一个禁门。  app.">
 <meta itemprop="datePublished" content="2020-12-14T22:50:40+08:00" />
 <meta itemprop="dateModified" content="2020-12-14T22:50:40+08:00" />
-<meta itemprop="wordCount" content="119">
+<meta itemprop="wordCount" content="189">
 
 
 
@@ -516,6 +516,36 @@ npm start / yarn run start成功运行
 </code></pre></div><p><code>yarn add --dev @electron-forge/cli</code></p>
 <p><code>yarn electron-forge import</code></p>
 <p><code>yarn make</code> 生成包含桌面应用的out文件夹</p>
+<h1 id="起手一个electron--vue开发的应用">起手一个electron + vue开发的应用</h1>
+<ol>
+<li>
+<p>安装vue-cli3 <code>vue -V</code></p>
+</li>
+<li>
+<p>创建<code>vue create electron-vue-demo</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#e6db74">&#39;配置项目&#39;</span>
+&gt; Manually <span style="color:#66d9ef">select</span> features
+&gt; Bable / Router / VueX / CSS Pre-precessors / Linter / Formatter
+&gt; Use histroy mode <span style="color:#66d9ef">for</span> router? n
+&gt; Stylus
+&gt; EsLint + Standard config
+&gt; Lint on save
+&gt; In package.json
+&gt; Save this as a preset <span style="color:#66d9ef">for</span> future projects? n
+</code></pre></div></li>
+<li>
+<p>自动安装electron
+<code>vue add electron-builder</code>
+⚠️可能需要科学上网，有点慢。
+失败就再试几次。
+还是不行，就手动安装</p>
+</li>
+<li>
+<p>编译并启动APP
+<code>npm run electron:serve</code>
+执行完，就会出现开发环境的app窗口</p>
+</li>
+</ol>
 
   </div>
 
