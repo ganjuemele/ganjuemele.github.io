@@ -20,9 +20,9 @@
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2020",
-        "datePublished": "2020-12-15 10:50:40 \u002b0800 CST",
-        "dateModified" : "2020-12-15 10:50:40 \u002b0800 CST",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-01-08 11:50:40 \u002b0800 CST",
+        "dateModified" : "2021-01-08 11:50:40 \u002b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2020-12-15T10:50:40+08:00" />
+<meta property="og:updated_time" content="2021-01-08T11:50:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -252,6 +252,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/eslint%E9%85%8D%E7%BD%AE/">ESLint的配置</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-01-08'>
+                                    January 8, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/electron-note2/">electron 笔记</a></h3>
                                 
                                 <time class="published" datetime=
@@ -265,18 +277,6 @@
                         <article class="mini-post">
                             <header>
                                 <h3><a href="/blog/electron-note1/">electron的起手笔记</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-12-14'>
-                                    December 14, 2020</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/fetch/">fetch的使用</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2020-12-14'>
@@ -308,7 +308,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/electron-note2/">electron 笔记</a></h2>
+            <h2><a href="/blog/eslint%E9%85%8D%E7%BD%AE/">ESLint的配置</a></h2>
         
         
     </div>
@@ -316,8 +316,8 @@
         
 
         <time class="published"
-            datetime='2020-12-15'>
-            December 15, 2020</time>
+            datetime='2021-01-08'>
+            January 8, 2021</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -335,7 +335,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2felectron-note2%2f&amp;text=electron%20%e7%ac%94%e8%ae%b0&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f&amp;text=ESLint%e7%9a%84%e9%85%8d%e7%bd%ae&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -349,7 +349,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2felectron-note2%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -362,7 +362,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2felectron-note2%2f&amp;title=electron%20%e7%ac%94%e8%ae%b0" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f&amp;title=ESLint%e7%9a%84%e9%85%8d%e7%bd%ae" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -378,7 +378,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2felectron-note2%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -392,22 +392,43 @@
   
 
   <div id="content">
-    <h2 id="electron的应用结构">electron的应用结构</h2>
-<p><strong>由三个支柱组成</strong></p>
-<ul>
-<li><code>Chromium</code> 用于显示网页内容。</li>
-<li><code>Node.js</code> 用于本地文件系统和操作系统。</li>
-<li><code>自定义 APIs</code> 用于使用经常需要的 OS 本机函数。
-就是构建一个带有网页界面的node.js应用程序，或者说是一个无缝集成的网页</li>
-</ul>
-<h3 id="main-and-renderer-进程">Main and Renderer 进程</h3>
-<ul>
-<li>主进程在浏览窗口中创建网页实例，每个浏览窗口实例中renderer进程运行网页。当一个浏览窗口实例被destroyed，对应的renderer进程也会被终止。</li>
-<li>主进程管理 所有的页面，及其对应的renderer进程。</li>
-<li>renderer进程只负责管理对应的网页,一个renderer进程崩溃不会影响到别的renderer进程。</li>
-<li>渲染进程 通过IPC 与主进程通信 在网页上执行GUI操作。 由于安全考虑和可能的资源泄漏，直接从渲染器过程中调用与本地GUI有关的API受到限制。</li>
-</ul>
-<p>进程间的通信可以通过： <code>ipcMain</code> 和 <code>ipcRenderer</code></p>
+    <p>ESlint可以高效的检查代码格式，让参与项目的所有工程师都能保持统一的代码风格。
+其检测精度甚至可以精确到是否多一个空格或者少一个空格。
+代码格式的统一对提高团队的协同开发效率有很大的帮助，特别是对有代码洁癖的工程师。</p>
+<p>在项目根目录下创建.eslintrc.js （注意文件名前面有个“.”）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">root</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+  <span style="color:#a6e22e">env</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">node</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+  },
+  <span style="color:#e6db74">&#39;extends&#39;</span><span style="color:#f92672">:</span> [
+    <span style="color:#e6db74">&#39;plugin:vue/essential&#39;</span>,
+    <span style="color:#e6db74">&#39;@vue/standard&#39;</span>
+  ],
+  <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;no-debugger&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;production&#39;</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;error&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;off&#39;</span>,
+    <span style="color:#75715e">// 不检测语句末尾的分号
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;semi&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;off&#39;</span>, <span style="color:#e6db74">&#39;always&#39;</span>],
+    <span style="color:#75715e">// 强制缩进为2个空格
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;indent&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;error&#39;</span>, <span style="color:#ae81ff">2</span>],
+    <span style="color:#75715e">// 关闭函数名称跟括号之间的空格检测
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;space-before-function-paren&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+    <span style="color:#75715e">// 忽略大括号内的空格
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;object-curly-spacing&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>
+  },
+  <span style="color:#a6e22e">parserOptions</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">parser</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;babel-eslint&#39;</span>
+  }
+}
+</code></pre></div><p>这里说明下关于indent缩进的配置，要配合项目根目录下的.editorconfig</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">[<span style="color:#f92672">*</span>.{<span style="color:#a6e22e">js</span>,<span style="color:#a6e22e">jsx</span>,<span style="color:#a6e22e">ts</span>,<span style="color:#a6e22e">tsx</span>,<span style="color:#a6e22e">vue</span>}]
+<span style="color:#a6e22e">indent_style</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">space</span>   <span style="color:#f92672">&lt;--</span><span style="color:#a6e22e">这里定义缩进类型是空格还是tab</span>
+<span style="color:#a6e22e">indent_size</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>        <span style="color:#f92672">&lt;--</span><span style="color:#a6e22e">这里需要与</span>.<span style="color:#a6e22e">eslintrc</span>.<span style="color:#a6e22e">js的indent对应</span>
+<span style="color:#a6e22e">trim_trailing_whitespace</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">insert_final_newline</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</code></pre></div><p>⚠️ .editorconfig 用于IDE自动格式化代码
+⚠️ .eslintrc.js 用于ESlint检测</p>
+<p>更多配置需求，参阅[cloud.tencent.com/developer/doc/1078]</p>
 
   </div>
 
@@ -421,7 +442,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/electron">electron</a></li>
+                <li><a class="article-category-link" href="/categories/eslint">ESLint</a></li>
                 
             
         
@@ -457,8 +478,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/electron-note1/"
-                class="button big previous">electron的起手笔记</a></li>
+        <li><a href="/blog/electron-note2/"
+                class="button big previous">electron 笔记</a></li>
     
 
     
@@ -498,7 +519,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2felectron-note2%2f&amp;text=electron%20%e7%ac%94%e8%ae%b0&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f&amp;text=ESLint%e7%9a%84%e9%85%8d%e7%bd%ae&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -512,7 +533,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2felectron-note2%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -525,7 +546,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2felectron-note2%2f&amp;title=electron%20%e7%ac%94%e8%ae%b0" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f&amp;title=ESLint%e7%9a%84%e9%85%8d%e7%bd%ae" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -541,7 +562,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2felectron-note2%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2feslint%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -685,6 +706,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/eslint%E9%85%8D%E7%BD%AE/">ESLint的配置</a>
+              </h3>
+              
+              <time class="published" datetime='2021-01-08'>
+                January 8, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/electron-note2/">electron 笔记</a>
               </h3>
               
@@ -700,20 +735,6 @@
             <header>
               <h3>
                 <a href="/blog/electron-note1/">electron的起手笔记</a>
-              </h3>
-              
-              <time class="published" datetime='2020-12-14'>
-                December 14, 2020
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/fetch/">fetch的使用</a>
               </h3>
               
               <time class="published" datetime='2020-12-14'>
@@ -853,7 +874,7 @@
     
     <p class="copyright">
       
-        &copy; 2020
+        &copy; 2021
         
           么了&#39;s 博客
         

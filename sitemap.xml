@@ -4,12 +4,27 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-12-15T10:50:40+08:00</lastmod>
+    <lastmod>2021-01-08T11:50:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-12-15T10:50:40+08:00</lastmod>
+    <lastmod>2021-01-08T11:50:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/eslint/</loc>
+    <lastmod>2021-01-08T11:50:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/eslint%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2021-01-08T11:50:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-08T11:50:40+08:00</lastmod>
   </url>
   
   <url>
@@ -19,11 +34,6 @@
   
   <url>
     <loc>/blog/electron-note2/</loc>
-    <lastmod>2020-12-15T10:50:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-12-15T10:50:40+08:00</lastmod>
   </url>
   
