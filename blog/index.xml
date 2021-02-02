@@ -6,7 +6,17 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 08 Jan 2021 11:50:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 14:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ios 屏幕安全距离 样式</title>
+      <link>/blog/safearea/</link>
+      <pubDate>Tue, 02 Feb 2021 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/safearea/</guid>
+      <description>env()和constant()，是IOS11新增特性， Webkit的css函数，用于设定安全区域与边界的距离，有4个预定义变量： safe-area-inset-left：安全区域距离左边边界的距离 safe-area-inset-right：安全区域距离右边边界的距离 safe-area-inset-top：安全区域距离顶部边界的距离 safe-area-inset-bottom：安全距离底部边界的距离
+padding-bottom: constant(safe-area-inset-bottom); /*兼容 IOS&amp;lt;11.2*/ padding-bottom: env(safe-area-inset-bottom); /*兼容 IOS&amp;gt;11.2*/ ⚠️ 注意： env() 和 constant() 需要同时存在，而且顺序不能换。</description>
+    </item>
+    
     <item>
       <title>ESLint的配置</title>
       <link>/blog/eslint%E9%85%8D%E7%BD%AE/</link>
