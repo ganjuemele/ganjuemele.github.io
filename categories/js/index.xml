@@ -91,5 +91,14 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
 Javascript的十个设计缺陷  不适合开发大型程序 非常小的标准库 null 和 undefined 全局变量难以控制 自动插入行尾分号 加号运算符 NAN 数组和对象的区分 == 和 === 基本类型的包装对象  如何看待Javascript Javascript其实并不算太糟，它的编程能力很强大。 如果遵守良好的编程规范，加上第三方函数库的帮助，JS的缺陷大部分可以规避。 还有JS目前是网页编程的唯一语言，许多新项目大大的扩展了它的用途，例如node.js,coffeeScript</description>
     </item>
     
+    <item>
+      <title>节流</title>
+      <link>/blog/throttle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/throttle/</guid>
+      <description>// 小程序 节流  data:{ canRetry: !0 } throttle(fn, delay) { let that = this; return function() { if(that.data.canRetry) { fn.apply(that.arguments); that.setData({canRetry: !1}) setTimeout(() =&amp;gt; that.setData({canRetry: !1}), delay) } } }, throttled() { const that = this; const retry = this.throttle(()=&amp;gt; that.actList(), 2000) retry() } </description>
+    </item>
+    
   </channel>
 </rss>

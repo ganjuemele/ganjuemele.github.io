@@ -464,4 +464,8 @@
     <loc>/contact/</loc>
   </url>
   
+  <url>
+    <loc>/blog/throttle/</loc>
+  </url>
+  
 </urlset>
