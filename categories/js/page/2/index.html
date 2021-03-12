@@ -30,9 +30,9 @@
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2020",
-        "datePublished": "2020-12-11 00:07:40 \u002b0800 CST",
-        "dateModified" : "2020-12-11 00:07:40 \u002b0800 CST",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-03-12 16:22:40 \u002b0800 CST",
+        "dateModified" : "2021-03-12 16:22:40 \u002b0800 CST",
         "url" : "\/categories\/js\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -78,7 +78,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/categories/js/" />
-<meta property="og:updated_time" content="2020-12-11T00:07:40+08:00" />
+<meta property="og:updated_time" content="2021-03-12T16:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -255,6 +255,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/file/">node.js文件系统</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-03-12'>
+                                    March 12, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/safearea/">ios 屏幕安全距离 样式</a></h3>
                                 
                                 <time class="published" datetime=
@@ -272,18 +284,6 @@
                                 <time class="published" datetime=
                                     '2021-01-08'>
                                     January 8, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/electron-note2/">electron 笔记</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2020-12-15'>
-                                    December 15, 2020</time>
                             </header>
                             
 
@@ -308,6 +308,76 @@
     <div id="main">
         <h1>js</h1>
         
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/promise-note/">promise</a></h2>
+        
+        
+            <p>promise小知识</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-09-08'>
+            September 8, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">Promise.<span style="color:#a6e22e">resolve</span>()
+  .<span style="color:#a6e22e">then</span>(() =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1&#34;</span>);
+    Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
+      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then1-1&#34;</span>);
+    });
+  })
+  .<span style="color:#a6e22e">then</span>(() =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;then2&#34;</span>);
+  });
+  
+  <span style="color:#75715e">// then1 → then1-1 → then2
+</span></code></pre></div><p><strong>结论：链式调用中，只有前一个 then 的回调执行完毕后，跟着的 then 中的回调才会被加入至微任务队列。</strong></p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/promise-note/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/js">js</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
             <article class="post">
   <header>
@@ -408,62 +478,6 @@
                 
                 
                 <li><a class="article-category-link" href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F">小程序</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/js">js</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/drag/">鼠标拖动实现</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-04-10'>
-            April 10, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/drag/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
                 
                 
                 <li><a class="article-category-link" href="/categories/js">js</a></li>
@@ -629,6 +643,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/file/">node.js文件系统</a>
+              </h3>
+              
+              <time class="published" datetime='2021-03-12'>
+                March 12, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/safearea/">ios 屏幕安全距离 样式</a>
               </h3>
               
@@ -648,20 +676,6 @@
               
               <time class="published" datetime='2021-01-08'>
                 January 8, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/electron-note2/">electron 笔记</a>
-              </h3>
-              
-              <time class="published" datetime='2020-12-15'>
-                December 15, 2020
               </time>
             </header>
             

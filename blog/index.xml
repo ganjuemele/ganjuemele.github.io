@@ -6,7 +6,18 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 02 Feb 2021 14:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 16:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>node.js文件系统</title>
+      <link>/blog/file/</link>
+      <pubDate>Fri, 12 Mar 2021 16:22:40 +0800</pubDate>
+      
+      <guid>/blog/file/</guid>
+      <description>Node.js文件系统模块 方法1：
+// 引入 fs 模块 let fs = require(&amp;#34;fs&amp;#34;) let fs = window.require(&amp;#39;fs&amp;#39;) // vue中需要在全局引入  // fs.readFile(path, cb) fs.readFile(&amp;#39;./src/data.json&amp;#39;, function (err, data) { // data为文件内容  if(err) { return console.error(err) } }) // fs.writeFile(&amp;#39;文件路径&amp;#39;，&amp;#39;写入的内容&amp;#39;，fn) fs.writeFile(&amp;#39;./src/data.json&amp;#39;, &amp;#39;TEXT&amp;#39;, function (err, data) { if (err) { return console.error(err) } }) 方法2：
+//需要的使用的地方 引入js文件 import xx from &amp;#39;../data/file.js&amp;#39; // file.js fs.readFile(&amp;#39;./src/data.json&amp;#39;, function (err, data) { if(err) { return console.error(err) } let dt = data.</description>
+    </item>
+    
     <item>
       <title>ios 屏幕安全距离 样式</title>
       <link>/blog/safearea/</link>

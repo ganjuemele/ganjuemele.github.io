@@ -4,12 +4,37 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2021-02-02T14:22:40+08:00</lastmod>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-02-02T14:22:40+08:00</lastmod>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/js/</loc>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/node/</loc>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/file/</loc>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/vue/</loc>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
   </url>
   
   <url>
@@ -19,11 +44,6 @@
   
   <url>
     <loc>/blog/safearea/</loc>
-    <lastmod>2021-02-02T14:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-02-02T14:22:40+08:00</lastmod>
   </url>
   
@@ -63,11 +83,6 @@
   </url>
   
   <url>
-    <loc>/categories/js/</loc>
-    <lastmod>2020-12-11T00:07:40+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/js-note2/</loc>
     <lastmod>2020-12-11T00:07:40+08:00</lastmod>
   </url>
@@ -90,11 +105,6 @@
   <url>
     <loc>/blog/js-note1/</loc>
     <lastmod>2020-11-17T22:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/vue/</loc>
-    <lastmod>2020-09-27T16:22:40+08:00</lastmod>
   </url>
   
   <url>
