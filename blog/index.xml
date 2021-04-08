@@ -6,7 +6,16 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 12 Mar 2021 16:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Apr 2021 14:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React Router</title>
+      <link>/blog/react-router/</link>
+      <pubDate>Thu, 08 Apr 2021 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/react-router/</guid>
+      <description>function App() { return( &amp;lt;Router&amp;gt; &amp;lt;Link to=&amp;#34;/home&amp;#34;&amp;gt;首页&amp;lt;/Link&amp;gt; &amp;lt;Link to=&amp;#34;/content&amp;#34;&amp;gt;内容&amp;lt;/Link&amp;gt; &amp;lt;Link to=&amp;#34;/about&amp;#34;&amp;gt;关于&amp;lt;/Link&amp;gt; &amp;lt;Switch&amp;gt; &amp;lt;Route path=&amp;#34;/home&amp;#34;&amp;gt; &amp;lt;Home /&amp;gt; &amp;lt;/Route&amp;gt; &amp;lt;Route path=&amp;#34;/content&amp;#34;&amp;gt; &amp;lt;Content /&amp;gt; &amp;lt;/Route&amp;gt; &amp;lt;Route path=&amp;#34;/about&amp;#34;&amp;gt; &amp;lt;About /&amp;gt; &amp;lt;/Route&amp;gt; // 重定向 &amp;lt;Redirect exact from=&amp;#34;/&amp;#34; to=&amp;#34;home&amp;#34; /&amp;gt; // 404页面 &amp;lt;Route path=&amp;#34;*&amp;#34;&amp;gt; &amp;lt;NoMatch/&amp;gt; &amp;lt;/Route&amp;gt; &amp;lt;/Switch&amp;gt; &amp;lt;/Router&amp;gt; ) } function Home() { return &amp;lt;h2&amp;gt;记账&amp;lt;/h2&amp;gt;; } function About() { return &amp;lt;h2&amp;gt;记账&amp;lt;/h2&amp;gt;; } function Content() { return &amp;lt;h2&amp;gt;记账&amp;lt;/h2&amp;gt;; } function NoMatch() { return &amp;lt;h2&amp;gt;页面不存在404&amp;lt;/h2&amp;gt;; } </description>
+    </item>
+    
     <item>
       <title>node.js文件系统</title>
       <link>/blog/file/</link>

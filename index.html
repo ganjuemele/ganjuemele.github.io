@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2021",
-        "datePublished": "2021-03-12 16:22:40 \u002b0800 CST",
-        "dateModified" : "2021-03-12 16:22:40 \u002b0800 CST",
+        "datePublished": "2021-04-08 14:22:40 \u002b0800 CST",
+        "dateModified" : "2021-04-08 14:22:40 \u002b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2021-03-12T16:22:40+08:00" />
+<meta property="og:updated_time" content="2021-04-08T14:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -252,6 +252,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/react-router/">React Router</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-04-08'>
+                                    April 8, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/file/">node.js文件系统</a></h3>
                                 
                                 <time class="published" datetime=
@@ -269,18 +281,6 @@
                                 <time class="published" datetime=
                                     '2021-02-02'>
                                     February 2, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/eslint%E9%85%8D%E7%BD%AE/">ESLint的配置</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-01-08'>
-                                    January 8, 2021</time>
                             </header>
                             
 
@@ -308,7 +308,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/file/">node.js文件系统</a></h2>
+            <h2><a href="/blog/react-router/">React Router</a></h2>
         
         
     </div>
@@ -316,8 +316,8 @@
         
 
         <time class="published"
-            datetime='2021-03-12'>
-            March 12, 2021</time>
+            datetime='2021-04-08'>
+            April 8, 2021</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -335,7 +335,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2ffile%2f&amp;text=node.js%e6%96%87%e4%bb%b6%e7%b3%bb%e7%bb%9f&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2freact-router%2f&amp;text=React%20Router&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -349,7 +349,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ffile%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2freact-router%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -362,7 +362,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ffile%2f&amp;title=node.js%e6%96%87%e4%bb%b6%e7%b3%bb%e7%bb%9f" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2freact-router%2f&amp;title=React%20Router" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -378,7 +378,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ffile%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2freact-router%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -392,41 +392,45 @@
   
 
   <div id="content">
-    <h2 id="nodejs文件系统模块">Node.js文件系统模块</h2>
-<p>方法1：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 引入 fs 模块
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;fs&#34;</span>)
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>) <span style="color:#75715e">// vue中需要在全局引入
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// fs.readFile(path, cb)
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>(<span style="color:#e6db74">&#39;./src/data.json&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">data</span>) {
-    <span style="color:#75715e">// data为文件内容
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">err</span>) {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>)
-    }
-})
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">function App() {
+    return(
+    &lt;<span style="color:#f92672">Router</span>&gt;
+        &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home&#34;</span>&gt;首页&lt;/<span style="color:#f92672">Link</span>&gt;
+        &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/content&#34;</span>&gt;内容&lt;/<span style="color:#f92672">Link</span>&gt;
+        &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;关于&lt;/<span style="color:#f92672">Link</span>&gt;
+        &lt;<span style="color:#f92672">Switch</span>&gt;
+            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home&#34;</span>&gt;
+                &lt;<span style="color:#f92672">Home</span> /&gt;
+            &lt;/<span style="color:#f92672">Route</span>&gt;
+            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/content&#34;</span>&gt;
+                &lt;<span style="color:#f92672">Content</span> /&gt;
+            &lt;/<span style="color:#f92672">Route</span>&gt;
+            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;
+                &lt;<span style="color:#f92672">About</span> /&gt;
+            &lt;/<span style="color:#f92672">Route</span>&gt;
+            // 重定向
+            &lt;<span style="color:#f92672">Redirect</span> <span style="color:#a6e22e">exact</span> <span style="color:#a6e22e">from</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;home&#34;</span> /&gt;
+            // 404页面
+            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;*&#34;</span>&gt;
+                &lt;<span style="color:#f92672">NoMatch</span>/&gt;
+            &lt;/<span style="color:#f92672">Route</span>&gt;
+        &lt;/<span style="color:#f92672">Switch</span>&gt;
+    &lt;/<span style="color:#f92672">Router</span>&gt;
+)
+}
 
-<span style="color:#75715e">// fs.writeFile(&#39;文件路径&#39;，&#39;写入的内容&#39;，fn)
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFile</span>(<span style="color:#e6db74">&#39;./src/data.json&#39;</span>, <span style="color:#e6db74">&#39;TEXT&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">data</span>) {
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>)
-    }
-})
-</code></pre></div><p>方法2：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//需要的使用的地方 引入js文件
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">xx</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../data/file.js&#39;</span>
-<span style="color:#75715e">// file.js
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>(<span style="color:#e6db74">&#39;./src/data.json&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">data</span>) {
-    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">err</span>) {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>)
-    }
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">dt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">toString</span>() <span style="color:#75715e">// 缓存之前文件的内容
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFile</span>(<span style="color:#e6db74">&#39;./src/data.json&#39;</span>, <span style="color:#a6e22e">dt</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;TEXT&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">data</span>) {
-        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
-            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">err</span>)
-        }
-    })
-})
+function Home() {
+  return &lt;<span style="color:#f92672">h2</span>&gt;记账&lt;/<span style="color:#f92672">h2</span>&gt;;
+}
+function About() {
+  return &lt;<span style="color:#f92672">h2</span>&gt;记账&lt;/<span style="color:#f92672">h2</span>&gt;;
+}
+function Content() {
+  return &lt;<span style="color:#f92672">h2</span>&gt;记账&lt;/<span style="color:#f92672">h2</span>&gt;;
+}
+function NoMatch() {
+  return &lt;<span style="color:#f92672">h2</span>&gt;页面不存在404&lt;/<span style="color:#f92672">h2</span>&gt;;
+}
 </code></pre></div>
   </div>
 
@@ -440,13 +444,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/js">js</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/node">node</a></li>
+                <li><a class="article-category-link" href="/categories/react">react</a></li>
                 
             
         
@@ -482,8 +480,8 @@
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/safearea/"
-                class="button big previous">ios 屏幕安全距离 样式</a></li>
+        <li><a href="/blog/file/"
+                class="button big previous">node.js文件系统</a></li>
     
 
     
@@ -523,7 +521,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2ffile%2f&amp;text=node.js%e6%96%87%e4%bb%b6%e7%b3%bb%e7%bb%9f&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2freact-router%2f&amp;text=React%20Router&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -537,7 +535,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ffile%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2freact-router%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -550,7 +548,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ffile%2f&amp;title=node.js%e6%96%87%e4%bb%b6%e7%b3%bb%e7%bb%9f" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2freact-router%2f&amp;title=React%20Router" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -566,7 +564,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2ffile%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2freact-router%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -710,6 +708,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/react-router/">React Router</a>
+              </h3>
+              
+              <time class="published" datetime='2021-04-08'>
+                April 8, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/file/">node.js文件系统</a>
               </h3>
               
@@ -729,20 +741,6 @@
               
               <time class="published" datetime='2021-02-02'>
                 February 2, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/eslint%E9%85%8D%E7%BD%AE/">ESLint的配置</a>
-              </h3>
-              
-              <time class="published" datetime='2021-01-08'>
-                January 8, 2021
               </time>
             </header>
             
