@@ -17,6 +17,20 @@
     </item>
     
     <item>
+      <title>React中的css in js库</title>
+      <link>/blog/react-css/</link>
+      <pubDate>Thu, 08 Apr 2021 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/react-css/</guid>
+      <description>//首先引入 import styled from &amp;#39;styled-components&amp;#39;; // 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; &amp;lt;Wrapper&amp;gt;1111&amp;lt;/Wrapper&amp;gt; yarn add styled-components 使用yarn安装 webstrom提示报错
+然后改用 yarn add @types/styled-components
+引用不变，还是import styled from &#39;styled-components&#39;;
+styled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。
+ 优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助
+ 缺点  可读性差，不方便直接看出组件的 html 元素</description>
+    </item>
+    
+    <item>
       <title>node.js文件系统</title>
       <link>/blog/file/</link>
       <pubDate>Fri, 12 Mar 2021 16:22:40 +0800</pubDate>
