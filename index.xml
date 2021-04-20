@@ -6,7 +6,26 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 08 Apr 2021 14:22:40 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Apr 2021 10:22:40 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Vant的picker</title>
+      <link>/blog/vant-1/</link>
+      <pubDate>Tue, 20 Apr 2021 10:22:40 +0800</pubDate>
+      
+      <guid>/blog/vant-1/</guid>
+      <description>&amp;lt;template&amp;gt; &amp;lt;!-- //时间选择--&amp;gt; &amp;lt;div @click=&amp;#34;isShowPopup=!isShowPopup&amp;#34;&amp;gt; {{日期}} &amp;lt;/div&amp;gt; &amp;lt;van-popup v-model=&amp;#34;isShowPopup&amp;#34; position=&amp;#34;bottom&amp;#34;&amp;gt; &amp;lt;van-picker show-toolbar :columns=&amp;#34;columns&amp;#34; @change=&amp;#34;onChange&amp;#34; @confirm=&amp;#34;onConfirm&amp;#34; @cancel=&amp;#34;onCancel&amp;#34; /&amp;gt; &amp;lt;/van-popup&amp;gt; &amp;lt;!-- // 状态选择--&amp;gt; &amp;lt;div @click=&amp;#34;isShowStat=!isShowStat&amp;#34;&amp;gt; {{状态}} &amp;lt;/div&amp;gt; &amp;lt;van-popup v-model=&amp;#34;isShowStat&amp;#34; position=&amp;#34;bottom&amp;#34; v-if=&amp;#34;isShowStat&amp;#34;&amp;gt; &amp;lt;van-picker show-toolbar :columns=&amp;#34;typeListStat&amp;#34; @confirm=&amp;#34;onConfirmStat&amp;#34; @cancel=&amp;#34;onCancel&amp;#34; /&amp;gt; &amp;lt;/van-popup&amp;gt; &amp;lt;/template&amp;gt; import Vue from &amp;#39;vue&amp;#39;; import {Picker, Popup} from &amp;#34;vant&amp;#34;; Vue.use(Picker,Popup) export default { data() { return{ isShowPopup:false, isShowStat: false, typeStat: [&amp;#39;全部明细&amp;#39;, 0], typeListStat: [{values:[&amp;#39;全部明细&amp;#39;,&amp;#39;积分奖励&amp;#39;,&amp;#39;积分扣减&amp;#39;],defaultIndex: 0}], columns:[{}] } }, methods: { onCancel(){ this.isShowPopup=false; this.isShowStat= false }, … … }, watch: { 日期改变() { this.</description>
+    </item>
+    
+    <item>
+      <title>React中的SVG loader</title>
+      <link>/blog/react-1/</link>
+      <pubDate>Fri, 09 Apr 2021 14:22:40 +0800</pubDate>
+      
+      <guid>/blog/react-1/</guid>
+      <description>yarn eject yarn add svgo-loader --dev yarn add svg-sprite-loader --dev /config/webpack.config.js 文件中添加
+return { module: { rules: [ {oneOf: [ //svg-sprite-loader  { test: /\.svg$/, use: [ { loader: &amp;#39;svg-sprite-loader&amp;#39;, options: { } }, { loader: &amp;#39;svgo-loader&amp;#39;, options: {} } ] } ]} ]} } import y from &amp;#39;../icons/pear.svg&amp;#39; require(&amp;#39;../icons/watermelon.svg&amp;#39;) console.log(y) //import需要log一下引入的内容 // 或者直接require svg &amp;lt;svg className=&amp;#34;icon&amp;#34;&amp;gt; // 匹配 id为pear的svg &amp;lt;use xlinkHref=&amp;#34;#pear&amp;#34;/&amp;gt; &amp;lt;/svg&amp;gt; &amp;lt;svg className=&amp;#34;icon&amp;#34;&amp;gt; &amp;lt;use xlinkHref=&amp;#34;#watermelon&amp;#34;/&amp;gt; &amp;lt;/svg&amp;gt; ⚠️注意：react添加了tree shaking 的优化功能，会把脚本中未使用的声明删除掉.</description>
+    </item>
+    
     <item>
       <title>React Router</title>
       <link>/blog/react-router/</link>

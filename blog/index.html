@@ -29,8 +29,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2021",
-        "datePublished": "2021-04-08 14:22:40 \u002b0800 CST",
-        "dateModified" : "2021-04-08 14:22:40 \u002b0800 CST",
+        "datePublished": "2021-04-20 10:22:40 \u002b0800 CST",
+        "dateModified" : "2021-04-20 10:22:40 \u002b0800 CST",
         "url" : "\/blog\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -76,7 +76,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" />
-<meta property="og:updated_time" content="2021-04-08T14:22:40+08:00" />
+<meta property="og:updated_time" content="2021-04-20T10:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -253,35 +253,35 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/vant-1/">使用Vant的picker</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-04-20'>
+                                    April 20, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/react-1/">React中的SVG loader</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-04-09'>
+                                    April 9, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/react-router/">React Router</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2021-04-08'>
                                     April 8, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/react-css/">React中的css in js库</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-04-08'>
-                                    April 8, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/file/">node.js文件系统</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-03-12'>
-                                    March 12, 2021</time>
                             </header>
                             
 
@@ -305,6 +305,136 @@
     
     <div id="main">
         
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/vant-1/">使用Vant的picker</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2021-04-20'>
+            April 20, 2021</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+<span style="color:#75715e">&lt;!--    //时间选择--&gt;</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowPopup=!isShowPopup&#34;</span>&gt;
+        {{日期}}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">van-popup</span> <span style="color:#a6e22e">v-model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowPopup&#34;</span> <span style="color:#a6e22e">position</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span>&gt;
+        &lt;<span style="color:#f92672">van-picker</span> <span style="color:#a6e22e">show-toolbar</span> <span style="color:#a6e22e">:columns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">change</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onChange&#34;</span>
+                    <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">confirm</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onConfirm&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">cancel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onCancel&#34;</span> /&gt;
+    &lt;/<span style="color:#f92672">van-popup</span>&gt;
+<span style="color:#75715e">&lt;!--    // 状态选择--&gt;</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowStat=!isShowStat&#34;</span>&gt;
+        {{状态}}&hellip;</code></pre>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/vant-1/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/vant">vant</a></li>
+                
+                
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/react-1/">React中的SVG loader</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2021-04-09'>
+            April 9, 2021</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre><code>yarn eject
+
+yarn add svgo-loader --dev
+yarn add svg-sprite-loader --dev
+</code></pre><p>/config/webpack.config.js 文件中添加</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/react-1/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/react">react</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
             <article class="post">
   <header>
@@ -346,137 +476,6 @@
                 
                 
                 <li><a class="article-category-link" href="/categories/react">react</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/react-css/">React中的css in js库</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2021-04-08'>
-            April 8, 2021</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">//首先引入
-import styled from &#39;styled-components&#39;;
-
-// 添加样式
-const Wrapper = styled.div`
-  border: 1px solid red;
-  min-height:100vh;
-  display:flex;
-`;
-&lt;<span style="color:#f92672">Wrapper</span>&gt;1111&lt;/<span style="color:#f92672">Wrapper</span>&gt;
-</code></pre></div><p><code>yarn add styled-components</code> 使用yarn安装</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/react-css/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/react">react</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/css">css</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/file/">node.js文件系统</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2021-03-12'>
-            March 12, 2021</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <p>方法1：</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/file/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/js">js</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/node">node</a></li>
                 
             
         
@@ -638,39 +637,39 @@ const Wrapper = styled.div`
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/vant-1/">使用Vant的picker</a>
+              </h3>
+              
+              <time class="published" datetime='2021-04-20'>
+                April 20, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/react-1/">React中的SVG loader</a>
+              </h3>
+              
+              <time class="published" datetime='2021-04-09'>
+                April 9, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/react-router/">React Router</a>
               </h3>
               
               <time class="published" datetime='2021-04-08'>
                 April 8, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/react-css/">React中的css in js库</a>
-              </h3>
-              
-              <time class="published" datetime='2021-04-08'>
-                April 8, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/file/">node.js文件系统</a>
-              </h3>
-              
-              <time class="published" datetime='2021-03-12'>
-                March 12, 2021
               </time>
             </header>
             

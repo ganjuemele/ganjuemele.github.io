@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2021",
-        "datePublished": "2021-04-08 14:22:40 \u002b0800 CST",
-        "dateModified" : "2021-04-08 14:22:40 \u002b0800 CST",
+        "datePublished": "2021-04-20 10:22:40 \u002b0800 CST",
+        "dateModified" : "2021-04-20 10:22:40 \u002b0800 CST",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -70,7 +70,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2021-04-08T14:22:40+08:00" />
+<meta property="og:updated_time" content="2021-04-20T10:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -252,35 +252,35 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/vant-1/">使用Vant的picker</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-04-20'>
+                                    April 20, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/react-1/">React中的SVG loader</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-04-09'>
+                                    April 9, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/react-router/">React Router</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2021-04-08'>
                                     April 8, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/react-css/">React中的css in js库</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-04-08'>
-                                    April 8, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/file/">node.js文件系统</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-03-12'>
-                                    March 12, 2021</time>
                             </header>
                             
 
@@ -308,7 +308,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/react-router/">React Router</a></h2>
+            <h2><a href="/blog/vant-1/">使用Vant的picker</a></h2>
         
         
     </div>
@@ -316,8 +316,8 @@
         
 
         <time class="published"
-            datetime='2021-04-08'>
-            April 8, 2021</time>
+            datetime='2021-04-20'>
+            April 20, 2021</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -335,7 +335,7 @@
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2freact-router%2f&amp;text=React%20Router&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fvant-1%2f&amp;text=%e4%bd%bf%e7%94%a8Vant%e7%9a%84picker&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -349,7 +349,7 @@
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2freact-router%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvant-1%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -362,7 +362,7 @@
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2freact-router%2f&amp;title=React%20Router" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvant-1%2f&amp;title=%e4%bd%bf%e7%94%a8Vant%e7%9a%84picker" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -378,7 +378,7 @@
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2freact-router%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvant-1%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -392,46 +392,61 @@
   
 
   <div id="content">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">function App() {
-    return(
-    &lt;<span style="color:#f92672">Router</span>&gt;
-        &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home&#34;</span>&gt;首页&lt;/<span style="color:#f92672">Link</span>&gt;
-        &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/content&#34;</span>&gt;内容&lt;/<span style="color:#f92672">Link</span>&gt;
-        &lt;<span style="color:#f92672">Link</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;关于&lt;/<span style="color:#f92672">Link</span>&gt;
-        &lt;<span style="color:#f92672">Switch</span>&gt;
-            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home&#34;</span>&gt;
-                &lt;<span style="color:#f92672">Home</span> /&gt;
-            &lt;/<span style="color:#f92672">Route</span>&gt;
-            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/content&#34;</span>&gt;
-                &lt;<span style="color:#f92672">Content</span> /&gt;
-            &lt;/<span style="color:#f92672">Route</span>&gt;
-            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;
-                &lt;<span style="color:#f92672">About</span> /&gt;
-            &lt;/<span style="color:#f92672">Route</span>&gt;
-            // 重定向
-            &lt;<span style="color:#f92672">Redirect</span> <span style="color:#a6e22e">exact</span> <span style="color:#a6e22e">from</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;home&#34;</span> /&gt;
-            // 404页面
-            &lt;<span style="color:#f92672">Route</span> <span style="color:#a6e22e">path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;*&#34;</span>&gt;
-                &lt;<span style="color:#f92672">NoMatch</span>/&gt;
-            &lt;/<span style="color:#f92672">Route</span>&gt;
-        &lt;/<span style="color:#f92672">Switch</span>&gt;
-    &lt;/<span style="color:#f92672">Router</span>&gt;
-)
-}
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+<span style="color:#75715e">&lt;!--    //时间选择--&gt;</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowPopup=!isShowPopup&#34;</span>&gt;
+        {{日期}}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">van-popup</span> <span style="color:#a6e22e">v-model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowPopup&#34;</span> <span style="color:#a6e22e">position</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span>&gt;
+        &lt;<span style="color:#f92672">van-picker</span> <span style="color:#a6e22e">show-toolbar</span> <span style="color:#a6e22e">:columns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">change</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onChange&#34;</span>
+                    <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">confirm</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onConfirm&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">cancel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onCancel&#34;</span> /&gt;
+    &lt;/<span style="color:#f92672">van-popup</span>&gt;
+<span style="color:#75715e">&lt;!--    // 状态选择--&gt;</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowStat=!isShowStat&#34;</span>&gt;
+        {{状态}}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">van-popup</span> <span style="color:#a6e22e">v-model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowStat&#34;</span> <span style="color:#a6e22e">position</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span> <span style="color:#a6e22e">v-if</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowStat&#34;</span>&gt;
+        &lt;<span style="color:#f92672">van-picker</span> <span style="color:#a6e22e">show-toolbar</span> <span style="color:#a6e22e">:columns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;typeListStat&#34;</span>
+                    <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">confirm</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onConfirmStat&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">cancel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onCancel&#34;</span> /&gt;
+    &lt;/<span style="color:#f92672">van-popup</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Vue</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue&#39;</span>;
+<span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">Picker</span>, <span style="color:#a6e22e">Popup</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;vant&#34;</span>;
+<span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">Picker</span>,<span style="color:#a6e22e">Popup</span>)
 
-function Home() {
-  return &lt;<span style="color:#f92672">h2</span>&gt;记账&lt;/<span style="color:#f92672">h2</span>&gt;;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+    <span style="color:#a6e22e">data</span>() {
+        <span style="color:#66d9ef">return</span>{
+            <span style="color:#a6e22e">isShowPopup</span><span style="color:#f92672">:</span><span style="color:#66d9ef">false</span>,
+            <span style="color:#a6e22e">isShowStat</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+            <span style="color:#a6e22e">typeStat</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;全部明细&#39;</span>, <span style="color:#ae81ff">0</span>],
+            <span style="color:#a6e22e">typeListStat</span><span style="color:#f92672">:</span> [{<span style="color:#a6e22e">values</span><span style="color:#f92672">:</span>[<span style="color:#e6db74">&#39;全部明细&#39;</span>,<span style="color:#e6db74">&#39;积分奖励&#39;</span>,<span style="color:#e6db74">&#39;积分扣减&#39;</span>],<span style="color:#a6e22e">defaultIndex</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>}],
+            <span style="color:#a6e22e">columns</span><span style="color:#f92672">:</span>[{}]
+        }
+    },
+    <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">onCancel</span>(){
+            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isShowPopup</span><span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>;
+            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isShowStat</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">…</span>
+        <span style="color:#960050;background-color:#1e0010">…</span>
+    },
+    <span style="color:#a6e22e">watch</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">日期改变</span>() {
+            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">typeStat</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;全部明细&#39;</span><span style="color:#960050;background-color:#1e0010">，</span> <span style="color:#ae81ff">0</span>]
+            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isShowStat</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isShowStat</span>;
+            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$nextTick</span>(()=&gt;{
+                <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isShowStat</span> <span style="color:#f92672">=</span> <span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">isShowStat</span>;
+            })
+        },
+        <span style="color:#a6e22e">typeStat</span>() {
+            <span style="color:#75715e">//...
+</span><span style="color:#75715e"></span>        }
+    }
 }
-function About() {
-  return &lt;<span style="color:#f92672">h2</span>&gt;记账&lt;/<span style="color:#f92672">h2</span>&gt;;
-}
-function Content() {
-  return &lt;<span style="color:#f92672">h2</span>&gt;记账&lt;/<span style="color:#f92672">h2</span>&gt;;
-}
-function NoMatch() {
-  return &lt;<span style="color:#f92672">h2</span>&gt;页面不存在404&lt;/<span style="color:#f92672">h2</span>&gt;;
-}
-</code></pre></div>
+</code></pre></div><p>watch监听日期改变后，利用<code>$nextTick</code>方法更新另一个picker组件,来更新状态选择内的defaultIndex</p>
+
   </div>
 
   <footer>
@@ -444,7 +459,10 @@ function NoMatch() {
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/react">react</a></li>
+                <li><a class="article-category-link" href="/categories/vant">vant</a></li>
+                
+                
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
                 
             
         
@@ -480,8 +498,8 @@ function NoMatch() {
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/react-css/"
-                class="button big previous">React中的css in js库</a></li>
+        <li><a href="/blog/react-1/"
+                class="button big previous">React中的SVG loader</a></li>
     
 
     
@@ -521,7 +539,7 @@ function NoMatch() {
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2freact-router%2f&amp;text=React%20Router&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fvant-1%2f&amp;text=%e4%bd%bf%e7%94%a8Vant%e7%9a%84picker&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -535,7 +553,7 @@ function NoMatch() {
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2freact-router%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvant-1%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -548,7 +566,7 @@ function NoMatch() {
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2freact-router%2f&amp;title=React%20Router" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvant-1%2f&amp;title=%e4%bd%bf%e7%94%a8Vant%e7%9a%84picker" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -564,7 +582,7 @@ function NoMatch() {
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2freact-router%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvant-1%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -708,39 +726,39 @@ function NoMatch() {
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/vant-1/">使用Vant的picker</a>
+              </h3>
+              
+              <time class="published" datetime='2021-04-20'>
+                April 20, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/react-1/">React中的SVG loader</a>
+              </h3>
+              
+              <time class="published" datetime='2021-04-09'>
+                April 9, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/react-router/">React Router</a>
               </h3>
               
               <time class="published" datetime='2021-04-08'>
                 April 8, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/react-css/">React中的css in js库</a>
-              </h3>
-              
-              <time class="published" datetime='2021-04-08'>
-                April 8, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/file/">node.js文件系统</a>
-              </h3>
-              
-              <time class="published" datetime='2021-03-12'>
-                March 12, 2021
               </time>
             </header>
             
