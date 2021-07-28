@@ -1,0 +1,930 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "锚点的跳转和返回",
+        "headline" : "锚点的跳转和返回",
+        "description" : "\u0026lt;div id=\u0026#34;task\u0026#34;\u0026gt; ... \u0026lt;\/div\u0026gt; 点击事件 window.location.href = \u0026#39;#task\u0026#39;; 跳转后会在链接上加上 task， 之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。\n所以改用\ndocument.getElementById(\u0026#39;task\u0026#39;).scrollIntoView() 可以解决路由返回需要2次的问题，不会在url上加上task 的锚点",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-07-28 11:22:40 \u002b0800 CST",
+        "dateModified" : "2021-07-28 11:22:40 \u002b0800 CST",
+        "url" : "\/blog\/js-note3\/",
+        "wordCount" : "15",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>锚点的跳转和返回</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.78.2" />
+        
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='/favicon/favicon.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
+  <meta name="application-name" content="么了&#39;s 博客">
+  <meta name="msapplication-tooltip" content="么记">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="么了">
+        
+        
+            
+                <meta name="description" content="么记">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="锚点的跳转和返回"/>
+<meta name="twitter:description" content="&lt;div id=&#34;task&#34;&gt; ... &lt;/div&gt; 点击事件 window.location.href = &#39;#task&#39;; 跳转后会在链接上加上 task， 之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。
+所以改用
+document.getElementById(&#39;task&#39;).scrollIntoView() 可以解决路由返回需要2次的问题，不会在url上加上task 的锚点"/>
+
+        <meta property="og:title" content="锚点的跳转和返回" />
+<meta property="og:description" content="&lt;div id=&#34;task&#34;&gt; ... &lt;/div&gt; 点击事件 window.location.href = &#39;#task&#39;; 跳转后会在链接上加上 task， 之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。
+所以改用
+document.getElementById(&#39;task&#39;).scrollIntoView() 可以解决路由返回需要2次的问题，不会在url上加上task 的锚点" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/js-note3/" />
+<meta property="article:published_time" content="2021-07-28T11:22:40+08:00" />
+<meta property="article:modified_time" content="2021-07-28T11:22:40+08:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="锚点的跳转和返回">
+<meta itemprop="description" content="&lt;div id=&#34;task&#34;&gt; ... &lt;/div&gt; 点击事件 window.location.href = &#39;#task&#39;; 跳转后会在链接上加上 task， 之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。
+所以改用
+document.getElementById(&#39;task&#39;).scrollIntoView() 可以解决路由返回需要2次的问题，不会在url上加上task 的锚点">
+<meta itemprop="datePublished" content="2021-07-28T11:22:40+08:00" />
+<meta itemprop="dateModified" content="2021-07-28T11:22:40+08:00" />
+<meta itemprop="wordCount" content="15">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>主页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/music/">
+                            <i class="fa fa-list">&nbsp;</i>音乐
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>类别
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>主页
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/music/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>音乐
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>类别
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/js-note4/">js添加css动画样式</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-07-28'>
+                                    July 28, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/js-note3/">锚点的跳转和返回</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-07-28'>
+                                    July 28, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/oop/">oop面向对象</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-05-13'>
+                                    May 13, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">查看更多</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fjs-note3%2f&amp;text=%e9%94%9a%e7%82%b9%e7%9a%84%e8%b7%b3%e8%bd%ac%e5%92%8c%e8%bf%94%e5%9b%9e&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fjs-note3%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fjs-note3%2f&amp;title=%e9%94%9a%e7%82%b9%e7%9a%84%e8%b7%b3%e8%bd%ac%e5%92%8c%e8%bf%94%e5%9b%9e" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fjs-note3%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/js-note3/">锚点的跳转和返回</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2021-07-28'>
+            July 28, 2021</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fjs-note3%2f&amp;text=%e9%94%9a%e7%82%b9%e7%9a%84%e8%b7%b3%e8%bd%ac%e5%92%8c%e8%bf%94%e5%9b%9e&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fjs-note3%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fjs-note3%2f&amp;title=%e9%94%9a%e7%82%b9%e7%9a%84%e8%b7%b3%e8%bd%ac%e5%92%8c%e8%bf%94%e5%9b%9e" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fjs-note3%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;task&#34;</span>&gt;
+    ...
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">点击事件</span>
+window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;#task&#39;</span>;
+</code></pre></div><p>跳转后会在链接上加上 <code>task</code>，
+之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。</p>
+<p>所以改用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;task&#39;</span>).<span style="color:#a6e22e">scrollIntoView</span>()
+</code></pre></div><p>可以解决路由返回需要2次的问题，不会在url上加上<code>task</code> 的锚点</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/js">js</a></li>
+                
+                
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/oop/"
+                class="button big previous">oop面向对象</a></li>
+    
+
+    
+        <li><a href="/blog/js-note4/"
+                class="button big next">js添加css动画样式</a></li>
+    
+</ul>
+
+
+
+<article class="post">
+  
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+</article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/me.jpg" class="intro-circle" width="150px" alt="么了" /></a>
+      
+    
+    
+      <header>
+        <h2>么了</h2>
+        <p>欢迎莅临 <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>最新文章</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/js-note4/">js添加css动画样式</a>
+              </h3>
+              
+              <time class="published" datetime='2021-07-28'>
+                July 28, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/js-note3/">锚点的跳转和返回</a>
+              </h3>
+              
+              <time class="published" datetime='2021-07-28'>
+                July 28, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/oop/">oop面向对象</a>
+              </h3>
+              
+              <time class="published" datetime='2021-05-13'>
+                May 13, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">查看更多</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>关于</h3>
+      <p>HTML 5 | CSS | JavaScript | React</p>
+      <a href="/about/" class="button">阅读更多</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2021
+        
+          么了&#39;s 博客
+        
+      .</br>
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

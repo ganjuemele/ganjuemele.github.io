@@ -4,7 +4,42 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2021-05-13T10:22:40+08:00</lastmod>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/css/</loc>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/js/</loc>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/js-note4/</loc>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/vue/</loc>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/js-note3/</loc>
+    <lastmod>2021-07-28T11:22:40+08:00</lastmod>
   </url>
   
   <url>
@@ -13,22 +48,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2021-05-13T10:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2021-04-20T10:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/vant/</loc>
-    <lastmod>2021-04-20T10:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/vue/</loc>
     <lastmod>2021-04-20T10:22:40+08:00</lastmod>
   </url>
   
@@ -48,11 +68,6 @@
   </url>
   
   <url>
-    <loc>/categories/css/</loc>
-    <lastmod>2021-04-08T14:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/react-router/</loc>
     <lastmod>2021-04-08T14:22:40+08:00</lastmod>
   </url>
@@ -60,11 +75,6 @@
   <url>
     <loc>/blog/react-css/</loc>
     <lastmod>2021-04-08T14:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/js/</loc>
-    <lastmod>2021-03-12T16:22:40+08:00</lastmod>
   </url>
   
   <url>

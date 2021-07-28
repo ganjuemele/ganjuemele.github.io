@@ -6,7 +6,16 @@
     <description>Recent content in CSS on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 08 Apr 2021 14:22:40 +0800</lastBuildDate><atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>js添加css动画样式</title>
+      <link>/blog/js-note4/</link>
+      <pubDate>Wed, 28 Jul 2021 12:22:40 +0800</pubDate>
+      
+      <guid>/blog/js-note4/</guid>
+      <description>&amp;lt;img src=&amp;#34;#&amp;#34; id=&amp;#34;ball&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt; ballMove() { document.styleSheets[0] .insertRule(&amp;#34;@keyframes ballmove{from{margin-left:0} to{margin-left:100px;}}&amp;#34;) } 使用js把动画添加到全局样式库中， 还可以传入变量</description>
+    </item>
+    
     <item>
       <title>React中的css in js库</title>
       <link>/blog/react-css/</link>
