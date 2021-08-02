@@ -255,7 +255,19 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/js-note4/">js添加css动画样式</a></h3>
+                                <h3><a href="/blog/js-note4/">js添加css动画变量</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-07-28'>
+                                    July 28, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/vue-note2/">vue-方法调用alert组件</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2021-07-28'>
@@ -272,18 +284,6 @@
                                 <time class="published" datetime=
                                     '2021-07-28'>
                                     July 28, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/oop/">oop面向对象</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-13'>
-                                    May 13, 2021</time>
                             </header>
                             
 
@@ -308,6 +308,76 @@
     <div id="main">
         <h1>vue</h1>
         
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/vant-1/">使用Vant的picker</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2021-04-20'>
+            April 20, 2021</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+<span style="color:#75715e">&lt;!--    //时间选择--&gt;</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowPopup=!isShowPopup&#34;</span>&gt;
+        {{日期}}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">van-popup</span> <span style="color:#a6e22e">v-model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowPopup&#34;</span> <span style="color:#a6e22e">position</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bottom&#34;</span>&gt;
+        &lt;<span style="color:#f92672">van-picker</span> <span style="color:#a6e22e">show-toolbar</span> <span style="color:#a6e22e">:columns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;columns&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">change</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onChange&#34;</span>
+                    <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">confirm</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onConfirm&#34;</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">cancel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onCancel&#34;</span> /&gt;
+    &lt;/<span style="color:#f92672">van-popup</span>&gt;
+<span style="color:#75715e">&lt;!--    // 状态选择--&gt;</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;isShowStat=!isShowStat&#34;</span>&gt;
+        {{状态}}&hellip;</code></pre>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/vant-1/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/vant">vant</a></li>
+                
+                
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
             <article class="post">
   <header>
@@ -402,66 +472,6 @@
   <footer>
     <ul class="actions">
       <li><a href="/blog/vue3-note1/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/vue-note1/">vue小知识</a></h2>
-        
-        
-            <p>vue:[v-cloak]</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-09-17'>
-            September 17, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <p>页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验，
-v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则
-[v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/vue-note1/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -635,7 +645,21 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/js-note4/">js添加css动画样式</a>
+                <a href="/blog/js-note4/">js添加css动画变量</a>
+              </h3>
+              
+              <time class="published" datetime='2021-07-28'>
+                July 28, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/vue-note2/">vue-方法调用alert组件</a>
               </h3>
               
               <time class="published" datetime='2021-07-28'>
@@ -654,20 +678,6 @@ v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特
               
               <time class="published" datetime='2021-07-28'>
                 July 28, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/oop/">oop面向对象</a>
-              </h3>
-              
-              <time class="published" datetime='2021-05-13'>
-                May 13, 2021
               </time>
             </header>
             

@@ -8,12 +8,13 @@
     <language>zh-Hans</language>
     <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>js添加css动画样式</title>
+      <title>js添加css动画变量</title>
       <link>/blog/js-note4/</link>
       <pubDate>Wed, 28 Jul 2021 12:22:40 +0800</pubDate>
       
       <guid>/blog/js-note4/</guid>
-      <description>&amp;lt;img src=&amp;#34;#&amp;#34; id=&amp;#34;ball&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt; ballMove() { document.styleSheets[0] .insertRule(&amp;#34;@keyframes ballmove{from{margin-left:0} to{margin-left:100px;}}&amp;#34;) } 使用js把动画添加到全局样式库中， 还可以传入变量</description>
+      <description>css动画，需要动态传入变量 &amp;lt;img src=&amp;#34;#&amp;#34; id=&amp;#34;ball&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt; ballMove() { document.styleSheets[0] .insertRule(&amp;#34;@keyframes ballmove{from{margin-left:0} to{margin-left:100px;}}&amp;#34;) } 使用js把动画添加到全局样式库中， 还可以传入变量
+img#ball { width:100px;height:100px; animation: ballmove 2s 1 forwards ease-out; -webkit-animation: ballmove 2s 1 forwards ease-out; } </description>
     </item>
     
     <item>

@@ -11,9 +11,9 @@
              "@id": "\/"
         },
         "articleSection" : "blog",
-        "name" : "React中的css in js库",
-        "headline" : "React中的css in js库",
-        "description" : "\/\/首先引入 import styled from \u0026#39;styled-components\u0026#39;; \/\/ 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; \u0026lt;Wrapper\u0026gt;1111\u0026lt;\/Wrapper\u0026gt; yarn add styled-components 使用yarn安装\nstyled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。\n 优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助\n 缺点  可读性差，不方便直接看出组件的 html 元素",
+        "name" : "vue-方法调用alert组件",
+        "headline" : "vue-方法调用alert组件",
+        "description" : "var alertComponent = function(content,callback,button) { if(button == undefined) { button = [{key:\u0026#39;alert\u0026#39;,text:\u0026#39;确定\u0026#39;}] } let ErrorAlert if(button.length===1){ ErrorAlert = Vue.extend({ template: \u0026#34;\u0026lt;MyAlert1 v-if=\u0026#39;showFlag\u0026#39; title=\u0026#39;Title\u0026#39;\u0026#34; \u002b \u0026#34; :content=\u0026#39;alertContent\u0026#39; :operation=\u0026#39;alertButton[0].text\u0026#39; \u0026#34; \u002b \u0026#34;:clickMaskHidden=\u0026#39;false\u0026#39; @cancel=\u0026#39;alertClick\u0026#39; \/\u0026gt;\u0026#34;, components: {MyAlert1}, data(){return{ alertContent:content, showFlag:true, alertButton: button }}, methods: { alertClick(){ let that = this; setTimeout(()=\u0026gt;{that.showFlag = false},100); callback\u0026amp;\u0026amp;callback() } } }) } else { ErrorAlert = Vue.extend({ template: \u0026#34;\u0026lt;MyAlert2 v-if=\u0026#39;showFlag\u0026#39; title=\u0026#39;Title\u0026#39; \u0026#34; \u002b \u0026#34;:cancelOperation=\u0026#39;alertButton[0].text\u0026#39; @cancel=\u0026#39;cancel\u0026#39;\u0026#34; \u002b \u0026#34;:confirmOperate=\u0026#39;alertButton[1].text\u0026#39; @confirm=\u0026#39;confirm\u0026#39; \/\u0026gt;\u0026#34;, components:{MyAlert2}, data(){ return{ alertContent:content, alertButton:button, showFlag: true } }, methods:{ cancel(){ let that = this; setTimeout(function(){that.",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -21,16 +21,16 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2021",
-        "datePublished": "2021-04-08 14:22:40 \u002b0800 CST",
-        "dateModified" : "2021-04-08 14:22:40 \u002b0800 CST",
-        "url" : "\/blog\/react-css\/",
-        "wordCount" : "62",
+        "datePublished": "2021-07-28 11:22:40 \u002b0800 CST",
+        "dateModified" : "2021-07-28 11:22:40 \u002b0800 CST",
+        "url" : "\/blog\/vue-note2\/",
+        "wordCount" : "121",
         "keywords" : [ "Blog" ]
     }
     </script>
         
             
-                <title>React中的css in js库</title>
+                <title>vue-方法调用alert组件</title>
             
         
 
@@ -65,34 +65,25 @@
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="React中的css in js库"/>
-<meta name="twitter:description" content="//首先引入 import styled from &#39;styled-components&#39;; // 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; &lt;Wrapper&gt;1111&lt;/Wrapper&gt; yarn add styled-components 使用yarn安装
-styled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。
- 优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助
- 缺点  可读性差，不方便直接看出组件的 html 元素"/>
+<meta name="twitter:title" content="vue-方法调用alert组件"/>
+<meta name="twitter:description" content="var alertComponent = function(content,callback,button) { if(button == undefined) { button = [{key:&#39;alert&#39;,text:&#39;确定&#39;}] } let ErrorAlert if(button.length===1){ ErrorAlert = Vue.extend({ template: &#34;&lt;MyAlert1 v-if=&#39;showFlag&#39; title=&#39;Title&#39;&#34; &#43; &#34; :content=&#39;alertContent&#39; :operation=&#39;alertButton[0].text&#39; &#34; &#43; &#34;:clickMaskHidden=&#39;false&#39; @cancel=&#39;alertClick&#39; /&gt;&#34;, components: {MyAlert1}, data(){return{ alertContent:content, showFlag:true, alertButton: button }}, methods: { alertClick(){ let that = this; setTimeout(()=&gt;{that.showFlag = false},100); callback&amp;&amp;callback() } } }) } else { ErrorAlert = Vue.extend({ template: &#34;&lt;MyAlert2 v-if=&#39;showFlag&#39; title=&#39;Title&#39; &#34; &#43; &#34;:cancelOperation=&#39;alertButton[0].text&#39; @cancel=&#39;cancel&#39;&#34; &#43; &#34;:confirmOperate=&#39;alertButton[1].text&#39; @confirm=&#39;confirm&#39; /&gt;&#34;, components:{MyAlert2}, data(){ return{ alertContent:content, alertButton:button, showFlag: true } }, methods:{ cancel(){ let that = this; setTimeout(function(){that."/>
 
-        <meta property="og:title" content="React中的css in js库" />
-<meta property="og:description" content="//首先引入 import styled from &#39;styled-components&#39;; // 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; &lt;Wrapper&gt;1111&lt;/Wrapper&gt; yarn add styled-components 使用yarn安装
-styled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。
- 优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助
- 缺点  可读性差，不方便直接看出组件的 html 元素" />
+        <meta property="og:title" content="vue-方法调用alert组件" />
+<meta property="og:description" content="var alertComponent = function(content,callback,button) { if(button == undefined) { button = [{key:&#39;alert&#39;,text:&#39;确定&#39;}] } let ErrorAlert if(button.length===1){ ErrorAlert = Vue.extend({ template: &#34;&lt;MyAlert1 v-if=&#39;showFlag&#39; title=&#39;Title&#39;&#34; &#43; &#34; :content=&#39;alertContent&#39; :operation=&#39;alertButton[0].text&#39; &#34; &#43; &#34;:clickMaskHidden=&#39;false&#39; @cancel=&#39;alertClick&#39; /&gt;&#34;, components: {MyAlert1}, data(){return{ alertContent:content, showFlag:true, alertButton: button }}, methods: { alertClick(){ let that = this; setTimeout(()=&gt;{that.showFlag = false},100); callback&amp;&amp;callback() } } }) } else { ErrorAlert = Vue.extend({ template: &#34;&lt;MyAlert2 v-if=&#39;showFlag&#39; title=&#39;Title&#39; &#34; &#43; &#34;:cancelOperation=&#39;alertButton[0].text&#39; @cancel=&#39;cancel&#39;&#34; &#43; &#34;:confirmOperate=&#39;alertButton[1].text&#39; @confirm=&#39;confirm&#39; /&gt;&#34;, components:{MyAlert2}, data(){ return{ alertContent:content, alertButton:button, showFlag: true } }, methods:{ cancel(){ let that = this; setTimeout(function(){that." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/react-css/" />
-<meta property="article:published_time" content="2021-04-08T14:22:40+08:00" />
-<meta property="article:modified_time" content="2021-04-08T14:22:40+08:00" />
+<meta property="og:url" content="/blog/vue-note2/" />
+<meta property="article:published_time" content="2021-07-28T11:22:40+08:00" />
+<meta property="article:modified_time" content="2021-07-28T11:22:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta itemprop="name" content="React中的css in js库">
-<meta itemprop="description" content="//首先引入 import styled from &#39;styled-components&#39;; // 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; &lt;Wrapper&gt;1111&lt;/Wrapper&gt; yarn add styled-components 使用yarn安装
-styled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。
- 优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助
- 缺点  可读性差，不方便直接看出组件的 html 元素">
-<meta itemprop="datePublished" content="2021-04-08T14:22:40+08:00" />
-<meta itemprop="dateModified" content="2021-04-08T14:22:40+08:00" />
-<meta itemprop="wordCount" content="62">
+        <meta itemprop="name" content="vue-方法调用alert组件">
+<meta itemprop="description" content="var alertComponent = function(content,callback,button) { if(button == undefined) { button = [{key:&#39;alert&#39;,text:&#39;确定&#39;}] } let ErrorAlert if(button.length===1){ ErrorAlert = Vue.extend({ template: &#34;&lt;MyAlert1 v-if=&#39;showFlag&#39; title=&#39;Title&#39;&#34; &#43; &#34; :content=&#39;alertContent&#39; :operation=&#39;alertButton[0].text&#39; &#34; &#43; &#34;:clickMaskHidden=&#39;false&#39; @cancel=&#39;alertClick&#39; /&gt;&#34;, components: {MyAlert1}, data(){return{ alertContent:content, showFlag:true, alertButton: button }}, methods: { alertClick(){ let that = this; setTimeout(()=&gt;{that.showFlag = false},100); callback&amp;&amp;callback() } } }) } else { ErrorAlert = Vue.extend({ template: &#34;&lt;MyAlert2 v-if=&#39;showFlag&#39; title=&#39;Title&#39; &#34; &#43; &#34;:cancelOperation=&#39;alertButton[0].text&#39; @cancel=&#39;cancel&#39;&#34; &#43; &#34;:confirmOperate=&#39;alertButton[1].text&#39; @confirm=&#39;confirm&#39; /&gt;&#34;, components:{MyAlert2}, data(){ return{ alertContent:content, alertButton:button, showFlag: true } }, methods:{ cancel(){ let that = this; setTimeout(function(){that.">
+<meta itemprop="datePublished" content="2021-07-28T11:22:40+08:00" />
+<meta itemprop="dateModified" content="2021-07-28T11:22:40+08:00" />
+<meta itemprop="wordCount" content="121">
 
 
 
@@ -331,7 +322,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2freact-css%2f&amp;text=React%e4%b8%ad%e7%9a%84css%20in%20js%e5%ba%93&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fvue-note2%2f&amp;text=vue-%e6%96%b9%e6%b3%95%e8%b0%83%e7%94%a8alert%e7%bb%84%e4%bb%b6&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -345,7 +336,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2freact-css%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvue-note2%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -358,7 +349,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2freact-css%2f&amp;title=React%e4%b8%ad%e7%9a%84css%20in%20js%e5%ba%93" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvue-note2%2f&amp;title=vue-%e6%96%b9%e6%b3%95%e8%b0%83%e7%94%a8alert%e7%bb%84%e4%bb%b6" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -374,7 +365,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2freact-css%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvue-note2%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -393,7 +384,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
   <header>
     <div class="title">
         
-            <h1><a href="/blog/react-css/">React中的css in js库</a></h1>
+            <h1><a href="/blog/vue-note2/">vue-方法调用alert组件</a></h1>
             
         
         
@@ -402,8 +393,8 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
         
 
         <time class="published"
-            datetime='2021-04-08'>
-            April 8, 2021</time>
+            datetime='2021-07-28'>
+            July 28, 2021</time>
         <span class="author">么了</span>
         
             <p>1 分钟阅读</p>
@@ -421,7 +412,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="//twitter.com/share?url=%2fblog%2freact-css%2f&amp;text=React%e4%b8%ad%e7%9a%84css%20in%20js%e5%ba%93&amp;via=" target="_blank" class="share-btn twitter">
+  <a href="//twitter.com/share?url=%2fblog%2fvue-note2%2f&amp;text=vue-%e6%96%b9%e6%b3%95%e8%b0%83%e7%94%a8alert%e7%bb%84%e4%bb%b6&amp;via=" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
     </a>
@@ -435,7 +426,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2freact-css%2f" target="_blank" class="share-btn facebook">
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fvue-note2%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
     </a>
@@ -448,7 +439,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2freact-css%2f&amp;title=React%e4%b8%ad%e7%9a%84css%20in%20js%e5%ba%93" target="_blank" class="share-btn linkedin">
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fvue-note2%2f&amp;title=vue-%e6%96%b9%e6%b3%95%e8%b0%83%e7%94%a8alert%e7%bb%84%e4%bb%b6" target="_blank" class="share-btn linkedin">
       <i class="fa fa-linkedin"></i>
       <p>LinkedIn</p>
     </a>
@@ -464,7 +455,7 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2freact-css%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=%2fblog%2fvue-note2%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -478,33 +469,70 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
   
 
   <div id="content">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">//首先引入
-import styled from &#39;styled-components&#39;;
-
-// 添加样式
-const Wrapper = styled.div`
-  border: 1px solid red;
-  min-height:100vh;
-  display:flex;
-`;
-&lt;<span style="color:#f92672">Wrapper</span>&gt;1111&lt;/<span style="color:#f92672">Wrapper</span>&gt;
-</code></pre></div><p><code>yarn add styled-components</code> 使用yarn安装</p>
-<p>styled-components 是一个针对 React 的 css in js 类库。
-和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。</p>
-<ul>
-<li>优点:</li>
-</ul>
-<p>贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖
-保留前端开发 CSS 书写习惯，无学习和迁移成本
-使用方便，不需要配置 webpack，开箱即用
-不用再担心样式命名的问题，移除样式与组件之间的对应关系
-样式可以使用变量，更加灵活
-组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助</p>
-<ul>
-<li>缺点</li>
-</ul>
-<p>可读性差，不方便直接看出组件的 html 元素</p>
-
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">alertComponent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">content</span>,<span style="color:#a6e22e">callback</span>,<span style="color:#a6e22e">button</span>) {
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">button</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>) {
+        <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> [{<span style="color:#a6e22e">key</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;alert&#39;</span>,<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;确定&#39;</span>}]
+    }
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ErrorAlert</span>
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">length</span><span style="color:#f92672">===</span><span style="color:#ae81ff">1</span>){
+        <span style="color:#a6e22e">ErrorAlert</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">extend</span>({
+            <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&lt;MyAlert1 v-if=&#39;showFlag&#39; title=&#39;Title&#39;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34; :content=&#39;alertContent&#39; :operation=&#39;alertButton[0].text&#39; &#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;:clickMaskHidden=&#39;false&#39; @cancel=&#39;alertClick&#39; /&gt;&#34;</span>,
+            <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">MyAlert1</span>},
+            <span style="color:#a6e22e">data</span>(){<span style="color:#66d9ef">return</span>{
+                <span style="color:#a6e22e">alertContent</span><span style="color:#f92672">:</span><span style="color:#a6e22e">content</span>,
+                <span style="color:#a6e22e">showFlag</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>,
+                <span style="color:#a6e22e">alertButton</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">button</span>
+            }},
+            <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span> {
+                <span style="color:#a6e22e">alertClick</span>(){
+                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">that</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+                    <span style="color:#a6e22e">setTimeout</span>(()=&gt;{<span style="color:#a6e22e">that</span>.<span style="color:#a6e22e">showFlag</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>},<span style="color:#ae81ff">100</span>);
+                    <span style="color:#a6e22e">callback</span><span style="color:#f92672">&amp;&amp;</span><span style="color:#a6e22e">callback</span>()
+                }
+            }
+        })
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">ErrorAlert</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">extend</span>({
+            <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&lt;MyAlert2 v-if=&#39;showFlag&#39; title=&#39;Title&#39; &#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;:cancelOperation=&#39;alertButton[0].text&#39; @cancel=&#39;cancel&#39;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;:confirmOperate=&#39;alertButton[1].text&#39; @confirm=&#39;confirm&#39; /&gt;&#34;</span>,
+            <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{<span style="color:#a6e22e">MyAlert2</span>},
+            <span style="color:#a6e22e">data</span>(){
+                <span style="color:#66d9ef">return</span>{
+                    <span style="color:#a6e22e">alertContent</span><span style="color:#f92672">:</span><span style="color:#a6e22e">content</span>,
+                    <span style="color:#a6e22e">alertButton</span><span style="color:#f92672">:</span><span style="color:#a6e22e">button</span>,
+                    <span style="color:#a6e22e">showFlag</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+                }
+            },
+            <span style="color:#a6e22e">methods</span><span style="color:#f92672">:</span>{
+                <span style="color:#a6e22e">cancel</span>(){
+                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">that</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+                    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){<span style="color:#a6e22e">that</span>.<span style="color:#a6e22e">showFlag</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>},<span style="color:#ae81ff">100</span>);
+                    <span style="color:#a6e22e">callback</span><span style="color:#f92672">&amp;&amp;</span><span style="color:#a6e22e">callback</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">alertButton</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">key</span>)
+                },
+                <span style="color:#a6e22e">confirm</span>(){
+                    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">that</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+                    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>(){<span style="color:#a6e22e">that</span>.<span style="color:#a6e22e">showFlag</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>},<span style="color:#ae81ff">100</span>);
+                    <span style="color:#a6e22e">callback</span><span style="color:#f92672">&amp;&amp;</span><span style="color:#a6e22e">callback</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">alertButton</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">key</span>)
+                }
+            }
+        })
+    }
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ShowErrorAlert</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ErrorAlert</span>().<span style="color:#a6e22e">$mount</span>();
+    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;app&#39;</span>).<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">ShowErrorAlert</span>.<span style="color:#a6e22e">$el</span>)
+}
+</code></pre></div><p>然后调用封装好的方法，通过点击组件按钮，获取按钮的key来判断</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">alertComponent</span>(
+    <span style="color:#e6db74">&#39;content&#39;</span>,
+    <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">key</span>){
+        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">key</span><span style="color:#f92672">==</span><span style="color:#e6db74">&#39;confirm&#39;</span>){}
+        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">key</span><span style="color:#f92672">==</span><span style="color:#e6db74">&#39;cancel&#39;</span>){}
+    },
+    [{<span style="color:#a6e22e">key</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;cancel&#39;</span>,<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;取消&#39;</span>},{<span style="color:#a6e22e">key</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;confirm&#39;</span>,<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;去看看&#39;</span>}]
+)
+</code></pre></div>
   </div>
 
   <footer>
@@ -517,10 +545,10 @@ const Wrapper = styled.div`
                 <i class="fa fa-folder"></i>
                 
                 
-                <li><a class="article-category-link" href="/categories/react">react</a></li>
+                <li><a class="article-category-link" href="/categories/js">js</a></li>
                 
                 
-                <li><a class="article-category-link" href="/categories/css">css</a></li>
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
                 
             
         
@@ -556,13 +584,13 @@ const Wrapper = styled.div`
 </script>
 <ul class="actions pagination">
     
-        <li><a href="/blog/file/"
-                class="button big previous">node.js文件系统</a></li>
+        <li><a href="/blog/js-note3/"
+                class="button big previous">锚点的跳转和返回</a></li>
     
 
     
-        <li><a href="/blog/react-router/"
-                class="button big next">React Router</a></li>
+        <li><a href="/blog/js-note4/"
+                class="button big next">js添加css动画变量</a></li>
     
 </ul>
 

@@ -255,7 +255,19 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/js-note4/">js添加css动画样式</a></h3>
+                                <h3><a href="/blog/js-note4/">js添加css动画变量</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-07-28'>
+                                    July 28, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/vue-note2/">vue-方法调用alert组件</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2021-07-28'>
@@ -272,18 +284,6 @@
                                 <time class="published" datetime=
                                     '2021-07-28'>
                                     July 28, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/oop/">oop面向对象</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-05-13'>
-                                    May 13, 2021</time>
                             </header>
                             
 
@@ -313,7 +313,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="/blog/js-note4/">js添加css动画样式</a></h2>
+            <h2><a href="/blog/js-note4/">js添加css动画变量</a></h2>
         
         
     </div>
@@ -381,6 +381,74 @@
   <header>
     <div class="title">
         
+            <h2><a href="/blog/vue-note2/">vue-方法调用alert组件</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2021-07-28'>
+            July 28, 2021</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">alertComponent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">content</span>,<span style="color:#a6e22e">callback</span>,<span style="color:#a6e22e">button</span>) {
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">button</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>) {
+        <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> [{<span style="color:#a6e22e">key</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;alert&#39;</span>,<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;确定&#39;</span>}]
+    }
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ErrorAlert</span>
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">length</span><span style="color:#f92672">===</span><span style="color:#ae81ff">1</span>){
+        <span style="color:#a6e22e">ErrorAlert</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">extend</span>({
+            <span style="color:#a6e22e">template</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&lt;MyAlert1 v-if=&#39;showFlag&#39; title=&#39;Title&#39;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34; :content=&#39;alertContent&#39; :operation=&#39;alertButton[0].text&#39; &#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;:clickMaskHidden=&#39;false&#39;&hellip;</span></code></pre>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/vue-note2/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/js">js</a></li>
+                
+                
+                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
             <h2><a href="/blog/js-note3/">锚点的跳转和返回</a></h2>
         
         
@@ -426,68 +494,6 @@ window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">h
                 
                 
                 <li><a class="article-category-link" href="/categories/vue">vue</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/file/">node.js文件系统</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2021-03-12'>
-            March 12, 2021</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <p>方法1：</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/file/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/vue">vue</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/js">js</a></li>
-                
-                
-                <li><a class="article-category-link" href="/categories/node">node</a></li>
                 
             
         
@@ -649,7 +655,21 @@ window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">h
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/blog/js-note4/">js添加css动画样式</a>
+                <a href="/blog/js-note4/">js添加css动画变量</a>
+              </h3>
+              
+              <time class="published" datetime='2021-07-28'>
+                July 28, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/vue-note2/">vue-方法调用alert组件</a>
               </h3>
               
               <time class="published" datetime='2021-07-28'>
@@ -668,20 +688,6 @@ window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">h
               
               <time class="published" datetime='2021-07-28'>
                 July 28, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/oop/">oop面向对象</a>
-              </h3>
-              
-              <time class="published" datetime='2021-05-13'>
-                May 13, 2021
               </time>
             </header>
             
