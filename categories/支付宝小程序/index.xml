@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>支付宝小程序 on 么了&#39;s 博客</title>
-    <link>/categories/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
     <description>Recent content in 支付宝小程序 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 15 Aug 2020 18:22:40 +0800</lastBuildDate><atom:link href="/categories/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Aug 2020 18:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/%E6%94%AF%E4%BB%98%E5%AE%9D%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>/blog/note-3/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-3/</link>
       <pubDate>Sat, 15 Aug 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/note-3/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-3/</guid>
       <description>支付宝小程序开发工具 v1.12.15中
 0 &amp;lt; t &amp;lt; 10 这种写法在支付宝小程序中连写不会识别
 需要写成0&amp;lt; t &amp;amp;&amp;amp; t&amp;lt; 10</description>

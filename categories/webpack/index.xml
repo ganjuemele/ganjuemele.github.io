@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webpack on 么了&#39;s 博客</title>
-    <link>/categories/webpack/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/webpack/</link>
     <description>Recent content in Webpack on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 07 Mar 2020 20:22:40 +0800</lastBuildDate><atom:link href="/categories/webpack/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Mar 2020 20:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/webpack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Webpack入门</title>
-      <link>/blog/webpack%E5%85%A5%E9%97%A8/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/webpack%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sat, 07 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/webpack%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/webpack%E5%85%A5%E9%97%A8/</guid>
       <description>安装webpack npm init -y
 yarn add webpack webpack-cli --dev
 安装插件css-loader,mini-css-extract-plugin,html-webpack-plugin

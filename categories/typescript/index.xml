@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>typescript on 么了&#39;s 博客</title>
-    <link>/categories/typescript/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/typescript/</link>
     <description>Recent content in typescript on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 17 Mar 2020 20:40:40 +0800</lastBuildDate><atom:link href="/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Mar 2020 20:40:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Typescript</title>
-      <link>/blog/typescript/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/typescript/</link>
       <pubDate>Tue, 17 Mar 2020 20:40:40 +0800</pubDate>
       
-      <guid>/blog/typescript/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/typescript/</guid>
       <description>TS是一个强类型语言，使得开发更加严谨
 优点  类型提示更加智能 编译时，还没运行代码就知道写错了 类型检查：无法点出错误的属性  TS 的一些语法 export default class Types extends Vue { type = &amp;#39;-&amp;#39;; selectType(type:string) { //需要给type加上类型 	if (type !== &amp;#39;-&amp;#39; &amp;amp;&amp;amp; type !== &amp;#39;+&amp;#39;) { throw new Error(&amp;#39;未知Type&amp;#39;) } this.type = type; } } </description>
     </item>

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>小程序 on 么了&#39;s 博客</title>
-    <link>/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
     <description>Recent content in 小程序 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 10 Dec 2020 09:47:40 +0800</lastBuildDate><atom:link href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 09:47:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>小程序开发笔记-触底加载更多</title>
-      <link>/blog/mini-note1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/mini-note1/</link>
       <pubDate>Thu, 10 Dec 2020 09:47:40 +0800</pubDate>
       
-      <guid>/blog/mini-note1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/mini-note1/</guid>
       <description>onReachBottom() { // ... // 监听最外层的page是否滑动到底部 // 触发事件 } &amp;lt;scroll-view scroll-y=&amp;quot;{{true}}&amp;quot; onScrollToLower=&amp;quot;scrollMytrip&amp;quot;&amp;gt; &amp;lt;view&amp;gt;......&amp;lt;/view&amp;gt; &amp;lt;/scroll-view&amp;gt; scrollMytrip(){ // ... // 给带滚动条的模块 // onScrollToLower=&amp;quot;scrollMytrip&amp;quot; // 定义一个监听事件，监听模块内部是否触底 // 触发事件 } </description>
     </item>
     
     <item>
       <title>App加载状态的几种类型</title>
-      <link>/blog/note-4/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-4/</link>
       <pubDate>Fri, 04 Sep 2020 10:22:40 +0800</pubDate>
       
-      <guid>/blog/note-4/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-4/</guid>
       <description>全页面加载 优点：适用于各个场景
 缺点：时间不确定性，加载过慢容易丢失用户
 例：常见的菊花图，和各种有意思的动画gif图
@@ -41,19 +41,19 @@
     
     <item>
       <title>小程序调用高德地图</title>
-      <link>/blog/amap/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/amap/</link>
       <pubDate>Wed, 02 Sep 2020 14:22:40 +0800</pubDate>
       
-      <guid>/blog/amap/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/amap/</guid>
       <description>小程序调用高德地图接口 function AMapWX(a) { this.key = a.key; this.requestConfig = { key: a.key, s: &amp;#39;rsx&amp;#39;, platform: &amp;#39;WXJS&amp;#39;, appname: a.key, sdkversion: &amp;#39;1.2.0&amp;#39;, logversion: &amp;#39;2.0&amp;#39; }; } AMapWX.prototype.getWxLocation = function (a, b) { my.getLocation({ type: &amp;#39;gcj02&amp;#39;, success: function (a) { var c = a.longitude + &amp;#39;,&amp;#39; + a.latitude; my.setStorage({key: &amp;#39;userLocation&amp;#39;, data: c}), b(c); }, fail: function (c) { my.getStorage({ key: &amp;#39;userLocation&amp;#39;, success: function (a) { a.data &amp;amp;&amp;amp; b(a.data); } }), a.fail({errCode: &amp;#39;0&amp;#39;, errMsg: c.</description>
     </item>
     
     <item>
       <title>小程序中生成条形码和二维码</title>
-      <link>/blog/qrcodebarcode/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/qrcodebarcode/</link>
       <pubDate>Sun, 26 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/qrcodebarcode/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/qrcodebarcode/</guid>
       <description>&amp;lt;canvas class=&amp;#34;barcode&amp;#34; id=&amp;#34;barcode&amp;#34;/&amp;gt; &amp;lt;canvas class=&amp;#34;qrcode&amp;#34; id=&amp;#34;qrcode&amp;#34;/&amp;gt; npm install wxbarcode
 从wxbarcode中拿出demo/utils文件夹。 把文件内的wx换成my就能使用。
 import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp;#39;barcode&amp;#39;, that.data.orderNo, 658, 140); mybarcode.qrcode(&amp;#39;qrcode&amp;#39;, that.data.orderNo, 440, 440); (编码格式, 编译的内容, width, height)</description>
@@ -61,19 +61,19 @@ import mybarcode from &amp;#39;./utils/index.js&amp;#39;; mybarcode.barcode(&amp
     
     <item>
       <title>支付宝小程序中slot的使用</title>
-      <link>/blog/slot/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/slot/</link>
       <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/slot/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/slot/</guid>
       <description>&amp;lt;!-- /components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;view&amp;gt;other&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; // /pages/index/index.json { &amp;#34;usingComponents&amp;#34;: { &amp;#34;my-component&amp;#34;: &amp;#34;/components/index/index&amp;#34; } } &amp;lt;!-- /pages/index/index.axml --&amp;gt; &amp;lt;my-component /&amp;gt; 输出 default slot &amp;amp; default value other  &amp;lt;!-- /components/index/index.axml --&amp;gt; &amp;lt;view&amp;gt; &amp;lt;slot&amp;gt; &amp;lt;view&amp;gt;default slot &amp;amp; default value&amp;lt;/view&amp;gt; &amp;lt;/slot&amp;gt; &amp;lt;slot name=&amp;#34;header&amp;#34;/&amp;gt; &amp;lt;view&amp;gt;body&amp;lt;/view&amp;gt; &amp;lt;slot name=&amp;#34;footer&amp;#34;/&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;!-- /pages/index/index.axml --&amp;gt; &amp;lt;my-component&amp;gt; &amp;lt;view slot=&amp;#34;header&amp;#34;&amp;gt;header&amp;lt;/view&amp;gt; &amp;lt;view slot=&amp;#34;footer&amp;#34;&amp;gt;footer&amp;lt;/view&amp;gt; &amp;lt;/my-component&amp;gt; 输出 default slot &amp;amp; default value header body footer </description>
     </item>
     
     <item>
       <title>页面跳转并传参</title>
-      <link>/blog/jumpwithparam/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/jumpwithparam/</link>
       <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/jumpwithparam/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/jumpwithparam/</guid>
       <description>页面跳转并传参 不能传列表
 入参url 跳转链接
 入参JSON Object 自动转换 key:value value只能为字符串
@@ -82,39 +82,39 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
     
     <item>
       <title>模版字符串的使用</title>
-      <link>/blog/template-string/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/template-string/</link>
       <pubDate>Mon, 20 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/template-string/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/template-string/</guid>
       <description>模板字符串（template string）是增强版的字符串，用反引号（`）标识 它可以当作普通字符串使用，也可以用来定义多行字符串，或者在字符串中嵌入变量。
 &amp;lt;navigator class=&amp;#34;vbox&amp;#34; open-type=&amp;#34;navigate&amp;#34; a:for=&amp;#34;{{ruleList}}&amp;#34; a:key=&amp;#34;{{item.index}}&amp;#34; url=&amp;#34;{{item.actType===&amp;#39;C&amp;#39; ?`/pages/mine/cashCouponInfo/cashCouponInfo?info=${item.info}` :`/pages/couponOperate/couponOperate?info=${item.info}`}}&amp;#34;&amp;gt; &amp;lt;/navigator&amp;gt; 反引号中可以写一个字符串，并且插入使用 ${变量名} 。</description>
     </item>
     
     <item>
       <title>组件中props的使用</title>
-      <link>/blog/my-component-1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/my-component-1/</link>
       <pubDate>Sat, 18 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/my-component-1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/my-component-1/</guid>
       <description>//index.axml &amp;lt;my-component ruleList= &amp;#34;{{ruleList}}&amp;#34;/&amp;gt; //这里给组件传一个ruleList ⚠对象和数组只能stringify后传值️
 //component.js 	Component({ mixins: [], data: { ruleList: [] }, props: { ruleList: &amp;#39;&amp;#39;, //接收传入的ruleList 	}, didUpdate() { this.setData({ ruleList: JSON.parse(this.props.ruleList) }); } }); //component.axml &amp;lt;view&amp;gt; {{ruleList[0].属性}} &amp;lt;/view&amp;gt; //在页面中就能调用ruleLIst的参数，并渲染 </description>
     </item>
     
     <item>
       <title>复制到粘贴板</title>
-      <link>/blog/copy/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/copy/</link>
       <pubDate>Mon, 29 Jun 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/copy/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/copy/</guid>
       <description>&amp;lt;text class=&amp;#34;info-copy&amp;#34; onTap=&amp;#34;clickCopy&amp;#34;&amp;gt;复制&amp;lt;/text&amp;gt; data: { orderNumber: 232322333, copyNumber: &amp;#39;&amp;#39; }, clickCopy() { //复制功能 	my.setClipboard({ text: this.data.orderNumber, }); // 粘贴功能 	// my.getClipboard({ 	// success: ({ text }) =&amp;gt; { 	// this.setData({ copyNumber: text }); 	// }, 	// });  } </description>
     </item>
     
     <item>
       <title>小程序保存图片到相册</title>
-      <link>/blog/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87/</link>
       <pubDate>Thu, 07 May 2020 00:22:40 +0800</pubDate>
       
-      <guid>/blog/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87/</guid>
       <description>保存图片的到相册
 判断权限问题，使用了wx.getSetting 和 wx.authorize的scpoe 获取和设置权限；
 使用wx.downloadFile 和 wx.saveImageToPhotosAlbum 下载图片至相册；
@@ -123,29 +123,29 @@ onPicDl(e) { let picUrl = e.target.dataset.picurl; let that = this; wx.showToast
     
     <item>
       <title>data-**的用法</title>
-      <link>/blog/wp-data-%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-data-%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Tue, 05 May 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/wp-data-%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-data-%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
       <description>&amp;lt;image src=&amp;quot;{{item.picCloudURL}}&amp;quot; class=&amp;quot;pic&amp;quot; data-picUrl=&amp;quot;{{item.picCloudURL}}&amp;quot; bindtap=&amp;quot;onPicPreview&amp;quot;/&amp;gt; data-picUrl可以用来传递参数
 当图片的点击事件触发，可以用e.currentTarget.dataset.picurl来获取传输的值</description>
     </item>
     
     <item>
       <title>小程序-加载云数据库</title>
-      <link>/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
       <pubDate>Sun, 03 May 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-%E5%8A%A0%E8%BD%BD%E4%BA%91%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
       <description>const db = wx.cloud.database() db.collection(&amp;#34;数据库集合名&amp;#34;).get({ success: function (res) { console.log(res) } }) </description>
     </item>
     
     <item>
       <title>小程序-图片预览</title>
-      <link>/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</link>
       <pubDate>Sun, 03 May 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/wp-%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</guid>
       <description>wx.previewImage({ current: &amp;#39;cloud://wp-5moue.7770-wp-5moue-1302009781/wallpaper/pic1@2x.png&amp;#39;, // 当前显示图片的http链接  urls: [`cloud://wp-5moue.7770-wp-5moue-1302009781/wallpaper/pic1@2x.png`] // 需要预览的图片http链接列表  // current: &amp;#39;https://7770-wp-5moue-1302009781.tcb.qcloud.la/wallpaper/pic%402x.png&amp;#39;,  // urls: [`https://7770-wp-5moue-1302009781.tcb.qcloud.la/wallpaper/pic%402x.png`]  }) </description>
     </item>
     

@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>js on 么了&#39;s 博客</title>
-    <link>/categories/js/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js/</link>
     <description>Recent content in js on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>js添加css动画变量</title>
-      <link>/blog/js-note4/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</link>
       <pubDate>Wed, 28 Jul 2021 12:22:40 +0800</pubDate>
       
-      <guid>/blog/js-note4/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</guid>
       <description>css动画，需要动态传入变量 &amp;lt;img src=&amp;#34;#&amp;#34; id=&amp;#34;ball&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt; ballMove() { document.styleSheets[0] .insertRule(&amp;#34;@keyframes ballmove{from{margin-left:0} to{margin-left:100px;}}&amp;#34;) } 使用js把动画添加到全局样式库中， 还可以传入变量
 img#ball { width:100px;height:100px; animation: ballmove 2s 1 forwards ease-out; -webkit-animation: ballmove 2s 1 forwards ease-out; } </description>
     </item>
     
     <item>
       <title>vue-方法调用alert组件</title>
-      <link>/blog/vue-note2/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/</link>
       <pubDate>Wed, 28 Jul 2021 11:22:40 +0800</pubDate>
       
-      <guid>/blog/vue-note2/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/</guid>
       <description>var alertComponent = function(content,callback,button) { if(button == undefined) { button = [{key:&amp;#39;alert&amp;#39;,text:&amp;#39;确定&amp;#39;}] } let ErrorAlert if(button.length===1){ ErrorAlert = Vue.extend({ template: &amp;#34;&amp;lt;MyAlert1 v-if=&amp;#39;showFlag&amp;#39; title=&amp;#39;Title&amp;#39;&amp;#34; + &amp;#34; :content=&amp;#39;alertContent&amp;#39; :operation=&amp;#39;alertButton[0].text&amp;#39; &amp;#34; + &amp;#34;:clickMaskHidden=&amp;#39;false&amp;#39; @cancel=&amp;#39;alertClick&amp;#39; /&amp;gt;&amp;#34;, components: {MyAlert1}, data(){return{ alertContent:content, showFlag:true, alertButton: button }}, methods: { alertClick(){ let that = this; setTimeout(()=&amp;gt;{that.showFlag = false},100); callback&amp;amp;&amp;amp;callback() } } }) } else { ErrorAlert = Vue.extend({ template: &amp;#34;&amp;lt;MyAlert2 v-if=&amp;#39;showFlag&amp;#39; title=&amp;#39;Title&amp;#39; &amp;#34; + &amp;#34;:cancelOperation=&amp;#39;alertButton[0].text&amp;#39; @cancel=&amp;#39;cancel&amp;#39;&amp;#34; + &amp;#34;:confirmOperate=&amp;#39;alertButton[1].text&amp;#39; @confirm=&amp;#39;confirm&amp;#39; /&amp;gt;&amp;#34;, components:{MyAlert2}, data(){ return{ alertContent:content, alertButton:button, showFlag: true } }, methods:{ cancel(){ let that = this; setTimeout(function(){that.</description>
     </item>
     
     <item>
       <title>锚点的跳转和返回</title>
-      <link>/blog/js-note3/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note3/</link>
       <pubDate>Wed, 28 Jul 2021 11:22:40 +0800</pubDate>
       
-      <guid>/blog/js-note3/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note3/</guid>
       <description>&amp;lt;div id=&amp;#34;task&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; 点击事件 window.location.href = &amp;#39;#task&amp;#39;; 跳转后会在链接上加上 task， 之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。
 所以改用
 document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路由返回需要2次的问题，不会在url上加上task 的锚点</description>
@@ -39,10 +39,10 @@ document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路
     
     <item>
       <title>node.js文件系统</title>
-      <link>/blog/file/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/file/</link>
       <pubDate>Fri, 12 Mar 2021 16:22:40 +0800</pubDate>
       
-      <guid>/blog/file/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/file/</guid>
       <description>Node.js文件系统模块 方法1：
 // 引入 fs 模块 let fs = require(&amp;#34;fs&amp;#34;) let fs = window.require(&amp;#39;fs&amp;#39;) // vue中需要在全局引入  // fs.readFile(path, cb) fs.readFile(&amp;#39;./src/data.json&amp;#39;, function (err, data) { // data为文件内容  if(err) { return console.error(err) } }) // fs.writeFile(&amp;#39;文件路径&amp;#39;，&amp;#39;写入的内容&amp;#39;，fn) fs.writeFile(&amp;#39;./src/data.json&amp;#39;, &amp;#39;TEXT&amp;#39;, function (err, data) { if (err) { return console.error(err) } }) 方法2：
 //需要的使用的地方 引入js文件 import xx from &amp;#39;../data/file.js&amp;#39; // file.js fs.readFile(&amp;#39;./src/data.json&amp;#39;, function (err, data) { if(err) { return console.error(err) } let dt = data.</description>
@@ -50,10 +50,10 @@ document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路
     
     <item>
       <title>深拷贝</title>
-      <link>/blog/js-note2/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note2/</link>
       <pubDate>Fri, 11 Dec 2020 00:07:40 +0800</pubDate>
       
-      <guid>/blog/js-note2/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note2/</guid>
       <description>浅拷贝的场景 展开运算符 const a = { en: &amp;#39;Bye&amp;#39;, de: &amp;#39;Tschüss&amp;#39; } let b = {...a} b.de = &amp;#39;Ciao&amp;#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss const c = {...a,...b} Object.assign() 用于将所有可枚举属性的值从一个或多个源对象复制到目标对象，然后返回目标对象。
 第一个参数是被修改和最终返回的值，第二个参数是你要拷贝的对象。通常，只需要给第一个参数传入一个空对象，这样可以避免修改已有的数据。
 const a = { en: &amp;#39;Bye&amp;#39;, de: &amp;#39;Tschüss&amp;#39; } let b = Object.assign({}, a) b.de = &amp;#39;Ciao&amp;#39; console.log(b.de) // Ciao console.log(a.de) // Tschüss 拷贝数组 const a = [1,2,3] let b = [...a] b[1] = 4 console.log(b[1]) // 4 console.log(a[1]) // 2 数组方法——map, filter, reduce, Array.</description>
@@ -61,10 +61,10 @@ const a = { en: &amp;#39;Bye&amp;#39;, de: &amp;#39;Tschüss&amp;#39; } let b = 
     
     <item>
       <title>创建优雅结束的函数</title>
-      <link>/blog/js-note1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note1/</link>
       <pubDate>Tue, 17 Nov 2020 22:22:40 +0800</pubDate>
       
-      <guid>/blog/js-note1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note1/</guid>
       <description>用return结束一个函数很简单，但是，想要能够在将来的某个时刻返回函数，然后再继续执行。
 使用ES6中的生成器函数（generator function） 这是可以进入和退出并记住其状态的函数。
 function* taskRunner(){ console.log(&amp;#39;doing sth&amp;#39;) yield function(){ console.log(&amp;#39;第一步&amp;#39;)	} console.log(&amp;#39;doing sth after first&amp;#39;) yield function(){ console.log(&amp;#39;second&amp;#39;) } console.log(&amp;#39;after second&amp;#39;) } var task = taskRunner(); task.next().value() task.next().value() task.next() 输出：
@@ -74,10 +74,10 @@ function* idMaker(){ var index = 0; while(true){ yield index++; } } var gen = id
     
     <item>
       <title>promise</title>
-      <link>/blog/promise-note/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/promise-note/</link>
       <pubDate>Tue, 08 Sep 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/promise-note/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/promise-note/</guid>
       <description>Promise.resolve() .then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34;); Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1-1&amp;#34;); }); }) .then(() =&amp;gt; { console.log(&amp;#34;then2&amp;#34;); }); // then1 → then1-1 → then2 结论：链式调用中，只有前一个 then 的回调执行完毕后，跟着的 then 中的回调才会被加入至微任务队列。
 let p = Promise.resolve(); p.then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34;); Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1-1&amp;#34;); }); }).then(() =&amp;gt; { console.log(&amp;#34;then1-2&amp;#34;); }); p.then(() =&amp;gt; { console.log(&amp;#34;then2&amp;#34;); }); // then1 → then2 → then1-1 → then1-2 结论：每个链式调用的开端会首先依次进入微任务队列。
 let p = Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34;); Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1-1&amp;#34;); }); }).</description>
@@ -85,10 +85,10 @@ let p = Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34
     
     <item>
       <title>数字算法的精度问题</title>
-      <link>/blog/note-5/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-5/</link>
       <pubDate>Mon, 07 Sep 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/note-5/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-5/</guid>
       <description>var a= &amp;#39;7.7&amp;#39;; var d = a * 687; // d = 5289.900000000001 会产生精度差的问题
 加法 function (arg1, arg2){ var r1, r2, m; try {r1 = arg1.toString().split(&amp;#39;.&amp;#39;)[1].length} catch(e) {r1 = 0} // arg1小数点后的数字长度 	try {r2 = arg1.toString().split(&amp;#39;.&amp;#39;)[1].length} catch(e) {r2 = 0} // arg2小数点后的数字长度 	m = Math.pow(10, Math.max(r1, r2)) // 取(r1,r2)中最大值，10的 次方 	return ( arg1*m + arg2*m ) / m } 此方法解决 加法函数的精度问题
 ⚠️可以直接toFixed
@@ -97,10 +97,10 @@ let p = Promise.resolve().then(() =&amp;gt; { console.log(&amp;#34;then1&amp;#34
     
     <item>
       <title>页面跳转并传参</title>
-      <link>/blog/jumpwithparam/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/jumpwithparam/</link>
       <pubDate>Sat, 25 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/jumpwithparam/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/jumpwithparam/</guid>
       <description>页面跳转并传参 不能传列表
 入参url 跳转链接
 入参JSON Object 自动转换 key:value value只能为字符串
@@ -109,19 +109,19 @@ var jumpWithParam = function(url, obj){ let jsonStr = JSON.stringify(obj); jsonS
     
     <item>
       <title>鼠标拖动实现</title>
-      <link>/blog/drag/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/drag/</link>
       <pubDate>Fri, 10 Apr 2020 14:22:40 +0800</pubDate>
       
-      <guid>/blog/drag/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/drag/</guid>
       <description>/html &amp;lt;div id=&amp;#34;xxx&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; /javascript let dragging = false; let position = null; xxx.addEventListener(&amp;#39;mousedown&amp;#39;,function(e){ dragging = true position = [e.clientX, e.clientY] }) document.addEventListener(&amp;#39;mousemove&amp;#39;, function(e){ if(dragging === false){return} console.log(&amp;#39;hi&amp;#39;) const x = e.clientX const y = e.clientY const deltaX = x - position[0] const deltaY = y - position[1] const left = parseInt(xxx.style.left || 0) const top = parseInt(xxx.style.top || 0) xxx.style.left = left + deltaX + &amp;#39;px&amp;#39; xxx.style.top = top + deltaY + &amp;#39;px&amp;#39; position = [x, y] }) document.</description>
     </item>
     
     <item>
       <title>javascript的十个设计缺陷</title>
-      <link>/blog/js-defect/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-defect/</link>
       <pubDate>Sun, 29 Mar 2020 01:40:40 +0800</pubDate>
       
-      <guid>/blog/js-defect/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-defect/</guid>
       <description>为什么会有设计缺陷 设计阶段过于仓促 由于javascript的设计只用了十天，而且是为了向公司交差其本人并不愿意这样设计 另外这语言的设计初衷，是为了解决一些简单的网页互动，并没有考虑复杂应用的需要。
 没有先例 Javascript同时结合了函数式编程和面向对象编程的特点，直到今天，js 仍是世界上唯一使用 Prototype继承模型的主要语言，使它没有设计先例作为参考。
 过早的标准化 Javascript的发展非常快，根本没有时间调整设计。
@@ -134,10 +134,10 @@ Javascript的十个设计缺陷  不适合开发大型程序 非常小的标准�
     
     <item>
       <title>节流</title>
-      <link>/blog/throttle/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/throttle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/blog/throttle/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/throttle/</guid>
       <description>// 小程序 节流  data:{ canRetry: !0 } throttle(fn, delay) { let that = this; return function() { if(that.data.canRetry) { fn.apply(that.arguments); that.setData({canRetry: !1}) setTimeout(() =&amp;gt; that.setData({canRetry: !1}), delay) } } }, throttled() { const that = this; const retry = this.throttle(()=&amp;gt; that.actList(), 2000) retry() } </description>
     </item>
     

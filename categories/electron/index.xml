@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>electron on 么了&#39;s 博客</title>
-    <link>/categories/electron/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/electron/</link>
     <description>Recent content in electron on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 15 Dec 2020 10:50:40 +0800</lastBuildDate><atom:link href="/categories/electron/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 10:50:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/electron/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>electron 笔记</title>
-      <link>/blog/electron-note2/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/electron-note2/</link>
       <pubDate>Tue, 15 Dec 2020 10:50:40 +0800</pubDate>
       
-      <guid>/blog/electron-note2/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/electron-note2/</guid>
       <description>electron的应用结构 由三个支柱组成
  Chromium 用于显示网页内容。 Node.js 用于本地文件系统和操作系统。 自定义 APIs 用于使用经常需要的 OS 本机函数。 就是构建一个带有网页界面的node.js应用程序，或者说是一个无缝集成的网页  Main and Renderer 进程  主进程在浏览窗口中创建网页实例，每个浏览窗口实例中renderer进程运行网页。当一个浏览窗口实例被destroyed，对应的renderer进程也会被终止。 主进程管理 所有的页面，及其对应的renderer进程。 renderer进程只负责管理对应的网页,一个renderer进程崩溃不会影响到别的renderer进程。 渲染进程 通过IPC 与主进程通信 在网页上执行GUI操作。 由于安全考虑和可能的资源泄漏，直接从渲染器过程中调用与本地GUI有关的API受到限制。  进程间的通信可以通过： ipcMain 和 ipcRenderer</description>
     </item>
     
     <item>
       <title>electron的起手笔记</title>
-      <link>/blog/electron-note1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/electron-note1/</link>
       <pubDate>Mon, 14 Dec 2020 22:50:40 +0800</pubDate>
       
-      <guid>/blog/electron-note1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/electron-note1/</guid>
       <description>初始化一个electron 使用npm install &amp;amp; npm start 报错
 改用yarn add electron@latest --save-dev来安装
 npm start / yarn run start成功运行

@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on 么了&#39;s 博客</title>
-    <link>/categories/css/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/css/</link>
     <description>Recent content in CSS on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>js添加css动画变量</title>
-      <link>/blog/js-note4/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</link>
       <pubDate>Wed, 28 Jul 2021 12:22:40 +0800</pubDate>
       
-      <guid>/blog/js-note4/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</guid>
       <description>css动画，需要动态传入变量 &amp;lt;img src=&amp;#34;#&amp;#34; id=&amp;#34;ball&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt; ballMove() { document.styleSheets[0] .insertRule(&amp;#34;@keyframes ballmove{from{margin-left:0} to{margin-left:100px;}}&amp;#34;) } 使用js把动画添加到全局样式库中， 还可以传入变量
 img#ball { width:100px;height:100px; animation: ballmove 2s 1 forwards ease-out; -webkit-animation: ballmove 2s 1 forwards ease-out; } </description>
     </item>
     
     <item>
       <title>React中的css in js库</title>
-      <link>/blog/react-css/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-css/</link>
       <pubDate>Thu, 08 Apr 2021 14:22:40 +0800</pubDate>
       
-      <guid>/blog/react-css/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-css/</guid>
       <description>//首先引入 import styled from &amp;#39;styled-components&amp;#39;; // 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; &amp;lt;Wrapper&amp;gt;1111&amp;lt;/Wrapper&amp;gt; yarn add styled-components 使用yarn安装
 styled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。
  优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助
@@ -31,30 +31,30 @@ styled-components 是一个针对 React 的 css in js 类库。 和所有同类�
     
     <item>
       <title>ios 屏幕安全距离 样式</title>
-      <link>/blog/safearea/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/safearea/</link>
       <pubDate>Tue, 02 Feb 2021 14:22:40 +0800</pubDate>
       
-      <guid>/blog/safearea/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/safearea/</guid>
       <description>env()和constant()，是IOS11新增特性， Webkit的css函数，用于设定安全区域与边界的距离，有4个预定义变量： safe-area-inset-left：安全区域距离左边边界的距离 safe-area-inset-right：安全区域距离右边边界的距离 safe-area-inset-top：安全区域距离顶部边界的距离 safe-area-inset-bottom：安全距离底部边界的距离
 padding-bottom: constant(safe-area-inset-bottom); /*兼容 IOS&amp;lt;11.2*/ padding-bottom: env(safe-area-inset-bottom); /*兼容 IOS&amp;gt;11.2*/ ⚠️ 注意： env() 和 constant() 需要同时存在，而且顺序不能换。</description>
     </item>
     
     <item>
       <title>flex-grow自动填充宽度高度</title>
-      <link>/blog/flex-grow/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/flex-grow/</link>
       <pubDate>Thu, 10 Dec 2020 11:47:40 +0800</pubDate>
       
-      <guid>/blog/flex-grow/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/flex-grow/</guid>
       <description>display: flex; // 占满宽度 flex-direction: row; // 占满高度 flex-direction: column; // 给父元素定义高度 height/min-height/max-height 子元素元素 flex-grow: 1; 当只有一个子元素的时候flex-grow:1;自动填充剩余的高度/宽度。
 多个子元素时，会按照flex-grow的总值按比例分配剩余的空间</description>
     </item>
     
     <item>
       <title>字体font-family</title>
-      <link>/blog/font-family/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/font-family/</link>
       <pubDate>Wed, 23 Sep 2020 12:22:40 +0800</pubDate>
       
-      <guid>/blog/font-family/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/font-family/</guid>
       <description>// 为什么这样写 font-family // 答案见 https://github.com/zenozeng/fonts.css/
 font-family: -apple-system, &amp;#34;Noto Sans&amp;#34;, &amp;#34;Helvetica Neue&amp;#34;, Helvetica, &amp;#34;Nimbus Sans L&amp;#34;, Arial, &amp;#34;Liberation Sans&amp;#34;, &amp;#34;PingFang SC&amp;#34;, &amp;#34;Hiragino Sans GB&amp;#34;, &amp;#34;Noto Sans CJK SC&amp;#34;, &amp;#34;Source Han Sans SC&amp;#34;, &amp;#34;Source Han Sans CN&amp;#34;, &amp;#34;Microsoft YaHei&amp;#34;, &amp;#34;Wenquanyi Micro Hei&amp;#34;, &amp;#34;WenQuanYi Zen Hei&amp;#34;, &amp;#34;ST Heiti&amp;#34;, SimHei, &amp;#34;WenQuanYi Zen Hei Sharp&amp;#34;, sans-serif; 能使各个平台的字体看起来统一
 中文字体也有英文名称
@@ -63,28 +63,28 @@ font-family: -apple-system, &amp;#34;Noto Sans&amp;#34;, &amp;#34;Helvetica Neue
     
     <item>
       <title>css动画</title>
-      <link>/blog/css-transition/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/css-transition/</link>
       <pubDate>Thu, 17 Sep 2020 12:22:40 +0800</pubDate>
       
-      <guid>/blog/css-transition/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/css-transition/</guid>
       <description>.coupon-type .selected { color: #00B893; width: 20vw; padding-bottom: 2.6vw; position: relative; } .coupon-tab .selected::before { position: absolute; width: 20vw; left: 0; content: &amp;#39;&amp;#39;; bottom: 0; animation: tabBorder 500ms ease alternate; //tabBorder是动画的事件名 border-bottom: .6vw solid #00B893; } @keyframes tabBorder { //过渡left和width属性 0% {transition: left,width;left: 50%;width:0;} 100% {transition: left,width;width:20vw;left: 0;} } </description>
     </item>
     
     <item>
       <title>CSS 的各种选择器</title>
-      <link>/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</link>
       <pubDate>Thu, 26 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/css%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
       <description>组合选择器 `E,F` 多元素选择器，使用`逗号`分隔，同时匹配元素E和元素F `E F` 后代选择器，用`空格`分隔，匹配E元素所有的后代元素F `E&amp;gt;F` 子元素选择器，用`&amp;gt;`分隔，匹配E元素的所有直接子元素 `E+F` 直接相邻选择器，匹配E元素之后的相邻的同级元素F `E～F` 普通相邻选择器（弟弟选择器），匹配E元素之后的同级元素F `element#id2.class1.class2#id1` id和class选择器连写时中间没有分隔符， `.`和`#`可以充当分隔符元素  属性选择器 `E[attr]` 匹配所有具有属性为attr的元素(div[id]能选择所有具有id属性的div) `E[attr=value]` 匹配所有属性为value的元素(div[type=text]匹配id=text的div) `E[attr~=value]` 匹配所有属性attr具有多个空格分隔，其中一个值等于value的元素 `E[attr^=value]` 匹配属性attr值以value开头的元素 `E[attr$=value]` 匹配属性attr值以value结尾的元素 `E[attr^=value]` 匹配属性attr值包含value的元素  伪类选择器 `E:first-child` 匹配元素E的第一个子元素 `E:last-child` 最后一个子元素 `E:nth-child(n)` 匹配其父元素的第n个子元素，1开始 `E:hover` 匹配鼠标悬停位置的E元素 `E:focus` 匹配获得焦点的E元素 `E:link` 匹配未被点击的链接 `E:active` 匹配鼠标已经按下、还没有释放的E元素 `E:visited` 匹配所有已被点击的链接 `E:first-of-type` 匹配父元素下使用同种标签的第一个子元素，等同于nth-of-type(1)  伪元素选择器 `E::before` 在E元素之前插入生成的内容 `E::after` 在E元素之后插入生成的内容 `E::first-line` 匹配E元素的第一行 `E::first-letter` 匹配E元素的第一个字母  </description>
     </item>
     
     <item>
       <title>css的calc属性</title>
-      <link>/blog/css-calc/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/css-calc/</link>
       <pubDate>Wed, 18 Mar 2020 22:40:40 +0800</pubDate>
       
-      <guid>/blog/css-calc/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/css-calc/</guid>
       <description>当不能确定一个页面元素的 width/height，需要计算之后才能取得值；
 calc() 计算 calc() 函数用于动态计算长度值。
 需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
@@ -94,19 +94,19 @@ calc()函数支持&#39;+&#39;，&#39;-&#39;，&#39;*&#39;，&#39;/&amp;lsquo;运
     
     <item>
       <title>box-shadow样式</title>
-      <link>/blog/box-shadow/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/box-shadow/</link>
       <pubDate>Mon, 16 Mar 2020 23:22:40 +0800</pubDate>
       
-      <guid>/blog/box-shadow/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/box-shadow/</guid>
       <description>button { font-size: 24px; height: 64px; width: 25%; border: #fff solid 1px; box-shadow: inset -2px -2px 1px rgba(0,0,0,0.45); $bg: #f2f2f2; &amp;amp;:nth-child(1) { background: $bg; } &amp;amp;:nth-child(2), &amp;amp;:nth-child(5) { background: darken($bg, 4%); } &amp;amp;:nth-child(3), &amp;amp;:nth-child(6), &amp;amp;:nth-child(9) { background: darken($bg, 8%); } &amp;amp;:nth-child(4), &amp;amp;:nth-child(7), &amp;amp;:nth-child(10), &amp;amp;:nth-child(13) { background: darken($bg, 12%); } &amp;amp;:nth-child(8), &amp;amp;:nth-child(11) { background: darken($bg, 16%); } &amp;amp;:nth-child(12), &amp;amp;:nth-child(14) { background: darken($bg, 20%); } &amp;amp;:nth-child(15) { background: darken($bg, 25%); } } -2px 就是未按下状态的样式;</description>
     </item>
     
     <item>
       <title>transform &amp; transition</title>
-      <link>/blog/transformtransition/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/transformtransition/</link>
       <pubDate>Tue, 10 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/transformtransition/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/transformtransition/</guid>
       <description>Transform transform 属性用于旋转、倾斜、缩放、平移
 有XYZ轴方向
 ⚠️只能转换由盒模型定位的元素
@@ -119,10 +119,10 @@ transition: 属性名 时长，属性名 时长 过渡方式 延迟
     
     <item>
       <title>浏览器渲染过程</title>
-      <link>/blog/render/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/render/</link>
       <pubDate>Fri, 06 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/render/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/render/</guid>
       <description>浏览器渲染过程  根据HTML构建html树（DOM） 根据css构建css树（cssom） 将两棵树合并成一颗渲染树（render tree） layout布局（文档流、盒模型、计算大小和位置） paint绘制（把边框颜色、文字颜色、阴影等画出来） compose合成（根据层叠关系展示页面）  如何更新样式
 一般采用 js 来更新样式
 div.style.display=&amp;#39;none&amp;#39; div.classList.add(&amp;#39;red&amp;#39;) div.remove() //直接删除节点 样式更新方式
@@ -131,10 +131,10 @@ div.style.display=&amp;#39;none&amp;#39; div.classList.add(&amp;#39;red&amp;#39;
     
     <item>
       <title>Flex &amp; Grid</title>
-      <link>/blog/flex-grid/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/flex-grid/</link>
       <pubDate>Wed, 12 Feb 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/flex-grid/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/flex-grid/</guid>
       <description>Flexbox display: flex; align-items纵向对齐元素，可选以下几个值：
  flex-start: 元素与容器的顶部对齐。 flex-end: 元素与容器的底部对齐。 center: 元素纵向居中。 baseline: 元素在容器的基线位置显示。 stretch: 元素被拉伸以填满整个容器。  justify-content横向对齐元素:
  space-between ：分散对齐 space-around ：平均等宽横向对齐 flex-start(default)：默认 左对齐 flex-end ：右对齐 center ：居中  flex-direction属性定义了元素在容器里摆放的方向:

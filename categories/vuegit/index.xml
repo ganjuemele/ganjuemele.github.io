@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vue,git on 么了&#39;s 博客</title>
-    <link>/categories/vuegit/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vuegit/</link>
     <description>Recent content in vue,git on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 10 Apr 2020 14:22:40 +0800</lastBuildDate><atom:link href="/categories/vuegit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2020 14:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vuegit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>github部署vue项目</title>
-      <link>/blog/git-note/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/git-note/</link>
       <pubDate>Fri, 10 Apr 2020 14:22:40 +0800</pubDate>
       
-      <guid>/blog/git-note/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/git-note/</guid>
       <description>git run build git branch P-pages //创建gh-pages分支 git checkout P-pages //切换到gh-pages分支 git add -f dist //强制把dist文件夹提交到github $ git subtree push --prefix dist origin P-pages //把dist文件夹单独部署到P-pages分支 这样就把dist目录和项目文件分开了</description>
     </item>
     

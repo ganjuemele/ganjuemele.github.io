@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>react on 么了&#39;s 博客</title>
-    <link>/categories/react/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/react/</link>
     <description>Recent content in react on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 09 Apr 2021 14:22:40 +0800</lastBuildDate><atom:link href="/categories/react/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Apr 2021 14:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React中的SVG loader</title>
-      <link>/blog/react-1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-1/</link>
       <pubDate>Fri, 09 Apr 2021 14:22:40 +0800</pubDate>
       
-      <guid>/blog/react-1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-1/</guid>
       <description>yarn eject yarn add svgo-loader --dev yarn add svg-sprite-loader --dev /config/webpack.config.js 文件中添加
 return { module: { rules: [ {oneOf: [ //svg-sprite-loader  { test: /\.svg$/, use: [ { loader: &amp;#39;svg-sprite-loader&amp;#39;, options: { } }, { loader: &amp;#39;svgo-loader&amp;#39;, options: {} } ] } ]} ]} } import y from &amp;#39;../icons/pear.svg&amp;#39; require(&amp;#39;../icons/watermelon.svg&amp;#39;) console.log(y) //import需要log一下引入的内容 // 或者直接require svg &amp;lt;svg className=&amp;#34;icon&amp;#34;&amp;gt; // 匹配 id为pear的svg &amp;lt;use xlinkHref=&amp;#34;#pear&amp;#34;/&amp;gt; &amp;lt;/svg&amp;gt; &amp;lt;svg className=&amp;#34;icon&amp;#34;&amp;gt; &amp;lt;use xlinkHref=&amp;#34;#watermelon&amp;#34;/&amp;gt; &amp;lt;/svg&amp;gt; ⚠️注意：react添加了tree shaking 的优化功能，会把脚本中未使用的声明删除掉.</description>
     </item>
     
     <item>
       <title>React Router</title>
-      <link>/blog/react-router/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-router/</link>
       <pubDate>Thu, 08 Apr 2021 14:22:40 +0800</pubDate>
       
-      <guid>/blog/react-router/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-router/</guid>
       <description>function App() { return( &amp;lt;Router&amp;gt; &amp;lt;Link to=&amp;#34;/home&amp;#34;&amp;gt;首页&amp;lt;/Link&amp;gt; &amp;lt;Link to=&amp;#34;/content&amp;#34;&amp;gt;内容&amp;lt;/Link&amp;gt; &amp;lt;Link to=&amp;#34;/about&amp;#34;&amp;gt;关于&amp;lt;/Link&amp;gt; &amp;lt;Switch&amp;gt; &amp;lt;Route path=&amp;#34;/home&amp;#34;&amp;gt; &amp;lt;Home /&amp;gt; &amp;lt;/Route&amp;gt; &amp;lt;Route path=&amp;#34;/content&amp;#34;&amp;gt; &amp;lt;Content /&amp;gt; &amp;lt;/Route&amp;gt; &amp;lt;Route path=&amp;#34;/about&amp;#34;&amp;gt; &amp;lt;About /&amp;gt; &amp;lt;/Route&amp;gt; // 重定向 &amp;lt;Redirect exact from=&amp;#34;/&amp;#34; to=&amp;#34;home&amp;#34; /&amp;gt; // 404页面 &amp;lt;Route path=&amp;#34;*&amp;#34;&amp;gt; &amp;lt;NoMatch/&amp;gt; &amp;lt;/Route&amp;gt; &amp;lt;/Switch&amp;gt; &amp;lt;/Router&amp;gt; ) } function Home() { return &amp;lt;h2&amp;gt;记账&amp;lt;/h2&amp;gt;; } function About() { return &amp;lt;h2&amp;gt;记账&amp;lt;/h2&amp;gt;; } function Content() { return &amp;lt;h2&amp;gt;记账&amp;lt;/h2&amp;gt;; } function NoMatch() { return &amp;lt;h2&amp;gt;页面不存在404&amp;lt;/h2&amp;gt;; } </description>
     </item>
     
     <item>
       <title>React中的css in js库</title>
-      <link>/blog/react-css/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-css/</link>
       <pubDate>Thu, 08 Apr 2021 14:22:40 +0800</pubDate>
       
-      <guid>/blog/react-css/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/react-css/</guid>
       <description>//首先引入 import styled from &amp;#39;styled-components&amp;#39;; // 添加样式 const Wrapper = styled.div` border: 1px solid red; min-height:100vh; display:flex; `; &amp;lt;Wrapper&amp;gt;1111&amp;lt;/Wrapper&amp;gt; yarn add styled-components 使用yarn安装
 styled-components 是一个针对 React 的 css in js 类库。 和所有同类型的类库一样，通过 js 赋能解决了原生 css 所不具备的能力，比如变量、循环、函数等。解决了 css 全局命名空间，避免样式冲突的问题，维护起来更加方便。
  优点:  贯彻 React 的 everything in JS 理念，降低 js 对 css 文件的依赖 保留前端开发 CSS 书写习惯，无学习和迁移成本 使用方便，不需要配置 webpack，开箱即用 不用再担心样式命名的问题，移除样式与组件之间的对应关系 样式可以使用变量，更加灵活 组件的逻辑、生命周期、样式、结构完全和其它组件解耦，对组件维护很有帮助

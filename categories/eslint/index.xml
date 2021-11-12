@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ESLint on 么了&#39;s 博客</title>
-    <link>/categories/eslint/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/eslint/</link>
     <description>Recent content in ESLint on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 08 Jan 2021 11:50:40 +0800</lastBuildDate><atom:link href="/categories/eslint/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 11:50:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/eslint/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ESLint的配置</title>
-      <link>/blog/eslint%E9%85%8D%E7%BD%AE/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/eslint%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 08 Jan 2021 11:50:40 +0800</pubDate>
       
-      <guid>/blog/eslint%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/eslint%E9%85%8D%E7%BD%AE/</guid>
       <description>ESlint可以高效的检查代码格式，让参与项目的所有工程师都能保持统一的代码风格。 其检测精度甚至可以精确到是否多一个空格或者少一个空格。 代码格式的统一对提高团队的协同开发效率有很大的帮助，特别是对有代码洁癖的工程师。
 在项目根目录下创建.eslintrc.js （注意文件名前面有个“.”）
 module.exports = { root: true, env: { node: true }, &amp;#39;extends&amp;#39;: [ &amp;#39;plugin:vue/essential&amp;#39;, &amp;#39;@vue/standard&amp;#39; ], rules: { &amp;#39;no-debugger&amp;#39;: process.env.NODE_ENV === &amp;#39;production&amp;#39; ? &amp;#39;error&amp;#39; : &amp;#39;off&amp;#39;, // 不检测语句末尾的分号  &amp;#39;semi&amp;#39;: [&amp;#39;off&amp;#39;, &amp;#39;always&amp;#39;], // 强制缩进为2个空格  &amp;#39;indent&amp;#39;: [&amp;#39;error&amp;#39;, 2], // 关闭函数名称跟括号之间的空格检测  &amp;#39;space-before-function-paren&amp;#39;: 0, // 忽略大括号内的空格  &amp;#39;object-curly-spacing&amp;#39;: 0 }, parserOptions: { parser: &amp;#39;babel-eslint&amp;#39; } } 这里说明下关于indent缩进的配置，要配合项目根目录下的.editorconfig

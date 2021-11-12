@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MVC on 么了&#39;s 博客</title>
-    <link>/categories/mvc/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/mvc/</link>
     <description>Recent content in MVC on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 05 Mar 2020 20:22:40 +0800</lastBuildDate><atom:link href="/categories/mvc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Mar 2020 20:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/mvc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MVC浅谈</title>
-      <link>/blog/mvc/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/mvc/</link>
       <pubDate>Thu, 05 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/mvc/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/mvc/</guid>
       <description>MVC 三个对象分别的作用，伪代码示例 model： 数据管理，请求到的数据给 controller
 view： 放视图相关的，html 渲染
 controller： 监听并操作 view，调用 model 里面的数据

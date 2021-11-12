@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on 么了&#39;s 博客</title>
-    <link>/categories/javascript/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/javascript/</link>
     <description>Recent content in javascript on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 12 Nov 2021 16:43:40 +0800</lastBuildDate><atom:link href="/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 16:43:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>逻辑分配运算符</title>
-      <link>/blog/es2021-1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/</link>
       <pubDate>Fri, 12 Nov 2021 16:43:40 +0800</pubDate>
       
-      <guid>/blog/es2021-1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/</guid>
       <description>1. ||= 或等于运算符 let a = false; let b = true; a ||= b //a=true  let c = 0; let d= true; c ||= d //c=true  let e= 1; let f = false; e ||= f //e=1 a ||= b 相当于 a || (a=b)
 2. &amp;amp;&amp;amp;= 且等于运算符 function() { let a; let b = 0; let c = 1; a &amp;amp;&amp;amp;= 2; b &amp;amp;&amp;amp;= 2; c &amp;amp;&amp;amp;= 2; return typeof a === &amp;#39;undefined&amp;#39; &amp;amp;&amp;amp; b === 0 &amp;amp;&amp;amp; c === 2; }//true  function(){ let a; let i = 1; a &amp;amp;&amp;amp;= ++i; return typeof a === &amp;#39;undefined&amp;#39; &amp;amp;&amp;amp; i === 1; } a &amp;amp;&amp;amp;= b 相当于 a &amp;amp;&amp;amp; (a=b)</description>
     </item>
     
     <item>
       <title>prompt的确定和取消事件</title>
-      <link>/blog/prompt/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/prompt/</link>
       <pubDate>Sun, 22 Mar 2020 16:40:40 +0800</pubDate>
       
-      <guid>/blog/prompt/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/prompt/</guid>
       <description>prompt事件触发，未输入标签名点击取消，也会新增一个空白标签， 这是因为点击取消， name === null
 const name = window.prompt(&amp;#39;请输入标签名&amp;#39;); if (name === null){ // console.log(name,&amp;#39;null&amp;#39;) }else if (name === &amp;#39;&amp;#39;) { window.alert(&amp;#39;标签名不能为空&amp;#39;) } else (this.dataSource) { this.$emit(&amp;#39;update:dataSource&amp;#39;, [...this.dataSource, name]) } ⚠️这里要把（name===null）的情况放在较前位置进行判断
 优化下

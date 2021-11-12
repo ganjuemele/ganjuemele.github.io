@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SEO on 么了&#39;s 博客</title>
-    <link>/categories/seo/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/seo/</link>
     <description>Recent content in SEO on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 22 Feb 2020 18:22:40 +0800</lastBuildDate><atom:link href="/categories/seo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Feb 2020 18:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/seo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SEO的站内优化</title>
-      <link>/blog/seo/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/seo/</link>
       <pubDate>Sat, 22 Feb 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/seo/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/seo/</guid>
       <description>网站结构优化的要素：  物理链接结构 清晰的导航 分配好子域名和目录 禁止收录机制 nofollow 使用 URL 静态化 URL 设计 404 页面 网站地图 sitemap 内部链接及权重分配 复制内容 网址规范化  物理及链接结构 物理结构是指网站真实目录和文件所在的位置决定的结构。通常有扁平式和树形结构； 扁平式适合页面数量少的网站，更多的是采用树形结构。
 链接结构是指网站内部页面的链接所形成的。可以理解为复杂的树形结构。
 对于搜索引擎来说，链接结构会比物理结构来的更有意义。与首页点击距离越近的页面被爬去的概率更大，权重越高。这里的点击距离就是链接结构的距离

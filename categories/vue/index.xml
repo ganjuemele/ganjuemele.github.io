@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vue on 么了&#39;s 博客</title>
-    <link>/categories/vue/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vue/</link>
     <description>Recent content in vue on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>js添加css动画变量</title>
-      <link>/blog/js-note4/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</link>
       <pubDate>Wed, 28 Jul 2021 12:22:40 +0800</pubDate>
       
-      <guid>/blog/js-note4/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</guid>
       <description>css动画，需要动态传入变量 &amp;lt;img src=&amp;#34;#&amp;#34; id=&amp;#34;ball&amp;#34; alt=&amp;#34;&amp;#34;&amp;gt; ballMove() { document.styleSheets[0] .insertRule(&amp;#34;@keyframes ballmove{from{margin-left:0} to{margin-left:100px;}}&amp;#34;) } 使用js把动画添加到全局样式库中， 还可以传入变量
 img#ball { width:100px;height:100px; animation: ballmove 2s 1 forwards ease-out; -webkit-animation: ballmove 2s 1 forwards ease-out; } </description>
     </item>
     
     <item>
       <title>vue-方法调用alert组件</title>
-      <link>/blog/vue-note2/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/</link>
       <pubDate>Wed, 28 Jul 2021 11:22:40 +0800</pubDate>
       
-      <guid>/blog/vue-note2/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/</guid>
       <description>var alertComponent = function(content,callback,button) { if(button == undefined) { button = [{key:&amp;#39;alert&amp;#39;,text:&amp;#39;确定&amp;#39;}] } let ErrorAlert if(button.length===1){ ErrorAlert = Vue.extend({ template: &amp;#34;&amp;lt;MyAlert1 v-if=&amp;#39;showFlag&amp;#39; title=&amp;#39;Title&amp;#39;&amp;#34; + &amp;#34; :content=&amp;#39;alertContent&amp;#39; :operation=&amp;#39;alertButton[0].text&amp;#39; &amp;#34; + &amp;#34;:clickMaskHidden=&amp;#39;false&amp;#39; @cancel=&amp;#39;alertClick&amp;#39; /&amp;gt;&amp;#34;, components: {MyAlert1}, data(){return{ alertContent:content, showFlag:true, alertButton: button }}, methods: { alertClick(){ let that = this; setTimeout(()=&amp;gt;{that.showFlag = false},100); callback&amp;amp;&amp;amp;callback() } } }) } else { ErrorAlert = Vue.extend({ template: &amp;#34;&amp;lt;MyAlert2 v-if=&amp;#39;showFlag&amp;#39; title=&amp;#39;Title&amp;#39; &amp;#34; + &amp;#34;:cancelOperation=&amp;#39;alertButton[0].text&amp;#39; @cancel=&amp;#39;cancel&amp;#39;&amp;#34; + &amp;#34;:confirmOperate=&amp;#39;alertButton[1].text&amp;#39; @confirm=&amp;#39;confirm&amp;#39; /&amp;gt;&amp;#34;, components:{MyAlert2}, data(){ return{ alertContent:content, alertButton:button, showFlag: true } }, methods:{ cancel(){ let that = this; setTimeout(function(){that.</description>
     </item>
     
     <item>
       <title>锚点的跳转和返回</title>
-      <link>/blog/js-note3/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note3/</link>
       <pubDate>Wed, 28 Jul 2021 11:22:40 +0800</pubDate>
       
-      <guid>/blog/js-note3/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note3/</guid>
       <description>&amp;lt;div id=&amp;#34;task&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; 点击事件 window.location.href = &amp;#39;#task&amp;#39;; 跳转后会在链接上加上 task， 之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。
 所以改用
 document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路由返回需要2次的问题，不会在url上加上task 的锚点</description>
@@ -39,19 +39,19 @@ document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路
     
     <item>
       <title>使用Vant的picker</title>
-      <link>/blog/vant-1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vant-1/</link>
       <pubDate>Tue, 20 Apr 2021 10:22:40 +0800</pubDate>
       
-      <guid>/blog/vant-1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vant-1/</guid>
       <description>&amp;lt;template&amp;gt; &amp;lt;!-- //时间选择--&amp;gt; &amp;lt;div @click=&amp;#34;isShowPopup=!isShowPopup&amp;#34;&amp;gt; {{日期}} &amp;lt;/div&amp;gt; &amp;lt;van-popup v-model=&amp;#34;isShowPopup&amp;#34; position=&amp;#34;bottom&amp;#34;&amp;gt; &amp;lt;van-picker show-toolbar :columns=&amp;#34;columns&amp;#34; @change=&amp;#34;onChange&amp;#34; @confirm=&amp;#34;onConfirm&amp;#34; @cancel=&amp;#34;onCancel&amp;#34; /&amp;gt; &amp;lt;/van-popup&amp;gt; &amp;lt;!-- // 状态选择--&amp;gt; &amp;lt;div @click=&amp;#34;isShowStat=!isShowStat&amp;#34;&amp;gt; {{状态}} &amp;lt;/div&amp;gt; &amp;lt;van-popup v-model=&amp;#34;isShowStat&amp;#34; position=&amp;#34;bottom&amp;#34; v-if=&amp;#34;isShowStat&amp;#34;&amp;gt; &amp;lt;van-picker show-toolbar :columns=&amp;#34;typeListStat&amp;#34; @confirm=&amp;#34;onConfirmStat&amp;#34; @cancel=&amp;#34;onCancel&amp;#34; /&amp;gt; &amp;lt;/van-popup&amp;gt; &amp;lt;/template&amp;gt; import Vue from &amp;#39;vue&amp;#39;; import {Picker, Popup} from &amp;#34;vant&amp;#34;; Vue.use(Picker,Popup) export default { data() { return{ isShowPopup:false, isShowStat: false, typeStat: [&amp;#39;全部明细&amp;#39;, 0], typeListStat: [{values:[&amp;#39;全部明细&amp;#39;,&amp;#39;积分奖励&amp;#39;,&amp;#39;积分扣减&amp;#39;],defaultIndex: 0}], columns:[{}] } }, methods: { onCancel(){ this.isShowPopup=false; this.isShowStat= false }, … … }, watch: { 日期改变() { this.</description>
     </item>
     
     <item>
       <title>node.js文件系统</title>
-      <link>/blog/file/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/file/</link>
       <pubDate>Fri, 12 Mar 2021 16:22:40 +0800</pubDate>
       
-      <guid>/blog/file/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/file/</guid>
       <description>Node.js文件系统模块 方法1：
 // 引入 fs 模块 let fs = require(&amp;#34;fs&amp;#34;) let fs = window.require(&amp;#39;fs&amp;#39;) // vue中需要在全局引入  // fs.readFile(path, cb) fs.readFile(&amp;#39;./src/data.json&amp;#39;, function (err, data) { // data为文件内容  if(err) { return console.error(err) } }) // fs.writeFile(&amp;#39;文件路径&amp;#39;，&amp;#39;写入的内容&amp;#39;，fn) fs.writeFile(&amp;#39;./src/data.json&amp;#39;, &amp;#39;TEXT&amp;#39;, function (err, data) { if (err) { return console.error(err) } }) 方法2：
 //需要的使用的地方 引入js文件 import xx from &amp;#39;../data/file.js&amp;#39; // file.js fs.readFile(&amp;#39;./src/data.json&amp;#39;, function (err, data) { if(err) { return console.error(err) } let dt = data.</description>
@@ -59,29 +59,29 @@ document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路
     
     <item>
       <title>Vue3.0 记录01</title>
-      <link>/blog/vue3-note1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue3-note1/</link>
       <pubDate>Sun, 27 Sep 2020 16:22:40 +0800</pubDate>
       
-      <guid>/blog/vue3-note1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue3-note1/</guid>
       <description>//SwitchDemo 父组件 &amp;lt;template&amp;gt; &amp;lt;div v-for=&amp;#34;(item, index) in evo&amp;#34; :item=&amp;#34;item&amp;#34; &amp;gt; &amp;lt;Switch v-model:value=&amp;#34;clickStatus&amp;#34; :evo=&amp;#34;evo[index]&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script lang=&amp;#34;ts&amp;#34;&amp;gt; import Switch from &amp;#39;../lib/Switch.vue&amp;#39;; import { ref } from &amp;#39;vue&amp;#39; export default { components: { Switch }, data(){ return { evo: [&amp;#34;Normal&amp;#34;, &amp;#34;Shadow&amp;#34;, &amp;#34;Disabled&amp;#34;, &amp;#34;Text&amp;#34;], } }, setup(){ const clickStatus = ref(!0); return { clickStatus } } } &amp;lt;/script&amp;gt; // Switch 子组件 &amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;switch-module&amp;#34;&amp;gt; &amp;lt;button @click=&amp;#34;toggle&amp;#34; :class=&amp;#34;[{checked:value, orange:value}, {&amp;#39;switchShadow switchShadow-orange&amp;#39;:evo===&amp;#39;Shadow&amp;#39;}, {&amp;#39;checkedDisBgc-orange&amp;#39;:value===true&amp;amp;&amp;amp;toggleDisable===true}, {uncheckedDisBgc:value===false&amp;amp;&amp;amp;toggleDisable===true}]&amp;#34; :disabled=&amp;#34;evo===&amp;#39;Disabled&amp;#39;&amp;amp;&amp;amp;toggleDisable&amp;#34; &amp;gt; &amp;lt;span class=&amp;#34;switchControl&amp;#34; /&amp;gt; &amp;lt;span v-if=&amp;#34;evo===&amp;#39;Text&amp;#39;&amp;#34; class=&amp;#34;switchText&amp;#34; :class=&amp;#34;value?</description>
     </item>
     
     <item>
       <title>vue小知识</title>
-      <link>/blog/vue-note1/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note1/</link>
       <pubDate>Thu, 17 Sep 2020 12:22:40 +0800</pubDate>
       
-      <guid>/blog/vue-note1/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note1/</guid>
       <description>v-cloak解决页面闪烁问题 页面中的数据时异步获取的，在网络不好的情况下，渲染页面的时候会出现页面闪烁的效果，影响用户体验， v-cloak 指令保持在元素上直到关联实例结束编译，利用它的特性，结合 CSS 的规则 [v-cloak] { display: none } 一起使用就可以隐藏掉未编译好的 Mustache 标签，直到实例准备完毕
 // template 中 &amp;lt;div class=&amp;#34;#app&amp;#34; v-cloak&amp;gt; &amp;lt;p&amp;gt;{{value.name}}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; // css 中 [v-cloak] { display: none; } ⚠️需要注意:虽然解决了闪烁的问题，但这段时间内如果什么都不处理的话，会直接白屏，这并不是我们想要的效果，我们应该加一个 loading 或者骨架屏的效果，提升用户体验</description>
     </item>
     
     <item>
       <title>App加载状态的几种类型</title>
-      <link>/blog/note-4/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-4/</link>
       <pubDate>Fri, 04 Sep 2020 10:22:40 +0800</pubDate>
       
-      <guid>/blog/note-4/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-4/</guid>
       <description>全页面加载 优点：适用于各个场景
 缺点：时间不确定性，加载过慢容易丢失用户
 例：常见的菊花图，和各种有意思的动画gif图
@@ -101,20 +101,20 @@ document.getElementById(&amp;#39;task&amp;#39;).scrollIntoView() 可以解决路
     
     <item>
       <title>模版字符串的使用</title>
-      <link>/blog/template-string/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/template-string/</link>
       <pubDate>Mon, 20 Jul 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/template-string/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/template-string/</guid>
       <description>模板字符串（template string）是增强版的字符串，用反引号（`）标识 它可以当作普通字符串使用，也可以用来定义多行字符串，或者在字符串中嵌入变量。
 &amp;lt;navigator class=&amp;#34;vbox&amp;#34; open-type=&amp;#34;navigate&amp;#34; a:for=&amp;#34;{{ruleList}}&amp;#34; a:key=&amp;#34;{{item.index}}&amp;#34; url=&amp;#34;{{item.actType===&amp;#39;C&amp;#39; ?`/pages/mine/cashCouponInfo/cashCouponInfo?info=${item.info}` :`/pages/couponOperate/couponOperate?info=${item.info}`}}&amp;#34;&amp;gt; &amp;lt;/navigator&amp;gt; 反引号中可以写一个字符串，并且插入使用 ${变量名} 。</description>
     </item>
     
     <item>
       <title>Vue实例&amp;模版语法</title>
-      <link>/blog/vue-note/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note/</link>
       <pubDate>Thu, 09 Apr 2020 14:22:40 +0800</pubDate>
       
-      <guid>/blog/vue-note/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note/</guid>
       <description>Object.freeze() 方法可以冻结一个对象， 冻结指的是不能向这个对象添加新的属性，不能修改其已有属性的值，不能删除已有属性， 以及不能修改该对象已有属性的可枚举性、可配置性、可写性。
 const object2 = Object.freeze(object1);  其中 object2 和 object1 是同一个对象
  Vue 实例的生命周期钩子不要写成箭头函数，给出的理由是什么?  箭头函数是和父级上下文绑定在一起的，this 不会是如你所预期的 Vue 实例 经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。</description>
@@ -122,19 +122,19 @@ const object2 = Object.freeze(object1);  其中 object2 和 object1 是同一个
     
     <item>
       <title>vue</title>
-      <link>/blog/note-2/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-2/</link>
       <pubDate>Fri, 27 Mar 2020 20:40:40 +0800</pubDate>
       
-      <guid>/blog/note-2/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-2/</guid>
       <description>&amp;lt;stylescopedlang=&amp;#39;scss&amp;#39;&amp;gt; .x::v-deep li { // 或者使用 /deep/ border: 1px solid red; } &amp;lt;/style&amp;gt; 往深处继续找 deep语法</description>
     </item>
     
     <item>
       <title>Vuex的总结</title>
-      <link>/blog/vuex/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vuex/</link>
       <pubDate>Fri, 27 Mar 2020 14:22:40 +0800</pubDate>
       
-      <guid>/blog/vuex/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vuex/</guid>
       <description>Vue.use(Vuex)
 // ~/main.ts  new Vue({ router, store, //引用进去  render: h =&amp;gt; h(App) }).$mount(&amp;#39;#app&amp;#39;); const store = new Vuex.store({ state: { count:0 ... ... }, mutations: { method1 (state){ state.count }, ... } }) 组件components中使用
 读：对象 computed获取 @Component({ components: {xxx}, computed: { tags() { return this.$store.state.count } } }) 类 js/ts export default class EditLabel extends Vue { get currentTag (){ return this.$store.state.currentTag } } 写： this.$store.commit(&amp;#39;updateTag&amp;#39;,{id:this.currentTag.id, name}); </description>
@@ -142,10 +142,10 @@ const object2 = Object.freeze(object1);  其中 object2 和 object1 是同一个
     
     <item>
       <title>写Vue组件的三种方式</title>
-      <link>/blog/vue-component/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-component/</link>
       <pubDate>Tue, 17 Mar 2020 20:40:40 +0800</pubDate>
       
-      <guid>/blog/vue-component/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-component/</guid>
       <description>  使用 JS 对象 export default { data, props, methods, created, ……}
   使用 TS 类 &amp;lt;script lang=&amp;quot;ts&amp;quot;&amp;gt; import {Component,Prop} from &#39;vue-property-decorator&#39;
   @Compotent export default class XXX extends Vue { xxx: string = &amp;#39;hi&amp;#39;; @Prop(Number) xxx: number | undefined; } //(Number)运行时检查xxx的参数类型是否为number //编译时 `xxx: number | undefined` 中的xxx可以为number也可以是undefined  使用 JS 类 &amp;lt;script lang=&amp;quot;js&amp;quot;&amp;gt;  @Compotent export default class XXX extends Vue { xxx = &amp;#39;hi&amp;#39; } </description>
@@ -153,20 +153,20 @@ const object2 = Object.freeze(object1);  其中 object2 和 object1 是同一个
     
     <item>
       <title>Vue的sync修饰符</title>
-      <link>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
       <pubDate>Tue, 10 Mar 2020 15:22:40 +0800</pubDate>
       
-      <guid>/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
       <description>修饰符sync 让子组件改变父组件状态的代码更容易被区分，作为编译时的语法糖存在，被扩展为一个自动更新父组件属性的v-on监听器。
 &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;div&amp;gt;{{bar}}&amp;lt;/div&amp;gt; &amp;lt;my-comp :foo.sync=&amp;#34;bar&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; // 下面扩展出来的写法 &amp;lt;!-- &amp;lt;my-comp :foo=&amp;#34;bar&amp;#34; @update:foo=&amp;#34;val =&amp;gt; bar = val&amp;#34;&amp;gt;&amp;lt;/my-comp&amp;gt; --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Vue.component(&amp;#39;my-comp&amp;#39;, { template: &amp;#39;&amp;lt;div @click=&amp;#34;increment&amp;#34;&amp;gt;点我+1&amp;lt;/div&amp;gt;&amp;#39;, data: function() { return {copyFoo: this.foo} }, props: [&amp;#39;foo&amp;#39;], methods: { increment: function() { this.$emit(&amp;#39;update:foo&amp;#39;, ++this.copyFoo); } } }); new Vue({ el: &amp;#39;#app&amp;#39;, data: {bar: 0} }); &amp;lt;/script&amp;gt; ⚠️注意带有 .sync 修饰符的 v-bind 不能和表达式一起使用 例如 v-bind:title.sync=”doc.title + ‘!’” 是无效的。 取而代之的是，你只能提供你想要绑定的属性名，类似 v-model。</description>
     </item>
     
     <item>
       <title>watch和computed</title>
-      <link>/blog/watch%E5%92%8Ccomputed/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/watch%E5%92%8Ccomputed/</link>
       <pubDate>Mon, 09 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/watch%E5%92%8Ccomputed/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/watch%E5%92%8Ccomputed/</guid>
       <description>watch watch 有数据监听回调的作用，用来观察和响应Vue实例上的数据变动。data数据变化执行回调，在方法中传入新的值和旧的值.
 immediate: true/false
 deep: true/false; //监听 obj 的时候是否往深处查。默认false

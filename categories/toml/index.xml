@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>toml on 么了&#39;s 博客</title>
-    <link>/categories/toml/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/toml/</link>
     <description>Recent content in toml on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 02 Feb 2020 18:22:40 +0800</lastBuildDate><atom:link href="/categories/toml/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Feb 2020 18:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/toml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>toml文档格式的数据定义</title>
-      <link>/blog/toml/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/toml/</link>
       <pubDate>Sun, 02 Feb 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/toml/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/toml/</guid>
       <description>TOML　的全称是　Tom’s Obvious, Minimal Language，因为它的作者是 GitHub　联合创始人　Tom Preston-Werner 。
  TOML是大小写敏感的 # 表示注释 可以按照自己的意愿使用空格或者Tab缩进  先写一个 Hugo 博客/md文档的配置规范 +++ title = &amp;#34;标题名称&amp;#34; description = &amp;#34;&amp;#34; //副标题 draft = false //草稿 author = &amp;#34;么了&amp;#34; date = &amp;#34;2019-04-02&amp;#34; categories = [&amp;#34;笔记&amp;#34;,博客&amp;#34;&amp;#34;] // 设置分类，支持数组格式 series = [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;] slug = &amp;#34;url的尾部&amp;#34; tags = [] keywords: [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;] featured = &amp;#34;pic01.jpg&amp;#34; //外部索引图片地址用文件夹 /年份/月份/pic.jpg featuredalt = &amp;#34;Pic 1&amp;#34; featuredpath = &amp;#34;date&amp;#34; // 也可使用绝对路径 linktitle = &amp;#34;&amp;#34; publishdate // 定时未来发布的时间 type = &amp;#34;post&amp;#34; metaDataFormat = &amp;#34;toml&amp;#34; languageCode = &amp;#34;en-us&amp;#34; date = &amp;#34;2014-09-29T21:54:53-05:00&amp;#34; weight // 排序的权重，默认按时间降序 +++ Hugo 的 markdown 文件前置数据定义结构，支持三种格式的语法类型 例如： yaml --- title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- toml +++ title: &amp;#34;My First Post&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true +++ json { &amp;#34;title&amp;#34;: &amp;#34;{{ replace .</description>
     </item>

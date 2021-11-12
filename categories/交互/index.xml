@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>交互 on 么了&#39;s 博客</title>
-    <link>/categories/%E4%BA%A4%E4%BA%92/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/%E4%BA%A4%E4%BA%92/</link>
     <description>Recent content in 交互 on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 04 Sep 2020 10:22:40 +0800</lastBuildDate><atom:link href="/categories/%E4%BA%A4%E4%BA%92/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Sep 2020 10:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/%E4%BA%A4%E4%BA%92/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App加载状态的几种类型</title>
-      <link>/blog/note-4/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-4/</link>
       <pubDate>Fri, 04 Sep 2020 10:22:40 +0800</pubDate>
       
-      <guid>/blog/note-4/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/note-4/</guid>
       <description>全页面加载 优点：适用于各个场景
 缺点：时间不确定性，加载过慢容易丢失用户
 例：常见的菊花图，和各种有意思的动画gif图

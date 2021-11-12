@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html on 么了&#39;s 博客</title>
-    <link>/categories/html/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/html/</link>
     <description>Recent content in html on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 24 Mar 2020 20:22:40 +0800</lastBuildDate><atom:link href="/categories/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2020 20:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>localStorage属性</title>
-      <link>/blog/ls%E5%B1%9E%E6%80%A7/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/ls%E5%B1%9E%E6%80%A7/</link>
       <pubDate>Tue, 24 Mar 2020 20:22:40 +0800</pubDate>
       
-      <guid>/blog/ls%E5%B1%9E%E6%80%A7/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/ls%E5%B1%9E%E6%80%A7/</guid>
       <description>window.localStorage.setItem(&#39;_key&#39;,&#39;_value&#39;);
 window.localStorage.getItem(&#39;_key&#39;)
 window.localStorage.removeItem(&#39;_key&#39;)</description>
@@ -20,10 +20,10 @@ window.localStorage.removeItem(&#39;_key&#39;)</description>
     
     <item>
       <title>meta标签个各种作用</title>
-      <link>/blog/meta/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/meta/</link>
       <pubDate>Wed, 18 Mar 2020 20:40:40 +0800</pubDate>
       
-      <guid>/blog/meta/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/meta/</guid>
       <description></description>
     </item>
     

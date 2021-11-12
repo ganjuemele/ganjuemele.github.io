@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cmd on 么了&#39;s 博客</title>
-    <link>/categories/cmd/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/cmd/</link>
     <description>Recent content in cmd on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 13 Aug 2020 18:22:40 +0800</lastBuildDate><atom:link href="/categories/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Aug 2020 18:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/cmd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>运行脚本</title>
-      <link>/blog/run-script/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/run-script/</link>
       <pubDate>Thu, 13 Aug 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/run-script/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/run-script/</guid>
       <description>// gp.bat  hugo cd public git add . git commit -m &amp;#39;hugo&amp;#39; git push origin master cd .. 打开终端进入文件夹，直接 ./gp.bat 回车. 一键 hugo转译 直接 push上传</description>
     </item>
     
     <item>
       <title>cmd的操作</title>
-      <link>/blog/cmd/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/cmd/</link>
       <pubDate>Wed, 19 Feb 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/cmd/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/cmd/</guid>
       <description>npm i -g tldr 太长不想读
 recursive 递归的
 echo 回声 ::echo::

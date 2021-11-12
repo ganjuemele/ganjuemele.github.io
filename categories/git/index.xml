@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on 么了&#39;s 博客</title>
-    <link>/categories/git/</link>
+    <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/git/</link>
     <description>Recent content in Git on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 24 Feb 2020 10:22:40 +0800</lastBuildDate><atom:link href="/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2020 10:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git远程仓库</title>
-      <link>/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
       <pubDate>Mon, 24 Feb 2020 10:22:40 +0800</pubDate>
       
-      <guid>/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
       <description>git 远程仓库 用SSH地址，复制ssh地址
 ssh-keygen -t rsa -b 4096 -C 你的邮箱 cat ~/.ssh/id_rsa.pub # 得到公钥内容 ssh -T git@github.com git remote add origin git@xxxxxxx git push -u origin master 新建了一个名为 ’19-12-26’ 的公钥 id_rsa 和 id_rsa.pub
 git remote add origin git@XXXXXX 在本地添加远程仓库地址
@@ -30,10 +30,10 @@ git pull是先把远程分支合并到本地对应的分支
     
     <item>
       <title>Git本地仓库</title>
-      <link>/blog/git-local/</link>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/git-local/</link>
       <pubDate>Sun, 23 Feb 2020 18:22:40 +0800</pubDate>
       
-      <guid>/blog/git-local/</guid>
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/git-local/</guid>
       <description>使用github程序 &amp;raquo; install command line tool 来安装git
 git config --global user.name 你的英文名 git config --global user.email 你的邮箱 git config --global push.default simple git config --global core.quotepath false git config --global core.autocrlf input 新建目录 &amp;raquo; 进入 &amp;raquo; git init
 git add 路径 //选择哪些变动是需要提交的
