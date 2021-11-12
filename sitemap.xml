@@ -4,12 +4,27 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+    <lastmod>2021-11-12T16:43:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
+    <lastmod>2021-11-12T16:43:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/javascript/</loc>
+    <lastmod>2021-11-12T16:43:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-11-12T16:43:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/es2021-1/</loc>
+    <lastmod>2021-11-12T16:43:40+08:00</lastmod>
   </url>
   
   <url>
@@ -29,11 +44,6 @@
   
   <url>
     <loc>/categories/vue/</loc>
-    <lastmod>2021-07-28T12:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-07-28T12:22:40+08:00</lastmod>
   </url>
   
@@ -330,11 +340,6 @@
   <url>
     <loc>/blog/ls%E5%B1%9E%E6%80%A7/</loc>
     <lastmod>2020-03-24T20:22:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/javascript/</loc>
-    <lastmod>2020-03-22T16:40:40+08:00</lastmod>
   </url>
   
   <url>

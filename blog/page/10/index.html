@@ -29,8 +29,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2021",
-        "datePublished": "2021-07-28 12:22:40 \u002b0800 CST",
-        "dateModified" : "2021-07-28 12:22:40 \u002b0800 CST",
+        "datePublished": "2021-11-12 16:43:40 \u002b0800 CST",
+        "dateModified" : "2021-11-12 16:43:40 \u002b0800 CST",
         "url" : "\/blog\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -76,7 +76,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" />
-<meta property="og:updated_time" content="2021-07-28T12:22:40+08:00" />
+<meta property="og:updated_time" content="2021-11-12T16:43:40+08:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -253,6 +253,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/es2021-1/">逻辑分配运算符</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-11-12'>
+                                    November 12, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/js-note4/">js添加css动画变量</a></h3>
                                 
                                 <time class="published" datetime=
@@ -266,18 +278,6 @@
                         <article class="mini-post">
                             <header>
                                 <h3><a href="/blog/vue-note2/">vue-方法调用alert组件</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-07-28'>
-                                    July 28, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/js-note3/">锚点的跳转和返回</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2021-07-28'>
@@ -305,6 +305,79 @@
     
     <div id="main">
         
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/amap/">小程序调用高德地图</a></h2>
+        
+        
+            <p>在地图上显示驾车路线图</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-09-02'>
+            September 2, 2020</time>
+        <span class="author">么了</span>
+        
+            <p>4 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">AMapWX</span>(<span style="color:#a6e22e">a</span>) {
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">key</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">key</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">requestConfig</span> <span style="color:#f92672">=</span> {
+        <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">key</span>,
+        <span style="color:#a6e22e">s</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;rsx&#39;</span>,
+        <span style="color:#a6e22e">platform</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;WXJS&#39;</span>,
+        <span style="color:#a6e22e">appname</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">key</span>,
+        <span style="color:#a6e22e">sdkversion</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;1.2.0&#39;</span>,
+        <span style="color:#a6e22e">logversion</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;2.0&#39;</span>
+    };
+}
+    <span style="color:#a6e22e">AMapWX</span>.<span style="color:#a6e22e">prototype</span>.<span style="color:#a6e22e">getWxLocation</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+        <span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">getLocation</span>({
+            <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;gcj02&#39;</span>, <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">a</span>) {
+                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">longitude</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">latitude</span>;
+                <span style="color:#a6e22e">my</span>.<span style="color:#a6e22e">setStorage</span>({<span style="color:#a6e22e">key</span><span style="color:#f92672">:&hellip;</span></code></pre>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/amap/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F">小程序</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
             <article class="post">
   <header>
@@ -412,66 +485,6 @@
                 
                 
                 <li><a class="article-category-link" href="/categories/cmd">cmd</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="/blog/qrcodebarcode/">小程序中生成条形码和二维码</a></h2>
-        
-        
-            <p>QRcode &amp; BarCode</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2020-07-26'>
-            July 26, 2020</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">canvas</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;barcode&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;barcode&#34;</span>/&gt;
-&lt;<span style="color:#f92672">canvas</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;qrcode&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;qrcode&#34;</span>/&gt;
-</code></pre></div><p><code>npm install wxbarcode</code></p>
-  <footer>
-    <ul class="actions">
-      <li><a href="/blog/qrcodebarcode/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F">小程序</a></li>
                 
             
         
@@ -634,6 +647,20 @@
           <article class="mini-post">
             <header>
               <h3>
+                <a href="/blog/es2021-1/">逻辑分配运算符</a>
+              </h3>
+              
+              <time class="published" datetime='2021-11-12'>
+                November 12, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="/blog/js-note4/">js添加css动画变量</a>
               </h3>
               
@@ -649,20 +676,6 @@
             <header>
               <h3>
                 <a href="/blog/vue-note2/">vue-方法调用alert组件</a>
-              </h3>
-              
-              <time class="published" datetime='2021-07-28'>
-                July 28, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="/blog/js-note3/">锚点的跳转和返回</a>
               </h3>
               
               <time class="published" datetime='2021-07-28'>

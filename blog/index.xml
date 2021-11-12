@@ -6,7 +6,17 @@
     <description>Recent content in Blog on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 16:43:40 +0800</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>逻辑分配运算符</title>
+      <link>/blog/es2021-1/</link>
+      <pubDate>Fri, 12 Nov 2021 16:43:40 +0800</pubDate>
+      
+      <guid>/blog/es2021-1/</guid>
+      <description>1. ||= 或等于运算符 let a = false; let b = true; a ||= b //a=true  let c = 0; let d= true; c ||= d //c=true  let e= 1; let f = false; e ||= f //e=1 a ||= b 相当于 a || (a=b)
+2. &amp;amp;&amp;amp;= 且等于运算符 function() { let a; let b = 0; let c = 1; a &amp;amp;&amp;amp;= 2; b &amp;amp;&amp;amp;= 2; c &amp;amp;&amp;amp;= 2; return typeof a === &amp;#39;undefined&amp;#39; &amp;amp;&amp;amp; b === 0 &amp;amp;&amp;amp; c === 2; }//true  function(){ let a; let i = 1; a &amp;amp;&amp;amp;= ++i; return typeof a === &amp;#39;undefined&amp;#39; &amp;amp;&amp;amp; i === 1; } a &amp;amp;&amp;amp;= b 相当于 a &amp;amp;&amp;amp; (a=b)</description>
+    </item>
+    
     <item>
       <title>js添加css动画变量</title>
       <link>/blog/js-note4/</link>
