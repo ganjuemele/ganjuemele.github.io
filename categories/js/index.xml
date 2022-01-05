@@ -6,7 +6,20 @@
     <description>Recent content in js on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jan 2022 14:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS中的数据类型检测方案</title>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/</link>
+      <pubDate>Sun, 02 Jan 2022 14:22:40 +0800</pubDate>
+      
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/</guid>
+      <description>typeof  console.log(1) //Number console.log(&amp;#39;str&amp;#39;) //String console.log(true) //Boolean console.log([]) //Object console.log({}) //Object console.log(null) //Object console.log(undefined) //undefined console.log(Symbol()) //Function console.log(function(){}) //Function 优点：能够快速区分基本数据类型
+缺点：不能将Object、Array和Null区分，都返回object
+instanceof  console.log(1 instanceof Number); // false console.log(true instanceof Boolean); // false console.log(&amp;#39;str&amp;#39; instanceof String); // false console.log([] instanceof Array); // true console.log(function(){} instanceof Function); // true console.log({} instanceof Object); // true 优点：能够区分Array、Object和Function，适合用于判断自定义的类实例对象
+缺点：Number，Boolean，String基本数据类型不能判断
+Object.prototype.toString.call()  var toString = Object.prototype.toString; console.log(toString.call(1)); //[object Number] console.log(toString.call(true)); //[object Boolean] console.log(toString.call(&amp;#39;str&amp;#39;)); //[object String] console.</description>
+    </item>
+    
     <item>
       <title>js添加css动画变量</title>
       <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</link>

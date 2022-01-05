@@ -6,7 +6,20 @@
     <description>Recent content in vue on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 28 Jul 2021 12:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 16:43:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>/deep/和&gt;&gt;&gt;和::v-deep</title>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/</link>
+      <pubDate>Tue, 28 Dec 2021 16:43:40 +0800</pubDate>
+      
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/</guid>
+      <description>在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用/deep/，如
+.conBox /deep/ .el-input__inner{ padding:0 10px; } 注意，/deep/在vue 3.0会报错 如果/deep/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。
+.conBox ::v-deep .el-input__inner{ padding:0 10px; } 深度作用选择器 &amp;raquo;&amp;gt; （注意，只作用于css）
+但如果是sass/less的话可能无法识别，这时候需要使用 /deep/和::v-deep 选择器。
+想修改element-ui某个深层元素也有其他方式解决； 解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）</description>
+    </item>
+    
     <item>
       <title>js添加css动画变量</title>
       <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/</link>

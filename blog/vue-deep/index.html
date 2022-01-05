@@ -1,0 +1,936 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https:\/\/ganjuemele.github.io\/https-ganjuemele.github.io-"
+        },
+        "articleSection" : "blog",
+        "name" : "\/deep\/和\u003e\u003e\u003e和::v-deep",
+        "headline" : "\/deep\/和\u003e\u003e\u003e和::v-deep",
+        "description" : "在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用\/deep\/，如\n.conBox \/deep\/ .el-input__inner{ padding:0 10px; } 注意，\/deep\/在vue 3.0会报错 如果\/deep\/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。\n.conBox ::v-deep .el-input__inner{ padding:0 10px; } 深度作用选择器 \u0026raquo;\u0026gt; （注意，只作用于css）\n但如果是sass\/less的话可能无法识别，这时候需要使用 \/deep\/和::v-deep 选择器。\n想修改element-ui某个深层元素也有其他方式解决； 解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2021",
+        "datePublished": "2021-12-28 16:43:40 \u002b0800 CST",
+        "dateModified" : "2021-12-28 16:43:40 \u002b0800 CST",
+        "url" : "https:\/\/ganjuemele.github.io\/https-ganjuemele.github.io-\/blog\/vue-deep\/",
+        "wordCount" : "29",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>/deep/和&gt;&gt;&gt;和::v-deep</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.78.2" />
+        
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='https://ganjuemele.github.io/https-ganjuemele.github.io-/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='https://ganjuemele.github.io/https-ganjuemele.github.io-/favicon/favicon.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
+  <meta name="application-name" content="么了&#39;s 博客">
+  <meta name="msapplication-tooltip" content="么记">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="么了">
+        
+        
+            
+                <meta name="description" content="么记">
+            
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="/deep/和&gt;&gt;&gt;和::v-deep"/>
+<meta name="twitter:description" content="在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用/deep/，如
+.conBox /deep/ .el-input__inner{ padding:0 10px; } 注意，/deep/在vue 3.0会报错 如果/deep/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。
+.conBox ::v-deep .el-input__inner{ padding:0 10px; } 深度作用选择器 &raquo;&gt; （注意，只作用于css）
+但如果是sass/less的话可能无法识别，这时候需要使用 /deep/和::v-deep 选择器。
+想修改element-ui某个深层元素也有其他方式解决； 解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）"/>
+
+        <meta property="og:title" content="/deep/和&gt;&gt;&gt;和::v-deep" />
+<meta property="og:description" content="在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用/deep/，如
+.conBox /deep/ .el-input__inner{ padding:0 10px; } 注意，/deep/在vue 3.0会报错 如果/deep/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。
+.conBox ::v-deep .el-input__inner{ padding:0 10px; } 深度作用选择器 &raquo;&gt; （注意，只作用于css）
+但如果是sass/less的话可能无法识别，这时候需要使用 /deep/和::v-deep 选择器。
+想修改element-ui某个深层元素也有其他方式解决； 解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/" />
+<meta property="article:published_time" content="2021-12-28T16:43:40+08:00" />
+<meta property="article:modified_time" content="2021-12-28T16:43:40+08:00" />
+
+        <meta property="og:image" content="https://ganjuemele.github.io/https-ganjuemele.github.io-/images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="/deep/和&gt;&gt;&gt;和::v-deep">
+<meta itemprop="description" content="在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用/deep/，如
+.conBox /deep/ .el-input__inner{ padding:0 10px; } 注意，/deep/在vue 3.0会报错 如果/deep/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。
+.conBox ::v-deep .el-input__inner{ padding:0 10px; } 深度作用选择器 &raquo;&gt; （注意，只作用于css）
+但如果是sass/less的话可能无法识别，这时候需要使用 /deep/和::v-deep 选择器。
+想修改element-ui某个深层元素也有其他方式解决； 解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）">
+<meta itemprop="datePublished" content="2021-12-28T16:43:40+08:00" />
+<meta itemprop="dateModified" content="2021-12-28T16:43:40+08:00" />
+<meta itemprop="wordCount" content="29">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/css/main.css">
+            <link rel="stylesheet" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/css/add-on.css">
+            <link rel="stylesheet" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/">
+                            <i class="fa fa-home">&nbsp;</i>主页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/music/">
+                            <i class="fa fa-list">&nbsp;</i>音乐
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>类别
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="https://ganjuemele.github.io/https-ganjuemele.github.io-">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://ganjuemele.github.io/https-ganjuemele.github.io-">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>主页
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>博客
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/music/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>音乐
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>类别
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>联系我
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>最新文章</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/">JS中的数据类型检测方案</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2022-01-02'>
+                                    January 2, 2022</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/">/deep/和&gt;&gt;&gt;和::v-deep</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-12-28'>
+                                    December 28, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/">逻辑分配运算符</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-11-12'>
+                                    November 12, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">查看更多</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>分享方式 <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f&amp;text=%2fdeep%2f%e5%92%8c%3e%3e%3e%e5%92%8c%3a%3av-deep&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f&amp;title=%2fdeep%2f%e5%92%8c%3e%3e%3e%e5%92%8c%3a%3av-deep" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/">/deep/和&gt;&gt;&gt;和::v-deep</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2021-12-28'>
+            December 28, 2021</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f&amp;text=%2fdeep%2f%e5%92%8c%3e%3e%3e%e5%92%8c%3a%3av-deep&amp;via=" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f&amp;title=%2fdeep%2f%e5%92%8c%3e%3e%3e%e5%92%8c%3a%3av-deep" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %e4%b9%88%e4%ba%86&amp;body=https%3a%2f%2fganjuemele.github.io%2fhttps-ganjuemele.github.io-%2fblog%2fvue-deep%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+
+  <div id="content">
+    <p>在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用/deep/，如</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">conBox</span> <span style="color:#f92672">/</span><span style="color:#f92672">deep</span><span style="color:#f92672">/</span> .<span style="color:#a6e22e">el-input__inner</span>{
+    <span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+}
+</code></pre></div><p>注意，/deep/在vue 3.0会报错
+如果/deep/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">conBox</span> ::<span style="color:#a6e22e">v-deep</span> .<span style="color:#a6e22e">el-input__inner</span>{
+    <span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+}
+</code></pre></div><p>深度作用选择器 &raquo;&gt; （注意，只作用于css）</p>
+<p>但如果是sass/less的话可能无法识别，这时候需要使用 /deep/和::v-deep 选择器。</p>
+<p>想修改element-ui某个深层元素也有其他方式解决；
+解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vue">vue</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+<ul class="actions pagination">
+    
+        <li><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/"
+                class="button big previous">逻辑分配运算符</a></li>
+    
+
+    
+        <li><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/"
+                class="button big next">JS中的数据类型检测方案</a></li>
+    
+</ul>
+
+
+
+<article class="post">
+  
+
+
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '7dAFDv2xHI5SPrdV1yH9MRSg-9Nh9j0Va',
+        appKey: 'ml8Bc7NGa4TC6GA5QtfOlHPm',
+        notify: 'false',
+        verify: 'false',
+        avatar:'retro',
+        placeholder: '评论支持Markdown语法...',
+        visitor: 'true'
+    });
+</script>
+</article>
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='https://ganjuemele.github.io/https-ganjuemele.github.io-/'><img src="https://ganjuemele.github.io/https-ganjuemele.github.io-/img/main/me.jpg" class="intro-circle" width="150px" alt="么了" /></a>
+      
+    
+    
+      <header>
+        <h2>么了</h2>
+        <p>欢迎莅临 <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>最新文章</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/">JS中的数据类型检测方案</a>
+              </h3>
+              
+              <time class="published" datetime='2022-01-02'>
+                January 2, 2022
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/">/deep/和&gt;&gt;&gt;和::v-deep</a>
+              </h3>
+              
+              <time class="published" datetime='2021-12-28'>
+                December 28, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/">逻辑分配运算符</a>
+              </h3>
+              
+              <time class="published" datetime='2021-11-12'>
+                November 12, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">查看更多</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>关于</h3>
+      <p>HTML 5 | CSS | JavaScript | React</p>
+      <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/about/" class="button">阅读更多</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/ganjuemele" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//behance.net/a2717072727086" target="_blank" title="Behance" class="fa fa-behance"></a></li>
+
+
+
+  <li><a href="//dribbble.com//" target="_blank" title="Dribbble" class="fa fa-dribbble"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="weixin://contacts/profile/ganjuemele" target="_blank" title="WeChat" class="fa fa-weixin"></a></li>
+
+
+
+  <li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=271707272&amp;site=qq&amp;menu=yes" target="_blank" title="QQ" class="fa fa-qq"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:271707272@qq.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2022
+        
+          么了&#39;s 博客
+        
+      .</br>
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="https://ganjuemele.github.io/https-ganjuemele.github.io-/js/util.js"></script>
+      <script src="https://ganjuemele.github.io/https-ganjuemele.github.io-/js/main.js"></script>
+      <script src="https://ganjuemele.github.io/https-ganjuemele.github.io-/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

@@ -30,9 +30,9 @@
         "publisher": "",
         "accountablePerson" : "",
         "copyrightHolder" : "",
-        "copyrightYear" : "2021",
-        "datePublished": "2021-07-28 12:22:40 \u002b0800 CST",
-        "dateModified" : "2021-07-28 12:22:40 \u002b0800 CST",
+        "copyrightYear" : "2022",
+        "datePublished": "2022-01-02 14:22:40 \u002b0800 CST",
+        "dateModified" : "2022-01-02 14:22:40 \u002b0800 CST",
         "url" : "https:\/\/ganjuemele.github.io\/https-ganjuemele.github.io-\/categories\/js\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -78,7 +78,7 @@
 <meta property="og:description" content="么记" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js/" />
-<meta property="og:updated_time" content="2021-07-28T12:22:40+08:00" />
+<meta property="og:updated_time" content="2022-01-02T14:22:40+08:00" />
 
         <meta property="og:image" content="https://ganjuemele.github.io/https-ganjuemele.github.io-/images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -255,35 +255,35 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/">JS中的数据类型检测方案</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2022-01-02'>
+                                    January 2, 2022</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/">/deep/和&gt;&gt;&gt;和::v-deep</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-12-28'>
+                                    December 28, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/">逻辑分配运算符</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2021-11-12'>
                                     November 12, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/">js添加css动画变量</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-07-28'>
-                                    July 28, 2021</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/">vue-方法调用alert组件</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2021-07-28'>
-                                    July 28, 2021</time>
                             </header>
                             
 
@@ -308,6 +308,71 @@
     <div id="main">
         <h1>js</h1>
         
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/">JS中的数据类型检测方案</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2022-01-02'>
+            January 2, 2022</time>
+        <span class="author">么了</span>
+        
+            <p>1 分钟阅读</p>
+        
+
+    </div>
+</header>
+
+  
+
+  
+  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">1</span>)              <span style="color:#75715e">//Number
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;str&#39;</span>)          <span style="color:#75715e">//String
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">true</span>)           <span style="color:#75715e">//Boolean
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([])             <span style="color:#75715e">//Object
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>({})             <span style="color:#75715e">//Object
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">null</span>)           <span style="color:#75715e">//Object
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">undefined</span>)      <span style="color:#75715e">//undefined
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Symbol</span>())       <span style="color:#75715e">//Function
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">function</span>(){})   <span style="color:#75715e">//Function
+</span></code></pre></div><p>优点：能够快速区分基本数据类型</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/" class="button big">阅读更多</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js">js</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
             <article class="post">
   <header>
@@ -415,71 +480,6 @@
   <footer>
     <ul class="actions">
       <li><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/" class="button big">阅读更多</a></li>
-    </ul>
-  <ul class="stats">
-  <li class="categories">
-    <ul>
-        
-            
-            
-                <i class="fa fa-folder"></i>
-                
-                
-                <li><a class="article-category-link" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/js">js</a></li>
-                
-                
-                <li><a class="article-category-link" href="https://ganjuemele.github.io/https-ganjuemele.github.io-/categories/vue">vue</a></li>
-                
-            
-        
-    </ul>
-  </li>
-  <li class="tags">
-    <ul>
-        
-    </ul>
-  </li>
-</ul>
-
-  </footer>
-</article>
-
-        
-            <article class="post">
-  <header>
-    <div class="title">
-        
-            <h2><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note3/">锚点的跳转和返回</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2021-07-28'>
-            July 28, 2021</time>
-        <span class="author">么了</span>
-        
-            <p>1 分钟阅读</p>
-        
-
-    </div>
-</header>
-
-  
-
-  
-  <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;task&#34;</span>&gt;
-    ...
-&lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">点击事件</span>
-window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;#task&#39;</span>;
-</code></pre></div><p>跳转后会在链接上加上 <code>task</code>，
-之后要返回上级页面时，需要点击2次返回，在移动端上对用户不太友好。</p>
-  <footer>
-    <ul class="actions">
-      <li><a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note3/" class="button big">阅读更多</a></li>
     </ul>
   <ul class="stats">
   <li class="categories">
@@ -655,39 +655,39 @@ window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">h
           <article class="mini-post">
             <header>
               <h3>
+                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/">JS中的数据类型检测方案</a>
+              </h3>
+              
+              <time class="published" datetime='2022-01-02'>
+                January 2, 2022
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/">/deep/和&gt;&gt;&gt;和::v-deep</a>
+              </h3>
+              
+              <time class="published" datetime='2021-12-28'>
+                December 28, 2021
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/">逻辑分配运算符</a>
               </h3>
               
               <time class="published" datetime='2021-11-12'>
                 November 12, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note4/">js添加css动画变量</a>
-              </h3>
-              
-              <time class="published" datetime='2021-07-28'>
-                July 28, 2021
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-note2/">vue-方法调用alert组件</a>
-              </h3>
-              
-              <time class="published" datetime='2021-07-28'>
-                July 28, 2021
               </time>
             </header>
             
@@ -823,7 +823,7 @@ window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">h
     
     <p class="copyright">
       
-        &copy; 2021
+        &copy; 2022
         
           么了&#39;s 博客
         

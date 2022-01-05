@@ -6,7 +6,33 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 12 Nov 2021 16:43:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jan 2022 14:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS中的数据类型检测方案</title>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/</link>
+      <pubDate>Sun, 02 Jan 2022 14:22:40 +0800</pubDate>
+      
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/</guid>
+      <description>typeof  console.log(1) //Number console.log(&amp;#39;str&amp;#39;) //String console.log(true) //Boolean console.log([]) //Object console.log({}) //Object console.log(null) //Object console.log(undefined) //undefined console.log(Symbol()) //Function console.log(function(){}) //Function 优点：能够快速区分基本数据类型
+缺点：不能将Object、Array和Null区分，都返回object
+instanceof  console.log(1 instanceof Number); // false console.log(true instanceof Boolean); // false console.log(&amp;#39;str&amp;#39; instanceof String); // false console.log([] instanceof Array); // true console.log(function(){} instanceof Function); // true console.log({} instanceof Object); // true 优点：能够区分Array、Object和Function，适合用于判断自定义的类实例对象
+缺点：Number，Boolean，String基本数据类型不能判断
+Object.prototype.toString.call()  var toString = Object.prototype.toString; console.log(toString.call(1)); //[object Number] console.log(toString.call(true)); //[object Boolean] console.log(toString.call(&amp;#39;str&amp;#39;)); //[object String] console.</description>
+    </item>
+    
+    <item>
+      <title>/deep/和&gt;&gt;&gt;和::v-deep</title>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/</link>
+      <pubDate>Tue, 28 Dec 2021 16:43:40 +0800</pubDate>
+      
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/vue-deep/</guid>
+      <description>在style经常用scoped属性实现组件的私有化时，要改变element-ui某个深层元素（eg:.el-input__inner）或其他深层样式时，需要使用/deep/，如
+.conBox /deep/ .el-input__inner{ padding:0 10px; } 注意，/deep/在vue 3.0会报错 如果/deep/报错，可采用::v-deep，效果基本一样，有人说::v-deep能加快编译速度，但是我在网上没有找到相关资料，无从验证。
+.conBox ::v-deep .el-input__inner{ padding:0 10px; } 深度作用选择器 &amp;raquo;&amp;gt; （注意，只作用于css）
+但如果是sass/less的话可能无法识别，这时候需要使用 /deep/和::v-deep 选择器。
+想修改element-ui某个深层元素也有其他方式解决； 解决方法之一：除非你将 scoped 移除，或者新建一个没有 scoped 的 style（一个.vue文件允许多个style）</description>
+    </item>
+    
     <item>
       <title>逻辑分配运算符</title>
       <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/es2021-1/</link>
