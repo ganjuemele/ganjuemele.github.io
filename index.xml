@@ -6,7 +6,17 @@
     <description>Recent content on 么了&#39;s 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 02 Jan 2022 14:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 14:22:40 +0800</lastBuildDate><atom:link href="https://ganjuemele.github.io/https-ganjuemele.github.io-/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>全图片页面css逐行淡入渲染</title>
+      <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/prod-note1/</link>
+      <pubDate>Mon, 28 Feb 2022 14:22:40 +0800</pubDate>
+      
+      <guid>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/prod-note1/</guid>
+      <description>判断页面模版， template=1一行一图， template=2一行二图
+&amp;lt;div class=&amp;#34;fadeIn&amp;#34; v-for=&amp;#34;(item,i) in list&amp;#34; :key=&amp;#34;i&amp;#34; :style=&amp;#34;i%2&amp;amp;&amp;amp;template===&amp;#39;2&amp;#39;?`${&amp;#39;animation-delay:&amp;#39;+i*100+&amp;#39;ms;&amp;#39;}`:`${&amp;#39;animation-delay:&amp;#39;+(i+1)*100+&amp;#39;ms;&amp;#39;}`&amp;#34; &amp;gt; &amp;lt;img :src=&amp;#34;item.imgUrl&amp;#34; alt=&amp;#34;&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; img { width:100%; height:100%; } .fadeIn { opacity: 0; animation: fadeIn .2s ease-in 1 forwards; } @keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} } </description>
+    </item>
+    
     <item>
       <title>JS中的数据类型检测方案</title>
       <link>https://ganjuemele.github.io/https-ganjuemele.github.io-/blog/js-note5/</link>
